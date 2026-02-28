@@ -1,10 +1,10 @@
 # Discovery Phase Deliverables Status
 
-## Overview (as of 26 Feb 2026)
+## Overview (as of 28 Feb 2026)
 
 | # | Deliverable | Owner(s) | Status |
 |---|---|---|---|
-| 1 | Solution Overview | Artsiom + Stepan + Ana | Stub — assigned, not written |
+| 1 | Solution Overview | Artsiom + Stepan + Ana | **In progress** — architecture diagram being actively developed |
 | 2 | Content Migration Plan | Michal Broz | Stub — assigned, not written |
 | 3 | Content Editor User and Role Mapping | TBD | Empty — not started |
 | 4 | Documentation and Training Plan | TBD | Not started (no document) |
@@ -18,7 +18,7 @@
 **Purpose:** Comprehensive technical documentation of the proposed Sitecore XM Cloud architecture, component mapping, gap analysis, and integration points.
 
 **Must include:**
-- Proposed Sitecore XM Cloud architecture diagram — **@Artsiom Dylevich** due ~3 Mar 2026
+- Proposed Sitecore XM Cloud architecture diagram — **@Artsiom Dylevich** due ~3 Mar 2026 ← **IN PROGRESS** (file: `Discovery Phase/Outputs/ArchitecureDiagram.png`)
 - Component mapping: Craft CMS → Sitecore equivalents (done for components; needs Sitecore architecture layer)
 - Gap analysis identifying:
   - Features mapping directly
@@ -28,10 +28,19 @@
 - Technical recommendations for each gap
 - Integration points with existing GROHE systems — **@Štěpán Novák + @Artsiom Dylevich** (TBD)
 
+**Architecture decisions captured this session (28 Feb 2026):**
+- Multisite: Grohe NEO + GTC in one Sitecore AI instance; shared components
+- GTC Middleware on Google Cloud Run
+- Database: Cloud SQL (PostgreSQL) → Datastream → BigQuery → Looker Studio (direct, no manual export)
+- Certificates: GCS + Signed URLs (generated on-request by Middleware)
+- Redirects: existing NEO GCR redirect service + Load Balancer extended for GTC
+- CELUM: asset picker in Sitecore (authoring) + CDN link (rendering)
+- Entity diagrams: CRAFT_main_entities.png (content model); tracking data model analysed from Excel exports
+
 **Key questions to answer:**
-- How will the Training Module be architected in Sitecore?
-- What custom components are needed?
-- How does GTC integrate with NEO?
+- How will the Training Module be architected in Sitecore? ← partially answered; content model mapped
+- What custom components are needed? ← quiz/question types all custom; see components.md
+- How does GTC integrate with NEO? ← answered in architecture diagram
 
 ---
 

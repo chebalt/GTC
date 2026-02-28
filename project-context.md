@@ -48,14 +48,20 @@ PO: 8100503322 | Offer: GR25120801 | Payment: 45 days net
 
 ### Content Model
 ```
-Collection (Course/Training Module)
-  └─ Story (Chapter/Page)
-       └─ Nugget (Content Piece/Component)
-Quizzes → Questions (standalone or linked to Collection)
+Collection (page, URL: /collections/x)
+  └─ Course (data item — type: Course | Compact Training, URL: /playlists/x for compact)
+       └─ Chapter (data item, ordered)
+            └─ Story (page, navigable)
+                 └─ Nugget (component on Story page)
+Quiz (page, URL: /quizzes/x) → Questions (data items)
+  — linked 1:1 to Chapter, and also accessible directly from Collection
 ```
+- Tracking grain: **user + content slug + language** — same user can have independent progress per language
+- Course tracking export: only "last updated" timestamp — NO completion flag (gap to resolve)
+- Quiz tracking export: completed (0/1), attempts (1–36), best/worst score (ratio 0.0–1.0), last attempt at
 - Completion defined by **scroll depth** — green checkmark when user scrolls to bottom of Story
-- Certificate generated when all required Stories in Collection completed AND quiz passed
-- Certificates: PDF, one template (personalized by name + course), stored in CMS, downloaded manually
+- Certificate generated when all required Stories in Collection completed AND quiz passed (8/10 threshold, configurable)
+- Certificates: PDF, one template (personalized by name + course); in target: generated on-request by Middleware
 - Certificate retention: no security/digital signature requirements stated
 
 ### User Roles / Access Groups (Confirmed)
@@ -87,7 +93,7 @@ Quizzes → Questions (standalone or linked to Collection)
 
 ### Active Integrations
 - **GROHE IDP** — SSO
-- **Looker Studio** — reporting (data pushed via Excel export from Craft)
+- **Looker Studio** — reporting (currently fed by **manual Excel export** from Craft; 2 reports: Courses + Quizzes)
 - **Phrase TMS** — translation (manual Excel import/export; no live API)
 - **Cloudflare** — CDN/proxy
 - **Google Analytics / GTM**
@@ -105,12 +111,41 @@ Quizzes → Questions (standalone or linked to Collection)
 ### Key Decisions
 - **Same IDP as NEO** → NO user/role migration needed
 - **Content migrated "as is"** (no re-localization during migration; future new content uses English master)
-- **Media → Celum DAM** (new GTC folder to be created in Celum by Aaron/SoE)
+- **Media → Celum DAM** (new GTC folder to be created in Celum by Aaron/SoE; asset picker extension in Sitecore for authoring; CDN link for rendering)
 - **Full LMS integration: DESCOPED** for this phase
 - **Personalization:** MVP = access-based visibility only (no behavioral personalization)
 - **Workflow:** No complex approval workflow (mirrors current simplicity)
 - **Salesforce:** Future goal only — not in scope for MVP
-- **Certificates:** PDF-based, no digital signatures required
+- **Certificates:** PDF-based, no digital signatures required; generated on-request by GTC Middleware, cached in GCS
+
+### Target Architecture — GCP Infrastructure
+- **Sitecore AI**: one instance, two sites — Grohe NEO (www.grohe.com) + Grohe GTC (training.grohe.com)
+  - Shared components (what Craft calls "Nuggets") reused/restyled across both sites
+  - Grohe NEO already in production; GTC is being added as a second site
+- **Frontend**: Next.js app hosted on **Vercel** — multisite, one deployment (pending FE team lead confirmation)
+- **GTC Middleware**: **Google Cloud Run** (same pattern as existing NEO GCR endpoints)
+  - Reads course content from Sitecore via GraphQL (Experience Edge)
+  - Handles course/quiz progress tracking, search, form submissions, certificate generation
+  - Validates user JWT from Grohe IDP (JWKS local validation — no persistent IDP connection needed)
+- **Database (OLTP)**: **Cloud SQL — PostgreSQL**
+  - Tables: UserCourseProgress, UserQuizProgress, Feedbacks
+  - Written by GTC Middleware; replaces manual Excel export workflow
+- **Analytics pipeline**: Cloud SQL → **Datastream (CDC)** → **BigQuery** → **Looker Studio**
+  - Direct connection replaces manual Excel import/export for Marina's dashboards
+  - Course progress, quiz progress, and feedback data all visible in Looker Studio in near real-time
+- **Certificate storage**: **Google Cloud Storage (GCS)**
+  - Immutable once issued; persistent across GCR restarts (unlike GCR ephemeral disk)
+  - Key structure: `certificates/{user_id}/{course_slug}/{language}/{issued_date}.pdf`
+  - Access via time-limited **Signed URLs** (user-specific, generated per request by Middleware)
+  - On request: Middleware checks GCS → if found serve Signed URL; if not, generate PDF → store → serve
+- **Redirect service**: existing NEO GCR service + Load Balancer; extended to handle GTC URL redirects
+- **Search**: **Sitecore Search** — existing NEO publish webhook extended to include GTC pages; GTC Middleware handles GTC-specific indexing and filters search results by site
+- **CELUM**: Sitecore asset picker extension for content editors; CDN link for FE App rendering
+
+### Forms
+- **End-of-course feedback** (`feedback_type = 'course'`): single multi-line text (1000 chars), silently captures Training ID / User ID / Timestamp / Language / Market; AJAX submit; course_slug populated
+- **Footer feedback** (`feedback_type = 'general'`): single "Feedback" field, no course context; course_slug = NULL
+- Both stored in Feedbacks table → flows to BigQuery → Looker Studio (no export needed)
 
 ### Domain Decision (OPEN)
 - Option A: Keep `training.grohe.com`

@@ -38,12 +38,15 @@
 | 17 | **Elasticsearch credentials**: Hardcoded in SCORM JS bundles — need to be rotated | GROHE IT | Action required |
 | 18 | **Infrastructure migration**: Hetzner → GCP (not LIXIL standard) | Estanislao | Open |
 | 19 | **Code access**: THIS holds code in private repo — purchase or extraction? | GROHE IT | Open |
-| 20 | **Reporting pipeline**: Looker Studio currently fed by Excel export — replicate in NEO? | Neele + Actum | TBD |
+| 20 | **Reporting pipeline**: Looker Studio currently fed by Excel export — replicate in NEO? | Neele + Actum | **Resolved** — see Resolved section |
 | 21 | **Phrase TMS**: Continue manual Excel or implement direct API? | GTC + Actum | Backlog item |
-| 22 | **Certificate storage in NEO**: Where do generated certificates live in Sitecore? | Actum | TBD |
-| 23 | **Feedback form export**: CSV/Excel export mechanism in NEO? | Actum | TBD |
+| 22 | **Certificate storage in NEO**: Where do generated certificates live in Sitecore? | Actum | **Resolved** — see Resolved section |
+| 23 | **Feedback form export**: CSV/Excel export mechanism in NEO? | Actum | **Resolved** — see Resolved section |
 | 24 | **Logging, monitoring, operational ownership** post-migration | GROHE IT + Actum | TBD |
 | 25 | **Security requirements** for APIs and certificates | GROHE IT | TBD |
+| 31 | **Course completion rule**: What exactly marks a course as complete in the new system — all Stories scrolled? All chapters? And does it require quiz passing? | Actum (Art) → Jessica / Daniela | Open — must confirm before DB schema finalised |
+| 32 | **Frontend multisite deployment**: One Vercel project for NEO + GTC or separate deployments with independent release cycles? | Actum FE team lead | Open — pending FE team lead input |
+| 33 | **Footer feedback in Craft**: Is the footer feedback form currently stored in the same place as end-of-course feedback, or does it go to a different tool (email, etc.)? Any historical data to migrate? | Jessica Folwarczny | Open |
 
 ## Governance & Process
 
@@ -61,7 +64,7 @@
 |---|---|
 | LMS integration | Explicitly DESCOPED for this phase |
 | User/role migration | NO — same IDP as NEO |
-| Authentication | Same IDP as NEO |
+| Authentication | Same IDP as NEO (OAuth2 / GROHE IDP); Middleware uses JWKS local JWT validation |
 | Content migration approach | "As is" — no re-localization during migration |
 | Personalization MVP | Access-based visibility only; no behavioral personalization |
 | Approval workflow | No complex workflow (mirrors current simplicity) |
@@ -73,3 +76,10 @@
 | Quiz pass threshold | 8/10 (configurable via passThreshold) |
 | Quiz retries | Unlimited |
 | Search scope | Course level only (not Nugget level) |
+| Reporting pipeline (Q20) | Cloud SQL (PostgreSQL) → Datastream CDC → BigQuery → Looker Studio direct connection; no manual export; covers course progress, quiz progress, and feedback data |
+| Certificate storage (Q22) | Google Cloud Storage (GCS); Middleware generates PDF on request, checks GCS (cache hit = Signed URL; miss = generate → store → serve); key: `certificates/{user_id}/{course_slug}/{language}/{issued_date}.pdf`; access via time-limited Signed URLs |
+| Feedback form export (Q23) | Feedbacks stored in Cloud SQL (PostgreSQL) Feedbacks table; flow to BigQuery via Datastream; visible in Looker Studio — no CSV/Excel export needed |
+| Multisite architecture | Grohe NEO + Grohe GTC in one Sitecore AI instance; components shared between sites |
+| CELUM integration | Sitecore asset picker extension for authoring; CELUM CDN link for FE App rendering |
+| Redirect service | Existing NEO GCR redirect service + Load Balancer extended to handle GTC URL redirects |
+| Certificate generation | GTC Middleware (Google Cloud Run) generates on-request; immutable once issued |
