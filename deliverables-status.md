@@ -4,7 +4,7 @@
 
 | # | Deliverable | Owner(s) | Status |
 |---|---|---|---|
-| 1 | Solution Overview | Artsiom + Stepan + Ana | **In progress** — architecture diagram being actively developed |
+| 1 | Solution Overview | Artsiom + Stepan + Ana | **Draft v1.0 written** — `Discovery Phase/Outputs/Solution Overview.md` (28 Feb 2026) |
 | 2 | Content Migration Plan | Michal Broz | Stub — assigned, not written |
 | 3 | Content Editor User and Role Mapping | TBD | Empty — not started |
 | 4 | Documentation and Training Plan | TBD | Not started (no document) |
@@ -15,10 +15,10 @@
 
 ## Deliverable 1: Solution Overview
 
-**Purpose:** Comprehensive technical documentation of the proposed Sitecore XM Cloud architecture, component mapping, gap analysis, and integration points.
+**Purpose:** Comprehensive technical documentation of the proposed Sitecore AI architecture, component mapping, gap analysis, and integration points.
 
 **Must include:**
-- Proposed Sitecore XM Cloud architecture diagram — **@Artsiom Dylevich** due ~3 Mar 2026 ← **IN PROGRESS** (file: `Discovery Phase/Outputs/ArchitecureDiagram.png`)
+- Proposed Sitecore AI architecture diagram — **@Artsiom Dylevich** due ~3 Mar 2026 ← **IN PROGRESS** (file: `Discovery Phase/Outputs/ArchitecureDiagram.png`)
 - Component mapping: Craft CMS → Sitecore equivalents (done for components; needs Sitecore architecture layer)
 - Gap analysis identifying:
   - Features mapping directly
@@ -46,7 +46,7 @@
 
 ## Deliverable 2: Content Migration Plan
 
-**Purpose:** Detailed roadmap for migrating all content and media from Craft CMS to Sitecore XM Cloud.
+**Purpose:** Detailed roadmap for migrating all content and media from Craft CMS to Sitecore AI.
 
 **Must include (all assigned to @Michal Broz):**
 - Content inventory and scope definition
@@ -64,7 +64,7 @@
 **Purpose:** Define who can do what in the new Sitecore system.
 
 **Must include:**
-- User roles definition for Sitecore XM Cloud
+- User roles definition for Sitecore AI
 - Permission matrix (role × action)
 - Workflow definitions: content creation / review-approval / publishing
 - Alignment with GROHE's content governance
