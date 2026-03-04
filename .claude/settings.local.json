@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(head:*)",
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(echo === $f ===:*)",
+      "Bash(python3:*)",
+      "Bash(python:*)",
+      "Bash(where:*)",
+      "Bash(git:*)",
+      "Bash(claude update:*)",
+      "Bash(claude:*)",
+      "Bash(py:*)",
+      "Bash(node:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}

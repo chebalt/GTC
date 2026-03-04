@@ -1,0 +1,632 @@
+[
+  {
+    "filename": "00-stage.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/00-stage.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "7838600",
+    "width": 4320,
+    "height": 2430
+  },
+  {
+    "filename": "00-introduction.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/00-introduction.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "2027633",
+    "width": 876,
+    "height": 1172
+  },
+  {
+    "filename": "04-stage.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/04-stage.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "9727442",
+    "width": 4320,
+    "height": 2430
+  },
+  {
+    "filename": "04-complete-solutions-video-compressed.mp4",
+    "url": "https://lc.training.grohe.this.work/assets/videos/Ceramics/04-complete-solutions-video-compressed.mp4",
+    "kind": "video",
+    "mimeType": "video/mp4",
+    "size": "3405190",
+    "width": null,
+    "height": null
+  },
+  {
+    "filename": "ceramics-divider.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/ceramics-divider.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "254",
+    "width": 2160,
+    "height": 4
+  },
+  {
+    "filename": "04-wash-basins.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/04-wash-basins.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "2249952",
+    "width": 2160,
+    "height": 1120
+  },
+  {
+    "filename": "04-toilets.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/04-toilets.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "2213454",
+    "width": 2160,
+    "height": 1080
+  },
+  {
+    "filename": "04-end-consumer.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/04-end-consumer.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "868007",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "04-installer.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/04-installer.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "717903",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "04-architect.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/04-architect.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "538480",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "04-projects.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/04-projects.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "805522",
+    "width": 876,
+    "height": 877
+  },
+  {
+    "filename": "03-stage.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/03-stage.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "5885397",
+    "width": 4320,
+    "height": 2430
+  },
+  {
+    "filename": "03-mold-making.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/03-mold-making.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "48258",
+    "width": 692,
+    "height": 469
+  },
+  {
+    "filename": "03-mold-casting.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/03-mold-casting.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "49490",
+    "width": 692,
+    "height": 468
+  },
+  {
+    "filename": "03-surface-treatment.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/03-surface-treatment.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "45482",
+    "width": 692,
+    "height": 468
+  },
+  {
+    "filename": "03-drying.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/03-drying.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "50808",
+    "width": 692,
+    "height": 469
+  },
+  {
+    "filename": "03-glazing.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/03-glazing.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "48252",
+    "width": 692,
+    "height": 469
+  },
+  {
+    "filename": "03-firing.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/03-firing.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "53992",
+    "width": 692,
+    "height": 468
+  },
+  {
+    "filename": "03-inspection.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/03-inspection.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "53654",
+    "width": 692,
+    "height": 469
+  },
+  {
+    "filename": "03-coating.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/03-coating.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "50586",
+    "width": 692,
+    "height": 468
+  },
+  {
+    "filename": "02-stage.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-stage.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "8737873",
+    "width": 4320,
+    "height": 2430
+  },
+  {
+    "filename": "02-at-a-glance-01.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-at-a-glance-01.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "1996649",
+    "width": 2520,
+    "height": 1160
+  },
+  {
+    "filename": "02-at-a-glance-02.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-at-a-glance-02.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "2054594",
+    "width": 2520,
+    "height": 1160
+  },
+  {
+    "filename": "02-at-a-glance-03.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-at-a-glance-03.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "2656999",
+    "width": 2520,
+    "height": 1160
+  },
+  {
+    "filename": "02-at-a-glance-04.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-at-a-glance-04.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "1719391",
+    "width": 2520,
+    "height": 1160
+  },
+  {
+    "filename": "02-at-a-glance-05.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-at-a-glance-05.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "2539983",
+    "width": 2520,
+    "height": 1160
+  },
+  {
+    "filename": "02-at-a-glance-06.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-at-a-glance-06.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "1737581",
+    "width": 2520,
+    "height": 1160
+  },
+  {
+    "filename": "02-airo-basin-video.mp4",
+    "url": "https://lc.training.grohe.this.work/assets/videos/Ceramics/02-airo-basin-video.mp4",
+    "kind": "video",
+    "mimeType": "video/mp4",
+    "size": "14698353",
+    "width": null,
+    "height": null
+  },
+  {
+    "filename": "01-pureguard-icon.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-pureguard-icon.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "126613",
+    "width": 540,
+    "height": 447
+  },
+  {
+    "filename": "02-airio-inspiration-1.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-airio-inspiration-1.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "829125",
+    "width": 876,
+    "height": 877
+  },
+  {
+    "filename": "02-airio-inspiration-2.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-airio-inspiration-2.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "785028",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "02-airio-inspiration-3.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-airio-inspiration-3.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "919522",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "02-airio-inspiration-4.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-airio-inspiration-4.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "904438",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "02-essence-intro.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-essence-intro.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "1441694",
+    "width": 2160,
+    "height": 801
+  },
+  {
+    "filename": "01-rimless-icon.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-rimless-icon.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "71451",
+    "width": 540,
+    "height": 447
+  },
+  {
+    "filename": "01-quickrelease-icon.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-quickrelease-icon.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "112368",
+    "width": 540,
+    "height": 447
+  },
+  {
+    "filename": "01-softclose-icon.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-softclose-icon.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "49172",
+    "width": 540,
+    "height": 447
+  },
+  {
+    "filename": "02-essence-inspiration-1.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-essence-inspiration-1.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "723348",
+    "width": 876,
+    "height": 877
+  },
+  {
+    "filename": "02-essence-inspiration-2.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-essence-inspiration-2.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "735299",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "02-essence-inspiration-3.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-essence-inspiration-3.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "645915",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "02-euro-intro.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-euro-intro.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "1608921",
+    "width": 2160,
+    "height": 801
+  },
+  {
+    "filename": "01-triplevortex-icon.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-triplevortex-icon.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "90618",
+    "width": 540,
+    "height": 447
+  },
+  {
+    "filename": "02-euro-fixation.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-euro-fixation.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "387236",
+    "width": 876,
+    "height": 877
+  },
+  {
+    "filename": "02-euro-inspiration-1.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-euro-inspiration-1.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "687519",
+    "width": 876,
+    "height": 877
+  },
+  {
+    "filename": "02-euro-inspiration-2.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-euro-inspiration-2.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "530790",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "02-euro-inspiration-3.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-euro-inspiration-3.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "853791",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "02-cube-intro.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-cube-intro.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "1329577",
+    "width": 2160,
+    "height": 801
+  },
+  {
+    "filename": "02-cube-inspiration-1.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-cube-inspiration-1.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "667867",
+    "width": 876,
+    "height": 877
+  },
+  {
+    "filename": "02-cube-inspiration-2.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-cube-inspiration-2.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "591564",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "02-cube-inspiration-3.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-cube-inspiration-3.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "600009",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "02-bau-intro.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-bau-intro.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "1479144",
+    "width": 2160,
+    "height": 801
+  },
+  {
+    "filename": "02-bau-inspiration-1.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-bau-inspiration-1.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "513182",
+    "width": 876,
+    "height": 877
+  },
+  {
+    "filename": "02-bau-inspiration-2.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-bau-inspiration-2.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "641262",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "02-bau-inspiration-3.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-bau-inspiration-3.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "575795",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "02-bau-edge-intro.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-bau-edge-intro.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "1351577",
+    "width": 2160,
+    "height": 801
+  },
+  {
+    "filename": "02-bau-edge-inspiration-1.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-bau-edge-inspiration-1.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "553182",
+    "width": 876,
+    "height": 877
+  },
+  {
+    "filename": "02-bau-edge-inspiration-2.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-bau-edge-inspiration-2.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "575536",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "02-bau-edge-inspiration-3.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-bau-edge-inspiration-3.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "636751",
+    "width": 876,
+    "height": 876
+  },
+  {
+    "filename": "PF_GROHE_Sensia.mp4",
+    "url": "https://lc.training.grohe.this.work/assets/videos/Ceramics/PF_GROHE_Sensia.mp4",
+    "kind": "video",
+    "mimeType": "video/mp4",
+    "size": "15998558",
+    "width": null,
+    "height": null
+  },
+  {
+    "filename": "PF_GROHE_Sensia_Pro.mp4",
+    "url": "https://lc.training.grohe.this.work/assets/videos/Ceramics/PF_GROHE_Sensia_Pro.mp4",
+    "kind": "video",
+    "mimeType": "video/mp4",
+    "size": "19422982",
+    "width": null,
+    "height": null
+  },
+  {
+    "filename": "02-matches.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/02-matches.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "1364824",
+    "width": 3240,
+    "height": 2854
+  },
+  {
+    "filename": "01-stage.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-stage.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "1271165",
+    "width": 4320,
+    "height": 2430
+  },
+  {
+    "filename": "01-hyperclean-icon.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-hyperclean-icon.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "85677",
+    "width": 540,
+    "height": 447
+  },
+  {
+    "filename": "01-pureguard-details.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-pureguard-details.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "1928034",
+    "width": 1261,
+    "height": 1261
+  },
+  {
+    "filename": "01-hyperclean-details.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-hyperclean-details.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "1796680",
+    "width": 1262,
+    "height": 1261
+  },
+  {
+    "filename": "01-triplevortex-details.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-triplevortex-details.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "2120430",
+    "width": 1261,
+    "height": 1261
+  },
+  {
+    "filename": "01-rimless-details.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-rimless-details.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "2245512",
+    "width": 1262,
+    "height": 1261
+  },
+  {
+    "filename": "01-quickrelease-details.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-quickrelease-details.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "2211773",
+    "width": 1261,
+    "height": 1262
+  },
+  {
+    "filename": "01-softclose-details.png",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/01-softclose-details.png",
+    "kind": "image",
+    "mimeType": "image/png",
+    "size": "1726495",
+    "width": 1262,
+    "height": 1262
+  },
+  {
+    "filename": "ceramics-quiz.jpg",
+    "url": "https://lc.training.grohe.this.work/assets/images/Ceramics/ceramics-quiz.jpg",
+    "kind": "image",
+    "mimeType": "image/jpeg",
+    "size": "1428864",
+    "width": 1640,
+    "height": 1520
+  }
+]

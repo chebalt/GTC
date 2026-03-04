@@ -39,7 +39,7 @@
 | 18 | **Infrastructure migration**: Hetzner → GCP (not LIXIL standard) | Estanislao | Open |
 | 19 | **Code access**: THIS holds code in private repo — purchase or extraction? | GROHE IT | Open |
 | 20 | **Reporting pipeline**: Looker Studio currently fed by Excel export — replicate in NEO? | Neele + Actum | **Resolved** — see Resolved section |
-| 21 | **Phrase TMS**: Continue manual Excel or implement direct API? | GTC + Actum | Backlog item |
+| 21 | **Phrase TMS**: Continue manual Excel or implement direct API? | GTC + Actum | **Resolved** — see Resolved section |
 | 22 | **Certificate storage in NEO**: Where do generated certificates live in Sitecore? | Actum | **Resolved** — see Resolved section |
 | 23 | **Feedback form export**: CSV/Excel export mechanism in NEO? | Actum | **Resolved** — see Resolved section |
 | 24 | **Logging, monitoring, operational ownership** post-migration | GROHE IT + Actum | TBD |
@@ -83,3 +83,5 @@
 | CELUM integration | Sitecore asset picker extension for authoring; CELUM CDN link for FE App rendering |
 | Redirect service | Existing NEO GCR redirect service + Load Balancer extended to handle GTC URL redirects |
 | Certificate generation | GTC Middleware (Google Cloud Run) generates on-request; immutable once issued |
+| Phrase TMS (Q21) | Direct API integration already live in NEO/Sitecore. GTC scope = configure existing connector for new GTC content types only. Flow: Sitecore → Phrase (export) → Phrase → Sitecore (import translated content). |
+| Redirect table maintenance | NOT in GTC scope — NEO team owns the Firestore-based redirect service. GTC's only responsibility = provide old Craft slug → new Sitecore slug mapping data as input. |

@@ -94,7 +94,7 @@ Quiz (page, URL: /quizzes/x) → Questions (data items)
 ### Active Integrations
 - **GROHE IDP** — SSO
 - **Looker Studio** — reporting (currently fed by **manual Excel export** from Craft; 2 reports: Courses + Quizzes)
-- **Phrase TMS** — translation (manual Excel import/export; no live API)
+- **Phrase TMS** — translation (currently manual Excel import/export in Craft; **direct API integration already live in NEO/Sitecore**; GTC scope = configure existing connector for new GTC content types only)
 - **Cloudflare** — CDN/proxy
 - **Google Analytics / GTM**
 - Elasticsearch (internal, containerized)
@@ -138,7 +138,7 @@ Quiz (page, URL: /quizzes/x) → Questions (data items)
   - Key structure: `certificates/{user_id}/{course_slug}/{language}/{issued_date}.pdf`
   - Access via time-limited **Signed URLs** (user-specific, generated per request by Middleware)
   - On request: Middleware checks GCS → if found serve Signed URL; if not, generate PDF → store → serve
-- **Redirect service**: existing NEO GCR service + Load Balancer; extended to handle GTC URL redirects
+- **Load Balancer + Redirect Tables (Firestore)**: existing NEO GCP infrastructure; sits in front of the Grohe Frontend Application and handles all inbound user traffic. Queries a **Firestore** database to evaluate incoming URLs and issue redirects before forwarding to the FE App. Already fully operational for NEO — **updating/maintaining this service is NOT in GTC scope**. GTC's only redirect responsibility is providing the URL mapping data (old Craft CMS slugs → new Sitecore slugs) as input; the mechanism itself is owned by the NEO team. Reverse proxy layer intentionally omitted from diagram for clarity. Note this in the Solution Overview document.
 - **Search**: **Sitecore Search** — existing NEO publish webhook extended to include GTC pages; GTC Middleware handles GTC-specific indexing and filters search results by site
 - **CELUM**: Sitecore asset picker extension for content editors; CDN link for FE App rendering
 
