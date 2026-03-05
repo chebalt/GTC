@@ -290,7 +290,9 @@ Scroll depth events are sent from the frontend to the GTC Middleware API, which 
 
 ### User Account & Learning History
 
-The User Account page presents two sections:
+My Account is a **standalone GTC feature**, not integrated into NEO My Account. It is accessible at `training.grohe.com/my-account` (or the equivalent path if the domain changes) and is owned entirely by GTC.
+
+The page presents two sections:
 
 - **Personal Data** (read-only): Title, First Name, Last Name, Email, Country (ISO-2). Data is read from the GROHE IDP profile; no local copy is maintained.
 - **Learning History**: A list of completed Collections, each showing the course thumbnail, title, completion date (localized format: DD.MM.YYYY / MM/DD/YYYY by market), and a **Download Certificate** button if a certificate has been generated for that completion.
@@ -525,11 +527,11 @@ The following items require decisions from named owners before detailed implemen
 |---|---|---|---|
 | 1 | **Domain**: Keep `training.grohe.com` or integrate as `www.grohe.com/de-de/training`? | Egidijus Bartusis (Egi) + Al-Wasir (SEO) | Determines URL structure, redirect scope, and SEO metadata strategy |
 | 2 | **Course completion rule**: What exactly marks a course as complete — all Stories scrolled? All chapters? Is quiz passing mandatory? | Jessica Folwarczny / Daniela Hesse | Blocks Cloud SQL schema finalisation and tracking implementation |
-| 3 | **My Account placement**: Separate "Training" section in GTC, or integrated into NEO My Account? | Technical workshop (Actum + SoE) | Affects FE architecture and IDP data flow |
+| ~~3~~ | ~~**My Account placement**~~ | ~~Technical workshop~~| **Resolved** — standalone GTC feature at `training.grohe.com/my-account` |
 | 4 | **Frontend multisite deployment**: One Vercel project for NEO + GTC (shared release cycle) or separate deployments (independent releases)? | Actum FE team lead | Affects CI/CD pipeline design and release governance |
 | 5 | **Quiz MVP scope**: What is the minimum feature set for the quiz component in the implementation phase? (Priority order of 8 question types) | GTC + Actum | Directly drives implementation planning and budget allocation |
 | 6 | **Footer feedback in Craft**: Is the footer feedback currently stored in the same place as end-of-course feedback, or does it go to a separate tool (email, etc.)? Any historical data to migrate? | Jessica Folwarczny | Determines historical data migration scope |
-| 7 | **Historical training data migration**: What is the strategy, tooling, and acceptable data loss tolerance? | Actum (Stepan + Artsiom) + GTC | Major effort; impacts project timeline |
+| 7 | **Historical training data migration**: GraphQL API confirmed to expose NO user progress data — course completions, quiz attempts/scores, and quiz answers all live in custom MariaDB tables not accessible via any API. Direct DB read access is the only extraction path. Decision needed: scope (all-time vs. last N months), which users, and whether to migrate at all vs. starting fresh. | Actum (Stepan + Artsiom) + GTC | Major effort; DB access request needed; impacts timeline |
 | 8 | **Target group / IDP integration**: How is the user's target group (access group) communicated via the IDP JWT in the NEO context, and does it match the Craft groups? | Actum (Artsiom + Stepan) | Blocks personalization and role-based visibility implementation |
 | 9 | **SCORM API break**: SCORM packages call `lc.training.grohe.this.work` at runtime — this endpoint will break post-migration. Handling strategy? | Actum | Affects 2 known SCORM packages; runtime failures post-cutover |
 | 10 | **Elasticsearch credentials**: Hardcoded in distributed SCORM JS bundles — must be rotated immediately regardless of migration timeline | GROHE IT | Security risk; not dependent on migration completion |

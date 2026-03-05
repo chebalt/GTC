@@ -126,6 +126,8 @@ Reuse existing OneTrust integration from NEO, configured for GTC.
 
 ### Epic 9 — My Account
 
+Standalone GTC feature at `training.grohe.com/my-account` — not integrated into NEO My Account.
+
 - My Account (personal data: title, first/last name, email, country — read-only from IDP JWT)
 - My Completed Courses (learning history list with thumbnail, title, completion date, Download Certificate CTA)
 
