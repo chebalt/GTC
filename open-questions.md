@@ -34,6 +34,7 @@
 
 | # | Question | Owner | Status |
 |---|---|---|---|
+| 34 | **"Company" tracking dimension**: User Tracking spec lists "company" as a required analytics dimension alongside access group and country. Not currently mapped to any field in the IDP JWT or DB schema — needs clarification on what "company" means (GROHE dealer/partner company?) and whether it's available in the IDP claims. | Neele / Marina Vorontcova + Actum | Open |
 | 16 | **SCORM API break**: `lc.training.grohe.this.work` called at runtime by SCORM packages — how to handle? | Actum | Open |
 | 17 | **Elasticsearch credentials**: Hardcoded in SCORM JS bundles — need to be rotated | GROHE IT | Action required |
 | 18 | **Infrastructure migration**: Hetzner → GCP (not LIXIL standard) | Estanislao | Open |
