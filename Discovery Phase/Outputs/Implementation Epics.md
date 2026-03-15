@@ -203,10 +203,9 @@ Authenticated-only. Sitecore Search scoped to GTC content (Collections, Stories,
 
 ### Epic 16 — Looker Studio Integration
 
-Replace manual Excel reporting with live automated pipeline: Cloud SQL → Datastream (CDC) → BigQuery → Looker Studio.
+Set up Cloud SQL (PostgreSQL) → Looker Studio connector to replace the existing Craft DB → Looker connector. Ensure existing Looker reports (Course Statistics, Quiz Statistics, User Export) are fully functional against the new schema.
 
-- Forms data integration
-- Learning Data Integration
+- Learning Data Integration (course progress, quiz results)
 
 ---
 

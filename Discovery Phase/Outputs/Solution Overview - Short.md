@@ -30,17 +30,17 @@ Rather than rebuilding GTC as a standalone system, the selected approach is to *
 - **Shared infrastructure** — GCP hosting, IDP, CDN, search, and media management (Celum) already in production for NEO
 - **Shared IDP** — no user or role migration required; the same GROHE IDP that NEO uses will authenticate GTC users
 - **Component reuse** — 13 of 28 assessed components are directly reusable from NEO; 6 require adaptation; 9 require custom development (primarily the quiz/question types)
-- **Reporting automation** — replaces the current manual Excel export workflow with a live Cloud SQL → BigQuery → Looker Studio pipeline
+- **Reporting continuity** — Craft currently connects to Looker Studio via an API connector; GTC sets up an equivalent Cloud SQL (PostgreSQL) → Looker Studio connector to keep existing reports fully functional
 
 ### What Is in Scope
 
 | Area | Scope |
 |---|---|
 | Content model + components | All 28 mapped; custom development for 9 quiz types |
-| Integrations | IDP (REUSE), Celum (EXTEND), Phrase TMS (EXTEND), Sitecore Search (EXTEND), Redirects (data provision only), Cloud SQL / BigQuery / GCS (NEW) |
-| Progress tracking & reporting | Full pipeline from user interaction → DB → BigQuery → Looker Studio |
+| Integrations | IDP (REUSE), Celum (EXTEND), Phrase TMS (EXTEND), Sitecore Search (EXTEND), Redirects (data provision only), Cloud SQL / GCS (NEW) |
+| Progress tracking & reporting | Cloud SQL → Looker Studio connector (replacing existing Craft DB → Looker connector) |
 | Certificate generation | On-request PDF generation with GCS storage |
-| Feedback forms | End-of-course and footer feedback |
+| Feedback forms | End-of-course and footer feedback (email delivery, no DB storage) |
 | Content migration | ~60 trainings, 19 languages, all media to Celum |
 | Historical progress data | Migration of existing course + quiz tracking records |
 
@@ -73,10 +73,9 @@ GTC will run as a **second site within the existing Sitecore AI instance** that 
 |---|---|---|---|
 | CMS | Sitecore AI | Content authoring + layout management | REUSE |
 | Frontend | Next.js on Vercel | Page rendering + user interaction (multisite) | EXTEND |
-| Middleware | Google Cloud Run (GCR) | Business logic, APIs, certificate generation | NEW |
-| Database | Cloud SQL — PostgreSQL | User progress, quiz results, feedback storage | NEW |
-| Analytics pipeline | Google Datastream → BigQuery | CDC pipeline for reporting data | NEW |
-| Reporting | Looker Studio | Direct BigQuery connection (no manual export) | NEW |
+| Middleware | Google Cloud Run (GCR) | Business logic, APIs, certificate generation | EXTEND |
+| Database | Cloud SQL — PostgreSQL | User progress, quiz results | NEW |
+| Reporting | Looker Studio | Cloud SQL connector (replaces existing Craft DB connector) | NEW |
 | Certificate storage | Google Cloud Storage (GCS) | Immutable PDF storage, Signed URL access | NEW |
 | Search | Sitecore Search | Full-text course/chapter/quiz search | EXTEND |
 | Media | Celum DAM | Asset picker (authoring) + CDN (rendering) | EXTEND |
@@ -95,11 +94,11 @@ GTC will run as a **second site within the existing Sitecore AI instance** that 
 
 ### GROHE IDP [REUSE]
 
-The same GROHE IDP instance used by NEO authenticates GTC users via **OAuth2 SSO**. No configuration change is required — GTC inherits the existing IDP connection. The GTC Middleware validates incoming JWTs using **JWKS local validation**, meaning no persistent connection to the IDP is required per API request; the JWKS public keys are cached locally in the Middleware.
+The same GROHE IDP instance used by NEO authenticates GTC users via **OAuth2 SSO**. No configuration change is required — GTC inherits the existing IDP connection. 
 
 ### Celum DAM [EXTEND]
 
-The Sitecore **asset picker extension** is already deployed in the NEO Sitecore instance, enabling content editors to browse and insert Celum assets directly within the Sitecore authoring UI. GTC scope: create a dedicated GTC media folder in Celum (coordinated with Aaron / SoE); configure the picker for GTC content types. During rendering, the Frontend App resolves asset URLs via the **Celum CDN** — no Sitecore media library involvement for delivery.
+The Sitecore **asset picker extension** is already deployed in the NEO Sitecore instance, enabling content editors to browse and insert Celum assets directly within the Sitecore authoring UI. GTC scope: **TBD** with Aaron/Andreas (the assets fully downoaded are shared for the review).
 
 ### Phrase TMS [EXTEND]
 
@@ -107,7 +106,7 @@ A **direct Sitecore API connector** for Phrase TMS is already live in NEO, repla
 
 ### Sitecore Search [EXTEND]
 
-The existing NEO publish webhook is extended to include GTC page types (Collections, Chapters, Quizzes). The GTC Middleware handles GTC-specific indexing logic and filters search results by site, ensuring that GTC search results are not mixed with NEO product content. Search is authenticated-only.
+The existing NEO publish webhook is extended to include GTC page types (Collections, Chapters, Quizzes). **TDB**: The search experience to be provided by Sascha and refined with the team. Most likely we are extending the Neo SERP page with the new tab.
 
 ### Load Balancer + Redirect Tables [EXTEND — data provision only]
 
@@ -123,13 +122,8 @@ A new **Cloud SQL (PostgreSQL)** instance is provisioned for GTC to store:
 |---|---|
 | UserCourseProgress | User ID, course slug, language, completion status, timestamps |
 | UserQuizProgress | User ID, quiz slug, language, attempts, best score, completion flag |
-| Feedbacks | User ID, course slug (nullable), language, market, feedback text, timestamp, feedback_type |
 
-All writes are handled by the GTC Middleware. This database replaces the manual Excel export workflow as the authoritative source of record for learning progress and feedback.
-
-### BigQuery + Datastream [NEW]
-
-**Google Datastream (CDC — Change Data Capture)** provides a near-real-time replication pipeline from Cloud SQL to **BigQuery**. Looker Studio connects natively to BigQuery, providing Marina Vorontcova and the GTC team with live dashboards covering course progress, quiz completion rates, feedback, and certificate issuance — **without any manual data export or upload**.
+All writes are handled by the GTC Middleware. Looker Studio connects directly to Cloud SQL via its native PostgreSQL connector, replacing the existing Craft DB → Looker connector. The task is to ensure the existing Looker Studio reports remain fully functional against the new Cloud SQL schema.
 
 ### GCS Certificate Storage [NEW]
 
@@ -143,16 +137,15 @@ All writes are handled by the GTC Middleware. This database replaces the manual 
 |---|---|---|
 | Sitecore AI (XM Cloud) | Sitecore SaaS | Managed; GTC added as second site |
 | Frontend | Vercel | Next.js, multisite deployment |
-| Middleware | Google Cloud Run (GCP) | Same pattern as existing NEO GCR endpoints |
-| Database | Google Cloud SQL (GCP) | PostgreSQL; provisioned new for GTC |
-| Analytics pipeline | Google Datastream → BigQuery (GCP) | Managed GCP services |
+| Middleware | Google Cloud Run (GCP) | Existing NEO GCR extended with GTC endpoints |
+| Database | Google Cloud SQL (GCP) | PostgreSQL; provisioned new for GTC; Looker Studio connects directly |
 | Certificate storage | Google Cloud Storage (GCP) | Immutable bucket; Signed URL access |
 | Search | Sitecore Search (SaaS) | Extended from NEO; managed by Sitecore |
-| Media / CDN | Celum CDN | Existing DAM; new GTC folder |
+| Media / CDN | Celum CDN | Existing DAM |
 | Redirects | GCP Load Balancer + Firestore | Existing NEO infrastructure; NEO team owns |
 | Authentication | GROHE IDP | Existing; no changes required |
 
-All new GCP infrastructure (Cloud Run, Cloud SQL, Datastream, BigQuery, GCS) follows the same patterns already established for the NEO platform on GCP. Hetzner Cloud (current Craft CMS host) is retired as part of this migration and is not carried forward; that infrastructure action is coordinated by Estanislao Montesinos-Gomez.
+All new GCP infrastructure (Cloud Run, Cloud SQL, GCS) follows the same patterns already established for the NEO platform on GCP. Hetzner Cloud (current Craft CMS host) is retired as part of this migration and is not carried forward; that infrastructure action is coordinated by Estanislao Montesinos-Gomez.
 
 ---
 

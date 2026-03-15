@@ -38,17 +38,17 @@ Rather than rebuilding GTC as a standalone system, the selected approach is to *
 - **Shared infrastructure** — GCP hosting, IDP, CDN, search, and media management (Celum) already in production for NEO
 - **Shared IDP** — no user or role migration required; the same GROHE IDP that NEO uses will authenticate GTC users
 - **Component reuse** — 13 of 28 assessed components are directly reusable from NEO; 6 require adaptation; 9 require custom development (primarily the quiz/question types)
-- **Reporting automation** — replaces the current manual Excel export workflow with a live Cloud SQL → BigQuery → Looker Studio pipeline
+- **Reporting continuity** — Craft currently connects to Looker Studio via an API connector; GTC sets up an equivalent Cloud SQL (PostgreSQL) → Looker Studio connector to keep existing reports fully functional
 
 ### What Is in Scope
 
 | Area | Scope |
 |---|---|
 | Content model + components | All 28 mapped; custom development for 9 quiz types |
-| Integrations | IDP (REUSE), Celum (EXTEND), Phrase TMS (EXTEND), Sitecore Search (EXTEND), Redirects (data provision only), Cloud SQL / BigQuery / GCS (NEW) |
-| Progress tracking & reporting | Full pipeline from user interaction → DB → BigQuery → Looker Studio |
+| Integrations | IDP (REUSE), Celum (EXTEND), Phrase TMS (EXTEND), Sitecore Search (EXTEND), Redirects (data provision only), Cloud SQL / GCS (NEW) |
+| Progress tracking & reporting | Cloud SQL → Looker Studio connector (replacing existing Craft DB → Looker connector) |
 | Certificate generation | On-request PDF generation with GCS storage |
-| Feedback forms | End-of-course and footer feedback |
+| Feedback forms | End-of-course and footer feedback (email delivery, no DB storage) |
 | Content migration | ~60 trainings, 19 languages, all media to Celum |
 | Historical progress data | Migration of existing course + quiz tracking records |
 
@@ -121,7 +121,7 @@ All media assets are stored in Craft CMS — **not in Celum**. Migration to Celu
 | Integration | Current Implementation |
 |---|---|
 | GROHE IDP | OAuth2 SSO for end users |
-| Looker Studio | Manual Excel export from Craft uploaded periodically (2 reports: Courses + Quizzes) |
+| Looker Studio | API connector from Craft DB (tables: `GTC_Quiz_Statistics`, `GTC_Course_Statistics`, `GTC_User_Export`) |
 | Phrase TMS | Manual Excel import/export for translations |
 | Cloudflare | CDN / proxy for the frontend |
 | Google Analytics / GTM | Tracking and campaign measurement |
@@ -132,7 +132,7 @@ All media assets are stored in Craft CMS — **not in Celum**. Migration to Celu
 - Agency THIS GmbH closed; source code is not owned by GROHE
 - Craft V4 LTS expires April 2026; THIS support expires June 2026
 - Platform is isolated from LIXIL IT standards (Hetzner, not GCP)
-- Reporting requires manual Excel export — no live data pipeline
+- Reporting uses an API connector to Craft DB tables — functional but tightly coupled to Craft schema
 - Translation requires manual Excel workflow — no live Phrase API
 - Caching architecture (140 cache combinations) is complex and requires expert knowledge to manage
 
@@ -161,10 +161,9 @@ GTC will run as a **second site within the existing Sitecore AI instance** that 
 |---|---|---|---|
 | CMS | Sitecore AI | Content authoring + layout management | REUSE |
 | Frontend | Next.js on Vercel | Page rendering + user interaction (multisite) | EXTEND |
-| Middleware | Google Cloud Run (GCR) | Business logic, APIs, certificate generation | NEW |
-| Database | Cloud SQL — PostgreSQL | User progress, quiz results, feedback storage | NEW |
-| Analytics pipeline | Google Datastream → BigQuery | CDC pipeline for reporting data | NEW |
-| Reporting | Looker Studio | Direct BigQuery connection (no manual export) | NEW |
+| Middleware | Google Cloud Run (GCR) | Business logic, APIs, certificate generation | EXTEND |
+| Database | Cloud SQL — PostgreSQL | User progress, quiz results | NEW |
+| Reporting | Looker Studio | Cloud SQL connector (replaces existing Craft DB connector) | NEW |
 | Certificate storage | Google Cloud Storage (GCS) | Immutable PDF storage, Signed URL access | NEW |
 | Search | Sitecore Search | Full-text course/chapter/quiz search | EXTEND |
 | Media | Celum DAM | Asset picker (authoring) + CDN (rendering) | EXTEND |
@@ -275,7 +274,7 @@ The following features are not components in the CMS sense but are distinct deve
 | User Account & Learning History | NEW | Profile read-only view + completed training list + certificate download |
 | PDF Certificate Generation | NEW | Middleware (GCR) + GCS storage + Signed URL delivery |
 | Training Search | EXTEND | Sitecore Search, authenticated-only, WCAG 2.1 |
-| Feedback Forms | NEW | End-of-course + footer, stored in DB, reported in Looker Studio |
+| Feedback Forms | NEW | End-of-course + footer, forwarded via SMTP email (no DB storage) |
 | Personalization Engine | EXTEND | Component-level visibility by access group |
 
 ---
@@ -323,14 +322,9 @@ Search is **authenticated only** — the search interface is not visible to unau
 
 ### Feedback Forms
 
-Two feedback entry points exist:
+A single general feedback form is linked at the bottom of each page and at the end of each course. The form includes a **"Training name"** field so that feedback can be attributed to a specific course.
 
-| Form | Context captured | feedback_type |
-|---|---|---|
-| End-of-course feedback | Training ID, User ID, Timestamp, Language, Market | `course` |
-| Footer feedback | No course context | `general` (course_slug = NULL) |
-
-Both forms present a single multi-line text field (1,000 character limit). Submission is AJAX with no page reload. Data flows: Frontend → GTC Middleware → Cloud SQL Feedbacks table → BigQuery → Looker Studio. No CSV/Excel export is needed.
+Both forms present a single multi-line text field (1,000 character limit). Submission is AJAX with no page reload. Data flows: **Frontend → GTC Middleware → SMTP email delivery**. No database storage is required — feedback is forwarded via email to the GTC team, matching the current Craft CMS behavior.
 
 ### Personalization
 
@@ -346,11 +340,11 @@ The user's access group is sourced from the GROHE IDP JWT. The default behavior 
 
 ### GROHE IDP [REUSE]
 
-The same GROHE IDP instance used by NEO authenticates GTC users via **OAuth2 SSO**. No configuration change is required — GTC inherits the existing IDP connection. The GTC Middleware validates incoming JWTs using **JWKS local validation**, meaning no persistent connection to the IDP is required per API request; the JWKS public keys are cached locally in the Middleware.
+The same GROHE IDP instance used by NEO authenticates GTC users via **OAuth2 SSO**. No configuration change is required — GTC inherits the existing IDP connection.
 
 ### Celum DAM [EXTEND]
 
-The Sitecore **asset picker extension** is already deployed in the NEO Sitecore instance, enabling content editors to browse and insert Celum assets directly within the Sitecore authoring UI. GTC scope: create a dedicated GTC media folder in Celum (coordinated with Aaron / SoE); configure the picker for GTC content types. During rendering, the Frontend App resolves asset URLs via the **Celum CDN** — no Sitecore media library involvement for delivery.
+The Sitecore **asset picker extension** is already deployed in the NEO Sitecore instance, enabling content editors to browse and insert Celum assets directly within the Sitecore authoring UI. GTC scope: **TBD** with Aaron/Andreas — GROHE needs to review the downloaded assets (~10 GB, shared as zip) to determine whether they already exist in Celum, whether they meet size/resolution requirements for Sitecore AI, and what the upload approach should be. The asset migration strategy cannot be finalized until this review is complete.
 
 ### Phrase TMS [EXTEND]
 
@@ -358,7 +352,7 @@ A **direct Sitecore API connector** for Phrase TMS is already live in NEO, repla
 
 ### Sitecore Search [EXTEND]
 
-The existing NEO publish webhook is extended to include GTC page types (Collections, Chapters, Quizzes). The GTC Middleware handles GTC-specific indexing logic and filters search results by site, ensuring that GTC search results are not mixed with NEO product content. Search is authenticated-only.
+The existing NEO publish webhook is extended to include GTC page types (Collections, Chapters, Quizzes). **TBD**: The search experience design to be provided by Sascha and refined with the team. Most likely we are extending the NEO SERP page with a new "Trainings" tab alongside the existing Products/Spare Parts/Content tabs. Search is authenticated-only.
 
 ### Load Balancer + Redirect Tables [EXTEND — data provision only]
 
@@ -374,13 +368,8 @@ A new **Cloud SQL (PostgreSQL)** instance is provisioned for GTC to store:
 |---|---|
 | UserCourseProgress | User ID, course slug, language, completion status, timestamps |
 | UserQuizProgress | User ID, quiz slug, language, attempts, best score, completion flag |
-| Feedbacks | User ID, course slug (nullable), language, market, feedback text, timestamp, feedback_type |
 
-All writes are handled by the GTC Middleware. This database replaces the manual Excel export workflow as the authoritative source of record for learning progress and feedback.
-
-### BigQuery + Datastream [NEW]
-
-**Google Datastream (CDC — Change Data Capture)** provides a near-real-time replication pipeline from Cloud SQL to **BigQuery**. Looker Studio connects natively to BigQuery, providing Marina Vorontcova and the GTC team with live dashboards covering course progress, quiz completion rates, feedback, and certificate issuance — **without any manual data export or upload**.
+All writes are handled by the GTC Middleware. Looker Studio connects directly to Cloud SQL via its native PostgreSQL connector, replacing the existing Craft DB → Looker connector. The task is to ensure the existing Looker Studio reports remain fully functional against the new Cloud SQL schema.
 
 ### GCS Certificate Storage [NEW]
 
@@ -392,25 +381,23 @@ All writes are handled by the GTC Middleware. This database replaces the manual 
 
 ### Current State
 
-GTC currently produces two manual data exports from Craft CMS — one for Courses, one for Quizzes — uploaded periodically to Looker Studio as Excel files. This introduces lag, manual effort, and risk of data gaps.
+GTC currently connects Looker Studio to the Craft CMS database via an API connector, pulling from three tables: `GTC_Course_Statistics`, `GTC_Quiz_Statistics`, and `GTC_User_Export`. This is **not a manual process** — the connector runs automatically. However, it is tightly coupled to the Craft schema and will not survive migration. The task for GTC is to set up an equivalent PostgreSQL → Looker Studio connector against the new Cloud SQL database and ensure the existing Looker reports are fully functional.
 
 **Tracking grain (carried forward):** user + content slug + language. The same user can have independent progress records per language — completing a training in German does not mark it complete in English.
 
 ### New Reporting Architecture
 
 ```
-User interaction (scroll / quiz submit / feedback)
+User interaction (scroll / quiz submit)
         ↓
 GTC Middleware (Google Cloud Run)
         ↓
 Cloud SQL — PostgreSQL
         ↓
-Google Datastream (CDC, near real-time)
-        ↓
-BigQuery
-        ↓
-Looker Studio (direct native connection)
+Looker Studio (direct Cloud SQL connection)
 ```
+
+Looker Studio connects directly to Cloud SQL via its native PostgreSQL connector. This replaces the current Craft workflow where three tables (`GTC_Quiz_Statistics`, `GTC_Course_Statistics`, `GTC_User_Export`) are connected to Looker Studio via an API connector.
 
 ### Data Entities
 
@@ -438,25 +425,12 @@ Looker Studio (direct native connection)
 | completed | boolean | Passed (score ≥ pass threshold) |
 | last_attempt_at | timestamp | |
 
-**Feedbacks**
-
-| Field | Type | Notes |
-|---|---|---|
-| id | uuid | |
-| user_id | string | |
-| feedback_type | enum | `course` or `general` |
-| course_slug | string (nullable) | NULL for general feedback |
-| language | string | |
-| market | string | |
-| feedback_text | text | Max 1,000 characters |
-| submitted_at | timestamp | |
-
 ### What Looker Studio Gains
 
 - Course completion rates per training, language, and market — **live**
 - Quiz attempt counts, pass rates, and score distributions — **live**
-- Feedback submissions searchable and filterable — **live**
 - Certificate issuance volume — **live**
+- Nice to have: information on translated modules
 - No manual export step; no upload lag; no risk of file corruption or missed updates
 
 ---
@@ -467,16 +441,15 @@ Looker Studio (direct native connection)
 |---|---|---|
 | Sitecore AI (XM Cloud) | Sitecore SaaS | Managed; GTC added as second site |
 | Frontend | Vercel | Next.js, multisite deployment |
-| Middleware | Google Cloud Run (GCP) | Same pattern as existing NEO GCR endpoints |
-| Database | Google Cloud SQL (GCP) | PostgreSQL; provisioned new for GTC |
-| Analytics pipeline | Google Datastream → BigQuery (GCP) | Managed GCP services |
+| Middleware | Google Cloud Run (GCP) | Existing NEO GCR extended with GTC endpoints |
+| Database | Google Cloud SQL (GCP) | PostgreSQL; provisioned new for GTC; Looker Studio connects directly |
 | Certificate storage | Google Cloud Storage (GCP) | Immutable bucket; Signed URL access |
 | Search | Sitecore Search (SaaS) | Extended from NEO; managed by Sitecore |
-| Media / CDN | Celum CDN | Existing DAM; new GTC folder |
+| Media / CDN | Celum CDN | Existing DAM |
 | Redirects | GCP Load Balancer + Firestore | Existing NEO infrastructure; NEO team owns |
 | Authentication | GROHE IDP | Existing; no changes required |
 
-All new GCP infrastructure (Cloud Run, Cloud SQL, Datastream, BigQuery, GCS) follows the same patterns already established for the NEO platform on GCP. Hetzner Cloud (current Craft CMS host) is retired as part of this migration and is not carried forward; that infrastructure action is coordinated by Estanislao Montesinos-Gomez.
+All new GCP infrastructure (Cloud Run, Cloud SQL, GCS) follows the same patterns already established for the NEO platform on GCP. Hetzner Cloud (current Craft CMS host) is retired as part of this migration and is not carried forward; that infrastructure action is coordinated by Estanislao Montesinos-Gomez.
 
 ---
 
@@ -530,7 +503,7 @@ The following items require decisions from named owners before detailed implemen
 | ~~3~~ | ~~**My Account placement**~~ | ~~Technical workshop~~| **Resolved** — standalone GTC feature at `training.grohe.com/my-account` |
 | 4 | **Frontend multisite deployment**: One Vercel project for NEO + GTC (shared release cycle) or separate deployments (independent releases)? | Actum FE team lead | Affects CI/CD pipeline design and release governance |
 | 5 | **Quiz MVP scope**: What is the minimum feature set for the quiz component in the implementation phase? (Priority order of 8 question types) | GTC + Actum | Directly drives implementation planning and budget allocation |
-| 6 | **Footer feedback in Craft**: Is the footer feedback currently stored in the same place as end-of-course feedback, or does it go to a separate tool (email, etc.)? Any historical data to migrate? | Jessica Folwarczny | Determines historical data migration scope |
+| ~~6~~ | ~~**Footer feedback in Craft**~~ | ~~Jessica Folwarczny~~ | **Resolved** — both footer and end-of-course feedback are forwarded via email. No DB storage. A general feedback form with a "Training name" field is sufficient. |
 | 7 | **Historical training data migration**: GraphQL API confirmed to expose NO user progress data — course completions, quiz attempts/scores, and quiz answers all live in custom MariaDB tables not accessible via any API. Direct DB read access is the only extraction path. Decision needed: scope (all-time vs. last N months), which users, and whether to migrate at all vs. starting fresh. | Actum (Stepan + Artsiom) + GTC | Major effort; DB access request needed; impacts timeline |
 | 8 | **Target group / IDP integration**: How is the user's target group (access group) communicated via the IDP JWT in the NEO context, and does it match the Craft groups? | Actum (Artsiom + Stepan) | Blocks personalization and role-based visibility implementation |
 | 9 | **SCORM API break**: SCORM packages call `lc.training.grohe.this.work` at runtime — this endpoint will break post-migration. Handling strategy? | Actum | Affects 2 known SCORM packages; runtime failures post-cutover |

@@ -13,7 +13,12 @@
       "Bash(claude:*)",
       "Bash(py:*)",
       "Bash(node:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(docker run:*)",
+      "Bash(sleep 5 && docker exec craft-mariadb mariadb -uroot -pcraft123 -e \"SELECT 1\")",
+      "Bash(docker ps:*)",
+      "Bash(docker exec:*)",
+      "Bash(cd \"C:/projects/GTC/CRAFT database\" && bash download_assets.sh)"
     ]
   }
 }
