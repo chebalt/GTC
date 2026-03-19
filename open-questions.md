@@ -50,10 +50,19 @@
 | Reporting pipeline | Cloud SQL (PostgreSQL) → Datastream CDC → BigQuery → Looker Studio direct connection; no manual export; covers course progress, quiz progress, and feedback data |
 | Certificate storage | Google Cloud Storage (GCS); Middleware generates PDF on request, checks GCS (cache hit = Signed URL; miss = generate → store → serve); key: `certificates/{user_id}/{course_slug}/{language}/{issued_date}.pdf`; access via time-limited Signed URLs |
 | Feedback form export | Feedbacks stored in Cloud SQL (PostgreSQL) Feedbacks table; flow to BigQuery via Datastream; visible in Looker Studio — no CSV/Excel export needed |
-| Multisite architecture | Grohe NEO + Grohe GTC in one Sitecore AI instance; components shared between sites |
+| Multisite architecture | **Amended 19 Mar 2026: NO multisite** — GTC content incorporated into NEO content tree; same repo and infrastructure; reuse NEO header, footer, publishing workflow |
 | CELUM integration | Sitecore asset picker extension for authoring; CELUM CDN link for FE App rendering |
 | Redirect service | Existing NEO GCR redirect service + Load Balancer extended to handle GTC URL redirects |
-| Certificate generation | GTC Middleware (Google Cloud Run) generates on-request; immutable once issued |
-| Phrase TMS | Direct API integration already live in NEO/Sitecore. GTC scope = configure existing connector for new GTC content types only. Flow: Sitecore → Phrase (export) → Phrase → Sitecore (import translated content). |
+| Certificate generation | GTC Middleware (Cloud Run) generates on-demand with temporary caching; **NO GCS** (amended 19 Mar 2026) |
+| Phrase TMS | Direct API integration already live in NEO/Sitecore. GTC scope = configure existing connector for new GTC content types only. |
 | Redirect table maintenance | NOT in GTC scope — NEO team owns the Firestore-based redirect service. GTC's only responsibility = provide old Craft slug → new Sitecore slug mapping data as input. |
-| My Account placement | **Standalone GTC feature** — not integrated into NEO My Account. Accessible at `training.grohe.com/my-account` (or equivalent path if domain changes). Owned entirely by GTC. |
+| My Account placement | **Standalone GTC feature** — not integrated into NEO My Account. Owned entirely by GTC. |
+| Search architecture | Extension of NEO search: new section in search dropdown + new tab on search results page. No standalone GTC search. (amended 19 Mar 2026) |
+| Quiz question types (MVP) | Multiple choice and true/false only. Other types (drag-and-drop, sliders, fill-in-the-blank, sorting) deferred. (19 Mar 2026) |
+| Tracking schema (MVP) | Reuse Craft CMS DB schema 1:1. No platform-agnostic redesign in MVP. (19 Mar 2026) |
+| Apigee | Out of scope (19 Mar 2026) |
+| Platform-agnostic API | Not developed — middleware serves GTC application only (19 Mar 2026) |
+| GTM analytics | Standard integration only — no custom actions (19 Mar 2026) |
+| Looker Studio | Direct Cloud SQL connection; no CSV import (19 Mar 2026) |
+| Interactive components (MVP) | Only A/B Slider and Hotspots developed as new; others mapped to NEO equivalents (19 Mar 2026) |
+| Personalisation (MVP) | Rules developed in Sitecore but configured manually by GTC team (19 Mar 2026) |

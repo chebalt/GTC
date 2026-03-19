@@ -1,15 +1,18 @@
 # Discovery Phase Deliverables Status
 
-## Overview (as of 28 Feb 2026)
+## Overview (as of 19 Mar 2026)
 
 | # | Deliverable | Owner(s) | Status |
 |---|---|---|---|
-| 1 | Solution Overview | Artsiom + Stepan + Ana | **Draft v1.0 written** — `Discovery Phase/Outputs/Solution Overview.md` (28 Feb 2026) |
+| 1 | Solution Overview | Artsiom + Stepan + Ana | **Draft v1.1** — `Discovery Phase/Outputs/Solution Overview.md` |
 | 2 | Content Migration Plan | Michal Broz | Stub — assigned, not written |
 | 3 | Content Editor User and Role Mapping | TBD | Empty — not started |
 | 4 | Documentation and Training Plan | TBD | Not started (no document) |
-| 5 | Project Plan with Timeline and Budget | Marianna Husar | Not started (due end of Discovery) |
+| 5 | Project Plan with Timeline and Budget | Marianna Husar | **GTC Project Plan.xlsx** — DEV/QA MD filled (19 Mar) |
 | 6 | Redirects Map | TBD | Not started (no document) |
+| 7 | **MVP Proposal** | Artsiom | **Done** — `Discovery Phase/Outputs/GTC MVP Proposal.md` (19 Mar 2026) |
+| 8 | **Assumptions and Limitations** | Artsiom | **Done** — `Discovery Phase/Outputs/Assumptions and Limitations.md` (19 Mar 2026) |
+| 9 | **MVP Project Plan** | Artsiom | **Done** — `Discovery Phase/Outputs/GTC Project MVP.xlsx` (19 Mar 2026) |
 
 ---
 
@@ -28,14 +31,18 @@
 - Technical recommendations for each gap
 - Integration points with existing GROHE systems — **@Štěpán Novák + @Artsiom Dylevich** (TBD)
 
-**Architecture decisions captured this session (28 Feb 2026):**
-- Multisite: Grohe NEO + GTC in one Sitecore AI instance; shared components
-- GTC Middleware on Google Cloud Run
-- Database: Cloud SQL (PostgreSQL) → Datastream → BigQuery → Looker Studio (direct, no manual export)
-- Certificates: GCS + Signed URLs (generated on-request by Middleware)
-- Redirects: existing NEO GCR redirect service + Load Balancer extended for GTC
+**Architecture decisions captured (28 Feb 2026, amended 19 Mar 2026):**
+- ~~Multisite~~ → **No multisite** (amended): GTC in NEO content tree, same repo/infra
+- GTC Middleware on Google Cloud Run (existing NEO GCR extended)
+- Database: Cloud SQL (PostgreSQL) → Looker Studio direct connection (no BigQuery, no Datastream, no CSV import)
+- ~~Certificates: GCS + Signed URLs~~ → **No GCS** (amended): Cloud Run on-demand generation with temporary caching
+- Redirects: existing NEO GCR redirect service + Load Balancer (NOT in GTC scope)
 - CELUM: asset picker in Sitecore (authoring) + CDN link (rendering)
-- Entity diagrams: CRAFT_main_entities.png (content model); tracking data model analysed from Excel exports
+- Reuse NEO: header, footer, publishing workflow, IDP tenant
+- Apigee: out of scope | No platform-agnostic API
+- Search: NEO extension (new dropdown section + results tab)
+- Quiz MVP: multiple choice + true/false only
+- Tracking MVP: Craft DB schema 1:1 reuse
 
 **Key questions to answer:**
 - How will the Training Module be architected in Sitecore? ← partially answered; content model mapped

@@ -1,0 +1,14 @@
+No Multisite solution is used. The GTC content to be incorporated into the NEO content tree. We are reusing same repository and same infrastructure. 
+No Google Could Storage is used storing Certificates. Google Cloud Run is used for temporary cache. 
+We are reusing the CRAFT database schema for storing the user learning process. Following the existing user progress storing logic. 
+Apigee setup is out of scope
+We are reuing the Neo Header and Footer
+We are reusing the NEO Content workflow
+The GTM analytics integration is only standard, no complicated custom actions, etc.
+CVS import is excluded. Direct Looker Studio connection used instead.
+Components to be implemented: A/B Slider and Hotspots. Other components to be mapped wit the existing NEO ones
+Personalization Rules to be developed in Sitecore but to be set up manually afterwards 
+Search is only extension of the NEO serarch: new section in the search dropdown + new Tab on the search results page
+Question type to be used developed: multiple choice, true/false
+IDP Authentication: the NEO tenant is used 
+We are not developing the platform agnostic API availabile for any other application

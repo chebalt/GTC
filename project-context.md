@@ -109,20 +109,24 @@ Quiz (page, URL: /quizzes/x) → Questions (data items)
 ## Target System (Sitecore XM Cloud / NEO)
 
 ### Key Decisions
-- **Same IDP as NEO** → NO user/role migration needed
+- **Same IDP as NEO** → NO user/role migration needed; NEO IDP tenant reused
 - **Content migrated "as is"** (no re-localization during migration; future new content uses English master)
 - **Media → Celum DAM** (new GTC folder to be created in Celum by Aaron/SoE; asset picker extension in Sitecore for authoring; CDN link for rendering)
 - **Full LMS integration: DESCOPED** for this phase
-- **Personalization:** MVP = access-based visibility only (no behavioral personalization)
-- **Workflow:** No complex approval workflow (mirrors current simplicity)
+- **Personalization:** MVP = access-based visibility only (no behavioral personalization); rules developed in Sitecore but configured manually by GTC team
+- **Workflow:** Reuse NEO publishing workflow (no custom GTC workflow)
 - **Salesforce:** Future goal only — not in scope for MVP
-- **Certificates:** PDF-based, no digital signatures required; generated on-request by GTC Middleware, cached in GCS
+- **Certificates:** PDF-based, no digital signatures required; generated on-request by GTC Middleware with temporary Cloud Run caching (NO GCS)
+- **No multisite** (amended 19 Mar 2026): GTC content incorporated into NEO content tree; same repository and infrastructure; reuse NEO header, footer, navigation
+- **Quiz:** MVP supports multiple choice and true/false only; other types deferred
+- **Apigee:** Out of scope
+- **No platform-agnostic API** — middleware serves GTC application only
 
 ### Target Architecture — GCP Infrastructure
-- **Sitecore AI**: one instance, two sites — Grohe NEO (www.grohe.com) + Grohe GTC (training.grohe.com)
-  - Shared components (what Craft calls "Nuggets") reused/restyled across both sites
-  - Grohe NEO already in production; GTC is being added as a second site
-- **Frontend**: Next.js app hosted on **Vercel** — multisite, one deployment (pending FE team lead confirmation)
+- **Sitecore AI**: one instance — GTC content incorporated into the NEO content tree (no separate multisite setup)
+  - Shared components (what Craft calls "Nuggets") reused/restyled
+  - Grohe NEO already in production; GTC added within same tree
+- **Frontend**: Next.js app hosted on **Vercel** — shared with NEO
 - **GTC Middleware**: **Google Cloud Run** (same pattern as existing NEO GCR endpoints)
   - Reads course content from Sitecore via GraphQL (Experience Edge)
   - Handles course/quiz progress tracking, search, form submissions, certificate generation
@@ -133,13 +137,9 @@ Quiz (page, URL: /quizzes/x) → Questions (data items)
 - **Analytics pipeline**: Cloud SQL → **Datastream (CDC)** → **BigQuery** → **Looker Studio**
   - Direct connection replaces manual Excel import/export for Marina's dashboards
   - Course progress, quiz progress, and feedback data all visible in Looker Studio in near real-time
-- **Certificate storage**: **Google Cloud Storage (GCS)**
-  - Immutable once issued; persistent across GCR restarts (unlike GCR ephemeral disk)
-  - Key structure: `certificates/{user_id}/{course_slug}/{language}/{issued_date}.pdf`
-  - Access via time-limited **Signed URLs** (user-specific, generated per request by Middleware)
-  - On request: Middleware checks GCS → if found serve Signed URL; if not, generate PDF → store → serve
+- **Certificate storage**: **No GCS** (amended 19 Mar 2026) — Cloud Run generates certificates on-demand with temporary caching only
 - **Load Balancer + Redirect Tables (Firestore)**: existing NEO GCP infrastructure; sits in front of the Grohe Frontend Application and handles all inbound user traffic. Queries a **Firestore** database to evaluate incoming URLs and issue redirects before forwarding to the FE App. Already fully operational for NEO — **updating/maintaining this service is NOT in GTC scope**. GTC's only redirect responsibility is providing the URL mapping data (old Craft CMS slugs → new Sitecore slugs) as input; the mechanism itself is owned by the NEO team. Reverse proxy layer intentionally omitted from diagram for clarity. Note this in the Solution Overview document.
-- **Search**: **Sitecore Search** — existing NEO publish webhook extended to include GTC pages; GTC Middleware handles GTC-specific indexing and filters search results by site
+- **Search**: Extension of NEO search — new section in search dropdown + new tab on search results page. No standalone GTC search experience.
 - **CELUM**: Sitecore asset picker extension for content editors; CDN link for FE App rendering
 
 ### Forms
