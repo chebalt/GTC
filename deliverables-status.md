@@ -1,6 +1,6 @@
 # Discovery Phase Deliverables Status
 
-## Overview (as of 19 Mar 2026)
+## Overview (as of 19 Mar 2026, timeline added 19 Mar 2026)
 
 | # | Deliverable | Owner(s) | Status |
 |---|---|---|---|
@@ -8,7 +8,7 @@
 | 2 | Content Migration Plan | Michal Broz | Stub — assigned, not written |
 | 3 | Content Editor User and Role Mapping | TBD | Empty — not started |
 | 4 | Documentation and Training Plan | TBD | Not started (no document) |
-| 5 | Project Plan with Timeline and Budget | Marianna Husar | **GTC Project Plan.xlsx** — DEV/QA MD filled (19 Mar) |
+| 5 | Project Plan with Timeline and Budget | Marianna Husar | **GTC Project Plan Revised.xlsx** — 160 MD, Timeline tab with Gantt chart (20 epics, W1–W14, Apr–Jun 2026) |
 | 6 | Redirects Map | TBD | Not started (no document) |
 | 7 | **MVP Proposal** | Artsiom | **Done** — `Discovery Phase/Outputs/GTC MVP Proposal.md` (19 Mar 2026) |
 | 8 | **Assumptions and Limitations** | Artsiom | **Done** — `Discovery Phase/Outputs/Assumptions and Limitations.md` (19 Mar 2026) |
