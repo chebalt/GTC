@@ -10,7 +10,7 @@
 
 1. **No `users` table** — User identity is the IDP UUID (type `uuid`), passed from the IDP token. No user profile data is stored in GTC's database.
 2. **Content IDs are Sitecore Item IDs** — All content references (`course_id`, `story_id`, `quiz_id`) are Sitecore GUIDs (`uuid`).
-3. **Language = ISO locale string** — Instead of a numeric `siteId` FK, we store the locale directly (e.g. `en-GB`, `de`, `fr`). This avoids a lookup table and is self-describing for Looker Studio.
+3. **Language = Sitecore locale string** — Stored as full BCP 47 codes (e.g. `en-GB`, `de-DE`, `fr-FR`). Craft's bare codes (e.g. `de`) are mapped to Sitecore locales via `locale_map` table.
 4. **Tracking grain preserved** — One row per `(user_id, content_id, locale)`, matching Craft's model.
 5. **Upsert pattern** — Middleware does `INSERT ... ON CONFLICT UPDATE` on the natural key. No duplicate rows.
 6. **Timestamps use `timestamptz`** — All timestamps are timezone-aware (UTC).
@@ -127,6 +127,50 @@ CREATE INDEX idx_quiz_progress_user  ON quiz_progress (user_id);
 CREATE INDEX idx_quiz_progress_quiz  ON quiz_progress (quiz_id);
 
 
+-- --------------------
+-- Content ID Mapping
+-- --------------------
+-- Maps Craft CMS element IDs to pre-generated Sitecore Item IDs.
+-- Used by: (1) tracking data migration, (2) Sitecore YML serialization.
+-- Sitecore Item IDs are generated once here and reused everywhere.
+-- 1,675 entries covering all content types.
+
+CREATE TABLE content_id_map (
+    craft_element_id    int             NOT NULL,
+    craft_uid           uuid            NOT NULL,
+    sitecore_item_id    uuid            NOT NULL DEFAULT gen_random_uuid(),
+    section             varchar(50)     NOT NULL,   -- courses, trainings, lessons, quizzes, quizInteractions, etc.
+    entry_type          varchar(50)     NOT NULL,
+    slug                varchar(255),
+    craft_uri           varchar(255),
+
+    CONSTRAINT pk_content_id_map PRIMARY KEY (craft_element_id),
+    CONSTRAINT uq_content_id_map_craft_uid UNIQUE (craft_uid),
+    CONSTRAINT uq_content_id_map_sitecore_id UNIQUE (sitecore_item_id)
+);
+
+CREATE INDEX idx_content_id_map_section ON content_id_map (section);
+CREATE INDEX idx_content_id_map_slug ON content_id_map (slug);
+
+
+-- --------------------
+-- Locale Mapping
+-- --------------------
+-- Maps Craft CMS locale codes to Sitecore locale codes.
+-- Craft uses bare ISO 639-1 (e.g. 'de'), Sitecore uses full BCP 47 (e.g. 'de-DE').
+-- 22 mappings covering all locales with tracking data.
+
+CREATE TABLE locale_map (
+    craft_locale    varchar(10) NOT NULL PRIMARY KEY,
+    sitecore_locale varchar(10) NOT NULL
+);
+
+-- Key mappings (ambiguous ones resolved to primary market):
+-- de → de-DE, fr → fr-FR, nl → nl-NL, es → es-ES, ar → ar-SA,
+-- pt → pt-PT, it → it-IT, ru → ru-RU, el → el-GR
+-- Clear mappings: en-GB, cs→cs-CZ, uk→uk-UA, bg→bg-BG, da→da-DK,
+-- pl→pl-PL, tr→tr-TR, fi→fi-FI, nb→nb-NO, hu→hu-HU, hr→hr-HR,
+-- sv→sv-SE, mn→mn-MN
 ```
 
 ---
@@ -148,15 +192,19 @@ CREATE INDEX idx_quiz_progress_quiz  ON quiz_progress (quiz_id);
 
 ## Migration ID Resolution
 
-During data migration, Craft integer IDs must be resolved to UUIDs:
+During data migration, Craft integer IDs are resolved via the `content_id_map` table:
 
 ```
 Craft userId  → users.email → strip "@training.grohe.com" → IDP UUID (user_id)
-Craft courseId/playlistId/quizId → elements_sites.slug → match to Sitecore Item ID (content_id)
+Craft courseId/playlistId/quizId → elements.uid (Craft UUID) → content_id_map.sitecore_item_id
 Craft siteId  → sites.handle → locale string (e.g. 'enGB' → 'en-GB')
 ```
 
-The slug-to-Sitecore-ID mapping will be produced as a CSV artifact during content migration (Epic 20), so tracking migration (Epic 19) depends on content migration completing first.
+The `content_id_map` table is the **single source of truth** for Craft-to-Sitecore ID mapping. The same pre-generated Sitecore Item IDs are used:
+1. In tracking tables (`course_progress`, `story_progress`, `page_view`, `quiz_progress`)
+2. In Sitecore YML serialization files (Item ID set explicitly during content migration)
+
+**CSV export:** `content_id_map.csv` (1,675 entries) — for use by content migration scripts outside the database.
 
 ---
 

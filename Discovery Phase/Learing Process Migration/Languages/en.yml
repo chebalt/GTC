@@ -1,0 +1,54 @@
+﻿---
+ID: "af584191-45c9-4201-8740-5409f4cf8bdd"
+Parent: "64c4f646-a3fa-4205-b98e-4de2c609b60f"
+Template: "f68f13a6-3395-426a-b9a1-fa2dc60d94eb"
+Path: /sitecore/system/Languages/en
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/flag_generic.png
+- ID: "60669e54-7b9c-4b55-a0c4-8f25059d8b94"
+  Hint: Dictionary
+  Value: "en-US.tdf"
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 
+- ID: "c437e416-8948-427d-a982-8ed37ae3f553"
+  Hint: Iso
+  Value: en
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "3d5fdea4-63fe-4d96-8ca4-302fa81734e0"
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Chief Editor LV|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor ID|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor TJ|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor AR|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor BR|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor FR|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor GR|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor HR|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor AM|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor CY|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor TR|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor MY|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor KO|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor NO|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor TM|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor RO|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor AU|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor HU|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor FI|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor DK|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor HK|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor SI|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor SK|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor UK|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor AE|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor BE|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor DE|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor IL|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor EE|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor GE|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor BG|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor IE|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor NL|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor EG|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor PL|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor TW|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor KG|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor CZ|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor SE|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor CN|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor MX|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor SG|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor ES|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor CH|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor KZ|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor IN|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor IS|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor NZ|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor MN|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor KH|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor UZ|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor AT|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor RS|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor PH|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor VN|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor MA|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor TH|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor IT|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor SA|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor UA|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor LT|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor MT|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor ZA|pd|+language:read|pe|+language:read|ar|sitecore\Chief Editor PT|pd|+language:read|pe|+language:read|
+Languages:
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "cadb5d63-ad42-4670-8a8d-56d21cfe91c6"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140905T080958Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "86131168-a1de-4db2-af17-8cbf586ca4dc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\martin.zaoral@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260122T110417Z

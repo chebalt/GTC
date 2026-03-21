@@ -85,6 +85,66 @@ CREATE INDEX IF NOT EXISTS idx_quiz_progress_user ON quiz_progress (user_id);
 CREATE INDEX IF NOT EXISTS idx_quiz_progress_quiz ON quiz_progress (quiz_id);
 
 -- --------------------
+-- Content ID Mapping
+-- --------------------
+CREATE TABLE IF NOT EXISTS content_id_map (
+    craft_element_id    int             NOT NULL,
+    craft_uid           uuid            NOT NULL,
+    sitecore_item_id    uuid            NOT NULL DEFAULT gen_random_uuid(),
+    section             varchar(50)     NOT NULL,
+    entry_type          varchar(50)     NOT NULL,
+    slug                varchar(255),
+    craft_uri           varchar(255),
+
+    CONSTRAINT pk_content_id_map PRIMARY KEY (craft_element_id),
+    CONSTRAINT uq_content_id_map_craft_uid UNIQUE (craft_uid),
+    CONSTRAINT uq_content_id_map_sitecore_id UNIQUE (sitecore_item_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_content_id_map_section ON content_id_map (section);
+CREATE INDEX IF NOT EXISTS idx_content_id_map_slug ON content_id_map (slug);
+
+-- --------------------
+-- Locale Mapping
+-- --------------------
+CREATE TABLE IF NOT EXISTS locale_map (
+    craft_locale    varchar(10) NOT NULL PRIMARY KEY,
+    sitecore_locale varchar(10) NOT NULL
+);
+
+INSERT INTO locale_map (craft_locale, sitecore_locale) VALUES
+    ('en-GB', 'en-GB'),
+    ('de',    'de-DE'),
+    ('fr',    'fr-FR'),
+    ('nl',    'nl-NL'),
+    ('es',    'es-ES'),
+    ('ar',    'ar-SA'),
+    ('pt',    'pt-PT'),
+    ('it',    'it-IT'),
+    ('ru',    'ru-RU'),
+    ('el',    'el-GR'),
+    ('cs',    'cs-CZ'),
+    ('uk',    'uk-UA'),
+    ('bg',    'bg-BG'),
+    ('da',    'da-DK'),
+    ('pl',    'pl-PL'),
+    ('tr',    'tr-TR'),
+    ('fi',    'fi-FI'),
+    ('nb',    'nb-NO'),
+    ('hu',    'hu-HU'),
+    ('hr',    'hr-HR'),
+    ('sv',    'sv-SE'),
+    ('mn',    'mn-MN'),
+    ('en',    'en'),
+    ('lv',    'lv-LV'),
+    ('lt',    'lt-LT'),
+    ('ro',    'ro-RO'),
+    ('he',    'he-IL'),
+    ('sl',    'sl-SI'),
+    ('et',    'et-EE')
+ON CONFLICT (craft_locale) DO NOTHING;
+
+-- --------------------
 -- Looker Studio Views
 -- --------------------
 CREATE OR REPLACE VIEW v_course_statistics AS
