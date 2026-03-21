@@ -132,20 +132,24 @@ Quiz (page, URL: /quizzes/x) → Questions (data items)
   - Handles course/quiz progress tracking, search, form submissions, certificate generation
   - Validates user JWT from Grohe IDP (JWKS local validation — no persistent IDP connection needed)
 - **Database (OLTP)**: **Cloud SQL — PostgreSQL**
-  - Tables: UserCourseProgress, UserQuizProgress, Feedbacks
-  - Written by GTC Middleware; replaces manual Excel export workflow
-- **Analytics pipeline**: Cloud SQL → **Datastream (CDC)** → **BigQuery** → **Looker Studio**
-  - Direct connection replaces manual Excel import/export for Marina's dashboards
-  - Course progress, quiz progress, and feedback data all visible in Looker Studio in near real-time
-- **Certificate storage**: **No GCS** (amended 19 Mar 2026) — Cloud Run generates certificates on-demand with temporary caching only
+  - 4 tables: `course_progress`, `story_progress`, `page_view`, `quiz_progress`
+  - No users table (IDP UUID used directly); no certificate table (derived from course_progress.completed)
+  - No feedbacks table — feedback is email-only (no DB storage)
+  - Written by GTC Middleware via upsert pattern (`INSERT ... ON CONFLICT UPDATE`)
+  - Schema design + local Docker prototype: `Discovery Phase/Learing Process Migration/CloudSQL-Schema.md`
+- **Reporting**: Looker Studio connects **directly to Cloud SQL** (no BigQuery, no Datastream, no CSV import)
+  - Views: `v_course_statistics`, `v_quiz_statistics` replicate existing Craft reporting tables
+- **Certificate generation**: Cloud Run generates on-demand from `course_progress.completed` flag — **no GCS, no certificate DB table** (amended 21 Mar 2026)
 - **Load Balancer + Redirect Tables (Firestore)**: existing NEO GCP infrastructure; sits in front of the Grohe Frontend Application and handles all inbound user traffic. Queries a **Firestore** database to evaluate incoming URLs and issue redirects before forwarding to the FE App. Already fully operational for NEO — **updating/maintaining this service is NOT in GTC scope**. GTC's only redirect responsibility is providing the URL mapping data (old Craft CMS slugs → new Sitecore slugs) as input; the mechanism itself is owned by the NEO team. Reverse proxy layer intentionally omitted from diagram for clarity. Note this in the Solution Overview document.
 - **Search**: Extension of NEO search — new section in search dropdown + new tab on search results page. No standalone GTC search experience.
 - **CELUM**: Sitecore asset picker extension for content editors; CDN link for FE App rendering
 
 ### Forms
-- **End-of-course feedback** (`feedback_type = 'course'`): single multi-line text (1000 chars), silently captures Training ID / User ID / Timestamp / Language / Market; AJAX submit; course_slug populated
-- **Footer feedback** (`feedback_type = 'general'`): single "Feedback" field, no course context; course_slug = NULL
-- Both stored in Feedbacks table → flows to BigQuery → Looker Studio (no export needed)
+- **Feedback is EMAIL-ONLY** — no database storage (confirmed Workshop 15 Mar 2026)
+- Single general feedback form with "Training name" field, linked at bottom of pages and end of courses
+- Single multi-line text (1000 chars), AJAX submit, no page reload
+- Flow: FE App → GTC Middleware → **SMTP email** to GTC team
+- Matches current Craft CMS behavior
 
 ### Domain Decision (OPEN)
 - Option A: Keep `training.grohe.com`

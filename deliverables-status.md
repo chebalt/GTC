@@ -42,7 +42,7 @@
 - Apigee: out of scope | No platform-agnostic API
 - Search: NEO extension (new dropdown section + results tab)
 - Quiz MVP: multiple choice + true/false only
-- Tracking MVP: Craft DB schema 1:1 reuse
+- Tracking MVP: Craft DB schema 1:1 reuse → **CloudSQL schema designed (21 Mar 2026)**: 4 PostgreSQL tables (`course_progress`, `story_progress`, `page_view`, `quiz_progress`); DDL + migration script + local Docker prototype verified with 49,845 migrated rows
 
 **Key questions to answer:**
 - How will the Training Module be architected in Sitecore? ← partially answered; content model mapped

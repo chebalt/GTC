@@ -22,8 +22,8 @@
 |---|---|---|---|
 | 7 | **"Company" tracking dimension**: User Tracking spec lists "company" as a required analytics dimension alongside access group and country. Not currently mapped to any field in the IDP JWT or DB schema — needs clarification on what "company" means (GROHE dealer/partner company?) and whether it's available in the IDP claims. | Neele / Marina Vorontcova + Actum | Open |
 | 8 | **Reporting pipeline / Looker Studio**: Architecture proposal — Looker Studio will connect directly to the GTC database. Before implementation, need a briefing from Marina/Neele on: (1) how the current Looker reports are structured, (2) what data they contain, (3) how the current Craft CSV/Excel exports are imported into Looker. | Marina Vorontcova + Neele → Actum | Open — briefing needed before implementation |
-| 9 | **Course completion rule**: What exactly marks a course as complete in the new system — all Stories scrolled? All chapters? And does it require quiz passing? | Actum (Art) → Jessica / Daniela | Open — must confirm before DB schema finalised |
-| 10 | **Feedback Form**: Is the footer feedback form currently stored in the same place as end-of-course feedback, or does it go to a different tool (email, etc.)? Any historical data to migrate? | Jessica Folwarczny | Open |
+| 9 | ~~**Course completion rule**~~ | Actum (Art) | **RESOLVED** — see Resolved section |
+| 10 | ~~**Feedback Form**~~ | Jessica Folwarczny | **RESOLVED** — see Resolved section |
 | 11 | **Celum — asset migration approach**: Originally assumed migrated assets would be uploaded directly to Celum. Aaron (GROHE) has raised objections to putting images directly into Celum. The use of Celum for migrated content is now **questionable** — needs a dedicated discussion with Aaron to clarify constraints, alternatives, and the final approach before migration tooling can be designed. | Actum (Michal + Art) + Aaron (GROHE) | Open — discussion with Aaron needed |
 | 12 | **Inline quiz question tracking**: When a quiz interaction is embedded directly inside a lesson (`Question` in contentBuilder) rather than in a standalone quiz, is the user's answer tracked? Is answering it mandatory for lesson/course completion, or is it purely optional/informational? | Jessica Folwarczny / Daniela Hesse | Open — impacts tracking DB schema and completion logic |
 | 13 | **Nugget → Sitecore page mapping**: In Craft, a Nugget is a standalone page (own URL, own entry) that lives inside a Training. Sitecore AI has no direct equivalent content type. Proposed approach: migrate each Nugget as a regular Sitecore page under the Training, with its `contentBuilder` components placed directly on that page. Is this acceptable from a content modelling and editorial perspective? | Actum (Art + Michal) → Jessica / Daniela | Open — decision needed before content model is finalised |
@@ -47,9 +47,9 @@
 | Quiz pass threshold | 8/10 (configurable via passThreshold) |
 | Quiz retries | Unlimited |
 | Search scope | Course level only (not Nugget level) |
-| Reporting pipeline | Cloud SQL (PostgreSQL) → Datastream CDC → BigQuery → Looker Studio direct connection; no manual export; covers course progress, quiz progress, and feedback data |
-| Certificate storage | Google Cloud Storage (GCS); Middleware generates PDF on request, checks GCS (cache hit = Signed URL; miss = generate → store → serve); key: `certificates/{user_id}/{course_slug}/{language}/{issued_date}.pdf`; access via time-limited Signed URLs |
-| Feedback form export | Feedbacks stored in Cloud SQL (PostgreSQL) Feedbacks table; flow to BigQuery via Datastream; visible in Looker Studio — no CSV/Excel export needed |
+| Reporting pipeline | Looker Studio connects **directly to Cloud SQL** (no BigQuery, no Datastream, no CSV import). Views `v_course_statistics` and `v_quiz_statistics` replicate existing Craft reporting tables. (amended 21 Mar 2026) |
+| Certificate storage | **No GCS, no DB table** (amended 21 Mar 2026) — certificates generated on-demand by Cloud Run from `course_progress.completed` flag; temporary caching only |
+| Feedback form | **Email-only** — no database storage, no BigQuery, no Looker export. SMTP to GTC team. (confirmed 15 Mar 2026) |
 | Multisite architecture | **Amended 19 Mar 2026: NO multisite** — GTC content incorporated into NEO content tree; same repo and infrastructure; reuse NEO header, footer, publishing workflow |
 | CELUM integration | Sitecore asset picker extension for authoring; CELUM CDN link for FE App rendering |
 | Redirect service | Existing NEO GCR redirect service + Load Balancer extended to handle GTC URL redirects |
@@ -66,3 +66,7 @@
 | Looker Studio | Direct Cloud SQL connection; no CSV import (19 Mar 2026) |
 | Interactive components (MVP) | Only A/B Slider and Hotspots developed as new; others mapped to NEO equivalents (19 Mar 2026) |
 | Personalisation (MVP) | Rules developed in Sitecore but configured manually by GTC team (19 Mar 2026) |
+| Course completion rule | **RESOLVED 21 Mar 2026** — completion rules stored in `globalTracking_GlobalSet.courseData` Matrix field (Craft DB table `matrixcontent_coursedata`). Each of 51 courses maps to N required stories (297 total). Quizzes are listed as required stories (e.g. `atrio-quiz`). Course = complete when ALL required stories in the list are completed. No separate quiz-pass check — quiz completion IS a required story. |
+| Feedback form | **RESOLVED 15 Mar 2026** — both footer and end-of-course feedback are email-only (SMTP). No database storage. No historical feedback data to migrate. |
+| Certificate DB table | **RESOLVED 21 Mar 2026** — no separate certificate table needed. Certificates generated on-demand from `course_progress.completed` flag. No GCS storage. |
+| CloudSQL tracking schema | **RESOLVED 21 Mar 2026** — 4 tables: `course_progress`, `story_progress`, `page_view`, `quiz_progress`. Schema + DDL + migration script at `Discovery Phase/Learing Process Migration/`. Local PostgreSQL Docker verified with 49,845 migrated rows. |
