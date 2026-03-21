@@ -18,7 +18,18 @@
       "Bash(sleep 5 && docker exec craft-mariadb mariadb -uroot -pcraft123 -e \"SELECT 1\")",
       "Bash(docker ps:*)",
       "Bash(docker exec:*)",
-      "Bash(cd \"C:/projects/GTC/CRAFT database\" && bash download_assets.sh)"
+      "Bash(cd \"C:/projects/GTC/CRAFT database\" && bash download_assets.sh)",
+      "Bash(bash \"C:/projects/GTC/CRAFT database/cleanup_broken_assets.sh\" 2>&1 | tail -5)",
+      "Bash(bash \"C:/projects/GTC/CRAFT database/download_assets.sh\" 2>&1)",
+      "Bash(ls /c/Python* /c/Users/artsi/AppData/Local/Programs/Python*)",
+      "Bash(pip --version)",
+      "Bash(conda --version)",
+      "Bash(find /c/projects/GTC -type f -name docker* -o -name *docker*)",
+      "Bash(find /c/projects/GTC -name *craft* -o -name *db* -o -name *local*)",
+      "Bash(docker start:*)",
+      "Bash(bash migrate_tracking.sh)",
+      "Bash(docker cp:*)",
+      "Bash(__NEW_LINE_d161656147ebf1f7__ docker:*)"
     ]
   }
 }
