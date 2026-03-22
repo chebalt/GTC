@@ -1,6 +1,6 @@
 # Discovery Phase Deliverables Status
 
-## Overview (as of 19 Mar 2026, timeline added 19 Mar 2026)
+## Overview (as of 22 Mar 2026)
 
 | # | Deliverable | Owner(s) | Status |
 |---|---|---|---|
@@ -43,6 +43,7 @@
 - Search: NEO extension (new dropdown section + results tab)
 - Quiz MVP: multiple choice + true/false only
 - Tracking MVP: Craft DB schema 1:1 reuse → **CloudSQL schema designed (21 Mar 2026)**: 4 PostgreSQL tables (`course_progress`, `story_progress`, `page_view`, `quiz_progress`); DDL + migration script + local Docker prototype verified with 49,845 migrated rows
+- **GTC Learning API implemented (22 Mar 2026)**: `GroheNeo.GtcLearningApi` — .NET 8.0 microservice, 7 REST endpoints (progress tracking + certificate PDF), 58 unit tests, Docker Compose (API + PostgreSQL), Postman collection, Craft tracking data migrated and verified end-to-end
 
 **Key questions to answer:**
 - How will the Training Module be architected in Sitecore? ← partially answered; content model mapped
