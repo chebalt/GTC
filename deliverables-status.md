@@ -43,7 +43,8 @@
 - Search: NEO extension (new dropdown section + results tab)
 - Quiz MVP: multiple choice + true/false only
 - Tracking MVP: Craft DB schema 1:1 reuse → **CloudSQL schema designed (21 Mar 2026)**: 4 PostgreSQL tables (`course_progress`, `story_progress`, `page_view`, `quiz_progress`); DDL + migration script + local Docker prototype verified with 49,845 migrated rows
-- **GTC Learning API implemented (22 Mar 2026)**: `GroheNeo.GtcLearningApi` — .NET 8.0 microservice, 7 REST endpoints (progress tracking + certificate PDF), 58 unit tests, Docker Compose (API + PostgreSQL), Postman collection, Craft tracking data migrated and verified end-to-end
+- **GTC Learning API implemented (22 Mar 2026, updated 23 Mar)**: `GroheNeo.GtcLearningApi` — .NET 8.0 microservice, 6 REST endpoints (progress tracking + certificate PDF), 52 unit tests, Docker Compose (API + PostgreSQL), Postman collection, Craft tracking data migrated and verified end-to-end. Page view endpoint removed (operational logs, not in scope per migration plan). Quiz completion is permanent (matches Craft behavior).
+- **GTC Project Plan Revised exported to MD (23 Mar 2026)**: `Discovery Phase/Outputs/GTC Project Plan Revised.md` — 36 included stories, 47 excluded with reasons, 14-week timeline, 14 assumptions
 
 **Key questions to answer:**
 - How will the Training Module be architected in Sitecore? ← partially answered; content model mapped
