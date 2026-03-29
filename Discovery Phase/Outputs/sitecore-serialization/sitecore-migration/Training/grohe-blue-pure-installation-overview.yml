@@ -1,0 +1,83 @@
+---
+ID: "a643b589-8ca9-f739-4eab-fd54b197befd"
+Parent: "eb490170-566c-4524-a835-68c00589b7ed"
+Template: "b5f566f0-776f-2143-6186-4f700b7f1293"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-blue-pure-installation-overview
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "1f0737de-7099-9deb-b4dd-49637efa42ef"
+  Hint: ProductlineTheme
+  Value: "{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}"
+- ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
+  Hint: CourseType
+  Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
+- ID: "eca0b7e6-cd13-51c2-96e2-b6595cd20827"
+  Hint: Chapters
+  Value: |
+    {124CE411-9E1F-0C1B-5285-280BC2367E38}
+    {770BA4DF-EA22-0BB4-4232-592C1A2326EB}
+    {C3806558-EE0B-1E2D-209D-600932AEA722}
+    {3E6B94E6-3041-D3DF-A18F-46D8CB355530}
+    {2E6AF442-034A-8D41-FF46-CB4C8B73A9A2}
+    {382898EE-7753-98B0-954B-7C7024A8F542}
+    {D67F8B3C-5014-3C0F-8193-DEFAA22F413D}
+    {5947325E-1EC8-D122-9D68-54477A45EF2E}
+    {6588B843-0FD1-B474-5D26-B946E90B67A6}
+    {8AC4EF53-73F7-44E5-9888-DC677DD2C665}
+    {D36D52DE-E740-8582-41BC-9A7FAA2A56E3}
+    {C2DE55F5-B484-B745-406C-8B41888BAC12}
+- ID: "9f4afd93-bb29-f131-c500-aabe4cee3860"
+  Hint: RequiredItems
+  Value: |
+    {124CE411-9E1F-0C1B-5285-280BC2367E38}
+    {770BA4DF-EA22-0BB4-4232-592C1A2326EB}
+    {C3806558-EE0B-1E2D-209D-600932AEA722}
+    {3E6B94E6-3041-D3DF-A18F-46D8CB355530}
+    {2E6AF442-034A-8D41-FF46-CB4C8B73A9A2}
+    {382898EE-7753-98B0-954B-7C7024A8F542}
+    {D67F8B3C-5014-3C0F-8193-DEFAA22F413D}
+    {5947325E-1EC8-D122-9D68-54477A45EF2E}
+    {6588B843-0FD1-B474-5D26-B946E90B67A6}
+    {8AC4EF53-73F7-44E5-9888-DC677DD2C665}
+    {D36D52DE-E740-8582-41BC-9A7FAA2A56E3}
+    {C2DE55F5-B484-B745-406C-8B41888BAC12}
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: |
+    {812BEF03-8348-3E82-DA67-890E60AE0009}
+    {8AB3484F-626A-3CEB-1904-42A9D42EE434}
+    {9F70624C-58C3-76C4-5C10-D404998D0B9C}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: GROHE Blue Pure Installation Overview
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Learn more about...
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 49783b3f-4440-51a1-2fef-320a946f4b1a
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

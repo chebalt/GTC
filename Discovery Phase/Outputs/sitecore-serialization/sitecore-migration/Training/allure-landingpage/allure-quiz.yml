@@ -1,0 +1,68 @@
+---
+ID: "d3fe5e03-aea4-0027-0ab3-abb2f330f32b"
+Parent: "28b8f6ed-5536-a148-87a0-d8e983ed04ba"
+Template: "20344734-9abd-a64f-27fc-d483f59253f6"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/allure-landingpage/allure-quiz
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{298D1DEB-8A48-15B5-F1FA-EAD9BA539786}"
+- ID: "a55c0362-e48c-b4e0-116b-6d7bad768a3a"
+  Hint: PassingScore
+  Value: 71
+- ID: "901e5bde-2ad1-f7a5-3bcd-66a1242e3d67"
+  Hint: NumberOfQuestions
+  Value: 7
+- ID: "a15079e7-fc34-f5d1-f95a-1a7c51ac1b08"
+  Hint: TrainingActivity
+  Value: Allure Quiz
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Allure Quiz
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Test your knowledge
+    - ID: "6b2cf028-1be3-e735-c921-320c913799d0"
+      Hint: InstructionText
+      Value: |
+        <p>Consolidate your newly acquired knowledge about the new GROHE Allure with this quiz. Seven questions about the new Allure await you. To pass the quiz, at least five questions must be answered correctly. Check if you have retained all the important information, and are ready to call yourself a true GROHE Allure professional.</p>
+    - ID: "62e67f64-7322-3c8e-f053-917afcc01844"
+      Hint: PassHeadline
+      Value: You passed the quiz!
+    - ID: "6dad913d-9bab-8c73-46e1-912bfb6b287e"
+      Hint: PassText
+      Value: |
+        <p>You have successfully completed the “Welcome to the new Allure” quiz! Very well done, you really know your stuff. You can revisit this training at any time or repeat the quiz to refresh your knowledge.</p>
+    - ID: "49ebedb2-2a41-e7c2-758e-dc227e5a14a0"
+      Hint: FailHeadline
+      Value: You did not pass!
+    - ID: "d5d66c8b-e43a-c06d-b23f-043525b43d4d"
+      Hint: FailText
+      Value: |
+        <p>Unfortunately, not everything was quite right. Do you want to repeat the quiz or go back to the training to review the content one more time?</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: a21ab6de-cc1b-3b5c-abaf-52afe1a7a97c
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

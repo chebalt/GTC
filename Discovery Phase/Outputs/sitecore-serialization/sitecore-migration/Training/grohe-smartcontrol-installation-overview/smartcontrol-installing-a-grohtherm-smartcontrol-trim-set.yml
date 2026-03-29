@@ -1,0 +1,57 @@
+---
+ID: "5b1cbdff-4bdb-dfec-8070-1c71627731a0"
+Parent: "efb7b46d-4dec-9cbf-a6c8-eddee4ed5731"
+Template: "693af99d-7689-dc12-31d8-0dd8ca77590a"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-smartcontrol-installation-overview/smartcontrol-installing-a-grohtherm-smartcontrol-trim-set
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "eb4651dd-43e9-1fd0-b0a8-29f6e233be75"
+  Hint: TrainingActivity
+  Value: SmartControl - Installing a GROHTHERM SmartControl trim set
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: |
+    {64F8CF47-A977-39D4-F6B3-C581F82CB613}
+    {FE5BE999-696B-0B92-14B3-3E687C2B14BF}
+    {73E3431E-B62F-60B3-E26F-EF17261DF535}
+    {7AC03E38-4D7C-E89B-C515-2C64AEEB2E7B}
+    {607FC705-F714-5249-D819-7A608954BD6D}
+    {986B51A1-FEE8-31F3-E391-0FDF29A09E0E}
+    {9F70624C-58C3-76C4-5C10-D404998D0B9C}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: SmartControl - Installing a GROHTHERM SmartControl trim set
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Installation
+    - ID: "71da194c-d7f1-067c-6b16-d661d41ad9ed"
+      Hint: Subline
+      Value: Get a step-by-step assembly guide
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: a2b1e12f-3afb-4eaa-f9e0-9ec84f1e3514
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

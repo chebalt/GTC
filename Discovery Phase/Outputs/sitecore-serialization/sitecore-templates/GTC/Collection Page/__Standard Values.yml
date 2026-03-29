@@ -1,0 +1,46 @@
+---
+ID: "27e05d9a-8dd9-386d-b4ac-b067babe4d45"
+Parent: "b5f566f0-776f-2143-6186-4f700b7f1293"
+Template: "b5f566f0-776f-2143-6186-4f700b7f1293"
+Path: /sitecore/templates/Project/Grohe Neo/Pages/GTC/Collection Page/__Standard Values
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: {3F123C71-443C-1853-37D5-612B09777FF8}
+- ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
+  Hint: CourseType
+  Value: {BAC7E663-54A1-54E3-4EB8-357F238954D9}
+- ID: "1f0737de-7099-9deb-b4dd-49637efa42ef"
+  Hint: ProductlineTheme
+  Value: {E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {693AF99D-7689-DC12-31D8-0DD8CA77590A}
+    {20344734-9ABD-A64F-27FC-D483F59253F6}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260328T120000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 567f34a4-1f6c-e58d-51cf-2fedb5fed40a
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260328T120000Z

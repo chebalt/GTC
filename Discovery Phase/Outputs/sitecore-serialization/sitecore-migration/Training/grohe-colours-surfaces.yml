@@ -1,0 +1,81 @@
+---
+ID: "1028c3cb-af47-84c8-12bb-0441e18859b7"
+Parent: "eb490170-566c-4524-a835-68c00589b7ed"
+Template: "b5f566f0-776f-2143-6186-4f700b7f1293"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-colours-surfaces
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "1f0737de-7099-9deb-b4dd-49637efa42ef"
+  Hint: ProductlineTheme
+  Value: "{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}"
+- ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
+  Hint: CourseType
+  Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
+- ID: "eca0b7e6-cd13-51c2-96e2-b6595cd20827"
+  Hint: Chapters
+  Value: |
+    {6FFE6871-C926-9304-75AA-B759A9767A42}
+    {3C92C758-0D67-CDF4-A094-972CA2688DAD}
+    {38DC3D60-709C-EFBA-2F10-3CD0DCD74C9B}
+    {3D047F75-67E0-D1C6-21B0-3597721AFB56}
+    {1B44232D-6B3E-4763-EBB4-88713401FB14}
+    {40BE2650-1320-CB97-8E29-F11D400365F0}
+    {1AFFFC6A-FA50-9EB1-C598-6EFFC5556CC8}
+    {CDA987CE-9819-85CF-B2DF-29A7E92D71D9}
+- ID: "9f4afd93-bb29-f131-c500-aabe4cee3860"
+  Hint: RequiredItems
+  Value: |
+    {6FFE6871-C926-9304-75AA-B759A9767A42}
+    {3C92C758-0D67-CDF4-A094-972CA2688DAD}
+    {38DC3D60-709C-EFBA-2F10-3CD0DCD74C9B}
+    {3D047F75-67E0-D1C6-21B0-3597721AFB56}
+    {1B44232D-6B3E-4763-EBB4-88713401FB14}
+    {1AFFFC6A-FA50-9EB1-C598-6EFFC5556CC8}
+    {40BE2650-1320-CB97-8E29-F11D400365F0}
+    {CDA987CE-9819-85CF-B2DF-29A7E92D71D9}
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: |
+    {64F8CF47-A977-39D4-F6B3-C581F82CB613}
+    {DED0580A-8F28-AE06-638F-7CA8C580D7B0}
+    {32A4C2F5-CB75-451D-E068-05DED821EB03}
+    {812BEF03-8348-3E82-DA67-890E60AE0009}
+    {2C42EA0E-1ACB-38BE-ACA8-D28B386AF887}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: GROHE Colours & Surfaces
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Getting to know...
+    - ID: "9795d5cf-b52a-f3bf-5adb-2eeee859bf83"
+      Hint: HeroText
+      Value: |
+        <p>Get detailed knowledge on long-lasting <strong>GROHE Colours &amp; Surfaces</strong>, and learn more about the production process behind them.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 9a0cc355-831b-841a-5934-378408b1450c
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

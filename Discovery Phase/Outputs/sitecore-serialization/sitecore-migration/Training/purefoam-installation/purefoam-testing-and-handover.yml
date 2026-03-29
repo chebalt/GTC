@@ -1,0 +1,50 @@
+---
+ID: "21f9a12d-e87e-01d5-a081-d87aa203fe7e"
+Parent: "de59efdd-7267-402b-6828-d98fa75b5cfd"
+Template: "693af99d-7689-dc12-31d8-0dd8ca77590a"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/purefoam-installation/purefoam-testing-and-handover
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "1f0737de-7099-9deb-b4dd-49637efa42ef"
+  Hint: ProductlineTheme
+  Value: "{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}"
+- ID: "eb4651dd-43e9-1fd0-b0a8-29f6e233be75"
+  Hint: TrainingActivity
+  Value: Purefoam - Testing and Handover
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: "{BC18EF12-92CE-7E6C-167F-5158A06B57BA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Purefoam - Testing and Handover
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: GROHE Purefoam
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: fce68781-7fd6-fffe-be1a-d3f82310625b
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

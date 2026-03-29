@@ -1,0 +1,70 @@
+---
+ID: "c2ab201b-a212-938e-9137-c0bfb7d67934"
+Parent: "eb490170-566c-4524-a835-68c00589b7ed"
+Template: "b5f566f0-776f-2143-6186-4f700b7f1293"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/rainshower-aqua-pure
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{298D1DEB-8A48-15B5-F1FA-EAD9BA539786}"
+- ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
+  Hint: CourseType
+  Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
+- ID: "d3b6aa13-8438-4457-e297-8747f3403bf8"
+  Hint: IsHero
+  Value: 1
+- ID: "eca0b7e6-cd13-51c2-96e2-b6595cd20827"
+  Hint: Chapters
+  Value: |
+    {8D113BB0-C495-120B-0F91-1EF7AEFB2393}
+    {3F3674F9-E170-AE7E-90BB-0839D48DB2FE}
+    {1E701354-72D8-474C-94A2-C115B7122B24}
+    {1F092F58-9705-5E0C-60E5-CD376BFBEA33}
+- ID: "9f4afd93-bb29-f131-c500-aabe4cee3860"
+  Hint: RequiredItems
+  Value: |
+    {8D113BB0-C495-120B-0F91-1EF7AEFB2393}
+    {3F3674F9-E170-AE7E-90BB-0839D48DB2FE}
+    {1E701354-72D8-474C-94A2-C115B7122B24}
+    {1F092F58-9705-5E0C-60E5-CD376BFBEA33}
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: |
+    {A61CBB84-FA82-FC88-AB32-729DBCC08D07}
+    {6C43E0A9-3EFB-33D3-DBDF-5BAF63EBFA26}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Rainshower Aqua Pure
+    - ID: "71da194c-d7f1-067c-6b16-d661d41ad9ed"
+      Hint: Subline
+      Value: Premium shower system
+    - ID: "9795d5cf-b52a-f3bf-5adb-2eeee859bf83"
+      Hint: HeroText
+      Value: |
+        <p>Design meets wellness: </p><p><strong>GROHE Rainshower Aqua Pure.</strong>  </p><p>Experience the training module and learn everything about the new premium shower system.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: a7676a77-fcc6-d90d-fe7c-145ea404c020
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

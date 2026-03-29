@@ -1,0 +1,73 @@
+---
+ID: "5523c588-ff3e-7b3b-31e0-a766e0eb3c6f"
+Parent: "eb490170-566c-4524-a835-68c00589b7ed"
+Template: "b5f566f0-776f-2143-6186-4f700b7f1293"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-rainshower-aqua-ceiling-shower-elements-installation
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{298D1DEB-8A48-15B5-F1FA-EAD9BA539786}"
+- ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
+  Hint: CourseType
+  Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
+- ID: "eca0b7e6-cd13-51c2-96e2-b6595cd20827"
+  Hint: Chapters
+  Value: |
+    {63C448F9-2CA9-7EDC-DFFF-2ABC8CBC82DB}
+    {51364333-8A77-30FA-55B5-F66A02D432AC}
+    {8B6BDAF2-27A2-5D35-0BC7-A38346B50F7B}
+    {B26A5054-B8EE-D8D3-E57F-2F088752C399}
+    {D2E21A13-2B20-FFC6-F4A8-BF653FF7CE60}
+    {D0E73571-E7D2-454A-CD06-76422E8780FA}
+    {614E6A0B-9A39-8A7D-25CA-97410E06E1B3}
+- ID: "9f4afd93-bb29-f131-c500-aabe4cee3860"
+  Hint: RequiredItems
+  Value: |
+    {63C448F9-2CA9-7EDC-DFFF-2ABC8CBC82DB}
+    {51364333-8A77-30FA-55B5-F66A02D432AC}
+    {8B6BDAF2-27A2-5D35-0BC7-A38346B50F7B}
+    {B26A5054-B8EE-D8D3-E57F-2F088752C399}
+    {D2E21A13-2B20-FFC6-F4A8-BF653FF7CE60}
+    {D0E73571-E7D2-454A-CD06-76422E8780FA}
+    {614E6A0B-9A39-8A7D-25CA-97410E06E1B3}
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: |
+    {DED0580A-8F28-AE06-638F-7CA8C580D7B0}
+    {0AECDA76-22DF-9C36-F3F2-21A719B0102D}
+    {9F70624C-58C3-76C4-5C10-D404998D0B9C}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Rainshower Aqua Ceiling Shower Elements Installation Overview
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Learn more about...
+    - ID: "71da194c-d7f1-067c-6b16-d661d41ad9ed"
+      Hint: Subline
+      Value: Immerse yourself in the next level shower experience
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: bcdc0dc4-1540-c7ba-0375-414dadae74b7
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

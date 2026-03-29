@@ -1,0 +1,53 @@
+---
+ID: "e5b49ad9-e8db-8a7b-3aac-bace2f4a403e"
+Parent: "e4d42591-9a27-cb60-25fd-e1fd8a8fb468"
+Template: "693af99d-7689-dc12-31d8-0dd8ca77590a"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/rainshower-aqua-body-sprays-installation-overview/body-sprays-5-testing-completion
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{298D1DEB-8A48-15B5-F1FA-EAD9BA539786}"
+- ID: "eb4651dd-43e9-1fd0-b0a8-29f6e233be75"
+  Hint: TrainingActivity
+  Value: Rainshower Aqua Body Sprays - 5. Testing & completion
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: |
+    {DED0580A-8F28-AE06-638F-7CA8C580D7B0}
+    {BE07460C-226B-77DD-4DEA-608975FC919C}
+    {9F70624C-58C3-76C4-5C10-D404998D0B9C}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Body sprays 5. Testing & completion_INST_GROHE
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Installation - Rainshower Aqua Body Sprays
+    - ID: "71da194c-d7f1-067c-6b16-d661d41ad9ed"
+      Hint: Subline
+      Value: Required time: 5 minutes
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 6de09820-0a61-2b81-d8ea-fd7f9dd5722f
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

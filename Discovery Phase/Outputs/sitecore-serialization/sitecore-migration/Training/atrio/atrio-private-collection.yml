@@ -1,0 +1,55 @@
+---
+ID: "1a812c1f-f88a-3440-7790-e2c1d838e94f"
+Parent: "ccd202e6-fa8c-2e37-2fb9-b684bf079083"
+Template: "693af99d-7689-dc12-31d8-0dd8ca77590a"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/atrio/atrio-private-collection
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{298D1DEB-8A48-15B5-F1FA-EAD9BA539786}"
+- ID: "be2156f7-5a4a-ffee-d198-e21a56887c09"
+  Hint: ReadingTime
+  Value: 12
+- ID: "eb4651dd-43e9-1fd0-b0a8-29f6e233be75"
+  Hint: TrainingActivity
+  Value: Atrio - Private Collection
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: |
+    {DED0580A-8F28-AE06-638F-7CA8C580D7B0}
+    {FE5BE999-696B-0B92-14B3-3E687C2B14BF}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Atrio - Private Collection
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Atrio
+    - ID: "71da194c-d7f1-067c-6b16-d661d41ad9ed"
+      Hint: Subline
+      Value: Even more exclusivity for premium customers
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: bf0f5e5b-4539-7bf7-28ea-dbb54f2f0e60
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

@@ -1,0 +1,66 @@
+---
+ID: "8b387cc1-977d-dff5-aa6e-d96149fd8c90"
+Parent: "eb490170-566c-4524-a835-68c00589b7ed"
+Template: "b5f566f0-776f-2143-6186-4f700b7f1293"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/rapido-shower-frame-heat-recovery-installation
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "1f0737de-7099-9deb-b4dd-49637efa42ef"
+  Hint: ProductlineTheme
+  Value: "{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}"
+- ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
+  Hint: CourseType
+  Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
+- ID: "eca0b7e6-cd13-51c2-96e2-b6595cd20827"
+  Hint: Chapters
+  Value: |
+    {F92F4B12-A763-1E92-8BC1-5EC7760E1FBC}
+    {3ABA7247-58F4-348A-4091-039FB96BD55A}
+    {D6666992-592F-FB39-E67F-5F618E12A489}
+    {A95DA526-D7FB-FE7F-9966-9AC3A40A94F0}
+    {3960FBAA-1DE1-1D9E-006E-E1A39643DC1C}
+- ID: "9f4afd93-bb29-f131-c500-aabe4cee3860"
+  Hint: RequiredItems
+  Value: |
+    {F92F4B12-A763-1E92-8BC1-5EC7760E1FBC}
+    {3ABA7247-58F4-348A-4091-039FB96BD55A}
+    {D6666992-592F-FB39-E67F-5F618E12A489}
+    {A95DA526-D7FB-FE7F-9966-9AC3A40A94F0}
+    {3960FBAA-1DE1-1D9E-006E-E1A39643DC1C}
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: "{0C212631-A971-34C0-0F4F-A964AF71C584}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Rapido Shower Frame Heat Recovery - Installation
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Learn more about ...
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 4ce0388e-69f0-2bdc-4599-679901febbe2
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

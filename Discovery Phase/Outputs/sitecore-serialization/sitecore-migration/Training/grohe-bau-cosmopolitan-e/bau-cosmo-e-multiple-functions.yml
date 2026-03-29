@@ -1,0 +1,57 @@
+---
+ID: "2e096732-4bdb-1ebc-cd4f-b57ba94842dd"
+Parent: "b7893c9f-136c-d0f0-0014-2810f5dcbbd4"
+Template: "693af99d-7689-dc12-31d8-0dd8ca77590a"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-bau-cosmopolitan-e/bau-cosmo-e-multiple-functions
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "be2156f7-5a4a-ffee-d198-e21a56887c09"
+  Hint: ReadingTime
+  Value: 10
+- ID: "eb4651dd-43e9-1fd0-b0a8-29f6e233be75"
+  Hint: TrainingActivity
+  Value: Bau Cosmopolitan E - Multiple functions
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: |
+    {64F8CF47-A977-39D4-F6B3-C581F82CB613}
+    {03357785-93FC-91BF-CA80-8058110C8B73}
+    {BD40BBED-40FE-C270-9EB2-B02606041A18}
+    {2057F56A-A9E6-C531-A2ED-FAB841FF1C37}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Bau Cosmo E - Multiple functions
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Bau Cosmopolitan E
+    - ID: "71da194c-d7f1-067c-6b16-d661d41ad9ed"
+      Hint: Subline
+      Value: An overview of the functionalities of the Bau Cosmopolitan E tap and the optional touchless taps remote control.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 6cbf5a2e-1cd5-7d36-1300-1f18da681538
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

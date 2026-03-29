@@ -1,0 +1,70 @@
+---
+ID: "a6cd4fa8-c888-9861-08f1-cb850d27e7b0"
+Parent: "eb490170-566c-4524-a835-68c00589b7ed"
+Template: "b5f566f0-776f-2143-6186-4f700b7f1293"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/body-sprays-landingpage
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{298D1DEB-8A48-15B5-F1FA-EAD9BA539786}"
+- ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
+  Hint: CourseType
+  Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
+- ID: "eca0b7e6-cd13-51c2-96e2-b6595cd20827"
+  Hint: Chapters
+  Value: |
+    {4EC4DFDC-FA50-1EED-F88C-1BAB2EAA2D4C}
+    {4A4DB8FB-0B89-EDD0-0233-5FC0497C4E0A}
+    {8C7F80B9-AFDE-3A91-CD87-A70912D0008A}
+    {75E0B993-3613-4E73-F08C-C86E248B4AB5}
+    {FCB57B24-2A9F-9FD8-ED0F-E0D118E70EF8}
+    {53333193-6E12-7141-4BAD-37E449C9597C}
+- ID: "9f4afd93-bb29-f131-c500-aabe4cee3860"
+  Hint: RequiredItems
+  Value: |
+    {4EC4DFDC-FA50-1EED-F88C-1BAB2EAA2D4C}
+    {4A4DB8FB-0B89-EDD0-0233-5FC0497C4E0A}
+    {8C7F80B9-AFDE-3A91-CD87-A70912D0008A}
+    {75E0B993-3613-4E73-F08C-C86E248B4AB5}
+    {FCB57B24-2A9F-9FD8-ED0F-E0D118E70EF8}
+    {53333193-6E12-7141-4BAD-37E449C9597C}
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: |
+    {DED0580A-8F28-AE06-638F-7CA8C580D7B0}
+    {BE07460C-226B-77DD-4DEA-608975FC919C}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Rainshower Aqua Body Sprays
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Getting to know …
+    - ID: "71da194c-d7f1-067c-6b16-d661d41ad9ed"
+      Hint: Subline
+      Value: All you need to know about our new body sprays
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 497e6809-4fcb-56d4-ee93-686ad9f5d873
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

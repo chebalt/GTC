@@ -1,0 +1,70 @@
+---
+ID: "28b8f6ed-5536-a148-87a0-d8e983ed04ba"
+Parent: "eb490170-566c-4524-a835-68c00589b7ed"
+Template: "b5f566f0-776f-2143-6186-4f700b7f1293"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/allure-landingpage
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{298D1DEB-8A48-15B5-F1FA-EAD9BA539786}"
+- ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
+  Hint: CourseType
+  Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
+- ID: "eca0b7e6-cd13-51c2-96e2-b6595cd20827"
+  Hint: Chapters
+  Value: |
+    {98BD5438-C513-979A-687D-63A5C9FD56CD}
+    {8390C0D8-91D2-AFC3-11D3-E3E3D66AD773}
+    {B309B0E3-A0C5-F821-B3D8-59B1F538B8CB}
+    {B7756F82-9EA8-AF12-1810-87037AB9355F}
+    {0FB75646-714E-9EBB-8D02-3B938B40F66B}
+    {D3FE5E03-AEA4-0027-0AB3-ABB2F330F32B}
+- ID: "9f4afd93-bb29-f131-c500-aabe4cee3860"
+  Hint: RequiredItems
+  Value: |
+    {98BD5438-C513-979A-687D-63A5C9FD56CD}
+    {8390C0D8-91D2-AFC3-11D3-E3E3D66AD773}
+    {B309B0E3-A0C5-F821-B3D8-59B1F538B8CB}
+    {B7756F82-9EA8-AF12-1810-87037AB9355F}
+    {0FB75646-714E-9EBB-8D02-3B938B40F66B}
+    {D3FE5E03-AEA4-0027-0AB3-ABB2F330F32B}
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: |
+    {DED0580A-8F28-AE06-638F-7CA8C580D7B0}
+    {73E3431E-B62F-60B3-E26F-EF17261DF535}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Allure
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Getting to know …
+    - ID: "71da194c-d7f1-067c-6b16-d661d41ad9ed"
+      Hint: Subline
+      Value: All you need to know about our luxury product line
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 3548a191-6e83-2853-28ca-779d4133ab8c
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

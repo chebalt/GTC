@@ -1,0 +1,77 @@
+---
+ID: "bd22484e-ee43-be46-d8ae-6caa4acd5db4"
+Parent: "b51c0c6f-e890-ba5d-0b19-767d3aa66284"
+Template: "20344734-9abd-a64f-27fc-d483f59253f6"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/purefoam/purefoam-quiz
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "1f0737de-7099-9deb-b4dd-49637efa42ef"
+  Hint: ProductlineTheme
+  Value: "{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}"
+- ID: "a55c0362-e48c-b4e0-116b-6d7bad768a3a"
+  Hint: PassingScore
+  Value: 80
+- ID: "901e5bde-2ad1-f7a5-3bcd-66a1242e3d67"
+  Hint: NumberOfQuestions
+  Value: 10
+- ID: "23208d1f-9c36-8d33-5cfa-144010b50938"
+  Hint: ShuffleQuestions
+  Value: 1
+- ID: "16f9e68b-ece3-1f3b-b47c-4eb54bdecee7"
+  Hint: EnableFeedback
+  Value: 1
+- ID: "a15079e7-fc34-f5d1-f95a-1a7c51ac1b08"
+  Hint: TrainingActivity
+  Value: Purefoam Quiz
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Purefoam Quiz
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: GROHE Purefoam
+    - ID: "6b2cf028-1be3-e735-c921-320c913799d0"
+      Hint: InstructionText
+      Value: |
+        <p>This test consists of 10 questions. You need 8 correct answers to pass the test. Click the play button to start.</p>
+    - ID: "62e67f64-7322-3c8e-f053-917afcc01844"
+      Hint: PassHeadline
+      Value: You have completed the quiz!
+    - ID: "6dad913d-9bab-8c73-46e1-912bfb6b287e"
+      Hint: PassText
+      Value: |
+        <p>Very well done, you really know your stuff. Go ahead and download your earned certificate in your personal space section. You can revisit the web-based training module at any time or repeat the quiz to refresh your knowledge.</p>
+    - ID: "49ebedb2-2a41-e7c2-758e-dc227e5a14a0"
+      Hint: FailHeadline
+      Value: Unfortunately, not everything was quite right.
+    - ID: "d5d66c8b-e43a-c06d-b23f-043525b43d4d"
+      Hint: FailText
+      Value: |
+        <p> Do you want to repeat the quiz or go back to the training module to review the content one more time?</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: bebae708-b5d1-34e1-f33f-16180d6214ac
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

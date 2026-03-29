@@ -1,0 +1,38 @@
+---
+ID: "3bbae94a-e7ac-d815-4a95-ea85a44a4e0a"
+Parent: "7764c426-0965-5490-3bf1-ec6ac0e4cd8e"
+Template: "3dfd7718-157e-7c1e-af4d-e3ccc551afe0"
+Path: /sitecore/content/Grohe Neo/Neo Website/Data/GTC Color Themes/medium
+SharedFields:
+- ID: "813062ae-6d75-a665-53b5-5d5cf1ebcd3c"
+  Hint: Value
+  Value: medium
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: medium
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260328T120000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: e2796b71-217c-5f75-3ef6-e943dfdbe2b8
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260328T120000Z

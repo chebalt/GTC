@@ -1,0 +1,38 @@
+---
+ID: "e1a40228-4536-044a-d362-795f1f612079"
+Parent: "d939b50a-7d15-a3b7-73b4-835a2e0b52e1"
+Template: "16e79d50-5f86-d17e-f32c-12b36010c670"
+Path: /sitecore/content/Grohe Neo/Neo Website/Data/GTC Categories/grandera
+SharedFields:
+- ID: "5b6a6471-7bf2-9a3f-a719-c3d7914be990"
+  Hint: Value
+  Value: GRANDERA
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: GRANDERA
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260328T120000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: cf6a56f8-9898-dc3e-ba1f-57ade4d9de46
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260328T120000Z

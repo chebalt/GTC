@@ -1,0 +1,62 @@
+---
+ID: "be4514df-5441-7872-bb2d-e87a8cd452b9"
+Parent: "6adfaebc-b6fc-67f1-2a29-8c271689791f"
+Template: "20344734-9abd-a64f-27fc-d483f59253f6"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/rapido-shower-frame/rapido-shower-frame-quiz
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "a55c0362-e48c-b4e0-116b-6d7bad768a3a"
+  Hint: PassingScore
+  Value: 77
+- ID: "901e5bde-2ad1-f7a5-3bcd-66a1242e3d67"
+  Hint: NumberOfQuestions
+  Value: 9
+- ID: "a15079e7-fc34-f5d1-f95a-1a7c51ac1b08"
+  Hint: TrainingActivity
+  Value: Rapido Shower Frame Quiz
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Rapido Shower Frame Quiz
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Rapido Shower Frame
+    - ID: "6b2cf028-1be3-e735-c921-320c913799d0"
+      Hint: InstructionText
+      Value: |
+        <p>Test your knowledge. This quiz consists of 9 questions. You need 7 correct answers to pass the quiz. Click the play button to start.</p>
+    - ID: "6dad913d-9bab-8c73-46e1-912bfb6b287e"
+      Hint: PassText
+      Value: |
+        <p>You have successfully completed the quiz and your certificate is reay for you! Very well done, you really know your stuff. You can revisit the web-based training module at any time or repeat the quiz to refresh your knowledge.</p>
+    - ID: "d5d66c8b-e43a-c06d-b23f-043525b43d4d"
+      Hint: FailText
+      Value: |
+        <p>Unfortunately, not everything was quite right. Do you want to repeat the quiz or go back to the training module to review the content one more time?</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 1f15265a-8f50-7f4e-5904-b5bdfcffbabf
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

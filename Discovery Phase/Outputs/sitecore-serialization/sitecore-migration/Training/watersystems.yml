@@ -1,0 +1,65 @@
+---
+ID: "1e39e028-2f77-e41c-a147-06de98926db1"
+Parent: "eb490170-566c-4524-a835-68c00589b7ed"
+Template: "b5f566f0-776f-2143-6186-4f700b7f1293"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/watersystems
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "1f0737de-7099-9deb-b4dd-49637efa42ef"
+  Hint: ProductlineTheme
+  Value: "{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}"
+- ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
+  Hint: CourseType
+  Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
+- ID: "eca0b7e6-cd13-51c2-96e2-b6595cd20827"
+  Hint: Chapters
+  Value: |
+    {FA1F6DD6-D40D-B186-030C-7AB3516626EC}
+    {3E85CB2F-CF37-EAD6-9843-152361F3EE96}
+    {2CC20CBA-14A7-2EC9-28E7-7314A8124AD5}
+    {39FB06B0-B026-15E8-F590-B449CF98E83B}
+    {76BC8BE3-9008-06ED-20BF-36F6FFBD9D84}
+    {56396CE6-436D-20B1-BC83-4AA350101366}
+- ID: "9f4afd93-bb29-f131-c500-aabe4cee3860"
+  Hint: RequiredItems
+  Value: |
+    {FA1F6DD6-D40D-B186-030C-7AB3516626EC}
+    {3E85CB2F-CF37-EAD6-9843-152361F3EE96}
+    {2CC20CBA-14A7-2EC9-28E7-7314A8124AD5}
+    {76BC8BE3-9008-06ED-20BF-36F6FFBD9D84}
+    {39FB06B0-B026-15E8-F590-B449CF98E83B}
+    {56396CE6-436D-20B1-BC83-4AA350101366}
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: "{99B44755-8BF1-FDC2-B187-61856F3BEB06}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Watersystems
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 91a81d9b-94a2-89a7-6aec-81356294d7ac
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

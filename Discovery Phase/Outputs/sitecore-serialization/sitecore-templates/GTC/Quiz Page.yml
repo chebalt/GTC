@@ -1,0 +1,49 @@
+---
+ID: "20344734-9abd-a64f-27fc-d483f59253f6"
+Parent: "12e3a3b8-289e-f6f5-3ba5-8884e59893c0"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Grohe Neo/Pages/GTC/Quiz Page
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Apps/32x32/Question mark.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {BD86855D-30CA-457B-A968-29822275418E}
+    {5B80F927-ADA7-464A-97A6-A6E226D1CD96}
+    {00A4A340-F77E-4E4E-996D-67209190CFB1}
+    {BF083033-D465-4447-9EBD-1410BB09A788}
+    {46FD8C16-6EB3-4E27-A3BB-24D5A12A3A00}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "13761179-9bf9-5b33-68de-3be76e4fb64c"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{B5B6871E-DD03-66D8-425A-CE7C0EF88E1C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260328T120000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 0b8f690e-e537-ba53-6508-d878eb2e6eb3
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260328T120000Z

@@ -1,0 +1,63 @@
+---
+ID: "fb525ba1-fc54-560b-6be2-fd59c6c8529d"
+Parent: "eb490170-566c-4524-a835-68c00589b7ed"
+Template: "b5f566f0-776f-2143-6186-4f700b7f1293"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/aqua-tiles
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{298D1DEB-8A48-15B5-F1FA-EAD9BA539786}"
+- ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
+  Hint: CourseType
+  Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
+- ID: "eca0b7e6-cd13-51c2-96e2-b6595cd20827"
+  Hint: Chapters
+  Value: |
+    {D38E5C6D-F88F-11D3-15DA-B99DDABB3ED6}
+    {6B9ED342-2E09-0083-3914-BF5D866D716C}
+    {B139EE32-5C9D-3872-1D0A-8E00D77B435E}
+    {F9C17B90-C8C7-4562-E972-9965BC05ED34}
+    {88F0EEAE-BDAA-332F-C987-FAB4019FEE82}
+- ID: "9f4afd93-bb29-f131-c500-aabe4cee3860"
+  Hint: RequiredItems
+  Value: |
+    {D38E5C6D-F88F-11D3-15DA-B99DDABB3ED6}
+    {F9C17B90-C8C7-4562-E972-9965BC05ED34}
+    {6B9ED342-2E09-0083-3914-BF5D866D716C}
+    {B139EE32-5C9D-3872-1D0A-8E00D77B435E}
+    {88F0EEAE-BDAA-332F-C987-FAB4019FEE82}
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: "{AD1FA07A-EFE0-445E-79D3-CD05EB1FB349}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Aqua Tiles
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Welcome to …
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 9a170468-7196-e7bf-74dd-59f2a62102bd
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

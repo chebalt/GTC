@@ -1,0 +1,64 @@
+---
+ID: "d7a0146a-35f3-c0af-e740-f161a711c3fa"
+Parent: "d6681bc8-c0c4-cd25-58cf-139c90cab8e9"
+Template: "20344734-9abd-a64f-27fc-d483f59253f6"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-rapido-shower-frame-heat-recovery/rapido-shower-frame-heat-recovery-quiz
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "1f0737de-7099-9deb-b4dd-49637efa42ef"
+  Hint: ProductlineTheme
+  Value: "{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}"
+- ID: "a55c0362-e48c-b4e0-116b-6d7bad768a3a"
+  Hint: PassingScore
+  Value: 75
+- ID: "901e5bde-2ad1-f7a5-3bcd-66a1242e3d67"
+  Hint: NumberOfQuestions
+  Value: 9
+- ID: "23208d1f-9c36-8d33-5cfa-144010b50938"
+  Hint: ShuffleQuestions
+  Value: 1
+- ID: "a15079e7-fc34-f5d1-f95a-1a7c51ac1b08"
+  Hint: TrainingActivity
+  Value: Rapido Shower Frame Heat Recovery Quiz
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Rapido Shower Frame Heat Recovery - QUIZ
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: Rapido Shower Frame Heat Recovery
+    - ID: "6dad913d-9bab-8c73-46e1-912bfb6b287e"
+      Hint: PassText
+      Value: |
+        <p>Well done! You passed the quiz. :) <br />Go ahead and download your certificate! </p>
+    - ID: "d5d66c8b-e43a-c06d-b23f-043525b43d4d"
+      Hint: FailText
+      Value: |
+        <p>Would you like to retake the quiz or revisit the training module for a review?</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: bca5a82c-f1b2-9b64-6ca1-44dbfaf59396
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

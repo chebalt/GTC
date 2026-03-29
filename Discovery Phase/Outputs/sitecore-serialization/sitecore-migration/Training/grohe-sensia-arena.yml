@@ -1,0 +1,70 @@
+---
+ID: "ae4984a8-6ec6-968e-7992-09f576819647"
+Parent: "eb490170-566c-4524-a835-68c00589b7ed"
+Template: "b5f566f0-776f-2143-6186-4f700b7f1293"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-sensia-arena
+SharedFields:
+- ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
+  Hint: ColorTheme
+  Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
+  Hint: CourseType
+  Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
+- ID: "eca0b7e6-cd13-51c2-96e2-b6595cd20827"
+  Hint: Chapters
+  Value: |
+    {813B2B6A-D3BA-21AE-A0D7-F9382790B767}
+    {D1DCF695-0809-4915-0C95-51BE71E62572}
+    {C7C8AAC7-2DD5-B0C1-160B-5246F050BE5C}
+    {920DA7B2-44E8-5C0F-3C7F-41F6446D246E}
+    {D093453B-1A7A-8039-53D2-381FEEE1D216}
+    {28426203-B1D3-6834-FA08-C64C6140586A}
+- ID: "9f4afd93-bb29-f131-c500-aabe4cee3860"
+  Hint: RequiredItems
+  Value: |
+    {813B2B6A-D3BA-21AE-A0D7-F9382790B767}
+    {D1DCF695-0809-4915-0C95-51BE71E62572}
+    {C7C8AAC7-2DD5-B0C1-160B-5246F050BE5C}
+    {920DA7B2-44E8-5C0F-3C7F-41F6446D246E}
+    {D093453B-1A7A-8039-53D2-381FEEE1D216}
+    {28426203-B1D3-6834-FA08-C64C6140586A}
+- ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
+  Hint: MainCategories
+  Value: |
+    {64F8CF47-A977-39D4-F6B3-C581F82CB613}
+    {AB7FAD75-7242-EA5C-0F73-F52F48C50940}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Sensia Arena
+    - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
+      Hint: Overline
+      Value: GETTING TO KNOW …
+    - ID: "71da194c-d7f1-067c-6b16-d661d41ad9ed"
+      Hint: Subline
+      Value: An "All-Around Clean Experience"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T091958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: eff24ea4-4633-5d04-63db-74d0d5b82c61
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T091958Z

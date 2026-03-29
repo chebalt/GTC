@@ -1,0 +1,89 @@
+{
+  "_description": "Lookup mappings for Craft CMS → Sitecore AI content migration",
+  "_generated": "2026-03-29T08:58:41.601Z",
+  "templateIds": {
+    "collectionPage": "b5f566f0-776f-2143-6186-4f700b7f1293",
+    "storyPage": "693af99d-7689-dc12-31d8-0dd8ca77590a",
+    "quizPage": "20344734-9abd-a64f-27fc-d483f59253f6"
+  },
+  "colorTheme": {
+    "_description": "Craft colorTheme string → Sitecore GTC Color Theme item GUID",
+    "_usage": "collection.colorTheme | training.colorTheme | quiz.colorTheme",
+    "mappings": {
+      "light": "3f123c71-443c-1853-37d5-612b09777ff8",
+      "medium": "3bbae94a-e7ac-d815-4a95-ea85a44a4e0a",
+      "dark": "298d1deb-8a48-15b5-f1fa-ead9ba539786"
+    }
+  },
+  "productlineTheme": {
+    "_description": "Craft productlineTheme string → Sitecore GTC Productline Theme item GUID",
+    "_usage": "collection.productlineTheme | training.productlineTheme | quiz.productlineTheme",
+    "mappings": {
+      "standard": "e36cbd21-ca3f-9b6a-03e8-8d4188ca1341"
+    }
+  },
+  "courseType": {
+    "_description": "Craft globalTracking __typename or display name → Sitecore GTC Course Type item GUID",
+    "_usage": "globalTracking.courseData[].__typename → GUID",
+    "mappings": {
+      "courseData_collections_BlockType": "bac7e663-54a1-54e3-4eb8-357f238954d9",
+      "Course": "bac7e663-54a1-54e3-4eb8-357f238954d9",
+      "courseData_compactTrainings_BlockType": "dc9c3ba8-a24f-2677-7b4c-85b535f07510",
+      "Compact Training": "dc9c3ba8-a24f-2677-7b4c-85b535f07510"
+    }
+  },
+  "mainCategories": {
+    "_description": "Craft mainCategory slug → Sitecore GTC Category item GUID",
+    "_usage": "taxonomy[0].mainCategories[].slug → GUID (pipe-separated for Multilist)",
+    "mappings": {
+      "professional": "64f8cf47-a977-39d4-f6b3-c581f82cb613",
+      "spa": "ded0580a-8f28-ae06-638f-7ca8c580d7b0",
+      "quickfix": "32a4c2f5-cb75-451d-e068-05ded821eb03",
+      "watersystems": "812bef03-8348-3e82-da67-890e60ae0009",
+      "brand": "772e174e-efca-0aaa-739d-42951d8be3db",
+      "colours": "2c42ea0e-1acb-38be-aca8-d28b386af887",
+      "atrio": "fe5be999-696b-0b92-14b3-3e687c2b14bf",
+      "allure": "73e3431e-b62f-60b3-e26f-ef17261df535",
+      "everstream": "440c97ca-75e8-beeb-180c-cd1245d2c687",
+      "purefoam": "bc18ef12-92ce-7e6c-167f-5158a06b57ba",
+      "rainshower-aqua-pure": "a61cbb84-fa82-fc88-ab32-729dbcc08d07",
+      "body-sprays": "be07460c-226b-77dd-4dea-608975fc919c",
+      "rsh-aqua-ceiling-shower-element": "0aecda76-22df-9c36-f3f2-21a719b0102d",
+      "cubeo": "aefdfbe5-6793-e175-81f5-921f8a268cba",
+      "ceramics": "9661247f-c1b0-08fc-f368-b33f596d5015",
+      "sensia-arena": "ab7fad75-7242-ea5c-0f73-f52f48c50940",
+      "sensia-pro": "6fccd58b-2d1c-909e-723b-29d3aed6b676",
+      "smartcontrol": "7ac03e38-4d7c-e89b-c515-2c64aeeb2e7b",
+      "tempesta-110": "35647c04-087d-2b5d-c766-e468eae86e17",
+      "rapido-smartbox": "607fc705-f714-5249-d819-7a608954bd6d",
+      "installation-systems-2": "a8c292fe-c726-100d-e09e-cac258e755a9",
+      "uniset": "62a13ed5-2fb9-87b2-b648-d85d3204f173",
+      "rapid-sl": "6c43e0a9-3efb-33d3-dbdf-5baf63ebfa26",
+      "euphoria": "8bb0264f-7964-02f7-08d2-289c729d3514",
+      "grohtherm": "986b51a1-fee8-31f3-e391-0fdf29a09e0e",
+      "rapid-slx": "9142acb0-e8fa-e0e5-7044-f93094c8a507",
+      "rapido-shower-frames": "4e63ceff-a5cf-e3df-ad2a-229ce5458e84",
+      "bau-cosmopolitan-e": "03357785-93fc-91bf-ca80-8058110c8b73",
+      "blue-pure": "8ab3484f-626a-3ceb-1904-42a9d42ee434",
+      "essence-crafted-lever": "efa75e03-2f0a-fefa-8401-980bf24c28cd",
+      "vitalio-110": "b4592710-d041-4a5c-6097-fe0293b9ed87",
+      "quickglue": "73db2771-0a6f-93ba-cbbd-6f10b257976f",
+      "design": "17244b2c-ba23-91ac-b56e-8bf7e8f3f774",
+      "features": "bd40bbed-40fe-c270-9eb2-b02606041a18",
+      "installation": "9f70624c-58c3-76c4-5c10-d404998d0b9c",
+      "maintenance": "23043460-9aa5-19c5-07bb-9aa162d7d0c5",
+      "sales": "2057f56a-a9e6-c531-a2ed-fab841ff1c37",
+      "grandera": "e1a40228-4536-044a-d362-795f1f612079",
+      "ish-2025": "0707ffd1-401c-ceab-6b6e-7763a1c2c804",
+      "allure-gravity": "a6f08539-a2dc-ef3d-c3b0-be3f06eb8122",
+      "salesforce": "3e531e28-7b12-b8f4-7fc1-5a448933b778",
+      "plus": "d78478f1-46ae-2a69-03ad-293d0f3a0efb",
+      "no-search": "578f736d-d5a9-fa8e-77ac-f38d972c3738",
+      "heat-recovery": "0c212631-a971-34c0-0f4f-a964af71c584",
+      "aqua-tiles": "ad1fa07a-efe0-445e-79d3-cd05eb1fb349",
+      "br1": "97ecba85-336e-7127-ca24-5c47567e8d23",
+      "dice": "d6d3b693-613e-2344-fb0c-38a5c90a908b",
+      "watersystems-2": "99b44755-8bf1-fdc2-b187-61856f3beb06"
+    }
+  }
+}
