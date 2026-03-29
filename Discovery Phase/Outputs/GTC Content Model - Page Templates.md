@@ -145,25 +145,104 @@ Inherits: `_GtcBasePageTemplate` (Overline, Subline, ColorTheme, ProductlineThem
 | FailText | Rich Text | Versioned | Message shown on fail |
 | FailImage | Image | Shared | Image for fail screen |
 
-### GTC Navigation section
+---
+
+## Question Templates (child items under Quiz Page)
+
+### _GtcQuestionBaseTemplate (Foundation)
+
+Inherited by all 6 question type templates.
+
+#### GTC Question section
 
 | Field | Type | Versioning | Notes |
 |---|---|---|---|
-| ParentCollection | Droptree | Shared | Back-link to owning Collection |
-| CorrespondingTraining | Droptree | Shared | The Story/Training this quiz belongs to |
+| QuestionOverline | Single-Line Text | Versioned | Text above the question (e.g. category label) |
+| QuestionText | Rich Text | Versioned | The question itself (HTML) |
+| QuestionInstruction | Rich Text | Versioned | Instruction text (e.g. "Select the right answers") |
+| QuestionImage | Image | Shared | Optional image for the question |
+
+#### GTC Question Feedback section
+
+| Field | Type | Versioning | Notes |
+|---|---|---|---|
+| PositiveFeedbackText | Rich Text | Versioned | Shown when answered correctly |
+| NegativeFeedbackText | Rich Text | Versioned | Shown when answered incorrectly |
+| SolutionFeedbackText | Rich Text | Versioned | Solution explanation (optional) |
+
+### GTC Choice Question
+
+Inherits: `_GtcQuestionBaseTemplate`. Insert options: GTC Choice Answer.
+
+| Field | Type | Versioning | Notes |
+|---|---|---|---|
+| ForceMultipleChoice | Checkbox | Shared | Force multi-select even if only 1 correct |
+| DisableShuffle | Checkbox | Shared | Prevent shuffling of answer order |
+
+**GTC Choice Answer** (child item): AnswerText (Rich Text, Versioned), IsCorrect (Checkbox, Shared), AnswerImage (Image, Shared)
+
+### GTC True False Question
+
+Inherits: `_GtcQuestionBaseTemplate`.
+
+| Field | Type | Versioning | Notes |
+|---|---|---|---|
+| TrueLabel | Single-Line Text | Versioned | Custom label for True option |
+| FalseLabel | Single-Line Text | Versioned | Custom label for False option |
+| CorrectAnswer | Checkbox | Shared | Checked = True is correct |
+
+### GTC Value Slider Question
+
+Inherits: `_GtcQuestionBaseTemplate`.
+
+| Field | Type | Versioning | Notes |
+|---|---|---|---|
+| MinValue | Integer | Shared | Minimum slider value |
+| MaxValue | Integer | Shared | Maximum slider value |
+| Steps | Single-Line Text | Shared | Step increment (supports decimals) |
+| InitialValue | Integer | Shared | Starting slider position |
+| CorrectValue | Integer | Shared | The correct answer value |
+| CorrectThreshold | Integer | Shared | Tolerance margin (empty = exact match) |
+| MinLabel | Single-Line Text | Versioned | Label at minimum end |
+| MaxLabel | Single-Line Text | Versioned | Label at maximum end |
+| ValueLabel | Single-Line Text | Versioned | Unit label (e.g. "mm") |
+
+### GTC Drag Drop Question
+
+Inherits: `_GtcQuestionBaseTemplate`. Insert options: GTC Drag Drop Pair.
+
+| Field | Type | Versioning | Notes |
+|---|---|---|---|
+| DisableShuffle | Checkbox | Shared | Prevent shuffling of drag items |
+
+**GTC Drag Drop Pair** (child item): DragText (Rich Text, Versioned), DragImage (Image, Shared), DropText (Rich Text, Versioned), DropImage (Image, Shared). Correct answer = the pairing itself.
+
+### GTC Fill Blank Question
+
+Inherits: `_GtcQuestionBaseTemplate`.
+
+| Field | Type | Versioning | Notes |
+|---|---|---|---|
+| BlankText | Rich Text | Versioned | Text with ___ markers where blanks appear |
+
+### GTC Sortable Question
+
+Inherits: `_GtcQuestionBaseTemplate`. Insert options: GTC Sortable Item.
+
+**GTC Sortable Item** (child item): ItemText (Rich Text, Versioned). Correct order = item sort order.
 
 ---
 
 ## Design Notes
 
-1. **Quiz questions** — will be child items under the Quiz page (not a field). Each question type (Choice, True/False, Value Slider, Drag & Drop, Fill in the Blank, Sortable) gets its own data template. This mirrors Sitecore's pattern for ordered, owned sub-content.
+1. **Quiz questions** — child items under the Quiz page. Each question type gets its own template inheriting `_GtcQuestionBaseTemplate`. Answer options (Choice, DragDrop, Sortable) are child items under the question. Order preserved via `__Sortorder`.
 
 2. **Nuggets eliminated** — their component content (text, image, video, multicolumn, tabs, sliders, etc.) will be placed as renderings directly on Story pages via the Experience Editor.
 
-3. **Taxonomy** — ~~Decision needed: keep custom fields, or rely on inherited ITaggableTemplate?~~ **Resolved:** rely on ITaggableTemplate for generic tagging (ContentTags removed). MainCategories kept as a GTC-specific custom field on Collection and Story for product-line/topic filtering (maps to Craft's 48 `mainCategory` items).
+3. **Taxonomy** — **Resolved:** rely on ITaggableTemplate for generic tagging (ContentTags removed). MainCategories kept as a GTC-specific custom field on Collection and Story via `_GtcTaxonomyTemplate`.
 
-4. **Common fields** — ~~Decision needed: extract into a shared `_GtcBasePageTemplate`?~~ **Resolved:** yes — Overline, Subline, ColorTheme, and ProductlineTheme extracted into `_GtcBasePageTemplate` foundation template, inherited by all three page templates.
+4. **Common fields** — **Resolved:** Overline, Subline, ColorTheme, and ProductlineTheme extracted into `_GtcBasePageTemplate`. Lookup fields (ColorTheme, ProductlineTheme, CourseType, MainCategories) use Droplink/Multilist pointing to Data folder items via enhanced Sitecore queries.
 
 5. **Course completion** — In Craft, completion rules were stored globally (`globalTracking.courseData`). In Sitecore AI, they move to the Collection's `RequiredItems` field — each Collection owns its own completion definition.
 
-6. **Navigation fields** — PreviousChapter/NextChapter on Story and CorrespondingTraining on Quiz enable sequential navigation. These are Shared (same structure across languages). Alternative: derive navigation from Chapters ordering on the parent Collection (would remove the need for these fields but add runtime logic).
+6. **Navigation** — **Resolved:** Navigation fields removed (ParentCollection, NextChapter, PreviousChapter, RelatedContent, CorrespondingTraining). Hierarchy is implicit via content tree structure. Chapter order defined by `__Sortorder` on Story/Quiz items under Collection.

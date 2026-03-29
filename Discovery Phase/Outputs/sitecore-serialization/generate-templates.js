@@ -571,21 +571,7 @@ const quizFailImg = makeFieldItem('FailImage', quizFbSec.id, `${quizPath}/GTC Qu
 });
 writeYml('GTC/Quiz Page/GTC Quiz Feedback/FailImage.yml', quizFailImg.yml);
 
-// Quiz → __Standard Values
-const quizSv = makeStandardValues(quizTpl.id, quizPath, [
-  { id: quizShuffle.id, hint: 'ShuffleQuestions', value: '1' },
-  { id: quizFeedback.id, hint: 'EnableFeedback', value: '1' },
-]);
-writeYml('GTC/Quiz Page/__Standard Values.yml', quizSv.yml);
-
-// ─── Collection Page __Standard Values (deferred — needs storyTpl + quizTpl IDs) ───
-const collSv = makeStandardValues(collTpl.id, collPath, [
-  { id: baseColorTheme.id, hint: 'ColorTheme', value: '{3F123C71-443C-1853-37D5-612B09777FF8}' },
-  { id: collCourseType.id, hint: 'CourseType', value: '{BAC7E663-54A1-54E3-4EB8-357F238954D9}' },
-  { id: baseProdTheme.id, hint: 'ProductlineTheme', value: '{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}' },
-  { id: FIELD_MASTERS, hint: '__Masters', value: `{${storyTpl.id.toUpperCase()}}\n{${quizTpl.id.toUpperCase()}}`, multiline: true },
-]);
-writeYml('GTC/Collection Page/__Standard Values.yml', collSv.yml);
+// (Quiz + Collection __Standard Values deferred — need question template IDs)
 
 
 // ─── 6. Lookup Templates ───
@@ -789,6 +775,364 @@ const prodFolderSv = makeStandardValues(prodFolderTpl.id, prodFolderTplPath, [
   { id: FIELD_MASTERS, hint: '__Masters', value: `{${prodTpl.id.toUpperCase()}}` },
 ]);
 writeYml('GTC/GTC Productline Themes Folder/__Standard Values.yml', prodFolderSv.yml);
+
+
+// ═══════════════════════════════════════════════════════════════
+//  7. Question Templates
+// ═══════════════════════════════════════════════════════════════
+
+// _GtcQuestionBaseTemplate — foundation for all question types
+const qBasePath = `${TEMPLATES_BASE}/GTC/_GtcQuestionBaseTemplate`;
+const qBaseTpl = makeTemplateItem({
+  name: '_GtcQuestionBaseTemplate',
+  parentId: gtcFolderId,
+  basePath: `${TEMPLATES_BASE}/GTC`,
+  icon: '',
+  baseTemplates: [],
+  stdValuesId: guid(`sv:${qBasePath}`),
+});
+writeYml('GTC/_GtcQuestionBaseTemplate.yml', templateYml({
+  id: qBaseTpl.id,
+  parent: gtcFolderId,
+  template: TEMPLATE_TEMPLATE,
+  path: qBasePath,
+  sharedFields: qBaseTpl.sharedFields,
+}));
+
+const qBaseContentSec = makeSectionItem('GTC Question', qBaseTpl.id, qBasePath, 100);
+writeYml('GTC/_GtcQuestionBaseTemplate/GTC Question.yml', qBaseContentSec.yml);
+
+const qOverline = makeFieldItem('QuestionOverline', qBaseContentSec.id, `${qBasePath}/GTC Question`, 100, 'Single-Line Text', {
+  shortDesc: 'Text above the question (e.g. category label)',
+});
+writeYml('GTC/_GtcQuestionBaseTemplate/GTC Question/QuestionOverline.yml', qOverline.yml);
+
+const qText = makeFieldItem('QuestionText', qBaseContentSec.id, `${qBasePath}/GTC Question`, 200, 'Rich Text', {
+  shortDesc: 'The question itself (HTML)',
+});
+writeYml('GTC/_GtcQuestionBaseTemplate/GTC Question/QuestionText.yml', qText.yml);
+
+const qInstruction = makeFieldItem('QuestionInstruction', qBaseContentSec.id, `${qBasePath}/GTC Question`, 300, 'Rich Text', {
+  shortDesc: 'Instruction text (e.g. "Select the right answers")',
+});
+writeYml('GTC/_GtcQuestionBaseTemplate/GTC Question/QuestionInstruction.yml', qInstruction.yml);
+
+const qImage = makeFieldItem('QuestionImage', qBaseContentSec.id, `${qBasePath}/GTC Question`, 400, 'Image', {
+  shared: true,
+  shortDesc: 'Optional image for the question',
+});
+writeYml('GTC/_GtcQuestionBaseTemplate/GTC Question/QuestionImage.yml', qImage.yml);
+
+const qBaseFbSec = makeSectionItem('GTC Question Feedback', qBaseTpl.id, qBasePath, 200);
+writeYml('GTC/_GtcQuestionBaseTemplate/GTC Question Feedback.yml', qBaseFbSec.yml);
+
+const qPosFb = makeFieldItem('PositiveFeedbackText', qBaseFbSec.id, `${qBasePath}/GTC Question Feedback`, 100, 'Rich Text', {
+  shortDesc: 'Shown when answered correctly',
+});
+writeYml('GTC/_GtcQuestionBaseTemplate/GTC Question Feedback/PositiveFeedbackText.yml', qPosFb.yml);
+
+const qNegFb = makeFieldItem('NegativeFeedbackText', qBaseFbSec.id, `${qBasePath}/GTC Question Feedback`, 200, 'Rich Text', {
+  shortDesc: 'Shown when answered incorrectly',
+});
+writeYml('GTC/_GtcQuestionBaseTemplate/GTC Question Feedback/NegativeFeedbackText.yml', qNegFb.yml);
+
+const qSolFb = makeFieldItem('SolutionFeedbackText', qBaseFbSec.id, `${qBasePath}/GTC Question Feedback`, 300, 'Rich Text', {
+  shortDesc: 'Solution explanation (optional)',
+});
+writeYml('GTC/_GtcQuestionBaseTemplate/GTC Question Feedback/SolutionFeedbackText.yml', qSolFb.yml);
+
+const qBaseSv = makeStandardValues(qBaseTpl.id, qBasePath);
+writeYml('GTC/_GtcQuestionBaseTemplate/__Standard Values.yml', qBaseSv.yml);
+
+
+// --- GTC Choice Question ---
+const choicePath = `${TEMPLATES_BASE}/GTC/GTC Choice Question`;
+const choiceTpl = makeTemplateItem({
+  name: 'GTC Choice Question',
+  parentId: gtcFolderId,
+  basePath: `${TEMPLATES_BASE}/GTC`,
+  icon: 'Applications/32x32/checkbox.png',
+  baseTemplates: [qBaseTpl.id],
+  stdValuesId: guid(`sv:${choicePath}`),
+});
+writeYml('GTC/GTC Choice Question.yml', templateYml({
+  id: choiceTpl.id, parent: gtcFolderId, template: TEMPLATE_TEMPLATE,
+  path: choicePath, sharedFields: choiceTpl.sharedFields,
+}));
+const choiceSettSec = makeSectionItem('GTC Choice Settings', choiceTpl.id, choicePath, 100);
+writeYml('GTC/GTC Choice Question/GTC Choice Settings.yml', choiceSettSec.yml);
+const choiceForceMulti = makeFieldItem('ForceMultipleChoice', choiceSettSec.id, `${choicePath}/GTC Choice Settings`, 100, 'Checkbox', {
+  shared: true, shortDesc: 'Force multi-select even if only 1 correct',
+});
+writeYml('GTC/GTC Choice Question/GTC Choice Settings/ForceMultipleChoice.yml', choiceForceMulti.yml);
+const choiceNoShuffle = makeFieldItem('DisableShuffle', choiceSettSec.id, `${choicePath}/GTC Choice Settings`, 200, 'Checkbox', {
+  shared: true, shortDesc: 'Prevent shuffling of answer order',
+});
+writeYml('GTC/GTC Choice Question/GTC Choice Settings/DisableShuffle.yml', choiceNoShuffle.yml);
+
+
+// --- GTC Choice Answer (child item) ---
+const choiceAnsPath = `${TEMPLATES_BASE}/GTC/GTC Choice Answer`;
+const choiceAnsTpl = makeTemplateItem({
+  name: 'GTC Choice Answer',
+  parentId: gtcFolderId,
+  basePath: `${TEMPLATES_BASE}/GTC`,
+  icon: 'People/32x32/pencil.png',
+  baseTemplates: [],
+  stdValuesId: guid(`sv:${choiceAnsPath}`),
+});
+writeYml('GTC/GTC Choice Answer.yml', templateYml({
+  id: choiceAnsTpl.id, parent: gtcFolderId, template: TEMPLATE_TEMPLATE,
+  path: choiceAnsPath, sharedFields: choiceAnsTpl.sharedFields,
+}));
+const choiceAnsSec = makeSectionItem('GTC Choice Answer', choiceAnsTpl.id, choiceAnsPath, 100);
+writeYml('GTC/GTC Choice Answer/GTC Choice Answer.yml', choiceAnsSec.yml);
+const ansText = makeFieldItem('AnswerText', choiceAnsSec.id, `${choiceAnsPath}/GTC Choice Answer`, 100, 'Rich Text', {
+  shortDesc: 'Answer option text (HTML)',
+});
+writeYml('GTC/GTC Choice Answer/GTC Choice Answer/AnswerText.yml', ansText.yml);
+const ansCorrect = makeFieldItem('IsCorrect', choiceAnsSec.id, `${choiceAnsPath}/GTC Choice Answer`, 200, 'Checkbox', {
+  shared: true, shortDesc: 'Whether this is a correct answer',
+});
+writeYml('GTC/GTC Choice Answer/GTC Choice Answer/IsCorrect.yml', ansCorrect.yml);
+const ansImage = makeFieldItem('AnswerImage', choiceAnsSec.id, `${choiceAnsPath}/GTC Choice Answer`, 300, 'Image', {
+  shared: true, shortDesc: 'Optional image for this answer option',
+});
+writeYml('GTC/GTC Choice Answer/GTC Choice Answer/AnswerImage.yml', ansImage.yml);
+const choiceAnsSv = makeStandardValues(choiceAnsTpl.id, choiceAnsPath);
+writeYml('GTC/GTC Choice Answer/__Standard Values.yml', choiceAnsSv.yml);
+
+// Choice Question __Standard Values with __Masters
+const choiceSv = makeStandardValues(choiceTpl.id, choicePath, [
+  { id: FIELD_MASTERS, hint: '__Masters', value: `{${choiceAnsTpl.id.toUpperCase()}}` },
+]);
+writeYml('GTC/GTC Choice Question/__Standard Values.yml', choiceSv.yml);
+
+
+// --- GTC True False Question ---
+const tfPath = `${TEMPLATES_BASE}/GTC/GTC True False Question`;
+const tfTpl = makeTemplateItem({
+  name: 'GTC True False Question',
+  parentId: gtcFolderId,
+  basePath: `${TEMPLATES_BASE}/GTC`,
+  icon: 'Office/32x32/elements_branch.png',
+  baseTemplates: [qBaseTpl.id],
+  stdValuesId: guid(`sv:${tfPath}`),
+});
+writeYml('GTC/GTC True False Question.yml', templateYml({
+  id: tfTpl.id, parent: gtcFolderId, template: TEMPLATE_TEMPLATE,
+  path: tfPath, sharedFields: tfTpl.sharedFields,
+}));
+const tfSettSec = makeSectionItem('GTC True False Settings', tfTpl.id, tfPath, 100);
+writeYml('GTC/GTC True False Question/GTC True False Settings.yml', tfSettSec.yml);
+const tfTrueLabel = makeFieldItem('TrueLabel', tfSettSec.id, `${tfPath}/GTC True False Settings`, 100, 'Single-Line Text', {
+  shortDesc: 'Custom label for True option (e.g. "Yes", "Correct")',
+});
+writeYml('GTC/GTC True False Question/GTC True False Settings/TrueLabel.yml', tfTrueLabel.yml);
+const tfFalseLabel = makeFieldItem('FalseLabel', tfSettSec.id, `${tfPath}/GTC True False Settings`, 200, 'Single-Line Text', {
+  shortDesc: 'Custom label for False option (e.g. "No", "Incorrect")',
+});
+writeYml('GTC/GTC True False Question/GTC True False Settings/FalseLabel.yml', tfFalseLabel.yml);
+const tfCorrect = makeFieldItem('CorrectAnswer', tfSettSec.id, `${tfPath}/GTC True False Settings`, 300, 'Checkbox', {
+  shared: true, shortDesc: 'Checked = True is correct, Unchecked = False is correct',
+});
+writeYml('GTC/GTC True False Question/GTC True False Settings/CorrectAnswer.yml', tfCorrect.yml);
+const tfSv = makeStandardValues(tfTpl.id, tfPath);
+writeYml('GTC/GTC True False Question/__Standard Values.yml', tfSv.yml);
+
+
+// --- GTC Value Slider Question ---
+const sliderPath = `${TEMPLATES_BASE}/GTC/GTC Value Slider Question`;
+const sliderTpl = makeTemplateItem({
+  name: 'GTC Value Slider Question',
+  parentId: gtcFolderId,
+  basePath: `${TEMPLATES_BASE}/GTC`,
+  icon: 'Office/32x32/gauge.png',
+  baseTemplates: [qBaseTpl.id],
+  stdValuesId: guid(`sv:${sliderPath}`),
+});
+writeYml('GTC/GTC Value Slider Question.yml', templateYml({
+  id: sliderTpl.id, parent: gtcFolderId, template: TEMPLATE_TEMPLATE,
+  path: sliderPath, sharedFields: sliderTpl.sharedFields,
+}));
+const sliderSettSec = makeSectionItem('GTC Slider Settings', sliderTpl.id, sliderPath, 100);
+writeYml('GTC/GTC Value Slider Question/GTC Slider Settings.yml', sliderSettSec.yml);
+
+const sliderFields = [
+  { name: 'MinValue', type: 'Integer', shared: true, desc: 'Minimum slider value', sort: 100 },
+  { name: 'MaxValue', type: 'Integer', shared: true, desc: 'Maximum slider value', sort: 200 },
+  { name: 'Steps', type: 'Single-Line Text', shared: true, desc: 'Step increment (supports decimals e.g. "0.5")', sort: 300 },
+  { name: 'InitialValue', type: 'Integer', shared: true, desc: 'Starting slider position', sort: 400 },
+  { name: 'CorrectValue', type: 'Integer', shared: true, desc: 'The correct answer value', sort: 500 },
+  { name: 'CorrectThreshold', type: 'Integer', shared: true, desc: 'Tolerance margin (empty = exact match)', sort: 600 },
+  { name: 'MinLabel', type: 'Single-Line Text', shared: false, desc: 'Label at minimum end (translatable)', sort: 700 },
+  { name: 'MaxLabel', type: 'Single-Line Text', shared: false, desc: 'Label at maximum end (translatable)', sort: 800 },
+  { name: 'ValueLabel', type: 'Single-Line Text', shared: false, desc: 'Unit label appended to value (e.g. "mm")', sort: 900 },
+];
+for (const f of sliderFields) {
+  const fi = makeFieldItem(f.name, sliderSettSec.id, `${sliderPath}/GTC Slider Settings`, f.sort, f.type, {
+    shared: f.shared, shortDesc: f.desc,
+  });
+  writeYml(`GTC/GTC Value Slider Question/GTC Slider Settings/${f.name}.yml`, fi.yml);
+}
+const sliderSv = makeStandardValues(sliderTpl.id, sliderPath);
+writeYml('GTC/GTC Value Slider Question/__Standard Values.yml', sliderSv.yml);
+
+
+// --- GTC Drag Drop Question ---
+const ddPath = `${TEMPLATES_BASE}/GTC/GTC Drag Drop Question`;
+const ddTpl = makeTemplateItem({
+  name: 'GTC Drag Drop Question',
+  parentId: gtcFolderId,
+  basePath: `${TEMPLATES_BASE}/GTC`,
+  icon: 'Office/32x32/graph_connection_directed.png',
+  baseTemplates: [qBaseTpl.id],
+  stdValuesId: guid(`sv:${ddPath}`),
+});
+writeYml('GTC/GTC Drag Drop Question.yml', templateYml({
+  id: ddTpl.id, parent: gtcFolderId, template: TEMPLATE_TEMPLATE,
+  path: ddPath, sharedFields: ddTpl.sharedFields,
+}));
+const ddSettSec = makeSectionItem('GTC Drag Drop Settings', ddTpl.id, ddPath, 100);
+writeYml('GTC/GTC Drag Drop Question/GTC Drag Drop Settings.yml', ddSettSec.yml);
+const ddNoShuffle = makeFieldItem('DisableShuffle', ddSettSec.id, `${ddPath}/GTC Drag Drop Settings`, 100, 'Checkbox', {
+  shared: true, shortDesc: 'Prevent shuffling of drag items',
+});
+writeYml('GTC/GTC Drag Drop Question/GTC Drag Drop Settings/DisableShuffle.yml', ddNoShuffle.yml);
+
+// GTC Drag Drop Pair (child item)
+const ddPairPath = `${TEMPLATES_BASE}/GTC/GTC Drag Drop Pair`;
+const ddPairTpl = makeTemplateItem({
+  name: 'GTC Drag Drop Pair',
+  parentId: gtcFolderId,
+  basePath: `${TEMPLATES_BASE}/GTC`,
+  icon: 'Office/32x32/graph_fork2.png',
+  baseTemplates: [],
+  stdValuesId: guid(`sv:${ddPairPath}`),
+});
+writeYml('GTC/GTC Drag Drop Pair.yml', templateYml({
+  id: ddPairTpl.id, parent: gtcFolderId, template: TEMPLATE_TEMPLATE,
+  path: ddPairPath, sharedFields: ddPairTpl.sharedFields,
+}));
+const ddPairSec = makeSectionItem('GTC Drag Drop Pair', ddPairTpl.id, ddPairPath, 100);
+writeYml('GTC/GTC Drag Drop Pair/GTC Drag Drop Pair.yml', ddPairSec.yml);
+const ddDragText = makeFieldItem('DragText', ddPairSec.id, `${ddPairPath}/GTC Drag Drop Pair`, 100, 'Rich Text', {
+  shortDesc: 'Text of the draggable item',
+});
+writeYml('GTC/GTC Drag Drop Pair/GTC Drag Drop Pair/DragText.yml', ddDragText.yml);
+const ddDragImg = makeFieldItem('DragImage', ddPairSec.id, `${ddPairPath}/GTC Drag Drop Pair`, 200, 'Image', {
+  shared: true, shortDesc: 'Image of the draggable item (alternative to text)',
+});
+writeYml('GTC/GTC Drag Drop Pair/GTC Drag Drop Pair/DragImage.yml', ddDragImg.yml);
+const ddDropText = makeFieldItem('DropText', ddPairSec.id, `${ddPairPath}/GTC Drag Drop Pair`, 300, 'Rich Text', {
+  shortDesc: 'Text of the drop zone',
+});
+writeYml('GTC/GTC Drag Drop Pair/GTC Drag Drop Pair/DropText.yml', ddDropText.yml);
+const ddDropImg = makeFieldItem('DropImage', ddPairSec.id, `${ddPairPath}/GTC Drag Drop Pair`, 400, 'Image', {
+  shared: true, shortDesc: 'Image of the drop zone (alternative to text)',
+});
+writeYml('GTC/GTC Drag Drop Pair/GTC Drag Drop Pair/DropImage.yml', ddDropImg.yml);
+const ddPairSv = makeStandardValues(ddPairTpl.id, ddPairPath);
+writeYml('GTC/GTC Drag Drop Pair/__Standard Values.yml', ddPairSv.yml);
+
+// Drag Drop Question __Standard Values with __Masters
+const ddSv = makeStandardValues(ddTpl.id, ddPath, [
+  { id: FIELD_MASTERS, hint: '__Masters', value: `{${ddPairTpl.id.toUpperCase()}}` },
+]);
+writeYml('GTC/GTC Drag Drop Question/__Standard Values.yml', ddSv.yml);
+
+
+// --- GTC Fill Blank Question ---
+const fbPath = `${TEMPLATES_BASE}/GTC/GTC Fill Blank Question`;
+const fbTpl = makeTemplateItem({
+  name: 'GTC Fill Blank Question',
+  parentId: gtcFolderId,
+  basePath: `${TEMPLATES_BASE}/GTC`,
+  icon: 'Office/32x32/text_field.png',
+  baseTemplates: [qBaseTpl.id],
+  stdValuesId: guid(`sv:${fbPath}`),
+});
+writeYml('GTC/GTC Fill Blank Question.yml', templateYml({
+  id: fbTpl.id, parent: gtcFolderId, template: TEMPLATE_TEMPLATE,
+  path: fbPath, sharedFields: fbTpl.sharedFields,
+}));
+const fbSettSec = makeSectionItem('GTC Fill Blank Settings', fbTpl.id, fbPath, 100);
+writeYml('GTC/GTC Fill Blank Question/GTC Fill Blank Settings.yml', fbSettSec.yml);
+const fbBlankText = makeFieldItem('BlankText', fbSettSec.id, `${fbPath}/GTC Fill Blank Settings`, 100, 'Rich Text', {
+  shortDesc: 'Text with ___ markers where blanks should appear',
+});
+writeYml('GTC/GTC Fill Blank Question/GTC Fill Blank Settings/BlankText.yml', fbBlankText.yml);
+const fbSv = makeStandardValues(fbTpl.id, fbPath);
+writeYml('GTC/GTC Fill Blank Question/__Standard Values.yml', fbSv.yml);
+
+
+// --- GTC Sortable Question ---
+const sortPath = `${TEMPLATES_BASE}/GTC/GTC Sortable Question`;
+const sortTpl = makeTemplateItem({
+  name: 'GTC Sortable Question',
+  parentId: gtcFolderId,
+  basePath: `${TEMPLATES_BASE}/GTC`,
+  icon: 'Office/32x32/sort_az_descending2.png',
+  baseTemplates: [qBaseTpl.id],
+  stdValuesId: guid(`sv:${sortPath}`),
+});
+writeYml('GTC/GTC Sortable Question.yml', templateYml({
+  id: sortTpl.id, parent: gtcFolderId, template: TEMPLATE_TEMPLATE,
+  path: sortPath, sharedFields: sortTpl.sharedFields,
+}));
+
+// GTC Sortable Item (child item)
+const sortItemPath = `${TEMPLATES_BASE}/GTC/GTC Sortable Item`;
+const sortItemTpl = makeTemplateItem({
+  name: 'GTC Sortable Item',
+  parentId: gtcFolderId,
+  basePath: `${TEMPLATES_BASE}/GTC`,
+  icon: 'WordProcessing/32x32/numbering.png',
+  baseTemplates: [],
+  stdValuesId: guid(`sv:${sortItemPath}`),
+});
+writeYml('GTC/GTC Sortable Item.yml', templateYml({
+  id: sortItemTpl.id, parent: gtcFolderId, template: TEMPLATE_TEMPLATE,
+  path: sortItemPath, sharedFields: sortItemTpl.sharedFields,
+}));
+const sortItemSec = makeSectionItem('GTC Sortable Item', sortItemTpl.id, sortItemPath, 100);
+writeYml('GTC/GTC Sortable Item/GTC Sortable Item.yml', sortItemSec.yml);
+const sortItemText = makeFieldItem('ItemText', sortItemSec.id, `${sortItemPath}/GTC Sortable Item`, 100, 'Rich Text', {
+  shortDesc: 'Text of this sortable item',
+});
+writeYml('GTC/GTC Sortable Item/GTC Sortable Item/ItemText.yml', sortItemText.yml);
+const sortItemSv = makeStandardValues(sortItemTpl.id, sortItemPath);
+writeYml('GTC/GTC Sortable Item/__Standard Values.yml', sortItemSv.yml);
+
+// Sortable Question __Standard Values with __Masters
+const sortSv = makeStandardValues(sortTpl.id, sortPath, [
+  { id: FIELD_MASTERS, hint: '__Masters', value: `{${sortItemTpl.id.toUpperCase()}}` },
+]);
+writeYml('GTC/GTC Sortable Question/__Standard Values.yml', sortSv.yml);
+
+
+// ═══════════════════════════════════════════════════════════════
+//  Deferred __Standard Values (need all template IDs)
+// ═══════════════════════════════════════════════════════════════
+
+// Quiz Page __Standard Values — allows all 6 question types as children
+const allQuestionTypes = [choiceTpl, tfTpl, sliderTpl, ddTpl, fbTpl, sortTpl];
+const quizMastersValue = allQuestionTypes.map(t => `{${t.id.toUpperCase()}}`).join('\n');
+const quizSv = makeStandardValues(quizTpl.id, quizPath, [
+  { id: quizShuffle.id, hint: 'ShuffleQuestions', value: '1' },
+  { id: quizFeedback.id, hint: 'EnableFeedback', value: '1' },
+  { id: FIELD_MASTERS, hint: '__Masters', value: quizMastersValue, multiline: true },
+]);
+writeYml('GTC/Quiz Page/__Standard Values.yml', quizSv.yml);
+
+// Collection Page __Standard Values
+const collSv = makeStandardValues(collTpl.id, collPath, [
+  { id: baseColorTheme.id, hint: 'ColorTheme', value: '{3F123C71-443C-1853-37D5-612B09777FF8}' },
+  { id: collCourseType.id, hint: 'CourseType', value: '{BAC7E663-54A1-54E3-4EB8-357F238954D9}' },
+  { id: baseProdTheme.id, hint: 'ProductlineTheme', value: '{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}' },
+  { id: FIELD_MASTERS, hint: '__Masters', value: `{${storyTpl.id.toUpperCase()}}\n{${quizTpl.id.toUpperCase()}}`, multiline: true },
+]);
+writeYml('GTC/Collection Page/__Standard Values.yml', collSv.yml);
 
 
 // ═══════════════════════════════════════════════════════════════
@@ -1028,3 +1372,14 @@ console.log(`  GTC Color Theme:          ${colorTpl.id}`);
 console.log(`  GTC Color Themes Folder:  ${colorFolderTpl.id}`);
 console.log(`  GTC Productline Theme:    ${prodTpl.id}`);
 console.log(`  GTC Productline Themes F: ${prodFolderTpl.id}`);
+console.log(`\nQuestion Template IDs:`);
+console.log(`  _GtcQuestionBase:         ${qBaseTpl.id}`);
+console.log(`  GTC Choice Question:      ${choiceTpl.id}`);
+console.log(`  GTC Choice Answer:        ${choiceAnsTpl.id}`);
+console.log(`  GTC True False Question:  ${tfTpl.id}`);
+console.log(`  GTC Value Slider Question:${sliderTpl.id}`);
+console.log(`  GTC Drag Drop Question:   ${ddTpl.id}`);
+console.log(`  GTC Drag Drop Pair:       ${ddPairTpl.id}`);
+console.log(`  GTC Fill Blank Question:  ${fbTpl.id}`);
+console.log(`  GTC Sortable Question:    ${sortTpl.id}`);
+console.log(`  GTC Sortable Item:        ${sortItemTpl.id}`);

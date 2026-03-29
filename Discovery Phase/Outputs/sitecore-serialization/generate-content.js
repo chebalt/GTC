@@ -88,8 +88,78 @@ const FID_FAIL_HEADLINE = fieldId(quizPath, 'GTC Quiz Feedback', 'FailHeadline')
 const FID_FAIL_TEXT = fieldId(quizPath, 'GTC Quiz Feedback', 'FailText');
 const FID_FAIL_IMAGE = fieldId(quizPath, 'GTC Quiz Feedback', 'FailImage');
 
-// _BasePageTemplate fields (NEO inherited)
-const FID_HEADLINE = '30a04223-f40c-4e2e-983f-c tried'; // We'll use __Display name instead
+// Question template IDs (deterministic)
+const CHOICE_TEMPLATE = guid(`template:${TEMPLATES_BASE}/GTC/GTC Choice Question`);
+const CHOICE_ANS_TEMPLATE = guid(`template:${TEMPLATES_BASE}/GTC/GTC Choice Answer`);
+const TF_TEMPLATE = guid(`template:${TEMPLATES_BASE}/GTC/GTC True False Question`);
+const SLIDER_TEMPLATE = guid(`template:${TEMPLATES_BASE}/GTC/GTC Value Slider Question`);
+const DD_TEMPLATE = guid(`template:${TEMPLATES_BASE}/GTC/GTC Drag Drop Question`);
+const DD_PAIR_TEMPLATE = guid(`template:${TEMPLATES_BASE}/GTC/GTC Drag Drop Pair`);
+const FILL_TEMPLATE = guid(`template:${TEMPLATES_BASE}/GTC/GTC Fill Blank Question`);
+const SORT_TEMPLATE = guid(`template:${TEMPLATES_BASE}/GTC/GTC Sortable Question`);
+const SORT_ITEM_TEMPLATE = guid(`template:${TEMPLATES_BASE}/GTC/GTC Sortable Item`);
+
+// _GtcQuestionBaseTemplate fields
+const qBasePath = `${TEMPLATES_BASE}/GTC/_GtcQuestionBaseTemplate`;
+const FID_Q_OVERLINE = fieldId(qBasePath, 'GTC Question', 'QuestionOverline');
+const FID_Q_TEXT = fieldId(qBasePath, 'GTC Question', 'QuestionText');
+const FID_Q_INSTRUCTION = fieldId(qBasePath, 'GTC Question', 'QuestionInstruction');
+const FID_Q_POS_FB = fieldId(qBasePath, 'GTC Question Feedback', 'PositiveFeedbackText');
+const FID_Q_NEG_FB = fieldId(qBasePath, 'GTC Question Feedback', 'NegativeFeedbackText');
+const FID_Q_SOL_FB = fieldId(qBasePath, 'GTC Question Feedback', 'SolutionFeedbackText');
+
+// Choice Question fields
+const choicePath = `${TEMPLATES_BASE}/GTC/GTC Choice Question`;
+const FID_FORCE_MULTI = fieldId(choicePath, 'GTC Choice Settings', 'ForceMultipleChoice');
+const FID_CHOICE_NO_SHUFFLE = fieldId(choicePath, 'GTC Choice Settings', 'DisableShuffle');
+
+// Choice Answer fields
+const choiceAnsPath = `${TEMPLATES_BASE}/GTC/GTC Choice Answer`;
+const FID_ANS_TEXT = fieldId(choiceAnsPath, 'GTC Choice Answer', 'AnswerText');
+const FID_ANS_CORRECT = fieldId(choiceAnsPath, 'GTC Choice Answer', 'IsCorrect');
+
+// True False Question fields
+const tfQPath = `${TEMPLATES_BASE}/GTC/GTC True False Question`;
+const FID_TF_TRUE_LABEL = fieldId(tfQPath, 'GTC True False Settings', 'TrueLabel');
+const FID_TF_FALSE_LABEL = fieldId(tfQPath, 'GTC True False Settings', 'FalseLabel');
+const FID_TF_CORRECT = fieldId(tfQPath, 'GTC True False Settings', 'CorrectAnswer');
+
+// Value Slider Question fields
+const sliderQPath = `${TEMPLATES_BASE}/GTC/GTC Value Slider Question`;
+const FID_SL_MIN = fieldId(sliderQPath, 'GTC Slider Settings', 'MinValue');
+const FID_SL_MAX = fieldId(sliderQPath, 'GTC Slider Settings', 'MaxValue');
+const FID_SL_STEPS = fieldId(sliderQPath, 'GTC Slider Settings', 'Steps');
+const FID_SL_INIT = fieldId(sliderQPath, 'GTC Slider Settings', 'InitialValue');
+const FID_SL_CORRECT = fieldId(sliderQPath, 'GTC Slider Settings', 'CorrectValue');
+const FID_SL_THRESHOLD = fieldId(sliderQPath, 'GTC Slider Settings', 'CorrectThreshold');
+const FID_SL_MIN_LABEL = fieldId(sliderQPath, 'GTC Slider Settings', 'MinLabel');
+const FID_SL_MAX_LABEL = fieldId(sliderQPath, 'GTC Slider Settings', 'MaxLabel');
+const FID_SL_VAL_LABEL = fieldId(sliderQPath, 'GTC Slider Settings', 'ValueLabel');
+
+// Drag Drop fields
+const ddQPath = `${TEMPLATES_BASE}/GTC/GTC Drag Drop Question`;
+const FID_DD_NO_SHUFFLE = fieldId(ddQPath, 'GTC Drag Drop Settings', 'DisableShuffle');
+const ddPairPath = `${TEMPLATES_BASE}/GTC/GTC Drag Drop Pair`;
+const FID_DD_DRAG_TEXT = fieldId(ddPairPath, 'GTC Drag Drop Pair', 'DragText');
+const FID_DD_DROP_TEXT = fieldId(ddPairPath, 'GTC Drag Drop Pair', 'DropText');
+
+// Fill Blank fields
+const fbQPath = `${TEMPLATES_BASE}/GTC/GTC Fill Blank Question`;
+const FID_FB_TEXT = fieldId(fbQPath, 'GTC Fill Blank Settings', 'BlankText');
+
+// Sortable Item fields
+const sortItemQPath = `${TEMPLATES_BASE}/GTC/GTC Sortable Item`;
+const FID_SORT_ITEM_TEXT = fieldId(sortItemQPath, 'GTC Sortable Item', 'ItemText');
+
+// Craft typename → Sitecore template ID mapping
+const QUESTION_TYPE_MAP = {
+  'interactionBuilder_choiceModule_BlockType': CHOICE_TEMPLATE,
+  'interactionBuilder_trueFalseModule_BlockType': TF_TEMPLATE,
+  'interactionBuilder_valueSliderModule_BlockType': SLIDER_TEMPLATE,
+  'interactionBuilder_DragDropModule_BlockType': DD_TEMPLATE,
+  'interactionBuilder_fillTheBlankModule_BlockType': FILL_TEMPLATE,
+  'interactionBuilder_sortableRankingListModule_BlockType': SORT_TEMPLATE,
+};
 
 // ─── Helpers ───
 
@@ -139,16 +209,22 @@ function versionBlock(indent = '') {
   ].join('');
 }
 
-function buildItemYml({ id, parent, template, itemPath, sharedFields, versionedFields, displayName }) {
+const FIELD_SORTORDER = 'ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e';
+
+function buildItemYml({ id, parent, template, itemPath, sharedFields, versionedFields, displayName, sortOrder }) {
   let yml = '---\n';
   yml += `ID: "${id}"\n`;
   yml += `Parent: "${parent}"\n`;
   yml += `Template: "${template}"\n`;
   yml += `Path: ${itemPath}\n`;
 
-  if (sharedFields) {
+  // Prepend __Sortorder to shared fields if provided
+  const sortField = (sortOrder !== undefined) ? renderField(FIELD_SORTORDER, '__Sortorder', String(sortOrder)) : '';
+
+  if (sharedFields || sortField) {
     yml += 'SharedFields:\n';
-    yml += sharedFields;
+    yml += sortField;
+    if (sharedFields) yml += sharedFields;
   }
 
   yml += 'Languages:\n';
@@ -243,6 +319,14 @@ async function main() {
     t.contentDependencies?.[0]?.overview?.length > 0
   );
 
+  // Build interaction lookup by slug
+  const interactions = exportData.interactions || [];
+  const interactionBySlug = {};
+  for (const i of interactions) {
+    interactionBySlug[i.slug] = i;
+  }
+  console.log(`  Interactions: ${interactions.length}`);
+
   // ─── Content ID map: slug → sitecore GUID ───
   const contentIdMap = {};
 
@@ -256,6 +340,9 @@ async function main() {
   for (const q of quizzes) {
     contentIdMap[q.slug] = contentGuid(q.slug);
   }
+  for (const i of interactions) {
+    contentIdMap[i.slug] = contentGuid(i.slug);
+  }
 
   // ─── Generate YML files ───
   console.log('\nGenerating YML files...\n');
@@ -265,7 +352,7 @@ async function main() {
     fs.rmSync(OUT, { recursive: true });
   }
 
-  let collCount = 0, storyCount = 0, quizCount = 0;
+  let collCount = 0, storyCount = 0, quizCount = 0, questionCount = 0, answerCount = 0;
 
   for (const c of collections) {
     const collId = contentIdMap[c.slug];
@@ -317,7 +404,8 @@ async function main() {
     collCount++;
 
     // ─── Stories under this collection ───
-    for (const storySlug of childSlugs) {
+    for (let si = 0; si < childSlugs.length; si++) {
+      const storySlug = childSlugs[si];
       const t = trainingBySlug[storySlug];
       if (!t) {
         console.warn(`  WARNING: Training "${storySlug}" not found in Craft data`);
@@ -347,6 +435,7 @@ async function main() {
         sharedFields: sShared,
         versionedFields: sVersioned,
         displayName: t.title,
+        sortOrder: (si + 1) * 100,
       }));
       storyCount++;
     }
@@ -385,6 +474,173 @@ async function main() {
         displayName: quiz.title,
       }));
       quizCount++;
+
+      // ─── Questions under this quiz ───
+      const quizInteractions = quiz.interactions || [];
+      for (let qi = 0; qi < quizInteractions.length; qi++) {
+        const iRef = quizInteractions[qi];
+        const interaction = interactionBySlug[iRef.slug];
+        if (!interaction) {
+          console.warn(`  WARNING: Interaction "${iRef.slug}" not found`);
+          continue;
+        }
+
+        const builder = interaction.interactionBuilder?.[0];
+        if (!builder) continue;
+
+        const typename = builder.__typename;
+        const templateId = QUESTION_TYPE_MAP[typename];
+        if (!templateId) {
+          console.warn(`  WARNING: Unknown question type "${typename}" for ${iRef.slug}`);
+          continue;
+        }
+
+        const iId = contentIdMap[interaction.slug];
+        const iItemPath = `${quizItemPath}/${interaction.slug}`;
+        let iShared = '';
+        let iVersioned = '';
+
+        // Common question fields (versioned — translatable)
+        iVersioned += renderField(FID_Q_OVERLINE, 'QuestionOverline', builder.questionOverline, '    ');
+        iVersioned += renderField(FID_Q_TEXT, 'QuestionText', builder.question, '    ');
+        iVersioned += renderField(FID_Q_INSTRUCTION, 'QuestionInstruction', builder.questionInstruction, '    ');
+
+        // Common feedback (versioned)
+        iVersioned += renderField(FID_Q_POS_FB, 'PositiveFeedbackText', builder.positiveFeedback?.[0]?.feedbackText, '    ');
+        iVersioned += renderField(FID_Q_NEG_FB, 'NegativeFeedbackText', builder.negativeFeedback?.[0]?.feedbackText, '    ');
+        iVersioned += renderField(FID_Q_SOL_FB, 'SolutionFeedbackText', builder.solutionFeedback?.[0]?.feedbackText, '    ');
+
+        // Type-specific fields
+        switch (typename) {
+          case 'interactionBuilder_choiceModule_BlockType':
+            iShared += renderField(FID_FORCE_MULTI, 'ForceMultipleChoice', builder.forceMultipleChoice ? '1' : '');
+            iShared += renderField(FID_CHOICE_NO_SHUFFLE, 'DisableShuffle', builder.disableShuffle ? '1' : '');
+            break;
+
+          case 'interactionBuilder_trueFalseModule_BlockType': {
+            const tfOpt = builder.trueFalseAnswerOptions?.[0];
+            if (tfOpt) {
+              iVersioned += renderField(FID_TF_TRUE_LABEL, 'TrueLabel', tfOpt.trueLabel, '    ');
+              iVersioned += renderField(FID_TF_FALSE_LABEL, 'FalseLabel', tfOpt.falseLabel, '    ');
+              iShared += renderField(FID_TF_CORRECT, 'CorrectAnswer', tfOpt.correctAnswer === true || tfOpt.correctAnswer === 'true' ? '1' : '');
+            }
+            break;
+          }
+
+          case 'interactionBuilder_valueSliderModule_BlockType': {
+            const sl = builder.valueSliderConfiguration?.[0];
+            if (sl) {
+              iShared += renderField(FID_SL_MIN, 'MinValue', sl.minValue);
+              iShared += renderField(FID_SL_MAX, 'MaxValue', sl.maxValue);
+              iShared += renderField(FID_SL_STEPS, 'Steps', sl.steps);
+              iShared += renderField(FID_SL_INIT, 'InitialValue', sl.initialValue);
+              iShared += renderField(FID_SL_CORRECT, 'CorrectValue', sl.correctValue);
+              iShared += renderField(FID_SL_THRESHOLD, 'CorrectThreshold', sl.correctThreshold);
+              iVersioned += renderField(FID_SL_MIN_LABEL, 'MinLabel', sl.minLabel, '    ');
+              iVersioned += renderField(FID_SL_MAX_LABEL, 'MaxLabel', sl.maxLabel, '    ');
+              iVersioned += renderField(FID_SL_VAL_LABEL, 'ValueLabel', sl.currentValueLabel, '    ');
+            }
+            break;
+          }
+
+          case 'interactionBuilder_DragDropModule_BlockType':
+            iShared += renderField(FID_DD_NO_SHUFFLE, 'DisableShuffle', builder.disableShuffle ? '1' : '');
+            break;
+
+          case 'interactionBuilder_fillTheBlankModule_BlockType':
+            iVersioned += renderField(FID_FB_TEXT, 'BlankText', builder.textWithoutFormating, '    ');
+            break;
+
+          case 'interactionBuilder_sortableRankingListModule_BlockType':
+            // No type-specific fields on the question itself; items are children
+            break;
+        }
+
+        writeYml(`Training/${c.slug}/${quiz.slug}/${interaction.slug}.yml`, buildItemYml({
+          id: iId,
+          parent: quizId,
+          template: templateId,
+          itemPath: iItemPath,
+          sharedFields: iShared || undefined,
+          versionedFields: iVersioned,
+          displayName: interaction.title,
+          sortOrder: (qi + 1) * 100,
+        }));
+        questionCount++;
+
+        // ─── Child items for Choice, DragDrop, Sortable ───
+        if (typename === 'interactionBuilder_choiceModule_BlockType' && builder.choiceAnswerOptions) {
+          builder.choiceAnswerOptions.forEach((ans, ai) => {
+            const ansId = contentGuid(`${interaction.slug}-answer-${ai}`);
+            const ansItemPath = `${iItemPath}/answer-${ai + 1}`;
+            let aShared = '';
+            aShared += renderField(FID_ANS_CORRECT, 'IsCorrect', ans.correctAnswer ? '1' : '');
+            let aVersioned = '';
+            aVersioned += renderField(FID_ANS_TEXT, 'AnswerText', ans.answerText, '    ');
+
+            writeYml(`Training/${c.slug}/${quiz.slug}/${interaction.slug}/answer-${ai + 1}.yml`, buildItemYml({
+              id: ansId,
+              parent: iId,
+              template: CHOICE_ANS_TEMPLATE,
+              itemPath: ansItemPath,
+              sharedFields: aShared || undefined,
+              versionedFields: aVersioned,
+              displayName: `Answer ${ai + 1}`,
+              sortOrder: (ai + 1) * 100,
+            }));
+            answerCount++;
+          });
+        }
+
+        if (typename === 'interactionBuilder_DragDropModule_BlockType' && builder.dragDrop) {
+          builder.dragDrop.forEach((pair, pi) => {
+            const pairId = contentGuid(`${interaction.slug}-pair-${pi}`);
+            const pairItemPath = `${iItemPath}/pair-${pi + 1}`;
+            let pVersioned = '';
+            // Drag side
+            const dragBlock = pair.drag?.[0];
+            if (dragBlock?.__typename === 'drag_dragDropText_BlockType') {
+              pVersioned += renderField(FID_DD_DRAG_TEXT, 'DragText', dragBlock.textComponent, '    ');
+            }
+            // Drop side
+            const dropBlock = pair.drop?.[0];
+            if (dropBlock?.__typename === 'drop_dropText_BlockType') {
+              pVersioned += renderField(FID_DD_DROP_TEXT, 'DropText', dropBlock.textComponent, '    ');
+            }
+
+            writeYml(`Training/${c.slug}/${quiz.slug}/${interaction.slug}/pair-${pi + 1}.yml`, buildItemYml({
+              id: pairId,
+              parent: iId,
+              template: DD_PAIR_TEMPLATE,
+              itemPath: pairItemPath,
+              versionedFields: pVersioned,
+              displayName: `Pair ${pi + 1}`,
+              sortOrder: (pi + 1) * 100,
+            }));
+            answerCount++;
+          });
+        }
+
+        if (typename === 'interactionBuilder_sortableRankingListModule_BlockType' && builder.sortableAnswerItems) {
+          builder.sortableAnswerItems.forEach((item, si) => {
+            const sItemId = contentGuid(`${interaction.slug}-sort-${si}`);
+            const sItemPath = `${iItemPath}/item-${si + 1}`;
+            let sVersioned = '';
+            sVersioned += renderField(FID_SORT_ITEM_TEXT, 'ItemText', item.item, '    ');
+
+            writeYml(`Training/${c.slug}/${quiz.slug}/${interaction.slug}/item-${si + 1}.yml`, buildItemYml({
+              id: sItemId,
+              parent: iId,
+              template: SORT_ITEM_TEMPLATE,
+              itemPath: sItemPath,
+              versionedFields: sVersioned,
+              displayName: `Item ${si + 1}`,
+              sortOrder: (si + 1) * 100,
+            }));
+            answerCount++;
+          });
+        }
+      }
     }
   }
 
@@ -395,11 +651,14 @@ async function main() {
     'utf8'
   );
 
+  const total = collCount + storyCount + quizCount + questionCount + answerCount;
   console.log(`\nGenerated:`);
   console.log(`  Collections: ${collCount}`);
   console.log(`  Stories:      ${storyCount}`);
   console.log(`  Quizzes:      ${quizCount}`);
-  console.log(`  Total YML:    ${collCount + storyCount + quizCount}`);
+  console.log(`  Questions:    ${questionCount}`);
+  console.log(`  Answers:      ${answerCount}`);
+  console.log(`  Total YML:    ${total}`);
   console.log(`\nOutput: ${OUT}`);
   console.log(`Content ID map: content-id-map.json`);
 }

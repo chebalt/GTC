@@ -26,7 +26,7 @@
 | 10 | ~~**Feedback Form**~~ | Jessica Folwarczny | **RESOLVED** — see Resolved section |
 | 11 | **Celum — asset migration approach**: Originally assumed migrated assets would be uploaded directly to Celum. Aaron (GROHE) has raised objections to putting images directly into Celum. The use of Celum for migrated content is now **questionable** — needs a dedicated discussion with Aaron to clarify constraints, alternatives, and the final approach before migration tooling can be designed. | Actum (Michal + Art) + Aaron (GROHE) | Open — discussion with Aaron needed |
 | 12 | **Inline quiz question tracking**: When a quiz interaction is embedded directly inside a lesson (`Question` in contentBuilder) rather than in a standalone quiz, is the user's answer tracked? Is answering it mandatory for lesson/course completion, or is it purely optional/informational? | Jessica Folwarczny / Daniela Hesse | Open — impacts tracking DB schema and completion logic |
-| 13 | **Nugget → Sitecore page mapping**: In Craft, a Nugget is a standalone page (own URL, own entry) that lives inside a Training. Sitecore AI has no direct equivalent content type. Proposed approach: migrate each Nugget as a regular Sitecore page under the Training, with its `contentBuilder` components placed directly on that page. Is this acceptable from a content modelling and editorial perspective? | Actum (Art + Michal) → Jessica / Daniela | Open — decision needed before content model is finalised |
+| 13 | ~~**Nugget → Sitecore page mapping**~~ | Actum (Art + Michal) | **RESOLVED** — see Resolved section |
 
 
 ## Resolved / Confirmed
@@ -58,7 +58,7 @@
 | Redirect table maintenance | NOT in GTC scope — NEO team owns the Firestore-based redirect service. GTC's only responsibility = provide old Craft slug → new Sitecore slug mapping data as input. |
 | My Account placement | **Standalone GTC feature** — not integrated into NEO My Account. Owned entirely by GTC. |
 | Search architecture | Extension of NEO search: new section in search dropdown + new tab on search results page. No standalone GTC search. (amended 19 Mar 2026) |
-| Quiz question types (MVP) | Multiple choice and true/false only. Other types (drag-and-drop, sliders, fill-in-the-blank, sorting) deferred. (19 Mar 2026) |
+| Quiz question types | All 6 types implemented: Choice (251), True/False (52), Value Slider (55), Drag & Drop (20), Fill in Blank (4), Sortable (3). Templates + content pushed to QA (29 Mar 2026). Originally MVP-scoped to 2 types, expanded after faster-than-expected progress. |
 | Tracking schema (MVP) | Reuse Craft CMS DB schema 1:1. No platform-agnostic redesign in MVP. (19 Mar 2026) |
 | Apigee | Out of scope (19 Mar 2026) |
 | Platform-agnostic API | Not developed — middleware serves GTC application only (19 Mar 2026) |
@@ -72,3 +72,5 @@
 | CloudSQL tracking schema | **RESOLVED 21 Mar 2026** — 4 tables: `course_progress`, `story_progress`, `page_view`, `quiz_progress`. Schema + DDL + migration script at `Discovery Phase/Learing Process Migration/`. Local PostgreSQL Docker verified with 49,845 migrated rows. |
 | Course completion responsibility | **RESOLVED 22 Mar 2026** — Frontend-driven (Option A). Completion rules (which stories + quiz are required) live in Sitecore content, NOT in middleware DB. The frontend triggers `POST /course/{id}/complete` after verifying rules locally. Middleware records the fact but does NOT validate rules. Certificate endpoint guards by checking `course_progress.completed = true`. |
 | GTC Learning API | **RESOLVED 22 Mar 2026** — `GroheNeo.GtcLearningApi` implemented as new .NET 8.0 microservice in NEO middleware platform. 7 endpoints, 58 unit tests, Docker Compose (API + PostgreSQL), Postman collection, Craft data migration verified. |
+| Nugget → Sitecore page mapping | **RESOLVED 28 Mar 2026** — Nuggets eliminated as a separate page type. Their component content (text, image, video, etc.) will be placed as renderings directly on Story pages via Experience Editor. Content model defines Collection → Story → (renderings) hierarchy. |
+| Content Model & Migration | **RESOLVED 29 Mar 2026** — Full content model implemented: 3 page templates (_GtcBase, Collection, Story, Quiz) + 10 question templates (all 6 types) + 8 lookup templates + folder templates. 1,324 content items migrated to QA (63 Collections + 272 Stories + 26 Quizzes + 258 Questions + 705 Answers). Generator scripts + SCS serialization modules + push scripts all operational. |

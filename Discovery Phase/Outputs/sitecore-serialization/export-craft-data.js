@@ -119,6 +119,91 @@ const QUIZZES_QUERY = `
         }
       }
       correspondingTraining { slug }
+      interactions { id uid title slug }
+    }
+  }
+}`;
+
+const INTERACTIONS_QUERY = `
+query($slugs: [String]) {
+  quizInteractionsEntries(slug: $slugs, limit: 500) {
+    ... on quizInteractions_quizInteractions_Entry {
+      id uid title slug
+      interactionMetaInformation {
+        ... on interactionMetaInformation_BlockType {
+          headline
+        }
+      }
+      interactionBuilder {
+        __typename
+        ... on interactionBuilder_choiceModule_BlockType {
+          questionOverline question questionInstruction
+          forceMultipleChoice disableShuffle stacked
+          choiceAnswerOptions {
+            answerText correctAnswer
+          }
+          positiveFeedback { feedbackHeadline feedbackText }
+          negativeFeedback { feedbackHeadline feedbackText }
+          solutionFeedback { feedbackHeadline feedbackText }
+        }
+        ... on interactionBuilder_trueFalseModule_BlockType {
+          questionOverline question questionInstruction
+          stacked
+          trueFalseAnswerOptions {
+            trueLabel falseLabel correctAnswer
+          }
+          positiveFeedback { feedbackHeadline feedbackText }
+          negativeFeedback { feedbackHeadline feedbackText }
+          solutionFeedback { feedbackHeadline feedbackText }
+        }
+        ... on interactionBuilder_valueSliderModule_BlockType {
+          questionOverline question questionInstruction
+          stacked
+          valueSliderConfiguration {
+            minValue maxValue steps initialValue
+            correctValue correctThreshold
+            minLabel maxLabel currentValueLabel
+          }
+          positiveFeedback { feedbackHeadline feedbackText }
+          negativeFeedback { feedbackHeadline feedbackText }
+          solutionFeedback { feedbackHeadline feedbackText }
+        }
+        ... on interactionBuilder_DragDropModule_BlockType {
+          questionOverline question questionInstruction
+          disableShuffle stacked
+          dragDrop {
+            drag {
+              __typename
+              ... on drag_dragDropText_BlockType { textComponent }
+              ... on drag_dragDropImage_BlockType { imageComponent { url alt } }
+            }
+            drop {
+              __typename
+              ... on drop_dropText_BlockType { textComponent }
+              ... on drop_dropImage_BlockType { imageComponent { url alt } }
+            }
+          }
+          positiveFeedback { feedbackHeadline feedbackText }
+          negativeFeedback { feedbackHeadline feedbackText }
+          solutionFeedback { feedbackHeadline feedbackText }
+        }
+        ... on interactionBuilder_fillTheBlankModule_BlockType {
+          questionOverline question questionInstruction
+          textWithoutFormating
+          stacked
+          positiveFeedback { feedbackHeadline feedbackText }
+          negativeFeedback { feedbackHeadline feedbackText }
+          solutionFeedback { feedbackHeadline feedbackText }
+        }
+        ... on interactionBuilder_sortableRankingListModule_BlockType {
+          questionOverline question questionInstruction
+          stacked
+          sortableAnswerItems { item }
+          positiveFeedback { feedbackHeadline feedbackText }
+          negativeFeedback { feedbackHeadline feedbackText }
+          solutionFeedback { feedbackHeadline feedbackText }
+        }
+      }
     }
   }
 }`;
@@ -187,13 +272,33 @@ async function main() {
   }
   console.log(`    ${allTrainings.length} trainings                `);
 
-  // 5. Save
+  // 5. Interactions (quiz questions) — in batches
+  console.log('  Fetching interactions...');
+  const allInteractionSlugs = [];
+  for (const q of quizzes) {
+    if (q.interactions) {
+      for (const i of q.interactions) {
+        allInteractionSlugs.push(i.slug);
+      }
+    }
+  }
+  let allInteractions = [];
+  for (let i = 0; i < allInteractionSlugs.length; i += BATCH_SIZE) {
+    const batch = allInteractionSlugs.slice(i, i + BATCH_SIZE);
+    const data = await craftQuery(INTERACTIONS_QUERY, { slugs: batch });
+    allInteractions = allInteractions.concat(data.quizInteractionsEntries || []);
+    process.stdout.write(`    ${allInteractions.length} interactions fetched...\r`);
+  }
+  console.log(`    ${allInteractions.length} interactions              `);
+
+  // 6. Save
   const exportData = {
     _exportedAt: new Date().toISOString(),
     _source: CRAFT_API,
     collections,
     trainings: allTrainings,
     quizzes,
+    interactions: allInteractions,
     globalTracking,
   };
 
@@ -201,9 +306,10 @@ async function main() {
 
   const sizeMB = (fs.statSync(OUT_FILE).size / 1024 / 1024).toFixed(1);
   console.log(`\nExported to: ${OUT_FILE} (${sizeMB} MB)`);
-  console.log(`  Collections: ${collections.length}`);
-  console.log(`  Trainings:   ${allTrainings.length}`);
-  console.log(`  Quizzes:     ${quizzes.length}`);
+  console.log(`  Collections:   ${collections.length}`);
+  console.log(`  Trainings:     ${allTrainings.length}`);
+  console.log(`  Quizzes:       ${quizzes.length}`);
+  console.log(`  Interactions:  ${allInteractions.length}`);
 }
 
 main().catch(err => {
