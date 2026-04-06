@@ -1,0 +1,68 @@
+---
+ID: "3ec68d09-b17f-ecfc-374f-d6ba271f572d"
+Parent: "63d4e7fd-e0e3-ee3d-c1f0-9056e58ce791"
+Template: "6cb14f18-98bd-9975-2b02-286d30513dcb"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/ish/ish-2025-quiz/ish-2025-how-many-outlets-can-be-used-at-the-same-time-on-a-3-button-smartcontrol
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1300
+- ID: "e45736a9-c03e-5936-1003-56fa8dc4ed5f"
+  Hint: MinValue
+  Value: 1
+- ID: "2d25ceec-dbf8-f8d6-cec6-2fb1b8aae49a"
+  Hint: MaxValue
+  Value: 5
+- ID: "53cae1e1-b21a-6020-3631-495636a7f253"
+  Hint: Steps
+  Value: 1
+- ID: "ba27edfe-ed6b-1e47-11de-aea94cac308f"
+  Hint: InitialValue
+  Value: 2
+- ID: "f7ea786a-3a2f-073c-03bf-f25c7f3a1caa"
+  Hint: CorrectValue
+  Value: 3
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: ISH 2025 - How many outlets can be used at the same time on a 3 button SmartControl?
+    - ID: "fc50f05f-0f7b-9fb9-d702-9f9c4e1475fc"
+      Hint: QuestionText
+      Value: |
+        <p>How many outlets can be used at the same time on a 3 button SmartControl?</p>
+    - ID: "7cc83bac-8fbc-fbc5-e03c-707cd1544063"
+      Hint: PositiveFeedbackText
+      Value: |
+        <p>All three outlets can be used at the same time </p>
+    - ID: "19709f27-d70e-9bb4-3c15-3afba54ebde2"
+      Hint: NegativeFeedbackText
+      Value: |
+        <p>All three outlets can be used at the same time</p>
+    - ID: "a93109fe-df4e-29c6-6713-a87b1376e794"
+      Hint: ValueLabel
+      Value: outlets
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 24a51870-9c71-5e19-c3ed-ea61beb6c5b1
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

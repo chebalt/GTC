@@ -1,0 +1,53 @@
+---
+ID: "24a756ad-86f9-c039-71df-0b30f9016bec"
+Parent: "be4514df-5441-7872-bb2d-e87a8cd452b9"
+Template: "b7f64499-291b-161b-dff6-1f52950f4c5e"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/rapido-shower-frame/rapido-shower-frame-quiz/rapido-shower-frame-the-head-shower-height-can-be-adjusted-individually-during-installation
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "e105345d-67d7-8542-80aa-7884944c7cc4"
+  Hint: CorrectAnswer
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Rapido Shower Frame - The head shower height can be adjusted individually during installation.
+    - ID: "fc50f05f-0f7b-9fb9-d702-9f9c4e1475fc"
+      Hint: QuestionText
+      Value: |
+        <p>The head shower height can be adjusted individually during installation.</p>
+    - ID: "7cc83bac-8fbc-fbc5-e03c-707cd1544063"
+      Hint: PositiveFeedbackText
+      Value: |
+        <p>quiz</p>
+    - ID: "19709f27-d70e-9bb4-3c15-3afba54ebde2"
+      Hint: NegativeFeedbackText
+      Value: |
+        <p>quiz</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: c13c5f0b-df97-adf5-69c8-6821f9f46b8e
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

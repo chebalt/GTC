@@ -1,0 +1,69 @@
+---
+ID: "e4e615e7-fb20-be54-87e9-8ce3f9faa1e5"
+Parent: "d7a0146a-35f3-c0af-e740-f161a711c3fa"
+Template: "6cb14f18-98bd-9975-2b02-286d30513dcb"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-rapido-shower-frame-heat-recovery/rapido-shower-frame-heat-recovery-quiz/heat-recovery-in-how-many-variants-is-the-rapido-shower-frame-heat-recovery-system-available
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+- ID: "e45736a9-c03e-5936-1003-56fa8dc4ed5f"
+  Hint: MinValue
+  Value: 1
+- ID: "2d25ceec-dbf8-f8d6-cec6-2fb1b8aae49a"
+  Hint: MaxValue
+  Value: 10
+- ID: "53cae1e1-b21a-6020-3631-495636a7f253"
+  Hint: Steps
+  Value: 1
+- ID: "ba27edfe-ed6b-1e47-11de-aea94cac308f"
+  Hint: InitialValue
+  Value: 1
+- ID: "f7ea786a-3a2f-073c-03bf-f25c7f3a1caa"
+  Hint: CorrectValue
+  Value: 4
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Heat Recovery - In how many variants is the Rapido Shower Frame Heat Recovery system available?
+    - ID: "fc50f05f-0f7b-9fb9-d702-9f9c4e1475fc"
+      Hint: QuestionText
+      Value: |
+        <p>In how many variants is the Rapido Shower Frame Heat Recovery system available?</p>
+    - ID: "7cc83bac-8fbc-fbc5-e03c-707cd1544063"
+      Hint: PositiveFeedbackText
+      Value: |
+        <p>Well done! The frames can be delivered in four different variants, both Mono and Duo with either one or two copper pipes for heat exchanging.</p>
+    - ID: "19709f27-d70e-9bb4-3c15-3afba54ebde2"
+      Hint: NegativeFeedbackText
+      Value: |
+        <p>Not quite, the frames can be delivered in four different variants, both Mono and Duo with either one or two copper pipes for heat exchanging.</p>
+    - ID: "86b6ea8a-8c7c-2d46-12eb-e24b49064588"
+      Hint: SolutionFeedbackText
+      Value: |
+        <p>The frames can be delivered in four different variants, both Mono and Duo with either one or two copper pipes for heat exchanging.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 77d4f146-0f21-cb83-4c78-2a93d6e34dfc
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

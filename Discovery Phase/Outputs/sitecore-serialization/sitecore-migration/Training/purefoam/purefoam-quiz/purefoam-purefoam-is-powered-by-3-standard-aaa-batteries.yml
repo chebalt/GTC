@@ -1,0 +1,50 @@
+---
+ID: "4985f165-120c-3622-a397-cb20ca093044"
+Parent: "bd22484e-ee43-be46-d8ae-6caa4acd5db4"
+Template: "b7f64499-291b-161b-dff6-1f52950f4c5e"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/purefoam/purefoam-quiz/purefoam-purefoam-is-powered-by-3-standard-aaa-batteries
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1000
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Purefoam - Purefoam is powered by 3 standard AAA batteries
+    - ID: "fc50f05f-0f7b-9fb9-d702-9f9c4e1475fc"
+      Hint: QuestionText
+      Value: |
+        <p>Purefoam is powered by 3 standard AAA batteries</p>
+    - ID: "7cc83bac-8fbc-fbc5-e03c-707cd1544063"
+      Hint: PositiveFeedbackText
+      Value: |
+        <p>Unlike normal AAA batteries, the Purefoam battery is rechargeable. It has a unique design and cannot be opened. </p>
+    - ID: "19709f27-d70e-9bb4-3c15-3afba54ebde2"
+      Hint: NegativeFeedbackText
+      Value: |
+        <p>Unlike normal AAA batteries, the Purefoam battery is rechargeable. It has a unique design and cannot be opened. </p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: cf398e29-b66c-a85b-f2e4-299b5cb9c2bd
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

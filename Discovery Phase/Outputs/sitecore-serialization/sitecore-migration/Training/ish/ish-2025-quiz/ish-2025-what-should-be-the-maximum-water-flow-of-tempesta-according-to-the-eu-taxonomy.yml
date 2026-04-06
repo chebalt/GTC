@@ -1,0 +1,74 @@
+---
+ID: "78ffed0d-1b64-f806-7e1e-9db6390e7736"
+Parent: "63d4e7fd-e0e3-ee3d-c1f0-9056e58ce791"
+Template: "6cb14f18-98bd-9975-2b02-286d30513dcb"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/ish/ish-2025-quiz/ish-2025-what-should-be-the-maximum-water-flow-of-tempesta-according-to-the-eu-taxonomy
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1800
+- ID: "e45736a9-c03e-5936-1003-56fa8dc4ed5f"
+  Hint: MinValue
+  Value: 2
+- ID: "2d25ceec-dbf8-f8d6-cec6-2fb1b8aae49a"
+  Hint: MaxValue
+  Value: 20
+- ID: "53cae1e1-b21a-6020-3631-495636a7f253"
+  Hint: Steps
+  Value: 1
+- ID: "ba27edfe-ed6b-1e47-11de-aea94cac308f"
+  Hint: InitialValue
+  Value: 2
+- ID: "f7ea786a-3a2f-073c-03bf-f25c7f3a1caa"
+  Hint: CorrectValue
+  Value: 8
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: ISH 2025 - What should be the maximum water flow of Tempesta according to the EU taxonomy
+    - ID: "fc50f05f-0f7b-9fb9-d702-9f9c4e1475fc"
+      Hint: QuestionText
+      Value: |
+        <p>What should be the maximum water flow of Tempesta according to the EU taxonomy (reference pressure 3-0/+0,2 bar)</p>
+    - ID: "7cc83bac-8fbc-fbc5-e03c-707cd1544063"
+      Hint: PositiveFeedbackText
+      Value: |
+        <p> The water flow/flush volume of Tempesta and all our products should have a maximum water flow of 8 litres/min (recorded at standard reference pressure 3-0/+0,2 bar) according to the EU taxonomy. </p>
+    - ID: "19709f27-d70e-9bb4-3c15-3afba54ebde2"
+      Hint: NegativeFeedbackText
+      Value: |
+        <p>The water flow/flush volume of Tempesta and all our products should have a maximum water flow of 8 litres/min (recorded at standard reference pressure 3-0/+0,2 bar) according to the EU taxonomy.</p>
+    - ID: "8234428d-c89b-cc5e-7f93-27063cbb8aad"
+      Hint: MinLabel
+      Value: 2 litres/min
+    - ID: "7a80c529-3e01-39a0-28ae-c921646350fa"
+      Hint: MaxLabel
+      Value: 20 litres/min
+    - ID: "a93109fe-df4e-29c6-6713-a87b1376e794"
+      Hint: ValueLabel
+      Value: litres/min
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 64884fa2-77a5-dc35-fcf3-7a609d4708fb
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

@@ -1,0 +1,42 @@
+---
+ID: "56dfe648-1abe-7d1a-a44a-92cfb146e5f8"
+Parent: "91bcd0a6-d039-07c0-ab57-62e9f62c416f"
+Template: "c2e52324-6d01-6754-6c16-3567b5b69c79"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/installation-systems/installation-systems-quiz/installation-systems-what-is-the-task-of-the-flow-manager-which-is-optional-for-rapid-sl-and-uniset-for-wc/answer-3
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Answer 3
+    - ID: "d1d99bc6-4588-f14b-e7e3-9c5d1f45cd84"
+      Hint: AnswerText
+      Value: |
+        <p>Increase the flow speed of the flush.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 43d3fb29-01f1-e935-3239-5bab806290ea
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

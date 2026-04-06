@@ -1,0 +1,42 @@
+---
+ID: "73971690-a449-ecc7-fb0b-4932df35051e"
+Parent: "5cdd9e21-ed85-6e41-0f7a-68142e80da3e"
+Template: "c2e52324-6d01-6754-6c16-3567b5b69c79"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/installation-systems/installation-systems-quiz/installation-systems-what-does-the-1m-marking-on-rapid-sl-indicate/answer-1
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Answer 1
+    - ID: "d1d99bc6-4588-f14b-e7e3-9c5d1f45cd84"
+      Hint: AnswerText
+      Value: |
+        <p>The 1m marking indicates the exact height of the flushing plate.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 75c75f9b-4df1-6b74-fd7a-673fb2437066
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

@@ -1,0 +1,50 @@
+---
+ID: "81573995-1013-5028-c984-52c90905d780"
+Parent: "bd25651c-2046-c28c-8dcc-29450921ad38"
+Template: "69c3d357-d3ee-0b34-e082-677a42a7c087"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-plus/plus-quiz/plus-which-of-the-listed-products-are-part-of-the-grohe-plus-product-range
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Plus - Which of the listed products are part of the GROHE Plus product range?
+    - ID: "fc50f05f-0f7b-9fb9-d702-9f9c4e1475fc"
+      Hint: QuestionText
+      Value: |
+        <p>Which of the listed products are part of the GROHE Plus product range?</p>
+    - ID: "7cc83bac-8fbc-fbc5-e03c-707cd1544063"
+      Hint: PositiveFeedbackText
+      Value: |
+        <p>Good! The exposed Bath Mixer and the Basin Mixer in L-Size are part of the product portfolio. A thermostat and  a mixer in SX-Size are not offered.</p>
+    - ID: "19709f27-d70e-9bb4-3c15-3afba54ebde2"
+      Hint: NegativeFeedbackText
+      Value: |
+        <p>Not correct! The exposed Bath Mixer and the Basin Mixer in L-Size are part of the product portfolio. A thermostat and  a mixer in SX-Size are not offered.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 10c6f599-2416-5f02-2771-6c1f34691bd2
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

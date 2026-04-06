@@ -1,0 +1,59 @@
+---
+ID: "5f2c77c5-1a36-0c04-b384-874ec7ecac0f"
+Parent: "081198be-6577-f522-75bd-0e1c58b5ed58"
+Template: "b7f64499-291b-161b-dff6-1f52950f4c5e"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-rapido-smartbox/rapido-smartbox-quiz/rapido-smartbox-prior-to-the-installation-of-the-piping-it-is-absolutely-required-to-decide-about-the-number-of-outlets-from-the-trim-set
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+- ID: "e105345d-67d7-8542-80aa-7884944c7cc4"
+  Hint: CorrectAnswer
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Rapido SmartBox - Prior to the installation of the piping it is absolutely required to decide about the number of outlets from the trim set.
+    - ID: "fc50f05f-0f7b-9fb9-d702-9f9c4e1475fc"
+      Hint: QuestionText
+      Value: |
+        <p>Prior to the installation of the piping it is absolutely required to decide about the number of outlets from the trim set.</p>
+    - ID: "7cc83bac-8fbc-fbc5-e03c-707cd1544063"
+      Hint: PositiveFeedbackText
+      Value: |
+        <p>Quiz question</p>
+    - ID: "19709f27-d70e-9bb4-3c15-3afba54ebde2"
+      Hint: NegativeFeedbackText
+      Value: |
+        <p>Quiz question</p>
+    - ID: "3c5ffc0d-ca17-bc66-af3c-e004fc7aade7"
+      Hint: TrueLabel
+      Value: True
+    - ID: "3ea05f0c-859f-5002-f8ae-f34e9d437390"
+      Hint: FalseLabel
+      Value: False
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 7573a0e3-8585-3b2d-4d22-34c17409c2c2
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

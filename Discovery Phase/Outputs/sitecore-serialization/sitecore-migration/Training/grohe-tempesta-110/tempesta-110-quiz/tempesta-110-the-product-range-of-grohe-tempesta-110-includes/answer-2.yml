@@ -1,0 +1,45 @@
+---
+ID: "97de04e8-2ce5-b9bb-a397-c11e3b0f5009"
+Parent: "b69110d3-a4fe-8144-ae2a-acc1489b5b28"
+Template: "c2e52324-6d01-6754-6c16-3567b5b69c79"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-tempesta-110/tempesta-110-quiz/tempesta-110-the-product-range-of-grohe-tempesta-110-includes/answer-2
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "dd2dd722-5980-7e34-af52-06d94efbcd37"
+  Hint: IsCorrect
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Answer 2
+    - ID: "d1d99bc6-4588-f14b-e7e3-9c5d1f45cd84"
+      Hint: AnswerText
+      Value: |
+        <p>Shower rail set</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 7affc8e5-ae35-ddd3-cc25-d7f7b63b27d8
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

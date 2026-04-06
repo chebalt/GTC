@@ -1,0 +1,53 @@
+---
+ID: "96cc2293-203b-7d8b-11e3-d0c5eaafb507"
+Parent: "d7a0146a-35f3-c0af-e740-f161a711c3fa"
+Template: "b7f64499-291b-161b-dff6-1f52950f4c5e"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-rapido-shower-frame-heat-recovery/rapido-shower-frame-heat-recovery-quiz/heat-recovery-rapido-shower-frame-heat-recovery-system-can-be-used-for-new-installation-and-major-renovations-not-for-retrofitting
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
+- ID: "e105345d-67d7-8542-80aa-7884944c7cc4"
+  Hint: CorrectAnswer
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Heat recovery - Rapido Shower Frame Heat Recovery system can be used for new installation and major renovations, not for retrofitting.
+    - ID: "fc50f05f-0f7b-9fb9-d702-9f9c4e1475fc"
+      Hint: QuestionText
+      Value: |
+        <p>Rapido Shower Frame Heat Recovery system can be used for new installation and major renovations, not for retrofitting.</p>
+    - ID: "7cc83bac-8fbc-fbc5-e03c-707cd1544063"
+      Hint: PositiveFeedbackText
+      Value: |
+        <p>Correct! The system cannot be retrofitted. It is designed for new installations and major renovations.</p>
+    - ID: "19709f27-d70e-9bb4-3c15-3afba54ebde2"
+      Hint: NegativeFeedbackText
+      Value: |
+        <p>Unfortunately this is not correct! The system cannot be retrofitted. It is designed for new installations and major renovations.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 413d2f32-2594-3637-bda4-bdcae57fa63a
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

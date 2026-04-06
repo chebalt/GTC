@@ -1,0 +1,45 @@
+---
+ID: "c0b1dd4d-8fa9-3f3d-77bb-32d068cb60ad"
+Parent: "56479a34-f1a1-b7b3-fdf8-2defb5315b68"
+Template: "c2e52324-6d01-6754-6c16-3567b5b69c79"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/watersystems/watersystems-quiz/watersystems-what-needs-to-be-considered-besides-electricity-and-a-drinking-water-supply-when-installing-grohe-blue-home-or-professional/answer-2
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "dd2dd722-5980-7e34-af52-06d94efbcd37"
+  Hint: IsCorrect
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Answer 2
+    - ID: "d1d99bc6-4588-f14b-e7e3-9c5d1f45cd84"
+      Hint: AnswerText
+      Value: |
+        <p>In order to avoid overheating ventilation needs to be assured</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: d7d3bd6b-7ba2-2a20-de1c-81659cee8cc1
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

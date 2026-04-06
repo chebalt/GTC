@@ -1,0 +1,45 @@
+---
+ID: "b8c69f76-1ccf-6124-042e-e0d656d7a71a"
+Parent: "55df9afc-b131-10f7-be6e-e2275c2830cd"
+Template: "c2e52324-6d01-6754-6c16-3567b5b69c79"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-smartcontrol/smartcontrol-quiz/smartcontrol-cooltouch-is-another-feature-of-smartcontrol-how-is-it-achieved-that-the-surface-of-the-thermostat-remains-cool/answer-3
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "dd2dd722-5980-7e34-af52-06d94efbcd37"
+  Hint: IsCorrect
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Answer 3
+    - ID: "d1d99bc6-4588-f14b-e7e3-9c5d1f45cd84"
+      Hint: AnswerText
+      Value: |
+        <p>All exposed and Combi-versions feature a separated housing from the inner functional parts.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 97acf494-6527-3108-13ad-8ed3d5098e33
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

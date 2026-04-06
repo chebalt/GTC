@@ -4,6 +4,9 @@ Parent: "a643b589-8ca9-f739-4eab-fd54b197befd"
 Template: "693af99d-7689-dc12-31d8-0dd8ca77590a"
 Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/grohe-blue-pure-installation-overview/blue-pure-3-installing-the-reverse-osmosis-filtration-system
 SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
 - ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
   Hint: ColorTheme
   Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
@@ -38,7 +41,7 @@ Languages:
       Value: Required time: 12 min.
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T091958Z
+      Value: 20260329T113333Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -49,11 +52,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 18f06bb9-5532-2a6b-681f-5e9a032410f7
+      Value: 8cb87b1a-1fc5-2489-2589-8a9f6d4de988
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T091958Z
+      Value: 20260329T113333Z

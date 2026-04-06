@@ -1,0 +1,46 @@
+---
+ID: "194d05ac-4d3e-8caa-347b-aa9ce7609e80"
+Parent: "51fc7ade-f525-ef5f-3f9f-7b8a07a10556"
+Template: "cf89f1c6-c65d-65f6-a062-92a13001b029"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/sensia-pro/sensia-pro-quiz/sensia-pro-match-the-hygiene-feature-with-its-correct-explanation/pair-1
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Pair 1
+    - ID: "758fc7ec-eca3-9170-1966-14bb797aecc7"
+      Hint: DragText
+      Value: |
+        <p>Antibacterial silver ions in the glaze prevent the implantation of germs and therefore the formation of odors. Ensures clean and virtually germ-free ceramics.</p>
+    - ID: "1dd3eb6b-20fb-4332-bc30-d6ff7f9ace6a"
+      Hint: DropText
+      Value: |
+        <p>GROHE HyperClean</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: c8287af3-d16d-c61a-5cbc-8bb4e50c7ce6
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

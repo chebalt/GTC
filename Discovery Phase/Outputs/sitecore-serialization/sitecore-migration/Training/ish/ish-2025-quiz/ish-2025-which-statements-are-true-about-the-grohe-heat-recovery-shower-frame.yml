@@ -1,0 +1,50 @@
+---
+ID: "0abfb16b-5f83-e413-b435-fbcb619d4a75"
+Parent: "63d4e7fd-e0e3-ee3d-c1f0-9056e58ce791"
+Template: "69c3d357-d3ee-0b34-e082-677a42a7c087"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/ish/ish-2025-quiz/ish-2025-which-statements-are-true-about-the-grohe-heat-recovery-shower-frame
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1900
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: ISH 2025 - Which statements are true about the GROHE Heat Recovery Shower Frame?
+    - ID: "fc50f05f-0f7b-9fb9-d702-9f9c4e1475fc"
+      Hint: QuestionText
+      Value: |
+        <p>Which statements are true about the GROHE Heat Recovery Shower Frame?</p>
+    - ID: "7cc83bac-8fbc-fbc5-e03c-707cd1544063"
+      Hint: PositiveFeedbackText
+      Value: |
+        <p>The GROHE Heat Recovery Shower Frame is indeed based on the GROHE Rapido Shower Frame. Depending on the variant, it includes one or two heat exchanger copper pipes where the recirculated grey water heats up the cold water. The Thermostat now only needs to add less than 60°C hot water for a 38°C warm shower which contributes to sustainability and a reduction of energy costs.</p>
+    - ID: "19709f27-d70e-9bb4-3c15-3afba54ebde2"
+      Hint: NegativeFeedbackText
+      Value: |
+        <p>The GROHE Heat Recovery Shower Frame is indeed based on the GROHE Rapido Shower Frame. Depending on the variant, it includes one or two heat exchanger copper pipes where the recirculated grey water heats up the cold water. The Thermostat now only needs to add less 60°C hot water for a 38°C warm shower which contributes to sustainability and a reduction of energy costs.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 88fad643-e36c-fded-bf3c-3a9ba564fa72
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

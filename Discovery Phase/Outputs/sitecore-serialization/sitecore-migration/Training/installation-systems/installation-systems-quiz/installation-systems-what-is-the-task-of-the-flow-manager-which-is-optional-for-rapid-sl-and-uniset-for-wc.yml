@@ -1,0 +1,54 @@
+---
+ID: "91bcd0a6-d039-07c0-ab57-62e9f62c416f"
+Parent: "c4492f21-9124-0da7-9c0b-8718e8f03a32"
+Template: "69c3d357-d3ee-0b34-e082-677a42a7c087"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/installation-systems/installation-systems-quiz/installation-systems-what-is-the-task-of-the-flow-manager-which-is-optional-for-rapid-sl-and-uniset-for-wc
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Installation Systems - What is the task of the flow manager? (Which is optional for Rapid SL and Uniset for WC.)
+    - ID: "fc50f05f-0f7b-9fb9-d702-9f9c4e1475fc"
+      Hint: QuestionText
+      Value: |
+        <p>What is the task of the flow manager? (Which is optional for Rapid SL and Uniset for WC.)</p>
+    - ID: "bbae6a74-13e2-04f3-6170-4e0705144018"
+      Hint: QuestionInstruction
+      Value: |
+        <p>Please select the correct answer.</p>
+    - ID: "7cc83bac-8fbc-fbc5-e03c-707cd1544063"
+      Hint: PositiveFeedbackText
+      Value: |
+        <p>Yes, correct. The flow manager decreases the speed of the flow in order to avoid water splashing over the rim. It does not decrease the volume is its purpose to decrease the noise.</p>
+    - ID: "19709f27-d70e-9bb4-3c15-3afba54ebde2"
+      Hint: NegativeFeedbackText
+      Value: |
+        <p>No, not correct. The flow manager decreases the speed of the flow in order to avoid water splashing over the rim. It does not decrease the volume is its purpose to decrease the noise.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 260cf8dd-b434-e5a7-3681-bf9bd61709fd
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z

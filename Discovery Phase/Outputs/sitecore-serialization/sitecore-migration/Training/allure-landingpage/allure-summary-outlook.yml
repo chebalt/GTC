@@ -4,6 +4,9 @@ Parent: "28b8f6ed-5536-a148-87a0-d8e983ed04ba"
 Template: "693af99d-7689-dc12-31d8-0dd8ca77590a"
 Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/allure-landingpage/allure-summary-outlook
 SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
 - ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
   Hint: ColorTheme
   Value: "{298D1DEB-8A48-15B5-F1FA-EAD9BA539786}"
@@ -31,7 +34,7 @@ Languages:
       Value: Key take-aways and recommendations
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T091958Z
+      Value: 20260329T113333Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -42,11 +45,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: b54179df-e92c-06db-ff7c-a3fc8cb63d4f
+      Value: 42a34815-50c5-ec79-e7eb-f8857ebe565b
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T091958Z
+      Value: 20260329T113333Z

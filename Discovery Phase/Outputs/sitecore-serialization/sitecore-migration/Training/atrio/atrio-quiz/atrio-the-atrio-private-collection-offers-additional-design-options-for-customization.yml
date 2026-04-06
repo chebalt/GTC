@@ -1,0 +1,63 @@
+---
+ID: "e01d8990-0fec-3c9f-8849-cb34eca6c86f"
+Parent: "b341aa26-369c-9433-963a-7c3fc7dae4cf"
+Template: "b7f64499-291b-161b-dff6-1f52950f4c5e"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/atrio/atrio-quiz/atrio-the-atrio-private-collection-offers-additional-design-options-for-customization
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+- ID: "e105345d-67d7-8542-80aa-7884944c7cc4"
+  Hint: CorrectAnswer
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: Atrio - The ATRIO Private Collection offers additional design options for customization.
+    - ID: "fc50f05f-0f7b-9fb9-d702-9f9c4e1475fc"
+      Hint: QuestionText
+      Value: |
+        <p>The ATRIO Private Collection offers additional design options for customization.</p>
+    - ID: "bbae6a74-13e2-04f3-6170-4e0705144018"
+      Hint: QuestionInstruction
+      Value: |
+        <p>Please evaluate the above statement and proceed to the next question.</p>
+    - ID: "7cc83bac-8fbc-fbc5-e03c-707cd1544063"
+      Hint: PositiveFeedbackText
+      Value: |
+        <p>Quiz Question</p>
+    - ID: "19709f27-d70e-9bb4-3c15-3afba54ebde2"
+      Hint: NegativeFeedbackText
+      Value: |
+        <p>Quiz Question</p>
+    - ID: "3c5ffc0d-ca17-bc66-af3c-e004fc7aade7"
+      Hint: TrueLabel
+      Value: TRUE
+    - ID: "3ea05f0c-859f-5002-f8ae-f34e9d437390"
+      Hint: FalseLabel
+      Value: FALSE
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260329T113333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: bfd62966-3cd0-9623-60d5-6e0eec2c4ba2
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260329T113333Z
