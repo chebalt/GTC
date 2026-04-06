@@ -73,6 +73,23 @@
 
 ---
 
+## Category 4: GTC Custom Components (Implementation Started)
+
+| # | Component | Sitecore Rendering | FE Component | Status |
+|---|---|---|---|---|
+| 1 | GTC Stepper | `GTC Stepper` (`{7FC704F5-...}`) | `GtcStepper` (server+client) | In progress — layout data working, FE rendering debugging |
+
+### GTC Stepper
+- Renders collection subitems (Story Pages + Quiz Pages) as numbered steps in a horizontal stepper
+- Labels: "Chapter 01, 02..." for stories, "Quiz 01, 02..." for quizzes (dictionary-driven via `gtc.stepper.chapter`/`gtc.stepper.quiz`)
+- Desktop: circles + labels; Mobile: circles only (labels hidden)
+- No datasource — uses `$contextItem` ComponentQuery to fetch children
+- Distinguishes Story vs Quiz by `PassingScore` field presence (Quiz-only field)
+- Step status variants (completed/active/inactive) deferred for later implementation
+- Placed on GTC Collection Above Main partial design (`{D13E1283-...}`)
+
+---
+
 ## Functional Components (Non-Content)
 
 ### User Account Component
