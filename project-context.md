@@ -203,9 +203,10 @@ Quiz (page, URL: /quizzes/x) → Questions (data items)
 | Component | Status | Notes |
 |---|---|---|
 | **GTC Learning API** | **Done** | `GroheNeo.GtcLearningApi` — 7 endpoints, 58 tests, Docker, Postman collection |
-| Content Model (Sitecore) | Not started | |
+| **Content Model (Sitecore)** | **Done** | 3 page templates + 10 question templates + 8 lookup templates pushed to QA (28–29 Mar) |
+| **Content Migration** | **Done** | 1,324 items pushed to QA (29 Mar). Test script for allure-gravity subset also working (6 Apr) |
+| **Page Design + Presentation** | **Done** | GTC Collection Page design + GTC Collection Above Main partial design + shared layouts on all 3 Standard Values (6 Apr) |
 | Quiz Component | Not started | |
-| Content Migration Automation | Not started | |
 | Certificate PDF Template | Draft | Basic DotLiquid template in `Templates/CertificateTemplate.html` |
 
 **GTC Learning API details**: .NET 8.0 microservice following NEO middleware patterns. Dapper+Npgsql for PostgreSQL. Auth via `IIdpTokenHelper` (prod) / `DevBearer` bypass (dev). Frontend-driven course completion. Batch progress endpoint. Certificate PDF via `Foundation.DocumentGenerator`. Docker Compose: `docker-compose.gtc.yml` (API port 62001 + PostgreSQL port 5433). All Craft tracking data migrated (49,845 rows) via `migrate_craft_data.sh`.
