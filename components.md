@@ -77,20 +77,28 @@
 
 | # | Component | Sitecore Rendering | FE Component | Status |
 |---|---|---|---|---|
-| 1 | GTC Stepper | `GTC Stepper` (`{7FC704F5-...}`) | `GtcStepper` (server+client) | Done — 3 states, clickable, progress API integrated |
+| 1 | GTC Stepper | `GTC Stepper` (`{7FC704F5-...}`) | `GtcStepper` (server+client) | Done — context-aware, all 3 page types, progress API integrated |
 
 ### GTC Stepper
-- Renders collection subitems (Story Pages + Quiz Pages) as numbered steps in a horizontal stepper
+- **Context-aware**: single component works on Collection, Story, and Quiz pages
+  - Collection Page: fetches own `children`, no active step
+  - Story/Quiz Page: fetches `parent.children` (siblings), current page = active step
+  - Detection: `template.name === 'Collection Page'` from expanded ComponentQuery
+- Renders steps as numbered horizontal stepper with **consecutive numbering** (1, 2, 3... regardless of type)
 - Labels: "Chapter 01, 02..." for stories, "Quiz 01, 02..." for quizzes (dictionary-driven via `gtc.stepper.chapter`/`gtc.stepper.quiz`)
 - Desktop: circles + labels; Mobile: circles only (labels hidden)
-- No datasource — uses `$contextItem` ComponentQuery to fetch children
+- No datasource — uses `$contextItem` ComponentQuery to fetch children + parent.children + template.name
 - Distinguishes Story vs Quiz by `PassingScore` field presence (Quiz-only field)
-- **3 step states** (7 Apr 2026): Active (blue circle, white number, bold label), Inactive (gray border, gray number), Done (blue circle, checkmark icon, black label)
-- Each step is a clickable link navigating to `{currentPath}/{childName}`
+- **Step states** (independent flags, not mutually exclusive):
+  - Inactive: gray border, gray number, gray label
+  - Active (not done): blue circle, white number, bold label
+  - Done (not active): blue circle, checkmark icon, black label
+  - Active + Done: blue circle with checkmark + ring-2 outline, bold label (done status preserved)
+- Clickable links: Collection appends `/{childName}`, Story/Quiz strips last segment and appends `/{siblingName}`
 - Progress fetched client-side from `/api/gtc/progress/batch` (GTC Learning API batch endpoint)
 - GUID normalization: API returns dashed GUIDs, Sitecore uses no-dash uppercase — normalized in `useGtcProgress` hook
 - API route uses hardcoded `DevBearer` auth for now; real IDP auth TBD
-- Placed on GTC Collection Above Main partial design (`{D13E1283-...}`)
+- Placed on GTC Collection Above Main partial design (`{D13E1283-...}`) — shared across all 3 Page Designs
 
 ---
 
