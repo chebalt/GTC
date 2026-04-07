@@ -77,7 +77,7 @@
 
 | # | Component | Sitecore Rendering | FE Component | Status |
 |---|---|---|---|---|
-| 1 | GTC Stepper | `GTC Stepper` (`{7FC704F5-...}`) | `GtcStepper` (server+client) | In progress — layout data working, FE rendering debugging |
+| 1 | GTC Stepper | `GTC Stepper` (`{7FC704F5-...}`) | `GtcStepper` (server+client) | Done — 3 states, clickable, progress API integrated |
 
 ### GTC Stepper
 - Renders collection subitems (Story Pages + Quiz Pages) as numbered steps in a horizontal stepper
@@ -85,7 +85,11 @@
 - Desktop: circles + labels; Mobile: circles only (labels hidden)
 - No datasource — uses `$contextItem` ComponentQuery to fetch children
 - Distinguishes Story vs Quiz by `PassingScore` field presence (Quiz-only field)
-- Step status variants (completed/active/inactive) deferred for later implementation
+- **3 step states** (7 Apr 2026): Active (blue circle, white number, bold label), Inactive (gray border, gray number), Done (blue circle, checkmark icon, black label)
+- Each step is a clickable link navigating to `{currentPath}/{childName}`
+- Progress fetched client-side from `/api/gtc/progress/batch` (GTC Learning API batch endpoint)
+- GUID normalization: API returns dashed GUIDs, Sitecore uses no-dash uppercase — normalized in `useGtcProgress` hook
+- API route uses hardcoded `DevBearer` auth for now; real IDP auth TBD
 - Placed on GTC Collection Above Main partial design (`{D13E1283-...}`)
 
 ---
