@@ -78,6 +78,7 @@
 | # | Component | Sitecore Rendering | FE Component | Status |
 |---|---|---|---|---|
 | 1 | GTC Stepper | `GTC Stepper` (`{7FC704F5-...}`) | `GtcStepper` (server+client) | Done — context-aware, all 3 page types, progress API integrated |
+| 2 | GTC Collection Navigation | `GTC Collection Navigation` (`{A1B2C3D4-...}`) | `GtcCollectionNavigation` (server+client) | Done — Back/Next buttons, story complete on Next |
 
 ### GTC Stepper
 - **Context-aware**: single component works on Collection, Story, and Quiz pages
@@ -99,6 +100,19 @@
 - GUID normalization: API returns dashed GUIDs, Sitecore uses no-dash uppercase — normalized in `useGtcProgress` hook
 - API route uses hardcoded `DevBearer` auth for now; real IDP auth TBD
 - Placed on GTC Collection Above Main partial design (`{D13E1283-...}`) — shared across all 3 Page Designs
+
+### GTC Collection Navigation
+- Back/Next buttons at the bottom of Story pages for navigating between collection siblings
+- **Back** (secondary outlined, left arrow): navigates to previous sibling
+- **Next Chapter/Quiz** (primary filled, right arrow): POSTs story-complete to `/api/gtc/story/complete`, then navigates to next sibling
+- Either button conditionally rendered (hidden if no prev/next sibling exists)
+- Uses NEO `Button` component (`variant="primary"`/`"secondary"`, `size="large"`) + `IconArrowLeft24`/`IconArrowRight24`
+- Returns null on Collection pages — only renders on Story/Quiz child pages
+- Prev/next determined server-side from `parent.children` via ComponentQuery
+- Next label is dictionary-driven: "Next Chapter" (`gtc.navigation.nextChapter`) or "Next Quiz" (`gtc.navigation.nextQuiz`) based on next sibling's `PassingScore` field
+- **New layout**: GTC Story Layout — General Layout + `gtc-below-main` placeholder after `headless-main`
+- **New partial design**: GTC Story Below Main — places this component into `gtc-below-main`
+- Story Page Design now has 4 partial designs: header, above-main, below-main, footer
 
 ---
 
