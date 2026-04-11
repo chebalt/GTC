@@ -33,6 +33,7 @@ Inherited by all three GTC page templates to avoid field duplication.
 |---|---|---|---|
 | Overline | Single-Line Text | Versioned | Translatable text above headline |
 | Subline | Rich Text | Versioned | Translatable text below headline |
+| KeyvisualUrl | Single-Line Text | Shared | External CDN URL for the keyvisual image (Craft asset URL during dev, CDN URL at launch) |
 
 ### GTC Settings section
 
@@ -66,7 +67,6 @@ Inherits: `_GtcBasePageTemplate` (Overline, Subline, ColorTheme, ProductlineThem
 
 | Field | Type | Versioning | Notes |
 |---|---|---|---|
-| Chapters | Multilist | Shared | Ordered list of Story + Quiz child pages |
 | RequiredItems | Multilist | Shared | Stories/Quizzes required for course completion (migrated from Craft `globalTracking.courseData`) |
 
 ### GTC Taxonomy section

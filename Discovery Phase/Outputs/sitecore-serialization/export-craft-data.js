@@ -45,6 +45,7 @@ const COLLECTIONS_QUERY = `
       stage {
         ... on stage_BlockType {
           overline headline subline
+          keyvisual { url }
         }
       }
       collectionData {
@@ -71,6 +72,7 @@ query($slugs: [String]) {
       stage {
         ... on stage_BlockType {
           overline headline subline
+          keyvisual { url }
         }
       }
       playlistMetaInformation {
@@ -104,6 +106,7 @@ const QUIZZES_QUERY = `
       quizMetaInformation {
         ... on quizMetaInformation_BlockType {
           overline headline subline text
+          keyvisual { url }
           passingScore numberOfInteractions
           shuffleInteractions enableFeedback
         }

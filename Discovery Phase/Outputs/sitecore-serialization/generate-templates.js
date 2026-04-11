@@ -32,6 +32,16 @@ const FIELD_TITLE         = '19a69332-a23e-4e70-8d16-b2640cb24cc8';
 const FIELD_SHORT_DESC    = '9541e67d-ce8c-4225-803d-33f7f29f09ef';
 
 const FIELD_MASTERS       = '1172f251-dad4-4efb-a329-0c63500e4f1e';
+const FIELD_RENDERINGS    = 'f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e';
+
+// Layout IDs
+const GENERAL_LAYOUT      = '58FF7D5D-0779-4B60-B2A8-25828283B08A';
+const GTC_STORY_LAYOUT    = 'D4E5F6A7-B8C9-4D1E-AF3A-4B5C6D7E8F90';
+const DEFAULT_DEVICE      = 'FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3';
+
+function standardValuesRenderingsXml(layoutId) {
+  return `<r xmlns:xsd="http://www.w3.org/2001/XMLSchema"><d id="{${DEFAULT_DEVICE}}" l="{${layoutId}}" /></r>`;
+}
 
 // ─── Version/audit field IDs ───
 const FIELD_CREATED       = '25bed78c-4957-4165-998a-ca1b52f67497';
@@ -291,6 +301,12 @@ const baseSubline = makeFieldItem('Subline', baseContentSec.id, `${baseTplPath}/
 });
 writeYml('GTC/_GtcBasePageTemplate/GTC Content/Subline.yml', baseSubline.yml);
 
+const baseKeyvisualUrl = makeFieldItem('KeyvisualUrl', baseContentSec.id, `${baseTplPath}/GTC Content`, 300, 'Single-Line Text', {
+  shared: true,
+  shortDesc: 'External CDN URL for the keyvisual image',
+});
+writeYml('GTC/_GtcBasePageTemplate/GTC Content/KeyvisualUrl.yml', baseKeyvisualUrl.yml);
+
 // _GtcBasePageTemplate → GTC Settings section
 const baseSettingsSec = makeSectionItem('GTC Settings', baseTpl.id, baseTplPath, 200);
 writeYml('GTC/_GtcBasePageTemplate/GTC Settings.yml', baseSettingsSec.yml);
@@ -401,13 +417,6 @@ writeYml('GTC/Collection Page/GTC Settings/IsHero.yml', collIsHero.yml);
 const collStructSec = makeSectionItem('GTC Structure', collTpl.id, collPath, 300);
 writeYml('GTC/Collection Page/GTC Structure.yml', collStructSec.yml);
 
-const collChapters = makeFieldItem('Chapters', collStructSec.id, `${collPath}/GTC Structure`, 100, 'Multilist', {
-  shared: true,
-  source: 'query:.//*[@@templatename=\'Story Page\' or @@templatename=\'Quiz Page\']',
-  shortDesc: 'Ordered list of Story + Quiz child pages',
-});
-writeYml('GTC/Collection Page/GTC Structure/Chapters.yml', collChapters.yml);
-
 const collRequired = makeFieldItem('RequiredItems', collStructSec.id, `${collPath}/GTC Structure`, 200, 'Multilist', {
   shared: true,
   source: 'query:.//*[@@templatename=\'Story Page\' or @@templatename=\'Quiz Page\']',
@@ -464,7 +473,9 @@ const storyActivity = makeFieldItem('TrainingActivity', storySettingsSec.id, `${
 writeYml('GTC/Story Page/GTC Settings/TrainingActivity.yml', storyActivity.yml);
 
 // Story → __Standard Values
-const storySv = makeStandardValues(storyTpl.id, storyPath);
+const storySv = makeStandardValues(storyTpl.id, storyPath, [
+  { id: FIELD_RENDERINGS, hint: '__Renderings', value: standardValuesRenderingsXml(GTC_STORY_LAYOUT), multiline: true },
+]);
 writeYml('GTC/Story Page/__Standard Values.yml', storySv.yml);
 
 
@@ -1121,6 +1132,7 @@ const quizMastersValue = allQuestionTypes.map(t => `{${t.id.toUpperCase()}}`).jo
 const quizSv = makeStandardValues(quizTpl.id, quizPath, [
   { id: quizShuffle.id, hint: 'ShuffleQuestions', value: '1' },
   { id: quizFeedback.id, hint: 'EnableFeedback', value: '1' },
+  { id: FIELD_RENDERINGS, hint: '__Renderings', value: standardValuesRenderingsXml(GENERAL_LAYOUT), multiline: true },
   { id: FIELD_MASTERS, hint: '__Masters', value: quizMastersValue, multiline: true },
 ]);
 writeYml('GTC/Quiz Page/__Standard Values.yml', quizSv.yml);
@@ -1130,6 +1142,7 @@ const collSv = makeStandardValues(collTpl.id, collPath, [
   { id: baseColorTheme.id, hint: 'ColorTheme', value: '{3F123C71-443C-1853-37D5-612B09777FF8}' },
   { id: collCourseType.id, hint: 'CourseType', value: '{BAC7E663-54A1-54E3-4EB8-357F238954D9}' },
   { id: baseProdTheme.id, hint: 'ProductlineTheme', value: '{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}' },
+  { id: FIELD_RENDERINGS, hint: '__Renderings', value: standardValuesRenderingsXml(GENERAL_LAYOUT), multiline: true },
   { id: FIELD_MASTERS, hint: '__Masters', value: `{${storyTpl.id.toUpperCase()}}\n{${quizTpl.id.toUpperCase()}}`, multiline: true },
 ]);
 writeYml('GTC/Collection Page/__Standard Values.yml', collSv.yml);

@@ -21,6 +21,8 @@ const OUT = path.join(__dirname, 'sitecore-migration');
 
 // ─── Well-known IDs ───
 const FIELD_TITLE         = '19a69332-a23e-4e70-8d16-b2640cb24cc8';
+const FIELD_HEADLINE      = 'ddf3e7ce-23e2-4871-a5b4-a29faefc21e9'; // _BasePageTemplate/Content/Headline
+const FIELD_NAV_TITLE     = '4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8'; // NavigationTitle (Link caption in navigation)
 const FIELD_CREATED       = '25bed78c-4957-4165-998a-ca1b52f67497';
 const FIELD_OWNER         = '52807595-0f8f-4b20-8d2a-cb71d28c6103';
 const FIELD_CREATED_BY    = '5dd74568-4d4b-44c1-b513-0af5f4cda34f';
@@ -30,6 +32,7 @@ const FIELD_UPDATED       = 'd9cf14b1-fa16-4ba6-9288-e8a174d4d522';
 
 const NOW = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+Z/, 'Z');
 const AUTHOR = 'sitecore\\artsiom.dylevich@actumdigital.com';
+const CRAFT_ASSET_BASE = 'https://lc.training.grohe.this.work';
 
 // ─── Template field IDs (from generate-templates.js deterministic GUIDs) ───
 function guid(seed) {
@@ -53,6 +56,7 @@ function fieldId(templatePath, sectionName, fieldName) {
 const basePath = `${TEMPLATES_BASE}/GTC/_GtcBasePageTemplate`;
 const FID_OVERLINE = fieldId(basePath, 'GTC Content', 'Overline');
 const FID_SUBLINE = fieldId(basePath, 'GTC Content', 'Subline');
+const FID_KEYVISUAL_URL = fieldId(basePath, 'GTC Content', 'KeyvisualUrl');
 const FID_COLOR_THEME = fieldId(basePath, 'GTC Settings', 'ColorTheme');
 const FID_PRODUCTLINE_THEME = fieldId(basePath, 'GTC Settings', 'ProductlineTheme');
 
@@ -65,7 +69,6 @@ const collPath = `${TEMPLATES_BASE}/GTC/Collection Page`;
 const FID_HERO_TEXT = fieldId(collPath, 'GTC Content', 'HeroText');
 const FID_COURSE_TYPE = fieldId(collPath, 'GTC Settings', 'CourseType');
 const FID_IS_HERO = fieldId(collPath, 'GTC Settings', 'IsHero');
-const FID_CHAPTERS = fieldId(collPath, 'GTC Structure', 'Chapters');
 const FID_REQUIRED_ITEMS = fieldId(collPath, 'GTC Structure', 'RequiredItems');
 
 // Story Page fields
@@ -262,6 +265,12 @@ function resolveCategories(cats) {
   return cats.map(c => LOOKUPS.mainCategories.mappings[c.slug]).filter(Boolean);
 }
 
+function resolveKeyvisualUrl(keyvisualArray) {
+  const url = keyvisualArray?.[0]?.url;
+  if (!url) return null;
+  return `${CRAFT_ASSET_BASE}${url}`;
+}
+
 // ─── Main ───
 
 async function main() {
@@ -367,9 +376,6 @@ async function main() {
     const quiz = quizByCollection[c.slug];
 
     // Build ordered chapters by following the chain
-    const chainedOrder = buildChapterOrder(childSlugs, trainingBySlug, quiz);
-    const chapterGuids = chainedOrder.map(slug => contentIdMap[slug]).filter(Boolean);
-
     // Required items (stories/quizzes needed for completion)
     const requiredGuids = tracking.requiredSlugs.map(slug => contentIdMap[slug]).filter(Boolean);
 
@@ -380,14 +386,16 @@ async function main() {
     let shared = '';
     shared += renderGuidField(FID_COLOR_THEME, 'ColorTheme', resolveColorTheme(c.colorTheme));
     shared += renderGuidField(FID_PRODUCTLINE_THEME, 'ProductlineTheme', resolveProductlineTheme(c.productlineTheme));
+    shared += renderField(FID_KEYVISUAL_URL, 'KeyvisualUrl', resolveKeyvisualUrl(c.stage?.[0]?.keyvisual));
     shared += renderGuidField(FID_COURSE_TYPE, 'CourseType', resolveCourseType(tracking.courseType));
     shared += renderField(FID_IS_HERO, 'IsHero', c.collectionData?.[0]?.isHero ? '1' : '');
-    shared += renderGuidListField(FID_CHAPTERS, 'Chapters', chapterGuids);
     shared += renderGuidListField(FID_REQUIRED_ITEMS, 'RequiredItems', requiredGuids);
     shared += renderGuidListField(FID_MAIN_CATEGORIES, 'MainCategories', catGuids);
 
     // Versioned fields (translatable)
     let versioned = '';
+    versioned += renderField(FIELD_HEADLINE, 'Headline', c.stage?.[0]?.headline, '    ');
+    versioned += renderField(FIELD_NAV_TITLE, 'NavigationTitle', c.stage?.[0]?.headline, '    ');
     versioned += renderField(FID_OVERLINE, 'Overline', c.stage?.[0]?.overline, '    ');
     versioned += renderField(FID_SUBLINE, 'Subline', c.stage?.[0]?.subline, '    ');
     versioned += renderField(FID_HERO_TEXT, 'HeroText', c.collectionData?.[0]?.heroText, '    ');
@@ -418,12 +426,15 @@ async function main() {
       let sShared = '';
       sShared += renderGuidField(FID_COLOR_THEME, 'ColorTheme', resolveColorTheme(t.colorTheme));
       sShared += renderGuidField(FID_PRODUCTLINE_THEME, 'ProductlineTheme', resolveProductlineTheme(t.productlineTheme));
+      sShared += renderField(FID_KEYVISUAL_URL, 'KeyvisualUrl', resolveKeyvisualUrl(t.stage?.[0]?.keyvisual));
       sShared += renderField(FID_READING_TIME, 'ReadingTime', t.playlistMetaInformation?.[0]?.readingTime);
       sShared += renderField(FID_STORY_TRAINING_ACTIVITY, 'TrainingActivity', t.trainingActivity);
       const sCatGuids = resolveCategories(t.taxonomy?.[0]?.mainCategories);
       sShared += renderGuidListField(FID_MAIN_CATEGORIES, 'MainCategories', sCatGuids);
 
       let sVersioned = '';
+      sVersioned += renderField(FIELD_HEADLINE, 'Headline', t.stage?.[0]?.headline, '    ');
+      sVersioned += renderField(FIELD_NAV_TITLE, 'NavigationTitle', t.stage?.[0]?.headline, '    ');
       sVersioned += renderField(FID_OVERLINE, 'Overline', t.stage?.[0]?.overline, '    ');
       sVersioned += renderField(FID_SUBLINE, 'Subline', t.stage?.[0]?.subline, '    ');
 
@@ -449,6 +460,7 @@ async function main() {
       let qShared = '';
       qShared += renderGuidField(FID_COLOR_THEME, 'ColorTheme', resolveColorTheme(quiz.colorTheme));
       qShared += renderGuidField(FID_PRODUCTLINE_THEME, 'ProductlineTheme', resolveProductlineTheme(quiz.productlineTheme));
+      qShared += renderField(FID_KEYVISUAL_URL, 'KeyvisualUrl', resolveKeyvisualUrl(meta.keyvisual));
       qShared += renderField(FID_PASSING_SCORE, 'PassingScore', meta.passingScore);
       qShared += renderField(FID_NUM_QUESTIONS, 'NumberOfQuestions', meta.numberOfInteractions);
       qShared += renderField(FID_SHUFFLE, 'ShuffleQuestions', meta.shuffleInteractions ? '1' : '');
@@ -456,6 +468,8 @@ async function main() {
       qShared += renderField(FID_QUIZ_TRAINING_ACTIVITY, 'TrainingActivity', quiz.trainingActivity);
 
       let qVersioned = '';
+      qVersioned += renderField(FIELD_HEADLINE, 'Headline', meta.headline, '    ');
+      qVersioned += renderField(FIELD_NAV_TITLE, 'NavigationTitle', meta.headline, '    ');
       qVersioned += renderField(FID_OVERLINE, 'Overline', meta.overline, '    ');
       qVersioned += renderField(FID_SUBLINE, 'Subline', meta.subline, '    ');
       qVersioned += renderField(FID_INSTRUCTION_TEXT, 'InstructionText', meta.text, '    ');

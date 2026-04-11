@@ -79,6 +79,7 @@
 |---|---|---|---|---|
 | 1 | GTC Stepper | `GTC Stepper` (`{7FC704F5-...}`) | `GtcStepper` (server+client) | Done — context-aware, all 3 page types, progress API integrated |
 | 2 | GTC Collection Navigation | `GTC Collection Navigation` (`{A1B2C3D4-...}`) | `GtcCollectionNavigation` (server+client) | Done — Back/Next buttons, story complete on Next |
+| 3 | GTC Quiz Overview | `GTC Quiz Overview` (`{B4E7F2A1-...}`) | `GtcQuizOverview` (server+client) | Done — headline, instruction, keyvisual, start button |
 
 ### GTC Stepper
 - **Context-aware**: single component works on Collection, Story, and Quiz pages
@@ -99,7 +100,22 @@
 - Progress fetched client-side from `/api/gtc/progress/batch` (GTC Learning API batch endpoint)
 - GUID normalization: API returns dashed GUIDs, Sitecore uses no-dash uppercase — normalized in `useGtcProgress` hook
 - API route uses hardcoded `DevBearer` auth for now; real IDP auth TBD
-- Placed on GTC Collection Above Main partial design (`{D13E1283-...}`) — shared across all 3 Page Designs
+- Placed on GTC Collection Above Main partial design (`{D13E1283-...}`) — shared across Collection and Story Page Designs
+- Width constrained: `max-w-[1280px] mx-auto`, `gap-6` between steps (matching Figma)
+
+### GTC Quiz Overview
+- Two-column layout: left = headline + instruction text + "Start quiz" button, right = keyvisual image
+- **Datasource**: Quiz Page item itself (template `{20344734-...}`)
+- **Fields consumed**: Headline (from `_BasePageTemplate`), InstructionText, KeyvisualUrl (all from ComponentQuery)
+- **Server component** renders headline (`typo-headline-sm-bold 1024:typo-headline-lg-bold`), RichText for instruction text
+- **Client component** `GtcQuizStartButton` — renders button with dictionary key `gtc.quiz.start` via `useT()`
+- Image rendered via Next.js `Image` component with optimization (`sizes="(max-width: 1024px) 100vw, 592px"`, no `unoptimized`)
+- Craft domain `lc.training.grohe.this.work` added to `next.config.ts` `remotePatterns`
+- Width: `max-w-[1280px]` with `1024:px-20` outer padding
+- **Rendering**: `{B4E7F2A1-8C3D-4E5F-9A6B-7D8E9F0A1B2C}`
+- **Partial design**: GTC Quiz Above Main (`{A2C4E6F8-...}`) — Breadcrumbs + GTC Stepper + GTC Quiz Overview
+- **Placeholder settings**: `sxa-gtc-quiz-above-main` (`{C3D4E5F6-...}`)
+- Quiz Page Design uses this partial instead of GTC Collection Above Main
 
 ### GTC Collection Navigation
 - Back/Next buttons at the bottom of Story pages for navigating between collection siblings
