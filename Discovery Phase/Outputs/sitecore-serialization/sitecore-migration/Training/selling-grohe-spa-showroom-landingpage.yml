@@ -7,16 +7,12 @@ SharedFields:
 - ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
   Hint: ColorTheme
   Value: "{298D1DEB-8A48-15B5-F1FA-EAD9BA539786}"
+- ID: "7d019b4b-0985-4250-c1d6-fdd0f759dd1c"
+  Hint: KeyvisualUrl
+  Value: https://lc.training.grohe.this.work/assets/images/Selling-SPA/Selling-showroom-00-keyvisual.jpg
 - ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
   Hint: CourseType
   Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
-- ID: "eca0b7e6-cd13-51c2-96e2-b6595cd20827"
-  Hint: Chapters
-  Value: |
-    {ECB0699F-F890-4A30-4002-2B2533776BE6}
-    {2B6E1AAB-A876-9145-89DB-A7F30370FBF0}
-    {3201C866-29D1-4395-F7E2-3584AC4FBD5D}
-    {A783E667-6584-C498-65C9-A2A807FE28E4}
 - ID: "9f4afd93-bb29-f131-c500-aabe4cee3860"
   Hint: RequiredItems
   Value: |
@@ -37,6 +33,12 @@ Languages:
     - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
       Hint: __Display name
       Value: Selling GROHE SPA Showroom Landingpage
+    - ID: "ddf3e7ce-23e2-4871-a5b4-a29faefc21e9"
+      Hint: Headline
+      Value: How to sell GROHE SPA
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: How to sell GROHE SPA
     - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
       Hint: Overline
       Value: Getting to know ...
@@ -45,7 +47,7 @@ Languages:
       Value: All you need to know about selling GROHE SPA to showrooms
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -56,11 +58,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 4995463d-32de-650f-b911-3eaf2a6b57f1
+      Value: 20de07a5-f0c6-f3c7-9eb3-13e1709ecf71
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

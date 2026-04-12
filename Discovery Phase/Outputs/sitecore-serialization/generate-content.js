@@ -107,6 +107,7 @@ const qBasePath = `${TEMPLATES_BASE}/GTC/_GtcQuestionBaseTemplate`;
 const FID_Q_OVERLINE = fieldId(qBasePath, 'GTC Question', 'QuestionOverline');
 const FID_Q_TEXT = fieldId(qBasePath, 'GTC Question', 'QuestionText');
 const FID_Q_INSTRUCTION = fieldId(qBasePath, 'GTC Question', 'QuestionInstruction');
+const FID_Q_IMAGE = fieldId(qBasePath, 'GTC Question', 'QuestionImage');
 const FID_Q_POS_FB = fieldId(qBasePath, 'GTC Question Feedback', 'PositiveFeedbackText');
 const FID_Q_NEG_FB = fieldId(qBasePath, 'GTC Question Feedback', 'NegativeFeedbackText');
 const FID_Q_SOL_FB = fieldId(qBasePath, 'GTC Question Feedback', 'SolutionFeedbackText');
@@ -120,6 +121,7 @@ const FID_CHOICE_NO_SHUFFLE = fieldId(choicePath, 'GTC Choice Settings', 'Disabl
 const choiceAnsPath = `${TEMPLATES_BASE}/GTC/GTC Choice Answer`;
 const FID_ANS_TEXT = fieldId(choiceAnsPath, 'GTC Choice Answer', 'AnswerText');
 const FID_ANS_CORRECT = fieldId(choiceAnsPath, 'GTC Choice Answer', 'IsCorrect');
+const FID_ANS_IMAGE = fieldId(choiceAnsPath, 'GTC Choice Answer', 'AnswerImage');
 
 // True False Question fields
 const tfQPath = `${TEMPLATES_BASE}/GTC/GTC True False Question`;
@@ -144,7 +146,9 @@ const ddQPath = `${TEMPLATES_BASE}/GTC/GTC Drag Drop Question`;
 const FID_DD_NO_SHUFFLE = fieldId(ddQPath, 'GTC Drag Drop Settings', 'DisableShuffle');
 const ddPairPath = `${TEMPLATES_BASE}/GTC/GTC Drag Drop Pair`;
 const FID_DD_DRAG_TEXT = fieldId(ddPairPath, 'GTC Drag Drop Pair', 'DragText');
+const FID_DD_DRAG_IMAGE = fieldId(ddPairPath, 'GTC Drag Drop Pair', 'DragImage');
 const FID_DD_DROP_TEXT = fieldId(ddPairPath, 'GTC Drag Drop Pair', 'DropText');
+const FID_DD_DROP_IMAGE = fieldId(ddPairPath, 'GTC Drag Drop Pair', 'DropImage');
 
 // Fill Blank fields
 const fbQPath = `${TEMPLATES_BASE}/GTC/GTC Fill Blank Question`;
@@ -267,6 +271,12 @@ function resolveCategories(cats) {
 
 function resolveKeyvisualUrl(keyvisualArray) {
   const url = keyvisualArray?.[0]?.url;
+  if (!url) return null;
+  return `${CRAFT_ASSET_BASE}${url}`;
+}
+
+function resolveImageUrl(imageArray) {
+  const url = imageArray?.[0]?.url;
   if (!url) return null;
   return `${CRAFT_ASSET_BASE}${url}`;
 }
@@ -519,6 +529,10 @@ async function main() {
         iVersioned += renderField(FID_Q_TEXT, 'QuestionText', builder.question, '    ');
         iVersioned += renderField(FID_Q_INSTRUCTION, 'QuestionInstruction', builder.questionInstruction, '    ');
 
+        // Common question image (shared — URL doesn't change per language)
+        const questionImageUrl = resolveImageUrl(builder.optionalImageComponent);
+        if (questionImageUrl) iShared += renderField(FID_Q_IMAGE, 'QuestionImage', questionImageUrl);
+
         // Common feedback (versioned)
         iVersioned += renderField(FID_Q_POS_FB, 'PositiveFeedbackText', builder.positiveFeedback?.[0]?.feedbackText, '    ');
         iVersioned += renderField(FID_Q_NEG_FB, 'NegativeFeedbackText', builder.negativeFeedback?.[0]?.feedbackText, '    ');
@@ -589,6 +603,8 @@ async function main() {
             const ansItemPath = `${iItemPath}/answer-${ai + 1}`;
             let aShared = '';
             aShared += renderField(FID_ANS_CORRECT, 'IsCorrect', ans.correctAnswer ? '1' : '');
+            const ansImageUrl = resolveImageUrl(ans.asset);
+            if (ansImageUrl) aShared += renderField(FID_ANS_IMAGE, 'AnswerImage', ansImageUrl);
             let aVersioned = '';
             aVersioned += renderField(FID_ANS_TEXT, 'AnswerText', ans.answerText, '    ');
 
@@ -610,16 +626,23 @@ async function main() {
           builder.dragDrop.forEach((pair, pi) => {
             const pairId = contentGuid(`${interaction.slug}-pair-${pi}`);
             const pairItemPath = `${iItemPath}/pair-${pi + 1}`;
+            let pShared = '';
             let pVersioned = '';
             // Drag side
             const dragBlock = pair.drag?.[0];
             if (dragBlock?.__typename === 'drag_dragDropText_BlockType') {
               pVersioned += renderField(FID_DD_DRAG_TEXT, 'DragText', dragBlock.textComponent, '    ');
+            } else if (dragBlock?.__typename === 'drag_dragDropImage_BlockType') {
+              const dragImgUrl = resolveImageUrl(dragBlock.imageComponent);
+              if (dragImgUrl) pShared += renderField(FID_DD_DRAG_IMAGE, 'DragImage', dragImgUrl);
             }
             // Drop side
             const dropBlock = pair.drop?.[0];
             if (dropBlock?.__typename === 'drop_dropText_BlockType') {
               pVersioned += renderField(FID_DD_DROP_TEXT, 'DropText', dropBlock.textComponent, '    ');
+            } else if (dropBlock?.__typename === 'drop_dropImage_BlockType') {
+              const dropImgUrl = resolveImageUrl(dropBlock.imageComponent);
+              if (dropImgUrl) pShared += renderField(FID_DD_DROP_IMAGE, 'DropImage', dropImgUrl);
             }
 
             writeYml(`Training/${c.slug}/${quiz.slug}/${interaction.slug}/pair-${pi + 1}.yml`, buildItemYml({
@@ -627,6 +650,7 @@ async function main() {
               parent: iId,
               template: DD_PAIR_TEMPLATE,
               itemPath: pairItemPath,
+              sharedFields: pShared || undefined,
               versionedFields: pVersioned,
               displayName: `Pair ${pi + 1}`,
               sortOrder: (pi + 1) * 100,

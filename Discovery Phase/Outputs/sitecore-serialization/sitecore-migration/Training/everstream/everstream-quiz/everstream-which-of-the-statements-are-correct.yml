@@ -29,7 +29,7 @@ Languages:
         <p>Everstream will require a connection to electricity and the Internet (either hardwired or Wi-Fi). Of course, it needs to be supplied with hot water and must, therefore, be connected to the hot water piping.</p>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -40,11 +40,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 242360f9-432c-cd9d-0337-450445d74ab8
+      Value: 64bb78c8-99ad-9a51-85fc-ac6b47cf8a47
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

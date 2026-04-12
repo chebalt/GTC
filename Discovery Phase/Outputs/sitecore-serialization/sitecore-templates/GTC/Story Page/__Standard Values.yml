@@ -3,6 +3,11 @@ ID: "19d66997-62d7-0d6b-05f6-021072548329"
 Parent: "693af99d-7689-dc12-31d8-0dd8ca77590a"
 Template: "693af99d-7689-dc12-31d8-0dd8ca77590a"
 Path: /sitecore/templates/Project/Grohe Neo/Pages/GTC/Story Page/__Standard Values
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{D4E5F6A7-B8C9-4D1E-AF3A-4B5C6D7E8F90}" /></r>
 Languages:
 - Language: en
   Versions:
@@ -21,7 +26,7 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: fcacbd38-5abf-cf8e-91b3-a8e1d5295ca8
+      Value: e3f13bef-1210-f854-fdaf-1e72d2806b04
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

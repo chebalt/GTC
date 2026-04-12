@@ -36,7 +36,7 @@ Languages:
       Value: The Reverse Osmosis Filter is especially useful for areas with unhealthy substances in the tap water, such as metals, plastics, {{ bacteria | chlorine | lime }}, viruses or hormones. The high performance particle filtration should only be used with a {{ water hardness | pH-level | chlorine content }} of max. 20° dKH. In cases with higher water hardness the water needs to be {{ softened | purified | mineralised }} before. Otherwise the reverse osmosis {{ membrane | filter | ions }} gets blocked too fast.
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -47,11 +47,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 5453288f-fb84-4711-1d94-46f401fa3cfa
+      Value: 2869656c-2193-41f9-ed68-92f87528fa13
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

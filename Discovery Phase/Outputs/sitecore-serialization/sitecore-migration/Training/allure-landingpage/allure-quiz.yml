@@ -7,6 +7,9 @@ SharedFields:
 - ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
   Hint: ColorTheme
   Value: "{298D1DEB-8A48-15B5-F1FA-EAD9BA539786}"
+- ID: "7d019b4b-0985-4250-c1d6-fdd0f759dd1c"
+  Hint: KeyvisualUrl
+  Value: https://lc.training.grohe.this.work/assets/images/General/Allure-quiz-image.jpg
 - ID: "a55c0362-e48c-b4e0-116b-6d7bad768a3a"
   Hint: PassingScore
   Value: 71
@@ -24,6 +27,12 @@ Languages:
     - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
       Hint: __Display name
       Value: Allure Quiz
+    - ID: "ddf3e7ce-23e2-4871-a5b4-a29faefc21e9"
+      Hint: Headline
+      Value: Allure
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Allure
     - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
       Hint: Overline
       Value: Test your knowledge
@@ -47,7 +56,7 @@ Languages:
         <p>Unfortunately, not everything was quite right. Do you want to repeat the quiz or go back to the training to review the content one more time?</p>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -58,11 +67,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 16514194-9fae-b29f-b2fd-aeb23cf3a371
+      Value: e01198bb-ba98-c5a3-85d9-dd4781ecf7c0
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

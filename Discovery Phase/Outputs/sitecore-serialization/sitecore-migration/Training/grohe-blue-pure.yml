@@ -10,20 +10,12 @@ SharedFields:
 - ID: "1f0737de-7099-9deb-b4dd-49637efa42ef"
   Hint: ProductlineTheme
   Value: "{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}"
+- ID: "7d019b4b-0985-4250-c1d6-fdd0f759dd1c"
+  Hint: KeyvisualUrl
+  Value: https://lc.training.grohe.this.work/assets/images/Blue-Pure/00-keyvisual.jpg
 - ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
   Hint: CourseType
   Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
-- ID: "eca0b7e6-cd13-51c2-96e2-b6595cd20827"
-  Hint: Chapters
-  Value: |
-    {722EFD16-70A2-C553-B8DF-4E160E258113}
-    {7A5E7263-0CBB-A5B2-F3AE-B2DCBC70C235}
-    {A296A986-6F28-9351-89F7-300F17DD6AE0}
-    {93C52B07-420F-FC1D-9BA4-1FD589A373A0}
-    {DBE62DE4-EBC9-0FF6-E180-FD12CAD36E16}
-    {3F102507-6EC9-10B1-1919-47BD0998BED6}
-    {04B5FB4D-CA5F-7F2E-90B5-8515207BA836}
-    {DE17E6FD-785B-6074-B985-DA901F6EDB0B}
 - ID: "9f4afd93-bb29-f131-c500-aabe4cee3860"
   Hint: RequiredItems
   Value: |
@@ -48,6 +40,12 @@ Languages:
     - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
       Hint: __Display name
       Value: GROHE Blue Pure
+    - ID: "ddf3e7ce-23e2-4871-a5b4-a29faefc21e9"
+      Hint: Headline
+      Value: GROHE Blue Pure
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: GROHE Blue Pure
     - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
       Hint: Overline
       Value: Getting to know...
@@ -56,7 +54,7 @@ Languages:
       Value: Everything you need to know about the GROHE Watersystems for still and filtered water.
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -67,11 +65,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 71dfdb0c-b0f6-79da-c540-42f91c76f432
+      Value: fb9f111f-4ce0-db9c-4fb1-e7c8c24c32db
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

@@ -10,6 +10,9 @@ SharedFields:
 - ID: "1f0737de-7099-9deb-b4dd-49637efa42ef"
   Hint: ProductlineTheme
   Value: "{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}"
+- ID: "7d019b4b-0985-4250-c1d6-fdd0f759dd1c"
+  Hint: KeyvisualUrl
+  Value: https://lc.training.grohe.this.work/assets/images/Everstream/Everstream-Quiz.png
 - ID: "a55c0362-e48c-b4e0-116b-6d7bad768a3a"
   Hint: PassingScore
   Value: 80
@@ -33,6 +36,12 @@ Languages:
     - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
       Hint: __Display name
       Value: Everstream Quiz
+    - ID: "ddf3e7ce-23e2-4871-a5b4-a29faefc21e9"
+      Hint: Headline
+      Value: Knowledge check
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Knowledge check
     - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
       Hint: Overline
       Value: GROHE Everstream
@@ -56,7 +65,7 @@ Languages:
         <p> Do you want to repeat the quiz or go back to the training module to review the content one more time?</p>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -67,11 +76,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 20d37f37-9ab4-cde1-aaf5-739679c9f213
+      Value: 714b306a-2078-e7f1-f44e-dcae3ccae7ad
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

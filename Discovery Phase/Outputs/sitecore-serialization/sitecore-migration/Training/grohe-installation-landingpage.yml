@@ -7,6 +7,9 @@ SharedFields:
 - ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
   Hint: ColorTheme
   Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "7d019b4b-0985-4250-c1d6-fdd0f759dd1c"
+  Hint: KeyvisualUrl
+  Value: https://lc.training.grohe.this.work/assets/images/Rapido-Shower-Frame/Installation/Thumbnails-01/Thumb-Thirdly.png
 - ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
   Hint: CourseType
   Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
@@ -24,6 +27,12 @@ Languages:
     - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
       Hint: __Display name
       Value: GROHE Installation Landingpage
+    - ID: "ddf3e7ce-23e2-4871-a5b4-a29faefc21e9"
+      Hint: Headline
+      Value: Installation and Maintenance
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Installation and Maintenance
     - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
       Hint: Overline
       Value: Welcom to...
@@ -32,7 +41,7 @@ Languages:
       Value: GROHE installation and maintenance guidelines for professionals
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -43,11 +52,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: cb5aa398-ada1-1535-62ff-420e0afb5482
+      Value: 07fb8cee-f3bc-cb30-6189-cd8e584189dc
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

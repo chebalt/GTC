@@ -560,9 +560,9 @@ const quizPassText = makeFieldItem('PassText', quizFbSec.id, `${quizPath}/GTC Qu
 });
 writeYml('GTC/Quiz Page/GTC Quiz Feedback/PassText.yml', quizPassText.yml);
 
-const quizPassImg = makeFieldItem('PassImage', quizFbSec.id, `${quizPath}/GTC Quiz Feedback`, 300, 'Image', {
+const quizPassImg = makeFieldItem('PassImage', quizFbSec.id, `${quizPath}/GTC Quiz Feedback`, 300, 'Single-Line Text', {
   shared: true,
-  shortDesc: 'Image for pass screen',
+  shortDesc: 'External CDN URL for pass screen image',
 });
 writeYml('GTC/Quiz Page/GTC Quiz Feedback/PassImage.yml', quizPassImg.yml);
 
@@ -576,9 +576,9 @@ const quizFailText = makeFieldItem('FailText', quizFbSec.id, `${quizPath}/GTC Qu
 });
 writeYml('GTC/Quiz Page/GTC Quiz Feedback/FailText.yml', quizFailText.yml);
 
-const quizFailImg = makeFieldItem('FailImage', quizFbSec.id, `${quizPath}/GTC Quiz Feedback`, 600, 'Image', {
+const quizFailImg = makeFieldItem('FailImage', quizFbSec.id, `${quizPath}/GTC Quiz Feedback`, 600, 'Single-Line Text', {
   shared: true,
-  shortDesc: 'Image for fail screen',
+  shortDesc: 'External CDN URL for fail screen image',
 });
 writeYml('GTC/Quiz Page/GTC Quiz Feedback/FailImage.yml', quizFailImg.yml);
 
@@ -828,9 +828,9 @@ const qInstruction = makeFieldItem('QuestionInstruction', qBaseContentSec.id, `$
 });
 writeYml('GTC/_GtcQuestionBaseTemplate/GTC Question/QuestionInstruction.yml', qInstruction.yml);
 
-const qImage = makeFieldItem('QuestionImage', qBaseContentSec.id, `${qBasePath}/GTC Question`, 400, 'Image', {
+const qImage = makeFieldItem('QuestionImage', qBaseContentSec.id, `${qBasePath}/GTC Question`, 400, 'Single-Line Text', {
   shared: true,
-  shortDesc: 'Optional image for the question',
+  shortDesc: 'External CDN URL for the question image',
 });
 writeYml('GTC/_GtcQuestionBaseTemplate/GTC Question/QuestionImage.yml', qImage.yml);
 
@@ -906,8 +906,8 @@ const ansCorrect = makeFieldItem('IsCorrect', choiceAnsSec.id, `${choiceAnsPath}
   shared: true, shortDesc: 'Whether this is a correct answer',
 });
 writeYml('GTC/GTC Choice Answer/GTC Choice Answer/IsCorrect.yml', ansCorrect.yml);
-const ansImage = makeFieldItem('AnswerImage', choiceAnsSec.id, `${choiceAnsPath}/GTC Choice Answer`, 300, 'Image', {
-  shared: true, shortDesc: 'Optional image for this answer option',
+const ansImage = makeFieldItem('AnswerImage', choiceAnsSec.id, `${choiceAnsPath}/GTC Choice Answer`, 300, 'Single-Line Text', {
+  shared: true, shortDesc: 'External CDN URL for this answer option image',
 });
 writeYml('GTC/GTC Choice Answer/GTC Choice Answer/AnswerImage.yml', ansImage.yml);
 const choiceAnsSv = makeStandardValues(choiceAnsTpl.id, choiceAnsPath);
@@ -1031,16 +1031,16 @@ const ddDragText = makeFieldItem('DragText', ddPairSec.id, `${ddPairPath}/GTC Dr
   shortDesc: 'Text of the draggable item',
 });
 writeYml('GTC/GTC Drag Drop Pair/GTC Drag Drop Pair/DragText.yml', ddDragText.yml);
-const ddDragImg = makeFieldItem('DragImage', ddPairSec.id, `${ddPairPath}/GTC Drag Drop Pair`, 200, 'Image', {
-  shared: true, shortDesc: 'Image of the draggable item (alternative to text)',
+const ddDragImg = makeFieldItem('DragImage', ddPairSec.id, `${ddPairPath}/GTC Drag Drop Pair`, 200, 'Single-Line Text', {
+  shared: true, shortDesc: 'External CDN URL for the draggable item image',
 });
 writeYml('GTC/GTC Drag Drop Pair/GTC Drag Drop Pair/DragImage.yml', ddDragImg.yml);
 const ddDropText = makeFieldItem('DropText', ddPairSec.id, `${ddPairPath}/GTC Drag Drop Pair`, 300, 'Rich Text', {
   shortDesc: 'Text of the drop zone',
 });
 writeYml('GTC/GTC Drag Drop Pair/GTC Drag Drop Pair/DropText.yml', ddDropText.yml);
-const ddDropImg = makeFieldItem('DropImage', ddPairSec.id, `${ddPairPath}/GTC Drag Drop Pair`, 400, 'Image', {
-  shared: true, shortDesc: 'Image of the drop zone (alternative to text)',
+const ddDropImg = makeFieldItem('DropImage', ddPairSec.id, `${ddPairPath}/GTC Drag Drop Pair`, 400, 'Single-Line Text', {
+  shared: true, shortDesc: 'External CDN URL for the drop zone image',
 });
 writeYml('GTC/GTC Drag Drop Pair/GTC Drag Drop Pair/DropImage.yml', ddDropImg.yml);
 const ddPairSv = makeStandardValues(ddPairTpl.id, ddPairPath);

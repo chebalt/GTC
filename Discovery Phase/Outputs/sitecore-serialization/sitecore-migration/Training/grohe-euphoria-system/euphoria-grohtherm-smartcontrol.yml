@@ -10,6 +10,9 @@ SharedFields:
 - ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
   Hint: ColorTheme
   Value: "{3F123C71-443C-1853-37D5-612B09777FF8}"
+- ID: "7d019b4b-0985-4250-c1d6-fdd0f759dd1c"
+  Hint: KeyvisualUrl
+  Value: https://lc.training.grohe.this.work/assets/images/Euphoria/05-keyvisual.jpg
 - ID: "be2156f7-5a4a-ffee-d198-e21a56887c09"
   Hint: ReadingTime
   Value: 4
@@ -30,6 +33,12 @@ Languages:
     - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
       Hint: __Display name
       Value: Euphoria - GROHTHERM SmartControl
+    - ID: "ddf3e7ce-23e2-4871-a5b4-a29faefc21e9"
+      Hint: Headline
+      Value: GROHTHERM SmartControl
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: GROHTHERM SmartControl
     - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
       Hint: Overline
       Value: Euphoria Systems
@@ -38,7 +47,7 @@ Languages:
       Value: 100 % control
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -49,11 +58,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 91839fa7-bfdf-4be1-df66-ba3721a7e668
+      Value: fa5aee9a-b6e5-b44f-6817-9259d9e796ca
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

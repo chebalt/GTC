@@ -10,6 +10,9 @@ SharedFields:
 - ID: "dd2dd722-5980-7e34-af52-06d94efbcd37"
   Hint: IsCorrect
   Value: 1
+- ID: "6ec8f5e0-cc93-4efc-acc5-c01970fbb8d5"
+  Hint: AnswerImage
+  Value: https://lc.training.grohe.this.work/assets/images/Filtration-Technologies/Quiz-Microplastic-reduction.png
 Languages:
 - Language: en
   Versions:
@@ -24,7 +27,7 @@ Languages:
         <p>Microplastic reduction</p>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -35,11 +38,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: c0559558-9279-0d5a-8c52-6bc6a0eb6127
+      Value: 1bda1435-b5a4-a2a9-57fb-f8071db4aaa5
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

@@ -10,6 +10,9 @@ SharedFields:
 - ID: "9ad122c6-0166-186d-1aa0-5a12ffd479d2"
   Hint: ColorTheme
   Value: "{298D1DEB-8A48-15B5-F1FA-EAD9BA539786}"
+- ID: "7d019b4b-0985-4250-c1d6-fdd0f759dd1c"
+  Hint: KeyvisualUrl
+  Value: https://lc.training.grohe.this.work/assets/images/Bodysprays/installation-step1-keyvisual.jpg
 - ID: "eb4651dd-43e9-1fd0-b0a8-29f6e233be75"
   Hint: TrainingActivity
   Value: Rainshower Aqua Body Sprays -  1. Rough-in box installation
@@ -27,6 +30,12 @@ Languages:
     - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
       Hint: __Display name
       Value: Body sprays 1. Rough-in box installation_INST_GROHE
+    - ID: "ddf3e7ce-23e2-4871-a5b4-a29faefc21e9"
+      Hint: Headline
+      Value: 1. Rough-In box installation
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: 1. Rough-In box installation
     - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
       Hint: Overline
       Value: Installation - Rainshower Aqua Body Sprays
@@ -35,7 +44,7 @@ Languages:
       Value: Required time: 10 minutes
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -46,11 +55,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: e6da9025-2b7d-c986-f0f7-bb3fbafa3b81
+      Value: 62e15782-a941-5be5-0a0d-faf42a7a081c
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

@@ -10,6 +10,9 @@ SharedFields:
 - ID: "1f0737de-7099-9deb-b4dd-49637efa42ef"
   Hint: ProductlineTheme
   Value: "{E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}"
+- ID: "7d019b4b-0985-4250-c1d6-fdd0f759dd1c"
+  Hint: KeyvisualUrl
+  Value: https://lc.training.grohe.this.work/assets/images/00-keyvisual.jpg
 - ID: "cec085d1-eb96-12db-eb17-3d5768567e14"
   Hint: CourseType
   Value: "{BAC7E663-54A1-54E3-4EB8-357F238954D9}"
@@ -24,12 +27,18 @@ Languages:
     - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
       Hint: __Display name
       Value: Landingpage Installer
+    - ID: "ddf3e7ce-23e2-4871-a5b4-a29faefc21e9"
+      Hint: Headline
+      Value: WELCOME TO THE GROHE LEARNING COMPANION
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: WELCOME TO THE GROHE LEARNING COMPANION
     - ID: "71da194c-d7f1-067c-6b16-d661d41ad9ed"
       Hint: Subline
       Value: Your #1 source for inspiring trainings
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -40,11 +49,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 56528eab-9485-218c-9bd3-d472b5e32169
+      Value: 8bab6cc2-54b0-5072-ba3f-a0bf498f7996
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

@@ -7,6 +7,9 @@ SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 400
+- ID: "6ec8f5e0-cc93-4efc-acc5-c01970fbb8d5"
+  Hint: AnswerImage
+  Value: https://lc.training.grohe.this.work/assets/images/Rapido-SmartBox/Quiz/09-Q1-Grohtherm-Special.png
 Languages:
 - Language: en
   Versions:
@@ -21,7 +24,7 @@ Languages:
         <p>…Grohtherm Special</p>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -32,11 +35,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: cd926091-82ac-e403-6714-df3798d1b9fc
+      Value: 99d1b615-862f-bef2-d562-f5d613f03a31
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

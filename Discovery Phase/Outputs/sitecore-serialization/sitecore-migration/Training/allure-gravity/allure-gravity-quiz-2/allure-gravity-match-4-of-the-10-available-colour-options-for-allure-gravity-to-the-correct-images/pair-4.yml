@@ -7,6 +7,9 @@ SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 400
+- ID: "66a1b2c6-9280-eaa0-f49c-207b5fb624a8"
+  Hint: DragImage
+  Value: https://lc.training.grohe.this.work/assets/images/Allure-Gravity/03-colors-phantom-black.png
 Languages:
 - Language: en
   Versions:
@@ -21,7 +24,7 @@ Languages:
         <p>Phantom Black</p>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -32,11 +35,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: ef5914bd-e3b4-bba9-5209-688007a109f5
+      Value: c0abbcd8-aab0-2ce8-e83a-30b09c7ba649
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260329T113333Z
+      Value: 20260412T150634Z

@@ -13,6 +13,10 @@ SharedFields:
 - ID: "1f0737de-7099-9deb-b4dd-49637efa42ef"
   Hint: ProductlineTheme
   Value: {E36CBD21-CA3F-9B6A-03E8-8D4188CA1341}
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{58FF7D5D-0779-4B60-B2A8-25828283B08A}" /></r>
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Value: |
@@ -36,7 +40,7 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 27975848-f518-84e6-f6e8-6796a8567afd
+      Value: 19eca670-b55f-06bf-ae10-20199f434a2f
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

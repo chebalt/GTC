@@ -141,9 +141,11 @@ query($slugs: [String]) {
         __typename
         ... on interactionBuilder_choiceModule_BlockType {
           questionOverline question questionInstruction
+          optionalImageComponent { url }
           forceMultipleChoice disableShuffle stacked
           choiceAnswerOptions {
             answerText correctAnswer
+            asset { url }
           }
           positiveFeedback { feedbackHeadline feedbackText }
           negativeFeedback { feedbackHeadline feedbackText }
@@ -151,6 +153,7 @@ query($slugs: [String]) {
         }
         ... on interactionBuilder_trueFalseModule_BlockType {
           questionOverline question questionInstruction
+          optionalImageComponent { url }
           stacked
           trueFalseAnswerOptions {
             trueLabel falseLabel correctAnswer
@@ -161,6 +164,7 @@ query($slugs: [String]) {
         }
         ... on interactionBuilder_valueSliderModule_BlockType {
           questionOverline question questionInstruction
+          optionalImageComponent { url }
           stacked
           valueSliderConfiguration {
             minValue maxValue steps initialValue
@@ -173,6 +177,7 @@ query($slugs: [String]) {
         }
         ... on interactionBuilder_DragDropModule_BlockType {
           questionOverline question questionInstruction
+          optionalImageComponent { url }
           disableShuffle stacked
           dragDrop {
             drag {
@@ -192,6 +197,7 @@ query($slugs: [String]) {
         }
         ... on interactionBuilder_fillTheBlankModule_BlockType {
           questionOverline question questionInstruction
+          optionalImageComponent { url }
           textWithoutFormating
           stacked
           positiveFeedback { feedbackHeadline feedbackText }
@@ -200,6 +206,7 @@ query($slugs: [String]) {
         }
         ... on interactionBuilder_sortableRankingListModule_BlockType {
           questionOverline question questionInstruction
+          optionalImageComponent { url }
           stacked
           sortableAnswerItems { item }
           positiveFeedback { feedbackHeadline feedbackText }
