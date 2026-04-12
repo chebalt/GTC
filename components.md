@@ -109,13 +109,23 @@
 - **Fields consumed**: Headline (from `_BasePageTemplate`), InstructionText, KeyvisualUrl (all from ComponentQuery)
 - **Server component** renders headline (`typo-headline-sm-bold 1024:typo-headline-lg-bold`), RichText for instruction text
 - **Client component** `GtcQuizStartButton` — renders button with dictionary key `gtc.quiz.start` via `useT()`
-- Image rendered via Next.js `Image` component with optimization (`sizes="(max-width: 1024px) 100vw, 592px"`, no `unoptimized`)
+- Image rendered via Next.js `Image` component (`sizes="(max-width: 1024px) 100vw, 592px"`). Locally renders as plain `<img>` (no srcset) because `next.config.ts` sets `unoptimized: !VERCEL_IMAGE_TTL` — on Vercel, full optimization (srcset, WebP/AVIF) kicks in.
 - Craft domain `lc.training.grohe.this.work` added to `next.config.ts` `remotePatterns`
 - Width: `max-w-[1280px]` with `1024:px-20` outer padding
 - **Rendering**: `{B4E7F2A1-8C3D-4E5F-9A6B-7D8E9F0A1B2C}`
 - **Partial design**: GTC Quiz Above Main (`{A2C4E6F8-...}`) — Breadcrumbs + GTC Stepper + GTC Quiz Overview
 - **Placeholder settings**: `sxa-gtc-quiz-above-main` (`{C3D4E5F6-...}`)
 - Quiz Page Design uses this partial instead of GTC Collection Above Main
+
+### GTC Quiz Engine (architecture decided 12 Apr 2026)
+- **Option B chosen**: SPA-style, single quiz page renders all questions client-side (no page-per-question routing)
+- Rationale: (1) `ShuffleQuestions` flag needs client-side array shuffle — page-based routing breaks this, (2) API only stores final score, not per-question answers — no server state to restore, (3) question items are data templates not page templates — no content model rework, (4) matches existing Craft CMS Nuxt.js SPA behavior
+- Alternatives rejected: (A) page-per-question — breaks shuffle, needs content model rework, adds state management across pages; (C) hybrid hash-based — marginal benefit over pure SPA, extra complexity
+- **Implementation approach**: server component fetches quiz fields + all child questions via GraphQL, passes to `GtcQuizEngine` client component. Client manages: question order (shuffle), current index, user answers, score computation. On completion: POST to `/neo/gtc-learning/v1/quiz/{quizId}/attempt` with `{ score, completed }`. Show pass/fail using `PassText`/`FailText` fields.
+- Trade-off accepted: page refresh resets quiz (acceptable — quizzes are 8-10 questions, ~2 min)
+- **Question types to implement**: Choice (65%), TrueFalse (14%), ValueSlider (14%), DragDrop (5%), FillBlank (<1%), Sortable (<1%) — switch on template ID
+- **Quiz fields used**: ShuffleQuestions, PassingScore, NumberOfQuestions, EnableFeedback, PassText, FailText, Headline, InstructionText, KeyvisualUrl
+- **Figma designs**: Multiple Choice (4120-6493), True/False (4120-5213), Fail Results (4120-7467), Success Results (4129-6788), Negative Feedback (4120-6818), Positive Feedback (4120-7140)
 
 ### GTC Collection Navigation
 - Back/Next buttons at the bottom of Story pages for navigating between collection siblings
