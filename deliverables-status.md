@@ -1,11 +1,11 @@
 # Discovery Phase Deliverables Status
 
-## Overview (as of 22 Mar 2026)
+## Overview (as of 14 Apr 2026)
 
 | # | Deliverable | Owner(s) | Status |
 |---|---|---|---|
 | 1 | Solution Overview | Artsiom + Stepan + Ana | **Draft v1.1** — `Discovery Phase/Outputs/Solution Overview.md` |
-| 2 | Content Migration Plan | Michal Broz | Stub — assigned, not written |
+| 2 | Content Migration Plan | Michal Broz + Artsiom | **In progress** — field mappings done (page-level + component-level), content model done, 1,324 items migrated to QA |
 | 3 | Content Editor User and Role Mapping | TBD | Empty — not started |
 | 4 | Documentation and Training Plan | TBD | Not started (no document) |
 | 5 | Project Plan with Timeline and Budget | Marianna Husar | **GTC Project Plan Revised.xlsx** — 160 MD, Timeline tab with Gantt chart (20 epics, W1–W14, Apr–Jun 2026) |
@@ -58,12 +58,12 @@
 **Purpose:** Detailed roadmap for migrating all content and media from Craft CMS to Sitecore AI.
 
 **Must include (all assigned to @Michal Broz):**
-- Content inventory and scope definition
-- Content type mapping (Craft → Sitecore)
-- Automated migration assessment (what can be auto-migrated vs. manual)
-- Proof-of-concept for automated migration
+- Content inventory and scope definition ← **Done** (63 Collections, 273 Trainings, 28 Quizzes, 273 Interactions)
+- Content type mapping (Craft → Sitecore) ← **Done** — `Content Migration - Field Mapping.md` (page-level: Collection/Story/Quiz + 6 question types, 8 transform rules, 6 open issues) + `Content Migration - Component Field Mapping.md` (24 content builder blocks → 15 NEO renderings, full field-by-field mapping)
+- Automated migration assessment (what can be auto-migrated vs. manual) ← **Partially done** — page-level content fully automated (1,324 items), component content migration tooling not yet built
+- Proof-of-concept for automated migration ← **Done** — generate-content.js + push scripts operational
 - Sitecore Pathway recommendations
-- Media migration plan (current inventory, DAM structure in target state, migration approach)
+- Media migration plan (current inventory, DAM structure in target state, migration approach) ← **Done** — Craft assets as-is to CDN, no Celum
 - Quality assurance approach for migrated content
 
 ---
