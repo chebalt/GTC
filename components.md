@@ -11,7 +11,7 @@
 
 | # | GTC Component | NEO Equivalent | Status | Notes |
 |---|---|---|---|---|
-| 1 | Stage / Hero banner | Hero banner | ✅ | NEO adds video support and dual buttons. Headline always H1. |
+| 1 | Stage / Hero banner | Header Hero Banner `{7A7CB182}` | ✅ **MIGRATED** | Datasource `{FADB7CE4}` at `local:/Data/CollectionHeroBanner`. HeroStageVideoURL field added for Craft video (3 collections + 23 stories). NavigationTitle mapped to Craft `title`. FE updated to use HeroStageVideoURL with priority over AssetMedia. |
 | 2 | Text / Text block | Text Block | ✅ | Supports 2/3-column options and buttons. |
 | 3 | Text/media / Content display block | Content Display Block | ✅ | Various image placements and backgrounds. |
 | 4 | Text/Media Breakdown | Content Display Block | ✅ | Same component; doesn't include exact offset layout. |
