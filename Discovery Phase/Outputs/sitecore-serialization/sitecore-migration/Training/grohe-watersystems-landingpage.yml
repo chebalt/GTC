@@ -19,6 +19,10 @@ SharedFields:
 - ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
   Hint: MainCategories
   Value: "{812BEF03-8348-3E82-DA67-890E60AE0009}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{D4E5F6A7-B8C9-4D1E-AF3A-4B5C6D7E8F90}"><r uid="{50202990-CE36-FA62-6784-73B822C60907}" s:ds="local:/Data/CollectionHeroBanner" s:id="{7A7CB182-4712-4167-8A60-86F88ED4DCC2}" s:par="ButtonStyle=button&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1" s:ph="headless-top-main" /></d></r>
 Languages:
 - Language: en
   Versions:
@@ -32,7 +36,7 @@ Languages:
       Value: GROHE Watersystems
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: GROHE Watersystems
+      Value: GROHE Watersystems Landingpage
     - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
       Hint: Overline
       Value: WELCOME TO THE LEARNING WORLD OF …
@@ -41,7 +45,7 @@ Languages:
       Value: Perfect taste straight from the tap!
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -52,11 +56,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 166993c8-d7ed-ec77-70ab-1299f56ec9d7
+      Value: 107e50d6-3cc3-0629-324a-d7fa0121684b
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z

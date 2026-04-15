@@ -46,6 +46,11 @@ const COLLECTIONS_QUERY = `
         ... on stage_BlockType {
           overline headline subline
           keyvisual { url }
+          video {
+            ... on video_stagevideo_BlockType {
+              videoAsset { url }
+            }
+          }
         }
       }
       collectionData {
@@ -73,6 +78,11 @@ query($slugs: [String]) {
         ... on stage_BlockType {
           overline headline subline
           keyvisual { url }
+          video {
+            ... on video_stagevideo_BlockType {
+              videoAsset { url }
+            }
+          }
         }
       }
       playlistMetaInformation {

@@ -1,30 +1,33 @@
 ---
-ID: "9795d5cf-b52a-f3bf-5adb-2eeee859bf83"
-Parent: "720bb06b-2065-ad8c-1908-432f45b5f139"
+ID: "4bcbfb7c-06eb-c467-7632-eba77e579fad"
+Parent: "9308ea5b-b8ca-ecab-325c-9d15af114087"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Project/Grohe Neo/Pages/GTC/Collection Page/GTC Content/HeroText
+Path: /sitecore/templates/Project/Grohe Neo/Pages/GTC/_GtcBasePageTemplate/GTC Content/HeroStageVideoURL
 SharedFields:
 - ID: "24cb32f0-e364-4f37-b400-0f2899097b5b"
   Hint: Enable Shared Language Fallback
   Value: 1
+- ID: "be351a73-fcb0-4213-93fa-c302d8ab4f51"
+  Hint: Shared
+  Value: 1
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: "Rich Text"
+  Value: "Single-Line Text"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 400
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "7034019c-4952-3d0e-52b3-2f18a859de1e"
+  Value: "55eefe36-6c95-6205-aea1-991229c49374"
 Languages:
 - Language: en
   Fields:
   - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
     Hint: __Short description
-    Value: Hero banner descriptive text
+    Value: Video URL for the hero stage banner (used instead of Asset Media)
   - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
     Hint: __Unversioned revision
-    Value: "06635979-4eee-d027-966f-b309618f8b98"
+    Value: "6a5ab26b-2195-fce6-a2da-1b840c35a313"
   Versions:
   - Version: 1
     Fields:
@@ -41,7 +44,7 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: bb00f37a-ac66-ac45-2ea8-d81da77f15eb
+      Value: 631a26e2-be92-c6d0-226d-b2dae8b8e7e9
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

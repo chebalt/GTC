@@ -29,6 +29,10 @@ SharedFields:
     {DED0580A-8F28-AE06-638F-7CA8C580D7B0}
     {0AECDA76-22DF-9C36-F3F2-21A719B0102D}
     {9F70624C-58C3-76C4-5C10-D404998D0B9C}
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{D4E5F6A7-B8C9-4D1E-AF3A-4B5C6D7E8F90}"><r uid="{F44C0BFA-D67E-88B5-6961-B8E5105A6E42}" s:ds="local:/Data/CollectionHeroBanner" s:id="{7A7CB182-4712-4167-8A60-86F88ED4DCC2}" s:par="ButtonStyle=button&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1" s:ph="headless-top-main" /></d></r>
 Languages:
 - Language: en
   Versions:
@@ -42,7 +46,7 @@ Languages:
       Value: Rainshower Aqua Ceiling Shower Elements Installation
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Rainshower Aqua Ceiling Shower Elements Installation
+      Value: Rainshower Aqua Ceiling Shower Elements Installation Overview
     - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
       Hint: Overline
       Value: Learn more about...
@@ -51,7 +55,7 @@ Languages:
       Value: Immerse yourself in the next level shower experience
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -62,11 +66,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: a8017316-88fc-e256-9ddb-dbbb7e233948
+      Value: ab9df4bf-c1f5-c7bb-8431-ac2930ca0619
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z

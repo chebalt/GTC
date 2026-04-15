@@ -49,7 +49,7 @@ Languages:
         <p>Would you like to retake the quiz or revisit the training module for a review?</p>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -60,11 +60,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: bb8d064b-66b4-a3fa-ddf0-2e2f9d069bcc
+      Value: 7fed598c-9f58-fa79-0679-f34ac799fc0b
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z

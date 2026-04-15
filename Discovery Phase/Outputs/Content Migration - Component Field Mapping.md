@@ -81,22 +81,39 @@ Craft CMS stores page body content as an ordered array of Neo blocks in the `con
 
 ### 2.1 Stage / Hero Banner
 
-**Craft block:** `stage_BlockType` (on page-level, not contentBuilder)  
-**NEO rendering:** Hero Banner  
-**NEO datasource template:** `/sitecore/templates/Feature/Grohe Neo/HeroBanner/HeroBanner`
+**Craft block:** `stage_BlockType` (on page-level, not contentBuilder — all 65 collections have it)  
+**NEO rendering:** Header Hero Banner `{7A7CB182-4712-4167-8A60-86F88ED4DCC2}`  
+**NEO datasource template:** Header Hero Banner Datasource `{FADB7CE4-762C-4534-BBA1-88701FED1EAF}` (`/sitecore/templates/Feature/Grohe Neo/HeaderHeroBanner/Header Hero Banner Datasource`)
+
+**Migration behavior:**
+- For each collection with a `stage_BlockType`: create a `Data` subfolder (template `{1C82E550-EBCD-4E5D-8ABD-D50D0809541E}`) and a `CollectionHeroBanner` datasource item inside it.
+- Add the Header Hero Banner rendering to the collection item's `__Renderings` (shared layout) in the `headless-top-main` placeholder with `s:ds="local:/Data/CollectionHeroBanner"`.
+- The component reads page-level fields (Headline, Overline/Tagline, Subline/Description, KeyvisualUrl) from `serverData.route.fields` and button fields from the datasource. Buttons are left empty during migration.
+
+**Page-level fields (on Collection Page template, inherited from _GtcBasePageTemplate):**
 
 | # | Craft Field | Craft Path | Craft Type | NEO Field | NEO Type | Transform | Notes |
 |---|---|---|---|---|---|---|---|
-| 1 | overline | `stage[0].overline` | String | Tagline | Single-Line Text | Direct copy | NEO calls this "Tagline" |
-| 2 | headline | `stage[0].headline` | String | Headline | Single-Line Text | Direct copy | |
-| 3 | subline | `stage[0].subline` | String | Description | Rich Text | Wrap in `<p>` if plain text | |
-| 4 | keyvisual | `stage[0].keyvisual[0].url` | Asset ref | Image | Droptree (media item) | Upload to media library | See [media rules](#6-media-handling-rules) |
-| — | — | — | — | VideoFile | File | — | **No Craft equivalent** — NEO-only feature |
-| — | — | — | — | VideoLink | Single-Line Text | — | **No Craft equivalent** |
-| — | — | — | — | ButtonsPrimary | General Link | — | **No Craft equivalent** — NEO adds CTA buttons |
-| — | — | — | — | ButtonsSecondary | General Link | — | **No Craft equivalent** |
+| 1 | overline | `stage[0].overline` | String | Overline | Single-Line Text | Direct copy | Displayed above headline |
+| 2 | headline | `stage[0].headline` | String | Headline | Single-Line Text | Direct copy | From `_BasePageTemplate/Content` |
+| 3 | title | `collection.title` | String | NavigationTitle | Single-Line Text | Direct copy | "Link caption in navigation" — mapped to Craft `title` (not `headline`) |
+| 4 | subline | `stage[0].subline` | String | Subline | Rich Text | Wrap in `<p>` if plain text | |
+| 5 | keyvisual | `stage[0].keyvisual[0].url` | Asset ref | KeyvisualUrl | Single-Line Text (Shared) | Prepend Craft base URL | CDN URL for the keyvisual image |
+| 6 | video | `stage[0].video[0].videoAsset` | Asset ref | HeroStageVideoURL | Single-Line Text (Shared) | — | Video URL for the hero stage (used instead of Asset Media). Craft schema has this field but current export does not populate it. |
 
-**Gap:** Craft Hero is simple (text + image). NEO Hero supports video backgrounds and dual CTA buttons — no data to populate these fields during migration.
+**Datasource fields (on Header Hero Banner Datasource — left empty during migration):**
+
+| # | NEO Field | NEO Type | Notes |
+|---|---|---|---|
+| — | ButtonsPrimary | General Link | **No Craft equivalent** — NEO CTA button |
+| — | ButtonsSecondary | General Link | **No Craft equivalent** — NEO CTA button |
+| — | TrackingButtonsPrimary | Lookup | **No Craft equivalent** (analytics) |
+| — | TrackingButtonsSecondary | Lookup | **No Craft equivalent** (analytics) |
+
+**Removed fields:**
+- `HeroText` (Rich Text) — removed from Collection Page template. Was not used by the Header Hero Banner component.
+
+**Gap:** Craft `video` field exists in the stage schema (`video_stagevideo_BlockType` with `videoAsset`, `videoCta`, `controls`, `autoplay`, `loop`, `muted`) but is not currently exported. `HeroStageVideoURL` is added as a placeholder for future population. The NEO Header Hero Banner reads video from `AssetMedia`/`VideoFile`/`VideoLink` on the route — the `HeroStageVideoURL` field will need FE adaptation to be consumed.
 
 ---
 
@@ -578,7 +595,7 @@ Additional fields on Text Slider not in Content Slider:
 
 | NEO Component | NEO-Only Fields | Notes |
 |---|---|---|
-| Hero Banner | VideoFile, VideoLink, ButtonsPrimary, ButtonsSecondary | NEO feature additions |
+| Header Hero Banner | ButtonsPrimary, ButtonsSecondary, TrackingButtonsPrimary, TrackingButtonsSecondary | NEO feature additions; datasource fields left empty |
 | TextBlock | SubTitle, FunctionalAttribute, ButtonsSecondary | |
 | Content Display Block | ButtonsSecondary, VideoIframeTitle | |
 | All with Tracking* | TrackingButtonsPrimary, TrackingButtonsSecondary, TrackingShowMore, TrackingButton | Analytics tracking — not in Craft |

@@ -16,6 +16,9 @@ SharedFields:
 - ID: "7d019b4b-0985-4250-c1d6-fdd0f759dd1c"
   Hint: KeyvisualUrl
   Value: https://lc.training.grohe.this.work/assets/images/Filtration-Technologies/05-Keyvisual.jpg
+- ID: "4bcbfb7c-06eb-c467-7632-eba77e579fad"
+  Hint: HeroStageVideoURL
+  Value: https://lc.training.grohe.this.work/assets/videos/Filtration-Technologies/05-Recycling.process-header.video.mp4
 - ID: "eb4651dd-43e9-1fd0-b0a8-29f6e233be75"
   Hint: TrainingActivity
   Value: GROHE Filtration Technologies - Recycling process
@@ -47,7 +50,7 @@ Languages:
       Value: How you can help GROHE and the environment to recycle old filters
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -58,11 +61,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: a6895458-5165-20c5-b1a9-ce0757c2bafd
+      Value: cfe64059-b941-1b33-90a4-266f9e2d289a
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z

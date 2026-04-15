@@ -27,6 +27,10 @@ SharedFields:
 - ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
   Hint: MainCategories
   Value: "{BC18EF12-92CE-7E6C-167F-5158A06B57BA}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{D4E5F6A7-B8C9-4D1E-AF3A-4B5C6D7E8F90}"><r uid="{478C5650-3189-2EE0-543D-E087EA3E3E52}" s:ds="local:/Data/CollectionHeroBanner" s:id="{7A7CB182-4712-4167-8A60-86F88ED4DCC2}" s:par="ButtonStyle=button&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1" s:ph="headless-top-main" /></d></r>
 Languages:
 - Language: en
   Versions:
@@ -40,20 +44,16 @@ Languages:
       Value: GROHE Purefoam
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: GROHE Purefoam
+      Value: Purefoam
     - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
       Hint: Overline
       Value: Introducing ...
     - ID: "71da194c-d7f1-067c-6b16-d661d41ad9ed"
       Hint: Subline
       Value: Reinvent your shower with the magic of warm foam
-    - ID: "9795d5cf-b52a-f3bf-5adb-2eeee859bf83"
-      Hint: HeroText
-      Value: |
-        <p><strong>GROHE Purefoam</strong></p><p>The magic of warm foam transforms your shower experience with GROHE Purefoam.</p><p>Discover more in the new training module.</p>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -64,11 +64,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: b3018f74-dbff-bfa0-6d70-b1141343c170
+      Value: 08d40dbe-c81b-0d7b-0adc-f43b881c2ec0
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z

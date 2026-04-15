@@ -1,0 +1,34 @@
+---
+ID: "c292894d-9570-2c9e-a79a-5517caea69e9"
+Parent: "9dd19fff-e48e-c1d4-108a-b3538cb64377"
+Template: "fadb7ce4-762c-4534-bba1-88701fed1eaf"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/landingpage-installer/Data/CollectionHeroBanner
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: CollectionHeroBanner
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260415T224427Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: d5bbda99-824d-757f-cfbe-6c152fda4497
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260415T224427Z

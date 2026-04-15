@@ -24,6 +24,10 @@ SharedFields:
 - ID: "47844f34-4176-1a5a-f20e-d5155d7d15ea"
   Hint: MainCategories
   Value: "{AD1FA07A-EFE0-445E-79D3-CD05EB1FB349}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{D4E5F6A7-B8C9-4D1E-AF3A-4B5C6D7E8F90}"><r uid="{3FA89737-7EA5-159D-6AB2-AB728049F054}" s:ds="local:/Data/CollectionHeroBanner" s:id="{7A7CB182-4712-4167-8A60-86F88ED4DCC2}" s:par="ButtonStyle=button&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1" s:ph="headless-top-main" /></d></r>
 Languages:
 - Language: en
   Versions:
@@ -43,7 +47,7 @@ Languages:
       Value: Welcome to …
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -54,11 +58,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 762ce4a7-e17c-31bd-db2b-ef4032337c3f
+      Value: 569387ce-ecbb-98b2-aaaa-6e917d59c480
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z

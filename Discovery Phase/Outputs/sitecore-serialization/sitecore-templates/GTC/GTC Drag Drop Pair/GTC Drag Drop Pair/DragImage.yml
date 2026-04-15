@@ -24,7 +24,7 @@ Languages:
   Fields:
   - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
     Hint: __Short description
-    Value: Image of the draggable item (alternative to text)
+    Value: External CDN URL for the draggable item image
   - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
     Hint: __Unversioned revision
     Value: "dd460165-506e-ec5a-459c-d8961af46079"
@@ -44,7 +44,7 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 050d7cd8-c0a8-1202-292a-c5bb9419c2f6
+      Value: 9e482699-6f44-4298-9b2d-1bdd81c5e75d
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

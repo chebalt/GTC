@@ -35,6 +35,10 @@ SharedFields:
     {32A4C2F5-CB75-451D-E068-05DED821EB03}
     {812BEF03-8348-3E82-DA67-890E60AE0009}
     {2C42EA0E-1ACB-38BE-ACA8-D28B386AF887}
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" s:l="{D4E5F6A7-B8C9-4D1E-AF3A-4B5C6D7E8F90}"><r uid="{54550395-9AAC-E44D-FF95-BFFCCEA0412E}" s:ds="local:/Data/CollectionHeroBanner" s:id="{7A7CB182-4712-4167-8A60-86F88ED4DCC2}" s:par="ButtonStyle=button&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1" s:ph="headless-top-main" /></d></r>
 Languages:
 - Language: en
   Versions:
@@ -52,13 +56,9 @@ Languages:
     - ID: "89473494-1277-3ef8-c85f-410af2328b8d"
       Hint: Overline
       Value: Getting to know...
-    - ID: "9795d5cf-b52a-f3bf-5adb-2eeee859bf83"
-      Hint: HeroText
-      Value: |
-        <p>Get detailed knowledge on long-lasting <strong>GROHE Colours &amp; Surfaces</strong>, and learn more about the production process behind them.</p>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -69,11 +69,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 6f3aa02b-775a-86be-693f-7fe0170eec99
+      Value: c7befe33-e32e-0acd-144a-754c2a8570f1
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z

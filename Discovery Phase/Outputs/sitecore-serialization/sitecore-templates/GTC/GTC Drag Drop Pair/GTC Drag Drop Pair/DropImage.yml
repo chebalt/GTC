@@ -24,7 +24,7 @@ Languages:
   Fields:
   - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
     Hint: __Short description
-    Value: Image of the drop zone (alternative to text)
+    Value: External CDN URL for the drop zone image
   - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
     Hint: __Unversioned revision
     Value: "0e341f13-440f-74f5-c50c-f8345040c971"
@@ -44,7 +44,7 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 854d00ed-d1ab-38c7-96e6-1e409b7e209e
+      Value: 20bdbf56-b797-99de-bc19-e0acf771cb57
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

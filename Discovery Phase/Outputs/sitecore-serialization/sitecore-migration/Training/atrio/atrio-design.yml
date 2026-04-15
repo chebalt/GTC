@@ -13,6 +13,9 @@ SharedFields:
 - ID: "7d019b4b-0985-4250-c1d6-fdd0f759dd1c"
   Hint: KeyvisualUrl
   Value: https://lc.training.grohe.this.work/assets/images/Atrio/02-keyvisual-fallbackimage.jpg
+- ID: "4bcbfb7c-06eb-c467-7632-eba77e579fad"
+  Hint: HeroStageVideoURL
+  Value: https://lc.training.grohe.this.work/assets/videos/Atrio/02-Keyvisual-Design.mp4
 - ID: "be2156f7-5a4a-ffee-d198-e21a56887c09"
   Hint: ReadingTime
   Value: 8
@@ -47,7 +50,7 @@ Languages:
       Value: Timeless elegance with minimalist design
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -58,11 +61,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 8f7cd30f-aa74-7084-ccb3-2cdc155c813a
+      Value: 9733006b-d7e5-5fcf-4e4f-d2821dc1a45d
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z

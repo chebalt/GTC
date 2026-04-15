@@ -1,0 +1,34 @@
+---
+ID: "b242e64e-7ce0-fe72-9207-effb34afba4a"
+Parent: "29ab6c2d-399c-71e1-3901-7e9187a7b860"
+Template: "fadb7ce4-762c-4534-bba1-88701fed1eaf"
+Path: /sitecore/content/Grohe Neo/Neo Website/Home/Training/selling-grohe-spa-showroom-landingpage/Data/CollectionHeroBanner
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+      Hint: __Display name
+      Value: CollectionHeroBanner
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260415T224427Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: 25180bf6-b9f9-ee39-bbf8-e7bf63e2dc62
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\artsiom.dylevich@actumdigital.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260415T224427Z

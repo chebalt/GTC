@@ -24,7 +24,7 @@ Languages:
   Fields:
   - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
     Hint: __Short description
-    Value: Image for fail screen
+    Value: External CDN URL for fail screen image
   - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
     Hint: __Unversioned revision
     Value: "ea4f1b04-ce45-99cd-eadf-3552654acd48"
@@ -44,7 +44,7 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 1a442ce9-a3c4-cc77-aac1-98ad5e636eef
+      Value: 824a2654-3c6b-814c-9a50-2587c782527a
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

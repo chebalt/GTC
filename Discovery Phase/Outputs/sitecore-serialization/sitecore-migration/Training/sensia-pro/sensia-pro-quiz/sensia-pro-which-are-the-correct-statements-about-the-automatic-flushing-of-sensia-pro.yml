@@ -29,7 +29,7 @@ Languages:
         <p>Unfortunately this is not correct! The automatic flushing feature is an option and the connection set 46944001 must be ordered separately. The flush volume can vary between 3l and 5l depending on the length of the stay.</p>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -40,11 +40,11 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 99536cab-c4f8-f043-2bde-2cbe2352e62f
+      Value: a7ff031a-2dca-a9b5-38c1-0da0fe744c07
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260412T150634Z
+      Value: 20260415T224427Z

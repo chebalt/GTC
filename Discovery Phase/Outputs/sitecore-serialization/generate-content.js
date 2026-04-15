@@ -34,6 +34,14 @@ const NOW = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+Z/, 'Z')
 const AUTHOR = 'sitecore\\artsiom.dylevich@actumdigital.com';
 const CRAFT_ASSET_BASE = 'https://lc.training.grohe.this.work';
 
+// ─── Well-known NEO IDs for HeaderHeroBanner ───
+const DATA_FOLDER_TEMPLATE        = '1c82e550-ebcd-4e5d-8abd-d50d0809541e';  // Common Data Folder
+const HERO_BANNER_DS_TEMPLATE     = 'fadb7ce4-762c-4534-bba1-88701fed1eaf';  // Header Hero Banner Datasource
+const HERO_BANNER_RENDERING_ID    = '7A7CB182-4712-4167-8A60-86F88ED4DCC2';  // Header Hero Banner rendering
+const DEFAULT_DEVICE              = 'FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3';
+const GTC_LAYOUT                  = 'D4E5F6A7-B8C9-4D1E-AF3A-4B5C6D7E8F90';
+const FIELD_RENDERINGS            = 'f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e';
+
 // ─── Template field IDs (from generate-templates.js deterministic GUIDs) ───
 function guid(seed) {
   const hash = crypto.createHash('md5').update(seed).digest('hex');
@@ -64,9 +72,11 @@ const FID_PRODUCTLINE_THEME = fieldId(basePath, 'GTC Settings', 'ProductlineThem
 const taxPath = `${TEMPLATES_BASE}/GTC/_GtcTaxonomyTemplate`;
 const FID_MAIN_CATEGORIES = fieldId(taxPath, 'GTC Taxonomy', 'MainCategories');
 
+// _GtcBasePageTemplate — HeroStageVideoURL
+const FID_HERO_STAGE_VIDEO_URL = fieldId(basePath, 'GTC Content', 'HeroStageVideoURL');
+
 // Collection Page fields
 const collPath = `${TEMPLATES_BASE}/GTC/Collection Page`;
-const FID_HERO_TEXT = fieldId(collPath, 'GTC Content', 'HeroText');
 const FID_COURSE_TYPE = fieldId(collPath, 'GTC Settings', 'CourseType');
 const FID_IS_HERO = fieldId(collPath, 'GTC Settings', 'IsHero');
 const FID_REQUIRED_ITEMS = fieldId(collPath, 'GTC Structure', 'RequiredItems');
@@ -281,6 +291,12 @@ function resolveImageUrl(imageArray) {
   return `${CRAFT_ASSET_BASE}${url}`;
 }
 
+function resolveVideoUrl(videoArray) {
+  const url = videoArray?.[0]?.videoAsset?.[0]?.url;
+  if (!url) return null;
+  return `${CRAFT_ASSET_BASE}${url}`;
+}
+
 // ─── Main ───
 
 async function main() {
@@ -397,6 +413,7 @@ async function main() {
     shared += renderGuidField(FID_COLOR_THEME, 'ColorTheme', resolveColorTheme(c.colorTheme));
     shared += renderGuidField(FID_PRODUCTLINE_THEME, 'ProductlineTheme', resolveProductlineTheme(c.productlineTheme));
     shared += renderField(FID_KEYVISUAL_URL, 'KeyvisualUrl', resolveKeyvisualUrl(c.stage?.[0]?.keyvisual));
+    shared += renderField(FID_HERO_STAGE_VIDEO_URL, 'HeroStageVideoURL', resolveVideoUrl(c.stage?.[0]?.video));
     shared += renderGuidField(FID_COURSE_TYPE, 'CourseType', resolveCourseType(tracking.courseType));
     shared += renderField(FID_IS_HERO, 'IsHero', c.collectionData?.[0]?.isHero ? '1' : '');
     shared += renderGuidListField(FID_REQUIRED_ITEMS, 'RequiredItems', requiredGuids);
@@ -405,10 +422,40 @@ async function main() {
     // Versioned fields (translatable)
     let versioned = '';
     versioned += renderField(FIELD_HEADLINE, 'Headline', c.stage?.[0]?.headline, '    ');
-    versioned += renderField(FIELD_NAV_TITLE, 'NavigationTitle', c.stage?.[0]?.headline, '    ');
+    versioned += renderField(FIELD_NAV_TITLE, 'NavigationTitle', c.title, '    ');
     versioned += renderField(FID_OVERLINE, 'Overline', c.stage?.[0]?.overline, '    ');
     versioned += renderField(FID_SUBLINE, 'Subline', c.stage?.[0]?.subline, '    ');
-    versioned += renderField(FID_HERO_TEXT, 'HeroText', c.collectionData?.[0]?.heroText, '    ');
+
+    // ─── HeaderHeroBanner: Data folder + datasource + __Renderings ───
+    const hasStage = c.stage && c.stage.length > 0;
+    if (hasStage) {
+      // Generate Data folder under this collection
+      const dataFolderId = contentGuid(`${c.slug}/Data`);
+      const dataFolderPath = `${collItemPath}/Data`;
+      writeYml(`Training/${c.slug}/Data.yml`, buildItemYml({
+        id: dataFolderId,
+        parent: collId,
+        template: DATA_FOLDER_TEMPLATE,
+        itemPath: dataFolderPath,
+        sortOrder: 0,
+      }));
+
+      // Generate CollectionHeroBanner datasource item under Data
+      const heroDsId = contentGuid(`${c.slug}/Data/CollectionHeroBanner`);
+      const heroDsPath = `${dataFolderPath}/CollectionHeroBanner`;
+      writeYml(`Training/${c.slug}/Data/CollectionHeroBanner.yml`, buildItemYml({
+        id: heroDsId,
+        parent: dataFolderId,
+        template: HERO_BANNER_DS_TEMPLATE,
+        itemPath: heroDsPath,
+        displayName: 'CollectionHeroBanner',
+      }));
+
+      // Add __Renderings to collection item with HeaderHeroBanner pointing to datasource
+      const renderingUid = guid(`rendering-uid:${c.slug}:HeaderHeroBanner`).toUpperCase();
+      const renderingsXml = `<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{${DEFAULT_DEVICE}}" s:l="{${GTC_LAYOUT}}"><r uid="{${renderingUid}}" s:ds="local:/Data/CollectionHeroBanner" s:id="{${HERO_BANNER_RENDERING_ID}}" s:par="ButtonStyle=button&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1" s:ph="headless-top-main" /></d></r>`;
+      shared += renderField(FIELD_RENDERINGS, '__Renderings', renderingsXml);
+    }
 
     writeYml(`Training/${c.slug}.yml`, buildItemYml({
       id: collId,
@@ -437,6 +484,7 @@ async function main() {
       sShared += renderGuidField(FID_COLOR_THEME, 'ColorTheme', resolveColorTheme(t.colorTheme));
       sShared += renderGuidField(FID_PRODUCTLINE_THEME, 'ProductlineTheme', resolveProductlineTheme(t.productlineTheme));
       sShared += renderField(FID_KEYVISUAL_URL, 'KeyvisualUrl', resolveKeyvisualUrl(t.stage?.[0]?.keyvisual));
+      sShared += renderField(FID_HERO_STAGE_VIDEO_URL, 'HeroStageVideoURL', resolveVideoUrl(t.stage?.[0]?.video));
       sShared += renderField(FID_READING_TIME, 'ReadingTime', t.playlistMetaInformation?.[0]?.readingTime);
       sShared += renderField(FID_STORY_TRAINING_ACTIVITY, 'TrainingActivity', t.trainingActivity);
       const sCatGuids = resolveCategories(t.taxonomy?.[0]?.mainCategories);

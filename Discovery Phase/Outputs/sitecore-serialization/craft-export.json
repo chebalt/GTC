@@ -1,43 +1,7 @@
 {
-  "_exportedAt": "2026-04-12T15:06:13.485Z",
+  "_exportedAt": "2026-04-15T22:43:31.358Z",
   "_source": "https://lc.training.grohe.this.work/api",
   "collections": [
-    {
-      "id": "24702835",
-      "uid": "d88d6f53-f2d7-4e3a-b96d-dca048ea9919",
-      "title": "Milan Design Week 2026",
-      "slug": "milan-design-week-2026",
-      "uri": "collections/milan-design-week-2026",
-      "colorTheme": "light",
-      "productlineTheme": "spa",
-      "isLandingpage": false,
-      "topic": "Milan Design Week 2026",
-      "taxonomy": [
-        {
-          "mainCategories": [
-            {
-              "id": "24702838",
-              "title": "Milan Design Week",
-              "slug": "milan-design-week"
-            }
-          ],
-          "tags": []
-        }
-      ],
-      "stage": [
-        {
-          "overline": "Welcome to ...",
-          "headline": "Milan Design Week 2026",
-          "subline": null,
-          "keyvisual": [
-            {
-              "url": "/assets/images/milan-stage.jpg"
-            }
-          ]
-        }
-      ],
-      "collectionData": []
-    },
     {
       "id": "24694548",
       "uid": "43687373-6e0d-4ecb-8373-d2b3aef01861",
@@ -69,7 +33,8 @@
             {
               "url": "/assets/images/Stage-module_2026-04-01-111957_hayy.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -105,7 +70,8 @@
             {
               "url": "/assets/images/Stage-module_2026-03-06-081315_stns.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -141,7 +107,8 @@
             {
               "url": "/assets/images/overview.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -177,7 +144,8 @@
             {
               "url": "/assets/images/verview.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -213,7 +181,8 @@
             {
               "url": "/assets/images/BR1/br1-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -249,7 +218,8 @@
             {
               "url": "/assets/images/Salesforce-Key-images-Events-18.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -285,7 +255,8 @@
             {
               "url": "/assets/images/Salesforce-Key-images-Events-4.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -321,7 +292,8 @@
             {
               "url": "/assets/images/Aqua-Tiles/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -357,7 +329,8 @@
             {
               "url": "/assets/images/Heat-Revovery/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -398,7 +371,8 @@
             {
               "url": "/assets/images/Plus/00-stage.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -434,7 +408,8 @@
             {
               "url": "/assets/images/Salesforce-Landingpage/Salesforce-Key-Image-Landing.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -475,7 +450,8 @@
             {
               "url": "/assets/images/Essence-Crafted-Lever/00-stage.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -516,7 +492,8 @@
             {
               "url": "/assets/images/Ceramics/00-stage.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -557,6 +534,15 @@
             {
               "url": "/assets/images/Allure-Gravity/02-keyvisual.jpg"
             }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Allure-Gravity/00-Allure-graivity-intro-keyvisual-compressed.mp4"
+                }
+              ]
+            }
           ]
         }
       ],
@@ -593,7 +579,8 @@
             {
               "url": "/assets/images/PureFoam/Installation/00-installation-collection-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -629,7 +616,8 @@
             {
               "url": "/assets/images/PureFoam/00-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": [
@@ -670,7 +658,8 @@
             {
               "url": "/assets/images/ISH/ISH-00-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -706,7 +695,8 @@
             {
               "url": "/assets/images/Everstream/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -747,7 +737,8 @@
             {
               "url": "/assets/images/Selling-SPA/Selling-showroom-01-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -793,7 +784,8 @@
             {
               "url": "/assets/images/Rapido-Shower-Frame/Installation/Thumbnails-01/Thumb-Thirdly.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -844,7 +836,8 @@
             {
               "url": "/assets/images/Sensia-Pro/05-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": [
@@ -885,7 +878,8 @@
             {
               "url": "/assets/images/Sensia-Pro/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -926,7 +920,8 @@
             {
               "url": "/assets/images/Rainshower-Aqua-Pure/Installation/Header-Installation.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -962,7 +957,8 @@
             {
               "url": "/assets/images/Cubeo/Image.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1003,7 +999,8 @@
             {
               "url": "/assets/images/Rainshower-Aqua-Pure/00-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": [
@@ -1054,7 +1051,8 @@
             {
               "url": "/assets/images/Rapido-Shower-Frame/Header-Installation.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1095,7 +1093,8 @@
             {
               "url": "/assets/images/Rapido-Shower-Frame/Headers/Header-00.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1136,7 +1135,8 @@
             {
               "url": "/assets/images/Installation-Systems/nacharbeiten/01-Keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1182,7 +1182,8 @@
             {
               "url": "/assets/images/Installation-Systems/Installation-1/10-Keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1238,7 +1239,8 @@
             {
               "url": "/assets/images/Colours/00_Color-and-surfaces-Stage.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": [
@@ -1289,7 +1291,8 @@
             {
               "url": "/assets/images/SmartControl/Stages/01-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1330,7 +1333,8 @@
             {
               "url": "/assets/images/SmartControl/Stages/01-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1371,7 +1375,8 @@
             {
               "url": "/assets/images/Rot-Weiss-Blau-Modern-Gaming-LiveStream-Video-YouTube-Thumbnail_2025-11-26-123543_jang.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1417,7 +1422,8 @@
             {
               "url": "/assets/images/Rapido-SmartBox/Stage-module-6.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1458,7 +1464,8 @@
             {
               "url": "/assets/images/Tempesta-110/00-Stage-module.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1499,7 +1506,8 @@
             {
               "url": "/assets/images/Rapido-SmartBox/Stage-module-6.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1534,6 +1542,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Filtration-Technologies/00-Keyvisual.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Filtration-Technologies/Water-System-Cover-00.mp4"
+                }
+              ]
             }
           ]
         }
@@ -1581,7 +1598,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1622,7 +1640,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1668,7 +1687,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-AF/AF-05-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1709,7 +1729,8 @@
             {
               "url": "/assets/images/Blue-Pure/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1755,7 +1776,8 @@
             {
               "url": "/assets/images/Euphoria/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1791,7 +1813,8 @@
             {
               "url": "/assets/images/water-systems-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1832,7 +1855,8 @@
             {
               "url": "/assets/images/Euphoria/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1868,7 +1892,8 @@
             {
               "url": "/assets/images/QuickFix/quickfix-landingpage-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1909,7 +1934,8 @@
             {
               "url": "/assets/images/Quickglue-cover.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1950,7 +1976,8 @@
             {
               "url": "/assets/images/Atrio/00-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -1991,7 +2018,8 @@
             {
               "url": "/assets/images/GROHTHERM/00-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2032,7 +2060,8 @@
             {
               "url": "/assets/images/Selling-SPA/Selling-showroom-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2073,7 +2102,8 @@
             {
               "url": "/assets/images/Selling-SPA/Selling-showroom-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2119,7 +2149,8 @@
             {
               "url": "/assets/images/Bodysprays/bodysprays-introduction-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2165,7 +2196,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Overview/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2211,7 +2243,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Introduction/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2257,7 +2290,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Introduction/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2292,6 +2326,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Stage-image-01.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Brand-story-00-keyvisual.mp4"
+                }
+              ]
             }
           ]
         }
@@ -2329,7 +2372,8 @@
             {
               "url": "/assets/images/Full-Bathroom-Projects/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2365,7 +2409,8 @@
             {
               "url": "/assets/images/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2401,7 +2446,8 @@
             {
               "url": "/assets/images/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2442,7 +2488,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Overview/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2483,7 +2530,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Overview/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2524,7 +2572,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Overview/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2565,7 +2614,8 @@
             {
               "url": "/assets/images/Stage-image-01.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2606,7 +2656,8 @@
             {
               "url": "/assets/images/Bodysprays/bodysprays-overview-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2647,7 +2698,8 @@
             {
               "url": "/assets/images/Allure/Allure-overview-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "collectionData": []
@@ -2704,7 +2756,8 @@
             {
               "url": "/assets/images/Colours/01_Stage.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -2773,7 +2826,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/Installation/06-Maintaining-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -2837,7 +2891,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/Installation/05-Testing-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -2905,7 +2960,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/Installation/04-Mounting-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -2973,7 +3029,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/Installation/03-Mounting-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -3041,7 +3098,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/Installation/02-Mounting-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -3109,7 +3167,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/Installation/01-Connectiong-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -3177,7 +3236,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/Installation/00-Preparation-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -3236,7 +3296,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/05-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -3305,7 +3366,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/04-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -3373,7 +3435,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/03-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -3446,7 +3509,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/02-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -3514,7 +3578,8 @@
             {
               "url": "/assets/images/Rainshower-AQUA-Ceiling-Shower/01-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -3573,7 +3638,8 @@
             {
               "url": "/assets/images/Atrio/07-keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -3636,7 +3702,8 @@
             {
               "url": "/assets/images/Atrio/06-keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -3698,6 +3765,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Atrio/05-keyvisual.png"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Atrio/05-Keyvisual-private-collection.mp4"
+                }
+              ]
             }
           ]
         }
@@ -3762,7 +3838,8 @@
             {
               "url": "/assets/images/Atrio/04-keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -3829,6 +3906,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Atrio/03-keyvisual-fallbackimage.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Atrio/03-Keyvisual-Features.mp4"
+                }
+              ]
             }
           ]
         }
@@ -3898,6 +3984,15 @@
             {
               "url": "/assets/images/Atrio/02-keyvisual-fallbackimage.jpg"
             }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Atrio/02-Keyvisual-Design.mp4"
+                }
+              ]
+            }
           ]
         }
       ],
@@ -3961,7 +4056,8 @@
             {
               "url": "/assets/images/Atrio/01-Keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4020,7 +4116,8 @@
             {
               "url": "/assets/images/Allure/Summary-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4079,7 +4176,8 @@
             {
               "url": "/assets/images/Selling-SPA/Selling-showroom-03-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4141,6 +4239,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Brand/Brand-story-05-hear.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Selling-SPA/Selling-showroom-02-keyvisual.mp4"
+                }
+              ]
             }
           ]
         }
@@ -4205,7 +4312,8 @@
             {
               "url": "/assets/images/Selling-SPA/Selling-showroom-02-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4264,7 +4372,8 @@
             {
               "url": "/assets/images/Allure/Summary-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4323,7 +4432,8 @@
             {
               "url": "/assets/images/Selling-SPA/Selling-showroom-03-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4385,6 +4495,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Brand/Brand-story-05-hear.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Selling-SPA/Selling-showroom-02-keyvisual.mp4"
+                }
+              ]
             }
           ]
         }
@@ -4449,7 +4568,8 @@
             {
               "url": "/assets/images/Selling-SPA/Selling-showroom-01-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4508,7 +4628,8 @@
             {
               "url": "/assets/images/Bodysprays/Matching-products-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4576,7 +4697,8 @@
             {
               "url": "/assets/images/Bodysprays/installation-step5-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4644,7 +4766,8 @@
             {
               "url": "/assets/images/Bodysprays/installation-step4-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4712,7 +4835,8 @@
             {
               "url": "/assets/images/Bodysprays/installation-step3-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4780,7 +4904,8 @@
             {
               "url": "/assets/images/Bodysprays/installation-step2-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4867,7 +4992,8 @@
             {
               "url": "/assets/images/Bodysprays/installation-step1-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4935,7 +5061,8 @@
             {
               "url": "/assets/images/Bodysprays/installation-step0-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -4999,7 +5126,8 @@
             {
               "url": "/assets/images/Bodysprays/bodysprays-design-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5067,7 +5195,8 @@
             {
               "url": "/assets/images/Bodysprays/bodysprays-features-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5130,7 +5259,8 @@
             {
               "url": "/assets/images/Bodysprays/bodysprays-introduction-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5189,7 +5319,8 @@
             {
               "url": "/assets/images/Brand/Brand-products-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5251,6 +5382,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Brand/Brand-story-00-keyvisual.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Brand-story-00-keyvisual.mp4"
+                }
+              ]
             }
           ]
         }
@@ -5315,7 +5455,8 @@
             {
               "url": "/assets/images/Brand/Brand-mission-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5378,7 +5519,8 @@
             {
               "url": "/assets/images/Brand/Brand-intro-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5437,7 +5579,8 @@
             {
               "url": "/assets/images/Bodysprays/bodysprays-summary-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5496,7 +5639,8 @@
             {
               "url": "/assets/images/Bodysprays/bodysprays-summary-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5555,7 +5699,8 @@
             {
               "url": "/assets/images/Allure/Summary-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5614,7 +5759,8 @@
             {
               "url": "/assets/images/Allure/Summary-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5673,7 +5819,8 @@
             {
               "url": "/assets/images/Allure/Allure-intro-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5732,7 +5879,8 @@
             {
               "url": "/assets/images/Allure/Allure-product-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5800,7 +5948,8 @@
             {
               "url": "/assets/images/Allure/Allure-features-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5868,7 +6017,8 @@
             {
               "url": "/assets/images/Allure/Allure-design-00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -5946,6 +6096,15 @@
             {
               "url": "/assets/images/Colours/teaser-satin.png"
             }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Colours/Satin-stagevideo.mp4"
+                }
+              ]
+            }
           ]
         }
       ],
@@ -6008,6 +6167,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Atrio/04-private-collection.png"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Atrio/05-Keyvisual-private-collection.mp4"
+                }
+              ]
             }
           ]
         }
@@ -6087,7 +6255,8 @@
             {
               "url": "/assets/images/Colours/05_Stage_Stainless-Steel.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -6165,7 +6334,8 @@
             {
               "url": "/assets/images/Colours/keyvisual_mw_pb_mb.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -6243,7 +6413,8 @@
             {
               "url": "/assets/images/Colours/03_Stage_Supersteel.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -6321,7 +6492,8 @@
             {
               "url": "/assets/images/Colours/02_Stage-Chrome.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -6394,7 +6566,8 @@
             {
               "url": "/assets/images/SmartControl/Stages/08-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -6467,7 +6640,8 @@
             {
               "url": "/assets/images/SmartControl/Stages/06-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -6536,7 +6710,8 @@
             {
               "url": "/assets/images/SmartControl/Stages/07-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -6604,7 +6779,8 @@
             {
               "url": "/assets/images/SmartControl/Stages/05-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -6673,7 +6849,8 @@
             {
               "url": "/assets/images/SmartControl/Stages/04-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -6746,7 +6923,8 @@
             {
               "url": "/assets/images/SmartControl/Stages/03-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -6814,7 +6992,8 @@
             {
               "url": "/assets/images/SmartControl/Stages/02-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -6878,7 +7057,8 @@
             {
               "url": "/assets/images/Tempesta-110/04-Stage-module.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -6942,7 +7122,8 @@
             {
               "url": "/assets/images/Tempesta-110/03-Stage-module.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7005,7 +7186,8 @@
             {
               "url": "/assets/images/Tempesta-110/02-Stage-module.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7073,7 +7255,8 @@
             {
               "url": "/assets/images/Tempesta-110/01-Stage-module.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7157,7 +7340,8 @@
             {
               "url": "/assets/images/Rapido-SmartBox/Installation-4/08-stage_update.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7236,7 +7420,8 @@
             {
               "url": "/assets/images/Rapido-SmartBox/Installation-4/08-stage_update.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7315,7 +7500,8 @@
             {
               "url": "/assets/images/Rapido-SmartBox/Stage-module-4.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7393,7 +7579,8 @@
             {
               "url": "/assets/images/Rapido-SmartBox/Stage-module-3.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7466,7 +7653,8 @@
             {
               "url": "/assets/images/Rapido-SmartBox/Stage-module-7.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7550,7 +7738,8 @@
             {
               "url": "/assets/images/Rapido-SmartBox/Stage-module-2.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7642,7 +7831,8 @@
             {
               "url": "/assets/images/Rapido-SmartBox/Stage-module-1.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7715,7 +7905,8 @@
             {
               "url": "/assets/images/Rapido-SmartBox/02-Features-and-benefits-Cover.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7783,7 +7974,8 @@
             {
               "url": "/assets/images/Rapido-SmartBox/Stage-module-5.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7847,7 +8039,8 @@
             {
               "url": "/assets/images/Euphoria/Maintenance-thermostatic-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7911,7 +8104,8 @@
             {
               "url": "/assets/images/Euphoria/Maintenance-aquadimmer-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -7979,7 +8173,8 @@
             {
               "url": "/assets/images/Euphoria/Maintenance-backflow-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8047,7 +8242,8 @@
             {
               "url": "/assets/images/Euphoria/Installation-step11-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8115,7 +8311,8 @@
             {
               "url": "/assets/images/Euphoria/Installation-step10-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8183,7 +8380,8 @@
             {
               "url": "/assets/images/Euphoria/Installation-step09-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8251,7 +8449,8 @@
             {
               "url": "/assets/images/Euphoria/Installation-step08-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8319,7 +8518,8 @@
             {
               "url": "/assets/images/Euphoria/Installation-step07-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8387,7 +8587,8 @@
             {
               "url": "/assets/images/Euphoria/Installation-step06-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8455,7 +8656,8 @@
             {
               "url": "/assets/images/Euphoria/Installation-step05-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8523,7 +8725,8 @@
             {
               "url": "/assets/images/Euphoria/Installation-step04-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8591,7 +8794,8 @@
             {
               "url": "/assets/images/Euphoria/Installation-step03-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8659,7 +8863,8 @@
             {
               "url": "/assets/images/Euphoria/Installation-step02-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8727,7 +8932,8 @@
             {
               "url": "/assets/images/Euphoria/Installation-step01-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8791,7 +8997,8 @@
             {
               "url": "/assets/images/Euphoria/08-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8850,7 +9057,8 @@
             {
               "url": "/assets/images/Euphoria/07-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8913,7 +9121,8 @@
             {
               "url": "/assets/images/Euphoria/06-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -8981,7 +9190,8 @@
             {
               "url": "/assets/images/Euphoria/05-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9044,7 +9254,8 @@
             {
               "url": "/assets/images/Euphoria/04-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9107,7 +9318,8 @@
             {
               "url": "/assets/images/Euphoria/03-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9175,7 +9387,8 @@
             {
               "url": "/assets/images/Euphoria/02-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9238,7 +9451,8 @@
             {
               "url": "/assets/images/Euphoria/01-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9297,7 +9511,8 @@
             {
               "url": "/assets/images/GROHTHERM/02-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9360,7 +9575,8 @@
             {
               "url": "/assets/images/GROHTHERM/01-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9419,7 +9635,8 @@
             {
               "url": "/assets/images/GROHTHERM/08-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9483,7 +9700,8 @@
             {
               "url": "/assets/images/GROHTHERM/07-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9551,7 +9769,8 @@
             {
               "url": "/assets/images/GROHTHERM/06-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9619,7 +9838,8 @@
             {
               "url": "/assets/images/GROHTHERM/05-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9687,7 +9907,8 @@
             {
               "url": "/assets/images/GROHTHERM/04-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9755,7 +9976,8 @@
             {
               "url": "/assets/images/GROHTHERM/03-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9823,7 +10045,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Pre-set-programmes/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9892,7 +10115,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Operating-features/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -9960,7 +10184,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Benefits/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10028,7 +10253,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Technology/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10096,7 +10322,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Automatic-flush/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10164,7 +10391,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Detection-area/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10232,7 +10460,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Running-time/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10300,7 +10529,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Max-running-time/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10368,7 +10598,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/User-profiles/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10436,7 +10667,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Need-for-touchless/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10500,7 +10732,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Predefined-programmes/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10568,7 +10801,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Operating-method/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10636,7 +10870,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Step-02/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10704,7 +10939,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Step-01/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10768,7 +11004,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Maintenance-02/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10832,7 +11069,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Maintenance-01/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10900,7 +11138,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Step-07/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -10968,7 +11207,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Step-06/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11036,7 +11276,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Step-05/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11104,7 +11345,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Step-04/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11172,7 +11414,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Step-03/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11240,7 +11483,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Step-02/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11308,7 +11552,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Step-01/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11372,7 +11617,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Step-11/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11436,7 +11682,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Step-10/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11504,7 +11751,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Step-09/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11572,7 +11820,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Step-08/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11640,7 +11889,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Step-07/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11708,7 +11958,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Step-06/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11776,7 +12027,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Step-05/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11844,7 +12096,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Step-04/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11912,7 +12165,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Step-03/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -11985,7 +12239,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Features-design-installation/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12049,7 +12304,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Step-02/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12117,7 +12373,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Features-comfort/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12185,7 +12442,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Features-hygiene/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12253,7 +12511,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Features-bodycare/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12321,7 +12580,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Step-01/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12380,7 +12640,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Range/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12444,7 +12705,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Flushplates/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12512,7 +12774,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Features/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12580,7 +12843,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Unnecessary-concerns/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12643,7 +12907,8 @@
             {
               "url": "/assets/images/Rapid-SLX/Introduction/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12702,7 +12967,8 @@
             {
               "url": "/assets/images/Sensia-Arena/Introduction/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12756,7 +13022,8 @@
             {
               "url": "/assets/images/Cubeo/03-Header.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12814,7 +13081,8 @@
             {
               "url": "/assets/images/Cubeo/header-02.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12872,7 +13140,8 @@
             {
               "url": "/assets/images/Cubeo/01-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12931,7 +13200,8 @@
             {
               "url": "/assets/images/Rainshower-Aqua-Pure/01-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -12995,7 +13265,8 @@
             {
               "url": "/assets/images/Rapido-Shower-Frame/Headers/Installation/installing-SmartBox.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -13059,7 +13330,8 @@
             {
               "url": "/assets/images/Rapido-Shower-Frame/Headers/Installation/installing-upper-Frame.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -13127,7 +13399,8 @@
             {
               "url": "/assets/images/Rapido-Shower-Frame/Headers/Installation/installing-bottom-Frame.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -13195,7 +13468,8 @@
             {
               "url": "/assets/images/Rapido-Shower-Frame/Headers/Installation/Preparation.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -13259,7 +13533,8 @@
             {
               "url": "/assets/images/Rapido-Shower-Frame/Headers/Header-04.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -13322,7 +13597,8 @@
             {
               "url": "/assets/images/Rapido-Shower-Frame/Headers/Header-03.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -13385,7 +13661,8 @@
             {
               "url": "/assets/images/Rapido-Shower-Frame/Headers/Header-02.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -13453,7 +13730,8 @@
             {
               "url": "/assets/images/Rapido-Shower-Frame/Headers/Header-01.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -13512,7 +13790,8 @@
             {
               "url": "/assets/images/Vitalio-110/03-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -13571,7 +13850,8 @@
             {
               "url": "/assets/images/Vitalio-110/02-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -13644,7 +13924,8 @@
             {
               "url": "/assets/images/Vitalio-110/01-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -13697,6 +13978,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Filtration-Technologies/06-Keyvisual.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Filtration-Technologies/Water-System-Cover-05.mp4"
+                }
+              ]
             }
           ]
         }
@@ -13761,6 +14051,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Filtration-Technologies/05-Keyvisual.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Filtration-Technologies/05-Recycling.process-header.video.mp4"
+                }
+              ]
             }
           ]
         }
@@ -13829,6 +14128,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Filtration-Technologies/04-Keyvisual.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Filtration-Technologies/Water-System-Cover-04.mp4"
+                }
+              ]
             }
           ]
         }
@@ -13903,6 +14211,15 @@
             {
               "url": "/assets/images/Filtration-Technologies/03-Keyvisual.jpg"
             }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Filtration-Technologies/Water-System-Cover-03.mp4"
+                }
+              ]
+            }
           ]
         }
       ],
@@ -13976,6 +14293,15 @@
             {
               "url": "/assets/images/Filtration-Technologies/02-Keyvisual.jpg"
             }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Filtration-Technologies/Water-System-Cover-02.mp4"
+                }
+              ]
+            }
           ]
         }
       ],
@@ -14043,6 +14369,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Filtration-Technologies/01-Keyvisual.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Filtration-Technologies/Water-System-Cover-01.mp4"
+                }
+              ]
             }
           ]
         }
@@ -14113,7 +14448,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-AF/AF-06-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -14177,7 +14513,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-AF/AF-05-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -14245,7 +14582,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-AF/AF-04-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -14313,7 +14651,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-AF/AF-03-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -14381,7 +14720,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-AF/AF-02-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -14449,7 +14789,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-AF/AF-01-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -14518,7 +14859,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-RO/RO-06-keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -14582,7 +14924,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-RO/RO-05-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -14650,7 +14993,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-RO/RO-04-keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -14718,7 +15062,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-RO/RO-03-keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -14786,7 +15131,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-RO/RO-02-keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -14854,7 +15200,8 @@
             {
               "url": "/assets/images/Blue-Pure/Installation-RO/RO-01-keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -14917,6 +15264,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Blue-Pure/06-keyvisual-poster.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Blue-Pure/06-keyvisual.mp4"
+                }
+              ]
             }
           ]
         }
@@ -14996,6 +15352,15 @@
             {
               "url": "/assets/images/Blue-Pure/02-keyvisual-poster.jpg"
             }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Blue-Pure/02-keyvisual.mp4"
+                }
+              ]
+            }
           ]
         }
       ],
@@ -15059,7 +15424,8 @@
             {
               "url": "/assets/images/Blue-Pure/07-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -15122,6 +15488,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/Blue-Pure/01-keyvisual-poster.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Blue-Pure/01-keyvisual.mp4"
+                }
+              ]
             }
           ]
         }
@@ -15197,6 +15572,15 @@
             {
               "url": "/assets/images/Blue-Pure/03-keyvisual-poster.jpg"
             }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Blue-Pure/03-keyvisual.mp4"
+                }
+              ]
+            }
           ]
         }
       ],
@@ -15270,6 +15654,15 @@
             {
               "url": "/assets/images/Blue-Pure/04-Product-Range/04-keyvisual-poster.jpg"
             }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Blue-Pure/04-keyvisual.mp4"
+                }
+              ]
+            }
           ]
         }
       ],
@@ -15338,6 +15731,15 @@
             {
               "url": "/assets/images/Blue-Pure/05-keyvisual-poster.jpg"
             }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Blue-Pure/05-keyvisual.mp4"
+                }
+              ]
+            }
           ]
         }
       ],
@@ -15401,7 +15803,8 @@
             {
               "url": "/assets/images/QuickGlue/06-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -15460,7 +15863,8 @@
             {
               "url": "/assets/images/QuickGlue/05-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -15523,7 +15927,8 @@
             {
               "url": "/assets/images/QuickGlue/04-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -15586,7 +15991,8 @@
             {
               "url": "/assets/images/QuickGlue/03-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -15649,7 +16055,8 @@
             {
               "url": "/assets/images/QuickGlue/02-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -15712,7 +16119,8 @@
             {
               "url": "/assets/images/QuickGlue/01-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -15776,7 +16184,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Usage-data/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -15840,7 +16249,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Thermal-disinfection/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -15908,7 +16318,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Battery-status/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -15976,7 +16387,8 @@
             {
               "url": "/assets/images/Bau-Cosmopolitan-E/Cleaning-mode/00-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16034,7 +16446,8 @@
             {
               "url": "/assets/images/Heat-Revovery/03-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16092,7 +16505,8 @@
             {
               "url": "/assets/images/Heat-Revovery/02-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16150,7 +16564,8 @@
             {
               "url": "/assets/images/Heat-Revovery/01-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16209,7 +16624,8 @@
             {
               "url": "/assets/images/Essence-Crafted-Lever/01-stage.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16268,7 +16684,8 @@
             {
               "url": "/assets/images/Ceramics/04-stage.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16331,7 +16748,8 @@
             {
               "url": "/assets/images/Ceramics/03-stage.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16394,7 +16812,8 @@
             {
               "url": "/assets/images/Ceramics/02-stage.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16457,6 +16876,15 @@
             {
               "url": "/assets/images/Ceramics/01-stage.jpg"
             }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/Ceramics/01-keyvisual-video-compressed.mp4"
+                }
+              ]
+            }
           ]
         }
       ],
@@ -16516,7 +16944,8 @@
             {
               "url": "/assets/images/Allure-Gravity/04-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16579,7 +17008,8 @@
             {
               "url": "/assets/images/Allure-Gravity/03-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16642,7 +17072,8 @@
             {
               "url": "/assets/images/Allure-Gravity/02-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16705,7 +17136,8 @@
             {
               "url": "/assets/images/Allure-Gravity/01-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16759,7 +17191,8 @@
             {
               "url": "/assets/images/Everstream/03-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16817,7 +17250,8 @@
             {
               "url": "/assets/images/Everstream/02-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16875,7 +17309,8 @@
             {
               "url": "/assets/images/Everstream/01-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16929,7 +17364,8 @@
             {
               "url": "/assets/images/PureFoam/Installation/00-Installtion-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -16983,7 +17419,8 @@
             {
               "url": "/assets/images/PureFoam/Installation/01-Installtion-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17041,7 +17478,8 @@
             {
               "url": "/assets/images/PureFoam/Installation/02-Installtion-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17099,7 +17537,8 @@
             {
               "url": "/assets/images/PureFoam/Installation/03-Installtion-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17157,7 +17596,8 @@
             {
               "url": "/assets/images/PureFoam/Installation/04-Installtion-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17215,7 +17655,8 @@
             {
               "url": "/assets/images/PureFoam/Installation/05-Installtion-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17269,7 +17710,8 @@
             {
               "url": "/assets/images/PureFoam/04-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17327,7 +17769,8 @@
             {
               "url": "/assets/images/PureFoam/03-keyvisual-00.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17384,6 +17827,15 @@
           "keyvisual": [
             {
               "url": "/assets/images/PureFoam/02-keyvisual-image.jpg"
+            }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/PureFoam/02-keyvisual-video.mp4"
+                }
+              ]
             }
           ]
         }
@@ -17443,6 +17895,15 @@
             {
               "url": "/assets/images/PureFoam/01-keyvisual-image.jpg"
             }
+          ],
+          "video": [
+            {
+              "videoAsset": [
+                {
+                  "url": "/assets/videos/PureFoam/01-keyvisual-video.mp4"
+                }
+              ]
+            }
           ]
         }
       ],
@@ -17497,7 +17958,8 @@
             {
               "url": "/assets/images/ISH/ISH-02-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17555,7 +18017,8 @@
             {
               "url": "/assets/images/ISH/ISH-01-Keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17609,7 +18072,8 @@
             {
               "url": "/assets/images/Sensia-Pro/08-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17663,7 +18127,8 @@
             {
               "url": "/assets/images/Sensia-Pro/07-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17721,7 +18186,8 @@
             {
               "url": "/assets/images/Sensia-Pro/06-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17779,7 +18245,8 @@
             {
               "url": "/assets/images/Sensia-Pro/sensia-pro-installation-extra.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17837,7 +18304,8 @@
             {
               "url": "/assets/images/Sensia-Pro/04-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17895,7 +18363,8 @@
             {
               "url": "/assets/images/Sensia-Pro/03-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -17953,7 +18422,8 @@
             {
               "url": "/assets/images/Sensia-Pro/02-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18011,7 +18481,8 @@
             {
               "url": "/assets/images/Sensia-Pro/01-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18070,7 +18541,8 @@
             {
               "url": "/assets/images/vlcsnap-2024-11-21-17h27m30s860.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18129,7 +18601,8 @@
             {
               "url": "/assets/images/Preparation-thumb.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18188,7 +18661,8 @@
             {
               "url": "/assets/images/Rainshower-Aqua-Pure/Sales-tips/03-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18251,7 +18725,8 @@
             {
               "url": "/assets/images/Rainshower-Aqua-Pure/02-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18324,7 +18799,8 @@
             {
               "url": "/assets/images/Installation-Systems/Installation-3/13-Keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18388,7 +18864,8 @@
             {
               "url": "/assets/images/Installation-Systems/Installation-2/12-Keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18456,7 +18933,8 @@
             {
               "url": "/assets/images/Installation-Systems/Installation-1/11-Keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18530,7 +19008,8 @@
             {
               "url": "/assets/images/Installation-Systems/09/09-Keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18604,7 +19083,8 @@
             {
               "url": "/assets/images/Installation-Systems/08/Stage-module.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18672,7 +19152,8 @@
             {
               "url": "/assets/images/Installation-Systems/07/07-Keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18740,7 +19221,8 @@
             {
               "url": "/assets/images/Installation-Systems/06/06-Keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18808,7 +19290,8 @@
             {
               "url": "/assets/images/Installation-Systems/05/05-Keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18881,7 +19364,8 @@
             {
               "url": "/assets/images/Installation-Systems/04/04-Keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -18949,7 +19433,8 @@
             {
               "url": "/assets/images/Installation-Systems/03/03-Stage.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19027,7 +19512,8 @@
             {
               "url": "/assets/images/Installation-Systems/02/02-Keyvisual.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19081,7 +19567,8 @@
             {
               "url": "/assets/images/Stage-module_2026-03-09-090627_abty.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19139,7 +19626,8 @@
             {
               "url": "/assets/images/BR1/05-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19197,7 +19685,8 @@
             {
               "url": "/assets/images/Stage-module_2026-03-06-102148_btcf.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19255,7 +19744,8 @@
             {
               "url": "/assets/images/Stage-module_2026-03-05-090800_odwv.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19313,7 +19803,8 @@
             {
               "url": "/assets/images/Stage-module.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19367,7 +19858,8 @@
             {
               "url": "/assets/images/header-sales.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19425,7 +19917,8 @@
             {
               "url": "/assets/images/Group-387-1.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19483,7 +19976,8 @@
             {
               "url": "/assets/images/dice-fb.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19537,7 +20031,8 @@
             {
               "url": "/assets/images/Aqua-Tiles/04-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19595,7 +20090,8 @@
             {
               "url": "/assets/images/Aqua-Tiles/03-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19653,7 +20149,8 @@
             {
               "url": "/assets/images/Aqua-Tiles/02-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19711,7 +20208,8 @@
             {
               "url": "/assets/images/Aqua-Tiles/01-keyvisual.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19765,7 +20263,8 @@
             {
               "url": "/assets/images/Salesforce-Key-images-Events-13.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19823,7 +20322,8 @@
             {
               "url": "/assets/images/Salesforce-Key-images-Events-15_2025-11-18-164127_paev.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19881,7 +20381,8 @@
             {
               "url": "/assets/images/Salesforce-Key-images-Events-11.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19939,7 +20440,8 @@
             {
               "url": "/assets/images/Salesforce-Key-images-Events-8.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -19993,7 +20495,8 @@
             {
               "url": "/assets/images/Salesforce-Key-images-Events-14.png"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -20052,7 +20555,8 @@
             {
               "url": "/assets/images/Plus/01-stage.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -20098,7 +20602,8 @@
             {
               "url": "/assets/images/Colours/preparation.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -20152,7 +20657,8 @@
             {
               "url": "/assets/images/check.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -20206,7 +20712,8 @@
             {
               "url": "/assets/images/three.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -20264,7 +20771,8 @@
             {
               "url": "/assets/images/two.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -20322,7 +20830,8 @@
             {
               "url": "/assets/images/one.jpg"
             }
-          ]
+          ],
+          "video": []
         }
       ],
       "playlistMetaInformation": [
@@ -20352,6 +20861,131 @@
     }
   ],
   "quizzes": [
+    {
+      "id": "24707336",
+      "uid": "ef3aa70b-7ba4-4f8e-9ff9-d3f64a486c3b",
+      "title": "Milan Design Week 2026 - Quiz",
+      "slug": "milan-design-week-2026-quiz",
+      "uri": "quizzes/milan-design-week-2026-quiz",
+      "colorTheme": "dark",
+      "productlineTheme": "spa",
+      "trainingActivity": "Milan Design Week 2026 - Quiz",
+      "taxonomy": [
+        {
+          "mainCategories": [
+            {
+              "id": "24702838",
+              "title": "Milan Design Week",
+              "slug": "milan-design-week"
+            }
+          ]
+        }
+      ],
+      "quizMetaInformation": [
+        {
+          "overline": "Milan Design Week 2026",
+          "headline": "Quiz",
+          "subline": null,
+          "text": "<p>Complete this 12-question quiz to verify your preparation and unlock your official Milan Design Week 2026 certificate for download.</p>",
+          "keyvisual": [
+            {
+              "url": "/assets/images/milan-quiz-final-square.jpg"
+            }
+          ],
+          "passingScore": 80,
+          "numberOfInteractions": 12,
+          "shuffleInteractions": true,
+          "enableFeedback": false
+        }
+      ],
+      "positiveFeedback": [
+        {
+          "feedbackHeadline": null,
+          "feedbackText": "<p>Congratulations! You are officially ready for Milan. Your certificate is now available for download below.</p>"
+        }
+      ],
+      "negativeFeedback": [
+        {
+          "feedbackHeadline": null,
+          "feedbackText": "<p>Not quite there yet! Please revisit the presentations to refresh your knowledge before trying the quiz again.</p>"
+        }
+      ],
+      "correspondingTraining": [],
+      "interactions": [
+        {
+          "id": "24707410",
+          "uid": "b7893cc6-b967-480e-893d-05029d70140e",
+          "title": "MDW 26 - Where is the Milan Design week being held?",
+          "slug": "mdw-26-where-is-the-milan-design-week-being-held"
+        },
+        {
+          "id": "24707496",
+          "uid": "5364ad74-2635-4e03-b38e-a42e2cabef76",
+          "title": "MDW 26 - SPA is an abbreviation of the latin term Salus per Aquam… but what does it mean?",
+          "slug": "mdw-26-spa-is-an-abbreviation-of-the-latin-term-salus-per-aquam...-but-what-does-it-mean"
+        },
+        {
+          "id": "24707632",
+          "uid": "924fdfe4-0d99-4f7b-b4ae-3c116d9eeea0",
+          "title": "MDW 26 - GROHE SPA recently added a HERO concept across Atrio / Atrio Private Collection and Allure, what are the finishes included in this 9 week promise?",
+          "slug": "mdw-26-grohe-spa-recently-added-a-hero-concept-across-atrio-atrio-private-collection-and-allure-what-are-the-finishes-included-in-this-9-week-promise"
+        },
+        {
+          "id": "24707741",
+          "uid": "60978d84-a4af-466e-a1c1-6abe5b139f5c",
+          "title": "MDW 26 - What is the Installation area of MDW for GROHE SPA called?",
+          "slug": "mdw-26-what-is-the-installation-area-of-mdw-for-grohe-spa-called"
+        },
+        {
+          "id": "24707896",
+          "uid": "0ab3034d-c0bc-4097-a63a-4ef949031c5c",
+          "title": "MDW 26 - What are the Business objectives of Milan Design Week 2026?",
+          "slug": "mdw-26-what-are-the-business-objectives-of-milan-design-week-2026"
+        },
+        {
+          "id": "24708025",
+          "uid": "ad2395d6-7a9c-44be-a82a-e970707a8253",
+          "title": "MDW 26 - What is the definition of GROHE Aqua Sanctuary?",
+          "slug": "mdw-26-what-is-the-definition-of-grohe-aqua-sanctuary"
+        },
+        {
+          "id": "24708183",
+          "uid": "d7172a16-e0fe-4b22-a61b-2940415e35c8",
+          "title": "MDW 26 - With the introduction of the Aqua Tree, GROHE has achieved a significant industry milestone. Which of these \"firsts\" defines this innovation?",
+          "slug": "mdw-26-with-the-introduction-of-the-aqua-tree-grohe-has-achieved-a-significant-industry-milestone-which-of-these-firsts-defines-this-innovation"
+        },
+        {
+          "id": "24708272",
+          "uid": "69074aa3-9539-4d54-9e4e-9c5cf96fd7db",
+          "title": "MDW 26 - What does B+P signify for Grohe SPA?",
+          "slug": "mdw-26-what-does-b-p-signify-for-grohe-spa"
+        },
+        {
+          "id": "24708380",
+          "uid": "9d6dc34f-0739-4656-b0aa-bfb603b56d14",
+          "title": "MDW 26 - The Aqua Tree can be purchased.",
+          "slug": "mdw-26-the-aqua-tree-can-be-purchased"
+        },
+        {
+          "id": "24708420",
+          "uid": "31bbeb91-8a57-44f2-a8d1-dcc048e9efff",
+          "title": "MDW 26 - When will the GROHE SPA Private Collection Vanity be available?",
+          "slug": "mdw-26-when-will-the-grohe-spa-private-collection-vanity-be-available"
+        },
+        {
+          "id": "24708532",
+          "uid": "21cb6344-5599-4f1f-9de2-b88de7fec242",
+          "title": "MDW 26 - What are the 3 essential rituals?",
+          "slug": "mdw-26-what-are-the-3-essential-rituals"
+        },
+        {
+          "id": "24708631",
+          "uid": "bae61931-e1d1-4bb6-88c5-8389ec4157a9",
+          "title": "MDW 26 - Atrio Private Collection is luxury personalization with:",
+          "slug": "mdw-26-atrio-private-collection-is-luxury-personalization-with"
+        }
+      ]
+    },
     {
       "id": "24705219",
       "uid": "b2b4dfa3-9b28-4a4a-9280-2efb0a1d395c",
@@ -23631,6 +24265,731 @@
   ],
   "interactions": [
     {
+      "id": "24708631",
+      "uid": "bae61931-e1d1-4bb6-88c5-8389ec4157a9",
+      "title": "MDW 26 - Atrio Private Collection is luxury personalization with:",
+      "slug": "mdw-26-atrio-private-collection-is-luxury-personalization-with",
+      "interactionMetaInformation": [
+        {
+          "headline": "Atrio Private Collection is luxury personalization with:"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>Atrio Private Collection is luxury personalization with:</p>",
+          "questionInstruction": "<p><i>Choose one answer.</i></p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>CMF (Caesarstone) </p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Flow</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Largest SKU collection</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Unlimited combinations</p>",
+              "correctAnswer": false,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24708532",
+      "uid": "21cb6344-5599-4f1f-9de2-b88de7fec242",
+      "title": "MDW 26 - What are the 3 essential rituals?",
+      "slug": "mdw-26-what-are-the-3-essential-rituals",
+      "interactionMetaInformation": [
+        {
+          "headline": "What are the 3 essential rituals?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>What are the 3 essential rituals?</p>",
+          "questionInstruction": "<p><i>Choose multiple answers.</i></p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>Preparation</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Relaxation</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Hydration</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Rejuvenation</p>",
+              "correctAnswer": true,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24708420",
+      "uid": "31bbeb91-8a57-44f2-a8d1-dcc048e9efff",
+      "title": "MDW 26 - When will the GROHE SPA Private Collection Vanity be available?",
+      "slug": "mdw-26-when-will-the-grohe-spa-private-collection-vanity-be-available",
+      "interactionMetaInformation": [
+        {
+          "headline": "When will the GROHE SPA Private Collection Vanity be available?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>When will the GROHE SPA Private Collection Vanity be available?  </p>",
+          "questionInstruction": "<p><i>Choose one answer.</i></p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>LW2 - Sept 26</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>ISH  2027</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>MDW 2028 </p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Concept only. Get feedback</p>",
+              "correctAnswer": true,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24708380",
+      "uid": "9d6dc34f-0739-4656-b0aa-bfb603b56d14",
+      "title": "MDW 26 - The Aqua Tree can be purchased.",
+      "slug": "mdw-26-the-aqua-tree-can-be-purchased",
+      "interactionMetaInformation": [
+        {
+          "headline": "The Aqua Tree can be purchased."
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_trueFalseModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>The Aqua Tree can be purchased.</p>",
+          "questionInstruction": null,
+          "optionalImageComponent": [],
+          "stacked": true,
+          "trueFalseAnswerOptions": [
+            {
+              "trueLabel": null,
+              "falseLabel": null,
+              "correctAnswer": "false"
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Is a concept, not for sale. To show what is possible. Get in touch for interest</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Is a concept, not for sale. To show what is possible. Get in touch for interest</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24708272",
+      "uid": "69074aa3-9539-4d54-9e4e-9c5cf96fd7db",
+      "title": "MDW 26 - What does B+P signify for Grohe SPA?",
+      "slug": "mdw-26-what-does-b-p-signify-for-grohe-spa",
+      "interactionMetaInformation": [
+        {
+          "headline": "What does B+P signify for Grohe SPA?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>What does B+P signify for Grohe SPA?</p>",
+          "questionInstruction": "<p><i>Choose one answer.</i></p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>British Petroleum sustainability project - Grohe partner</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>British &amp; Proud - design team based in the UK</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Buster &amp; Punch collaboration where every detail connects  - Material harmony</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Beans &amp; Peas - UK national dish which will be served as a snack at MDW</p>",
+              "correctAnswer": false,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24708183",
+      "uid": "d7172a16-e0fe-4b22-a61b-2940415e35c8",
+      "title": "MDW 26 - With the introduction of the Aqua Tree, GROHE has achieved a significant industry milestone. Which of these \"firsts\" defines this innovation?",
+      "slug": "mdw-26-with-the-introduction-of-the-aqua-tree-grohe-has-achieved-a-significant-industry-milestone-which-of-these-firsts-defines-this-innovation",
+      "interactionMetaInformation": [
+        {
+          "headline": "With the introduction of the Aqua Tree, GROHE has achieved a significant industry milestone. Which of these \"firsts\" defines this innovation?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>With the introduction of the Aqua Tree, GROHE has achieved a significant industry milestone. Which of these \"firsts\" defines this innovation?</p>",
+          "questionInstruction": "<p><i>Choose one answer.</i></p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>Realizing an ultra-thin, organic silhouette that was previously deemed technically unfeasible.</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Successfully integrated lighting bulbs directly into the structural frame.</p>",
+              "correctAnswer": false,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24708025",
+      "uid": "ad2395d6-7a9c-44be-a82a-e970707a8253",
+      "title": "MDW 26 - What is the definition of GROHE Aqua Sanctuary?",
+      "slug": "mdw-26-what-is-the-definition-of-grohe-aqua-sanctuary",
+      "interactionMetaInformation": [
+        {
+          "headline": "What is the definition of GROHE Aqua Sanctuary?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>What is the definition of GROHE Aqua Sanctuary?</p>",
+          "questionInstruction": "<p><i>Choose one answer.</i></p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>A state of complete wellbeing - where mind, body, and space align in perfect harmony, with every detail carefully considered</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>An opportunity to experience the Grohe SPA product range with live working products with running water </p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>A place where we connect with GROHE SPA products</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>A place to take orders to increase the Project pipeline </p>",
+              "correctAnswer": false,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24707896",
+      "uid": "0ab3034d-c0bc-4097-a63a-4ef949031c5c",
+      "title": "MDW 26 - What are the Business objectives of Milan Design Week 2026?",
+      "slug": "mdw-26-what-are-the-business-objectives-of-milan-design-week-2026",
+      "interactionMetaInformation": [
+        {
+          "headline": "What are the Business objectives of Milan Design Week 2026?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>What are the Business objectives of Milan Design Week 2026?</p>",
+          "questionInstruction": "<p><i>Choose multiple answers.</i></p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>Inspire the Architect &amp; Design Community (influence the influencer) </p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Engage with Specifiers on Project Opportunities </p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Generate new connections in Projects Business</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Have a cappuccino before 10:30 </p>",
+              "correctAnswer": false,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24707741",
+      "uid": "60978d84-a4af-466e-a1c1-6abe5b139f5c",
+      "title": "MDW 26 - What is the Installation area of MDW for GROHE SPA called?",
+      "slug": "mdw-26-what-is-the-installation-area-of-mdw-for-grohe-spa-called",
+      "interactionMetaInformation": [
+        {
+          "headline": "What is the Installation area of MDW for GROHE SPA called?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>What is the Installation area of MDW for GROHE SPA called?</p>",
+          "questionInstruction": "<p><i>Choose one answer.</i></p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>Aquatecture </p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Aqua Tiers</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Aqua Sanctuary </p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Aqua Santums </p>",
+              "correctAnswer": false,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24707632",
+      "uid": "924fdfe4-0d99-4f7b-b4ae-3c116d9eeea0",
+      "title": "MDW 26 - GROHE SPA recently added a HERO concept across Atrio / Atrio Private Collection and Allure, what are the finishes included in this 9 week promise?",
+      "slug": "mdw-26-grohe-spa-recently-added-a-hero-concept-across-atrio-atrio-private-collection-and-allure-what-are-the-finishes-included-in-this-9-week-promise",
+      "interactionMetaInformation": [
+        {
+          "headline": "GROHE SPA recently added a HERO concept across Atrio / Atrio Private Collection and Allure, what are the finishes included in this 9 week promise?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>GROHE SPA recently added a HERO concept across Atrio / Atrio Private Collection and Allure, what are the finishes included in this 9 week promise?</p>",
+          "questionInstruction": "<p><i>Choose multiple answers.</i></p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>Brushed Warm Sunset</p>",
+              "correctAnswer": true,
+              "asset": [
+                {
+                  "url": "/assets/images/Aqua-Tiles/03-Brushed-Warm-Sunset.png"
+                }
+              ]
+            },
+            {
+              "answerText": "<p>Brushed Hard Graphite</p>",
+              "correctAnswer": true,
+              "asset": [
+                {
+                  "url": "/assets/images/Aqua-Tiles/03-Brushed-Hard-Graphite.png"
+                }
+              ]
+            },
+            {
+              "answerText": "<p>Phantom Black</p>",
+              "correctAnswer": true,
+              "asset": [
+                {
+                  "url": "/assets/images/Aqua-Tiles/03-Phantom-Black.png"
+                }
+              ]
+            },
+            {
+              "answerText": "<p>Supersteel</p>",
+              "correctAnswer": true,
+              "asset": [
+                {
+                  "url": "/assets/images/Aqua-Tiles/03-Supersteel.png"
+                }
+              ]
+            },
+            {
+              "answerText": "<p>Brushed Cool Sunrise</p>",
+              "correctAnswer": true,
+              "asset": [
+                {
+                  "url": "/assets/images/Aqua-Tiles/03-Brushed-Cool-Sunrise.png"
+                }
+              ]
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24707496",
+      "uid": "5364ad74-2635-4e03-b38e-a42e2cabef76",
+      "title": "MDW 26 - SPA is an abbreviation of the latin term Salus per Aquam… but what does it mean?",
+      "slug": "mdw-26-spa-is-an-abbreviation-of-the-latin-term-salus-per-aquam...-but-what-does-it-mean",
+      "interactionMetaInformation": [
+        {
+          "headline": "SPA is an abbreviation of the latin term Salus per Aquam… but what does it mean?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>SPA is an abbreviation of the latin term Salus per Aquam… but what does it mean?</p>",
+          "questionInstruction": "<p><i>Choose one answers.</i></p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>Salus Per Aqua</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Wellbeing through water </p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Spa Personal Aqua</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Special Personalized Aromatherapy </p>",
+              "correctAnswer": false,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24707410",
+      "uid": "b7893cc6-b967-480e-893d-05029d70140e",
+      "title": "MDW 26 - Where is the Milan Design week being held?",
+      "slug": "mdw-26-where-is-the-milan-design-week-being-held",
+      "interactionMetaInformation": [
+        {
+          "headline": "Where is the Milan Design week being held?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_fillTheBlankModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>Where is the Milan Design week being held?</p>",
+          "questionInstruction": null,
+          "optionalImageComponent": [],
+          "textWithoutFormating": "<p>The Milan Design Week 2026 is in {{Milan | Paris | Bergamo | London}}.</p>",
+          "stacked": true,
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "24706179",
       "uid": "4b9f3b08-6f43-4941-bc56-92d5877e8e16",
       "title": "AquaBooster Technology & Products - SpeedClean is a feature of GROHE Hand and head showers",
@@ -25341,116 +26700,6 @@
       ]
     },
     {
-      "id": "24480559",
-      "uid": "d6f86832-6c9e-4afd-8ee3-649b23a643ff",
-      "title": "Heat Recovery - Which of the below listed items is a big advantage for the customer?",
-      "slug": "heat-recovery-which-of-the-below-listed-items-is-a-big-advantage-for-the-customer",
-      "interactionMetaInformation": [
-        {
-          "headline": "Which of the below listed items is a big advantage for the customer?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_choiceModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>Which of the below listed items is a big advantage for the customer?</p>",
-          "questionInstruction": null,
-          "optionalImageComponent": [],
-          "forceMultipleChoice": false,
-          "disableShuffle": false,
-          "stacked": true,
-          "choiceAnswerOptions": [
-            {
-              "answerText": "<p>Used hot shower water heats up new shower water which results in saving costs in times of high energy prices.</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Easy retrofitting</p>",
-              "correctAnswer": false,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Easy cleaning of the system</p>",
-              "correctAnswer": false,
-              "asset": []
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Correct, it is the savings! The system is for new installations or major renovations only and does not require special cleaning.</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Sorry, it is the savings! The system is for new installations or major renovations only and does not require special cleaning.</p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>It is the savings! The system is for new installations or major renovations only and does not require special cleaning.</p>"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "24480477",
-      "uid": "ea2f5d47-70c6-4e45-9b2b-f8ecaa0a89ea",
-      "title": "Heat Recovery - In how many variants is the Rapido Shower Frame Heat Recovery system available?",
-      "slug": "heat-recovery-in-how-many-variants-is-the-rapido-shower-frame-heat-recovery-system-available",
-      "interactionMetaInformation": [
-        {
-          "headline": "In how many variants is the Rapido Shower Frame Heat Recovery system available?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_valueSliderModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>In how many variants is the Rapido Shower Frame Heat Recovery system available?</p>",
-          "questionInstruction": null,
-          "optionalImageComponent": [],
-          "stacked": true,
-          "valueSliderConfiguration": [
-            {
-              "minValue": 1,
-              "maxValue": 10,
-              "steps": 1,
-              "initialValue": 1,
-              "correctValue": 4,
-              "correctThreshold": null,
-              "minLabel": null,
-              "maxLabel": null,
-              "currentValueLabel": null
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Well done! The frames can be delivered in four different variants, both Mono and Duo with either one or two copper pipes for heat exchanging.</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Not quite, the frames can be delivered in four different variants, both Mono and Duo with either one or two copper pipes for heat exchanging.</p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>The frames can be delivered in four different variants, both Mono and Duo with either one or two copper pipes for heat exchanging.</p>"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "24480291",
       "uid": "2b56ad7a-f54a-448f-a03a-61d156d628b1",
       "title": "Heat recovery - Which of the below listed items are major advantages for the installer?",
@@ -25864,6 +27113,116 @@
             {
               "feedbackHeadline": null,
               "feedbackText": "<p>The HeatRecovery system is based on the Rapido ShowerFrame.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24480559",
+      "uid": "d6f86832-6c9e-4afd-8ee3-649b23a643ff",
+      "title": "Heat Recovery - Which of the below listed items is a big advantage for the customer?",
+      "slug": "heat-recovery-which-of-the-below-listed-items-is-a-big-advantage-for-the-customer",
+      "interactionMetaInformation": [
+        {
+          "headline": "Which of the below listed items is a big advantage for the customer?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>Which of the below listed items is a big advantage for the customer?</p>",
+          "questionInstruction": null,
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>Used hot shower water heats up new shower water which results in saving costs in times of high energy prices.</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Easy retrofitting</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Easy cleaning of the system</p>",
+              "correctAnswer": false,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Correct, it is the savings! The system is for new installations or major renovations only and does not require special cleaning.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Sorry, it is the savings! The system is for new installations or major renovations only and does not require special cleaning.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>It is the savings! The system is for new installations or major renovations only and does not require special cleaning.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24480477",
+      "uid": "ea2f5d47-70c6-4e45-9b2b-f8ecaa0a89ea",
+      "title": "Heat Recovery - In how many variants is the Rapido Shower Frame Heat Recovery system available?",
+      "slug": "heat-recovery-in-how-many-variants-is-the-rapido-shower-frame-heat-recovery-system-available",
+      "interactionMetaInformation": [
+        {
+          "headline": "In how many variants is the Rapido Shower Frame Heat Recovery system available?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_valueSliderModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>In how many variants is the Rapido Shower Frame Heat Recovery system available?</p>",
+          "questionInstruction": null,
+          "optionalImageComponent": [],
+          "stacked": true,
+          "valueSliderConfiguration": [
+            {
+              "minValue": 1,
+              "maxValue": 10,
+              "steps": 1,
+              "initialValue": 1,
+              "correctValue": 4,
+              "correctThreshold": null,
+              "minLabel": null,
+              "maxLabel": null,
+              "currentValueLabel": null
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Well done! The frames can be delivered in four different variants, both Mono and Duo with either one or two copper pipes for heat exchanging.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Not quite, the frames can be delivered in four different variants, both Mono and Duo with either one or two copper pipes for heat exchanging.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>The frames can be delivered in four different variants, both Mono and Duo with either one or two copper pipes for heat exchanging.</p>"
             }
           ]
         }
@@ -29475,127 +30834,6 @@
       ]
     },
     {
-      "id": "24578013",
-      "uid": "a6b1ef2c-0046-4ead-be73-454eae9db90f",
-      "title": "Dice - In which colours is Dice available?",
-      "slug": "dice-in-which-colours-is-dice-available",
-      "interactionMetaInformation": [
-        {
-          "headline": "In which colours is Dice available?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_choiceModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>In which colours is Dice available?</p>",
-          "questionInstruction": null,
-          "optionalImageComponent": [],
-          "forceMultipleChoice": false,
-          "disableShuffle": false,
-          "stacked": true,
-          "choiceAnswerOptions": [
-            {
-              "answerText": "<p>Chrome</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Matte Black</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Supersteel</p>",
-              "correctAnswer": false,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Brushed Hard Graphite</p>",
-              "correctAnswer": false,
-              "asset": []
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Yes, Dice is available in Chrome and Matte Black.</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Sorry, this is wrong. Dice is available in Chrome and Matte Black.</p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": null
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "24577907",
-      "uid": "89084d19-922a-4dfb-8c37-177d2f2c9217",
-      "title": "Dice - What is the purpose of the Quick Tool which is included in the delivery?",
-      "slug": "dice-what-is-the-purpose-of-the-quick-tool-which-is-included-in-the-delivery",
-      "interactionMetaInformation": [
-        {
-          "headline": "What is the purpose of the Quick Tool which is included in the delivery?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_choiceModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>What is the purpose of the Quick Tool which is included in the delivery?</p>",
-          "questionInstruction": null,
-          "optionalImageComponent": [],
-          "forceMultipleChoice": false,
-          "disableShuffle": false,
-          "stacked": true,
-          "choiceAnswerOptions": [
-            {
-              "answerText": "<p>I allows you to install the faucet yourself even if you do not have appropriate tools at hand.</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>To support the installer in case of a missing tool.</p>",
-              "correctAnswer": false,
-              "asset": []
-            },
-            {
-              "answerText": "<p>GROHE does not provide any tools with their products</p>",
-              "correctAnswer": false,
-              "asset": []
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Yes, this is correct! Even if you do not have appropriate tools at hand the Quick Tool provided allows the customer to install the faucet by himself.</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>This is unfortunately not correct! Even if you do not have appropriate tools at hand the Quick Tool provided allows the customer to install the faucet by himself.</p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": null
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "23743334",
       "uid": "ef283d79-5158-4753-abaa-2007b305803d",
       "title": "ISH 2025 - How many outlets can be used at the same time on a 3 button SmartControl?",
@@ -31950,6 +33188,346 @@
       ]
     },
     {
+      "id": "24578321",
+      "uid": "e7e3ba24-ed8f-438e-9d07-4f526a9a89e6",
+      "title": "Dice - Which of the following Dice variants are available?",
+      "slug": "dice-which-of-the-following-dice-variants-are-available",
+      "interactionMetaInformation": [
+        {
+          "headline": "Which of the following Dice variants are available?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>Which of the following Dice variants are available?</p>",
+          "questionInstruction": null,
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>Basin Mixer M-Size in Chrome with pull-out spout</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Matte Black Basin Mixer S-Size</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Matte Black Shower Mixer concealed</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Basin Mixer L-Size in Chrome and Matte Black</p>",
+              "correctAnswer": true,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Very good! The concealed Shower Mixer in Matte Black is not available.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>This was not correct! The concealed Shower Mixer in Matte Black is not available.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24578215",
+      "uid": "f9dd2a1c-fb12-4a66-bd9e-531b54f64e71",
+      "title": "Dice - Which of the following properties apply to GROHE Dice?",
+      "slug": "dice-which-of-the-following-properties-apply-to-grohe-dice",
+      "interactionMetaInformation": [
+        {
+          "headline": "Which of the following properties apply to GROHE Dice?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>Which of the following properties apply to GROHE Dice?</p>",
+          "questionInstruction": null,
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>Available in Phantom Black</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Soft square edges</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Rounded open lever</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Slightly kicked lever</p>",
+              "correctAnswer": true,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Yes, Dice comes with soft square edges and a slightly kicked lever. It is available in Matte Black and has no rounded open lever.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Sorry, this is wrong. Dice comes with soft square edges and a slightly kicked lever. It is available in Matte Black and has no rounded open lever.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24578013",
+      "uid": "a6b1ef2c-0046-4ead-be73-454eae9db90f",
+      "title": "Dice - In which colours is Dice available?",
+      "slug": "dice-in-which-colours-is-dice-available",
+      "interactionMetaInformation": [
+        {
+          "headline": "In which colours is Dice available?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>In which colours is Dice available?</p>",
+          "questionInstruction": null,
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>Chrome</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Matte Black</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Supersteel</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Brushed Hard Graphite</p>",
+              "correctAnswer": false,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Yes, Dice is available in Chrome and Matte Black.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Sorry, this is wrong. Dice is available in Chrome and Matte Black.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24577907",
+      "uid": "89084d19-922a-4dfb-8c37-177d2f2c9217",
+      "title": "Dice - What is the purpose of the Quick Tool which is included in the delivery?",
+      "slug": "dice-what-is-the-purpose-of-the-quick-tool-which-is-included-in-the-delivery",
+      "interactionMetaInformation": [
+        {
+          "headline": "What is the purpose of the Quick Tool which is included in the delivery?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>What is the purpose of the Quick Tool which is included in the delivery?</p>",
+          "questionInstruction": null,
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>I allows you to install the faucet yourself even if you do not have appropriate tools at hand.</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>To support the installer in case of a missing tool.</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>GROHE does not provide any tools with their products</p>",
+              "correctAnswer": false,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Yes, this is correct! Even if you do not have appropriate tools at hand the Quick Tool provided allows the customer to install the faucet by himself.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>This is unfortunately not correct! Even if you do not have appropriate tools at hand the Quick Tool provided allows the customer to install the faucet by himself.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24577795",
+      "uid": "dc330fce-d6af-43e2-849c-57c68cda369c",
+      "title": "Cubeo - Cubeo stands for soft edges.",
+      "slug": "cubeo-cubeo-stands-for-soft-edges",
+      "interactionMetaInformation": [
+        {
+          "headline": "Cubeo stands for soft edges."
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_trueFalseModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>Cubeo stands for soft edges.</p>",
+          "questionInstruction": null,
+          "optionalImageComponent": [],
+          "stacked": true,
+          "trueFalseAnswerOptions": [
+            {
+              "trueLabel": null,
+              "falseLabel": null,
+              "correctAnswer": "true"
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24577761",
+      "uid": "cbdfff92-0cd9-4b7b-86f7-3ae699eae276",
+      "title": "Cubeo - How is Cubeo a sustainable product?",
+      "slug": "cubeo-how-is-cubeo-a-sustainable-product",
+      "interactionMetaInformation": [
+        {
+          "headline": "How is Cubeo a sustainable product?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>How is Cubeo a sustainable product?</p>",
+          "questionInstruction": null,
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>GROHE Eco Joy technology</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>With the integrated flow restrictor the water consumption is automatically reduced.</p>",
+              "correctAnswer": true,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>.</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "23146757",
       "uid": "e608c3a6-3eb3-4c64-a45d-42bd24672083",
       "title": "RSH Aqua Pure -  Which is the correct feature of the updated Rainshower SmartActive handshower?",
@@ -32449,328 +34027,6 @@
       ]
     },
     {
-      "id": "23142064",
-      "uid": "48cd9671-d23c-4f23-9079-7b03b8acf24d",
-      "title": "Dice - How is Dice considered a sustainable product?",
-      "slug": "dice-in-which-way-is-cubeo-a-sustainable-product",
-      "interactionMetaInformation": [
-        {
-          "headline": "How is Dice considered a sustainable product?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_choiceModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>How is Dice considered a sustainable product?</p>",
-          "questionInstruction": "<p>Please select the right answers and confirm by clicking OK.</p>",
-          "optionalImageComponent": [],
-          "forceMultipleChoice": false,
-          "disableShuffle": false,
-          "stacked": true,
-          "choiceAnswerOptions": [
-            {
-              "answerText": "<p>It is made from ABS.</p>",
-              "correctAnswer": false,
-              "asset": []
-            },
-            {
-              "answerText": "<p>It includes as specific restrictor to limit the use of warm water.</p>",
-              "correctAnswer": false,
-              "asset": []
-            },
-            {
-              "answerText": "<p>GROHE Eco Joy technology</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>With the integrated flow restrictor the water consumption is automatically reduced.</p>",
-              "correctAnswer": true,
-              "asset": []
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Yes, the EcoJoy technology and the integrated flow restrictor contribute to sustainability. </p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>No, the EcoJoy technology and the integrated flow restrictor contribute to sustainability. </p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": null
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "23141433",
-      "uid": "4a831976-eb1d-4b58-a233-56fa15339d1f",
-      "title": "Dice - GROHE Dice fits any bathroom!",
-      "slug": "dice-fits-any-bathroom",
-      "interactionMetaInformation": [
-        {
-          "headline": "GROHE Dice fits any bathroom!"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_trueFalseModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>GROHE Dice fits any bathroom!</p>",
-          "questionInstruction": null,
-          "optionalImageComponent": [],
-          "stacked": true,
-          "trueFalseAnswerOptions": [
-            {
-              "trueLabel": null,
-              "falseLabel": null,
-              "correctAnswer": "true"
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Yes, this statement is true. Due to its design it matches both, rounded or rectilinear bathroom designs.</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Sorry, but this statement is true. Due to its design it matches both, rounded or rectilinear bathroom designs.</p>"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "24578321",
-      "uid": "e7e3ba24-ed8f-438e-9d07-4f526a9a89e6",
-      "title": "Dice - Which of the following Dice variants are available?",
-      "slug": "dice-which-of-the-following-dice-variants-are-available",
-      "interactionMetaInformation": [
-        {
-          "headline": "Which of the following Dice variants are available?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_choiceModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>Which of the following Dice variants are available?</p>",
-          "questionInstruction": null,
-          "optionalImageComponent": [],
-          "forceMultipleChoice": false,
-          "disableShuffle": false,
-          "stacked": true,
-          "choiceAnswerOptions": [
-            {
-              "answerText": "<p>Basin Mixer M-Size in Chrome with pull-out spout</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Matte Black Basin Mixer S-Size</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Matte Black Shower Mixer concealed</p>",
-              "correctAnswer": false,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Basin Mixer L-Size in Chrome and Matte Black</p>",
-              "correctAnswer": true,
-              "asset": []
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Very good! The concealed Shower Mixer in Matte Black is not available.</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>This was not correct! The concealed Shower Mixer in Matte Black is not available.</p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": null
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "24578215",
-      "uid": "f9dd2a1c-fb12-4a66-bd9e-531b54f64e71",
-      "title": "Dice - Which of the following properties apply to GROHE Dice?",
-      "slug": "dice-which-of-the-following-properties-apply-to-grohe-dice",
-      "interactionMetaInformation": [
-        {
-          "headline": "Which of the following properties apply to GROHE Dice?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_choiceModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>Which of the following properties apply to GROHE Dice?</p>",
-          "questionInstruction": null,
-          "optionalImageComponent": [],
-          "forceMultipleChoice": false,
-          "disableShuffle": false,
-          "stacked": true,
-          "choiceAnswerOptions": [
-            {
-              "answerText": "<p>Available in Phantom Black</p>",
-              "correctAnswer": false,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Soft square edges</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Rounded open lever</p>",
-              "correctAnswer": false,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Slightly kicked lever</p>",
-              "correctAnswer": true,
-              "asset": []
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Yes, Dice comes with soft square edges and a slightly kicked lever. It is available in Matte Black and has no rounded open lever.</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Sorry, this is wrong. Dice comes with soft square edges and a slightly kicked lever. It is available in Matte Black and has no rounded open lever.</p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": null
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "24577795",
-      "uid": "dc330fce-d6af-43e2-849c-57c68cda369c",
-      "title": "Cubeo - Cubeo stands for soft edges.",
-      "slug": "cubeo-cubeo-stands-for-soft-edges",
-      "interactionMetaInformation": [
-        {
-          "headline": "Cubeo stands for soft edges."
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_trueFalseModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>Cubeo stands for soft edges.</p>",
-          "questionInstruction": null,
-          "optionalImageComponent": [],
-          "stacked": true,
-          "trueFalseAnswerOptions": [
-            {
-              "trueLabel": null,
-              "falseLabel": null,
-              "correctAnswer": "true"
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>.</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>.</p>"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "24577761",
-      "uid": "cbdfff92-0cd9-4b7b-86f7-3ae699eae276",
-      "title": "Cubeo - How is Cubeo a sustainable product?",
-      "slug": "cubeo-how-is-cubeo-a-sustainable-product",
-      "interactionMetaInformation": [
-        {
-          "headline": "How is Cubeo a sustainable product?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_choiceModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>How is Cubeo a sustainable product?</p>",
-          "questionInstruction": null,
-          "optionalImageComponent": [],
-          "forceMultipleChoice": false,
-          "disableShuffle": false,
-          "stacked": true,
-          "choiceAnswerOptions": [
-            {
-              "answerText": "<p>GROHE Eco Joy technology</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>With the integrated flow restrictor the water consumption is automatically reduced.</p>",
-              "correctAnswer": true,
-              "asset": []
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>.</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>.</p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": null
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "23142766",
       "uid": "0a8a1ace-e6b1-4cc9-b938-a0da19288823",
       "title": "Cubeo - What sizes are available for Cubeo basin faucets?",
@@ -32981,6 +34237,69 @@
       ]
     },
     {
+      "id": "23142064",
+      "uid": "48cd9671-d23c-4f23-9079-7b03b8acf24d",
+      "title": "Dice - How is Dice considered a sustainable product?",
+      "slug": "dice-in-which-way-is-cubeo-a-sustainable-product",
+      "interactionMetaInformation": [
+        {
+          "headline": "How is Dice considered a sustainable product?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>How is Dice considered a sustainable product?</p>",
+          "questionInstruction": "<p>Please select the right answers and confirm by clicking OK.</p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>It is made from ABS.</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>It includes as specific restrictor to limit the use of warm water.</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>GROHE Eco Joy technology</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>With the integrated flow restrictor the water consumption is automatically reduced.</p>",
+              "correctAnswer": true,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Yes, the EcoJoy technology and the integrated flow restrictor contribute to sustainability. </p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>No, the EcoJoy technology and the integrated flow restrictor contribute to sustainability. </p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "23141669",
       "uid": "7ac2dd84-c9b8-42eb-9745-64f6260dd498",
       "title": "Cubeo - What percentage of energy can be saved with SlikMove ES?",
@@ -33090,6 +34409,46 @@
             {
               "feedbackHeadline": null,
               "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "23141433",
+      "uid": "4a831976-eb1d-4b58-a233-56fa15339d1f",
+      "title": "Dice - GROHE Dice fits any bathroom!",
+      "slug": "dice-fits-any-bathroom",
+      "interactionMetaInformation": [
+        {
+          "headline": "GROHE Dice fits any bathroom!"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_trueFalseModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>GROHE Dice fits any bathroom!</p>",
+          "questionInstruction": null,
+          "optionalImageComponent": [],
+          "stacked": true,
+          "trueFalseAnswerOptions": [
+            {
+              "trueLabel": null,
+              "falseLabel": null,
+              "correctAnswer": "true"
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Yes, this statement is true. Due to its design it matches both, rounded or rectilinear bathroom designs.</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Sorry, but this statement is true. Due to its design it matches both, rounded or rectilinear bathroom designs.</p>"
             }
           ]
         }
@@ -34737,6 +36096,46 @@
       ]
     },
     {
+      "id": "16807849",
+      "uid": "5dcd86c2-15e7-4456-9d96-7b985660cc99",
+      "title": "SmartControl - GROHE SmartControl features ProGrip handles with a ridged structure.",
+      "slug": "smartcontrol-grohe-smartcontrol-features-progrip-handles-with-a-ridged-structure",
+      "interactionMetaInformation": [
+        {
+          "headline": "GROHE SmartControl features ProGrip handles with a ridged structure."
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_trueFalseModule_BlockType",
+          "questionOverline": "What do you think?",
+          "question": "<p>GROHE SmartControl features ProGrip handles with a ridged structure.</p>",
+          "questionInstruction": "<p class=\"is-typo-copytext--small\">Please evaluate if this statement is true or false.</p>",
+          "optionalImageComponent": [],
+          "stacked": false,
+          "trueFalseAnswerOptions": [
+            {
+              "trueLabel": "True",
+              "falseLabel": "False",
+              "correctAnswer": "true"
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz Question</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz Question</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "16808901",
       "uid": "2f16f52e-0088-4c63-b173-efd3201c79e2",
       "title": "SmartControl - What needs to be considered before installing the fixing plate?",
@@ -35225,40 +36624,155 @@
       ]
     },
     {
-      "id": "16807849",
-      "uid": "5dcd86c2-15e7-4456-9d96-7b985660cc99",
-      "title": "SmartControl - GROHE SmartControl features ProGrip handles with a ridged structure.",
-      "slug": "smartcontrol-grohe-smartcontrol-features-progrip-handles-with-a-ridged-structure",
+      "id": "16544609",
+      "uid": "37c787db-b596-4a81-af4b-b830ec6ab0e2",
+      "title": "Tempesta 110 - Tempesta 110 features GROHE Shockproof. ﻿How is this achieved?",
+      "slug": "tempesta-110-tempesta-110-features-grohe-shockproof-how-is-this-achieved",
       "interactionMetaInformation": [
         {
-          "headline": "GROHE SmartControl features ProGrip handles with a ridged structure."
+          "headline": "Tempesta 110 features GROHE ShockProof. ﻿How is this achieved?"
         }
       ],
       "interactionBuilder": [
         {
           "__typename": "interactionBuilder_trueFalseModule_BlockType",
-          "questionOverline": "What do you think?",
-          "question": "<p>GROHE SmartControl features ProGrip handles with a ridged structure.</p>",
-          "questionInstruction": "<p class=\"is-typo-copytext--small\">Please evaluate if this statement is true or false.</p>",
+          "questionOverline": null,
+          "question": "<p>Tempesta 110 features GROHE ShockProof. How is this achieved?</p>",
+          "questionInstruction": "<p>Please select the correct statement.</p>",
           "optionalImageComponent": [],
           "stacked": false,
           "trueFalseAnswerOptions": [
             {
-              "trueLabel": "True",
-              "falseLabel": "False",
-              "correctAnswer": "true"
+              "trueLabel": "The inner parts are decoupled from the housing and are shock protected",
+              "falseLabel": "A circumferential silicone ring with a reinforced ShockProof edge",
+              "correctAnswer": "false"
             }
           ],
           "positiveFeedback": [
             {
               "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz Question</p>"
+              "feedbackText": "<p>Quiz question</p>"
             }
           ],
           "negativeFeedback": [
             {
               "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz Question</p>"
+              "feedbackText": "<p>Quiz question</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16544449",
+      "uid": "0faeb0d8-1c7c-467d-bb2b-f95421344017",
+      "title": "Tempesta 110 - The product range of GROHE Tempesta 110 includes...",
+      "slug": "tempesta-110-the-product-range-of-grohe-tempesta-110-includes",
+      "interactionMetaInformation": [
+        {
+          "headline": "The product range of GROHE Tempesta 110 includes..."
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>The product range of GROHE Tempesta 110 includes...</p>",
+          "questionInstruction": "<p>Please select all products which are included in the product range</p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": false,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>Single hand shower</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Shower rail set</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Complete shower system</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Hand shower with wall holder</p>",
+              "correctAnswer": true,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz question</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz question</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16544183",
+      "uid": "bd9e0fe9-2095-403a-9d00-98da6332a58a",
+      "title": "Tempesta 110 - Which flow rate corresponds to the GROHE Tempesta 110 feature \"Water Saving Plus\"?",
+      "slug": "tempesta-110-grohe-tempesta-110-offers-the-feature-water-saving-plus",
+      "interactionMetaInformation": [
+        {
+          "headline": "Which flow rate corresponds to the GROHE Tempesta 110 feature \"Water Saving Plus\"?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_valueSliderModule_BlockType",
+          "questionOverline": null,
+          "question": "<p>Which flow rate corresponds to the GROHE Tempesta 110 feature \"Water Saving Plus\"?</p>",
+          "questionInstruction": "<p>Move the slider below to the correct value and proceed to the next question</p>",
+          "optionalImageComponent": [],
+          "stacked": false,
+          "valueSliderConfiguration": [
+            {
+              "minValue": 0,
+              "maxValue": 10,
+              "steps": 0.1,
+              "initialValue": 5,
+              "correctValue": 5.6,
+              "correctThreshold": 0.4,
+              "minLabel": "0 l",
+              "maxLabel": "10 l",
+              "currentValueLabel": "l at 3bar"
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz question</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz question</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
             }
           ]
         }
@@ -35407,161 +36921,6 @@
               "answerText": "<p>Bokoma</p>",
               "correctAnswer": false,
               "asset": []
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz question</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz question</p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": null
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "16544609",
-      "uid": "37c787db-b596-4a81-af4b-b830ec6ab0e2",
-      "title": "Tempesta 110 - Tempesta 110 features GROHE Shockproof. ﻿How is this achieved?",
-      "slug": "tempesta-110-tempesta-110-features-grohe-shockproof-how-is-this-achieved",
-      "interactionMetaInformation": [
-        {
-          "headline": "Tempesta 110 features GROHE ShockProof. ﻿How is this achieved?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_trueFalseModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>Tempesta 110 features GROHE ShockProof. How is this achieved?</p>",
-          "questionInstruction": "<p>Please select the correct statement.</p>",
-          "optionalImageComponent": [],
-          "stacked": false,
-          "trueFalseAnswerOptions": [
-            {
-              "trueLabel": "The inner parts are decoupled from the housing and are shock protected",
-              "falseLabel": "A circumferential silicone ring with a reinforced ShockProof edge",
-              "correctAnswer": "false"
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz question</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz question</p>"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "16544449",
-      "uid": "0faeb0d8-1c7c-467d-bb2b-f95421344017",
-      "title": "Tempesta 110 - The product range of GROHE Tempesta 110 includes...",
-      "slug": "tempesta-110-the-product-range-of-grohe-tempesta-110-includes",
-      "interactionMetaInformation": [
-        {
-          "headline": "The product range of GROHE Tempesta 110 includes..."
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_choiceModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>The product range of GROHE Tempesta 110 includes...</p>",
-          "questionInstruction": "<p>Please select all products which are included in the product range</p>",
-          "optionalImageComponent": [],
-          "forceMultipleChoice": false,
-          "disableShuffle": false,
-          "stacked": false,
-          "choiceAnswerOptions": [
-            {
-              "answerText": "<p>Single hand shower</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Shower rail set</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Complete shower system</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Hand shower with wall holder</p>",
-              "correctAnswer": true,
-              "asset": []
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz question</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz question</p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": null
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "16544183",
-      "uid": "bd9e0fe9-2095-403a-9d00-98da6332a58a",
-      "title": "Tempesta 110 - Which flow rate corresponds to the GROHE Tempesta 110 feature \"Water Saving Plus\"?",
-      "slug": "tempesta-110-grohe-tempesta-110-offers-the-feature-water-saving-plus",
-      "interactionMetaInformation": [
-        {
-          "headline": "Which flow rate corresponds to the GROHE Tempesta 110 feature \"Water Saving Plus\"?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_valueSliderModule_BlockType",
-          "questionOverline": null,
-          "question": "<p>Which flow rate corresponds to the GROHE Tempesta 110 feature \"Water Saving Plus\"?</p>",
-          "questionInstruction": "<p>Move the slider below to the correct value and proceed to the next question</p>",
-          "optionalImageComponent": [],
-          "stacked": false,
-          "valueSliderConfiguration": [
-            {
-              "minValue": 0,
-              "maxValue": 10,
-              "steps": 0.1,
-              "initialValue": 5,
-              "correctValue": 5.6,
-              "correctThreshold": 0.4,
-              "minLabel": "0 l",
-              "maxLabel": "10 l",
-              "currentValueLabel": "l at 3bar"
             }
           ],
           "positiveFeedback": [
@@ -37425,202 +38784,6 @@
       ]
     },
     {
-      "id": "8814740",
-      "uid": "80947bc6-92e8-45e2-8df6-ca47baa816db",
-      "title": "QuickGlue - Do you know the correct phrases?",
-      "slug": "quickglue-do-you-know-the-correct-phrases",
-      "interactionMetaInformation": [
-        {
-          "headline": "Do you know the correct phrases?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_fillTheBlankModule_BlockType",
-          "questionOverline": "Fill in the blanks",
-          "question": "<p>Do you know the correct phrases?</p>",
-          "questionInstruction": "<p class=\"is-typo-copytext--small\">Can you complete the paragraph by filling in the blanks?</p>",
-          "optionalImageComponent": [],
-          "textWithoutFormating": "<p>The {{difference|similarity}} between the A- and S- glue set is, that the {{packaging|installation}} and application method is specialized to the respective product type (accessories/ shower products) in order to allow an {{easy installation process|easy unpacking process}}</p>",
-          "stacked": true,
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz Question</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz Question</p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": null
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "8814739",
-      "uid": "314a0575-a36d-4c1c-932b-e01eda1b9c02",
-      "title": "QuickGlue - The glue and the accessory come together in one package.",
-      "slug": "quickglue-the-glue-and-the-accessory-come-together-in-one-package",
-      "interactionMetaInformation": [
-        {
-          "headline": "The glue and the accessory come together in one package."
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_trueFalseModule_BlockType",
-          "questionOverline": "What do you think?",
-          "question": "<p>The glue and the accessory come together in one package.</p>",
-          "questionInstruction": "<p class=\"is-typo-copytext--small\">Please select the correct answer below and proceed to the next question.</p>",
-          "optionalImageComponent": [],
-          "stacked": true,
-          "trueFalseAnswerOptions": [
-            {
-              "trueLabel": "True",
-              "falseLabel": "False",
-              "correctAnswer": "false"
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz Question</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz Question</p>"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "8814738",
-      "uid": "d3241de5-466f-42a8-897d-f4dbf7e9d3c7",
-      "title": "QuickGlue - Which product lines can be combined with GROHE QuickGlue set A1 and A2?",
-      "slug": "quickglue-which-product-lines-can-be-combined-with-grohe-quickglue-set-a1-and-a2",
-      "interactionMetaInformation": [
-        {
-          "headline": "Which product lines can be combined with GROHE QuickGlue set A1 and A2?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_choiceModule_BlockType",
-          "questionOverline": "Knowledge check",
-          "question": "<p>Which product lines can be combined with GROHE QuickGlue set A1 and A2?</p>",
-          "questionInstruction": "<p class=\"is-typo-copytext--small\">Please select the correct answer below and proceed to the next question.</p>",
-          "optionalImageComponent": [],
-          "forceMultipleChoice": false,
-          "disableShuffle": false,
-          "stacked": true,
-          "choiceAnswerOptions": [
-            {
-              "answerText": "<p>Start, Start Cosmopolitan, Start Cube</p>",
-              "correctAnswer": true,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Start and VitalioFlex</p>",
-              "correctAnswer": false,
-              "asset": []
-            },
-            {
-              "answerText": "<p>Tempesta</p>",
-              "correctAnswer": false,
-              "asset": []
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz Question</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz Question</p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": null
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "8814737",
-      "uid": "027a86ac-5f7d-4039-b289-bbfb0fabf489",
-      "title": "QuickGlue - The consumer wants to install the product Start Cube Towel rail 600 mm in his bathroom.  What GROHE QuickGlue set would you recommend?",
-      "slug": "quickglue-the-consumer-wants-to-install-the-product-start-cube-towel-rail-600-mm-in-his-bathroom-what-grohe-quickglue-set-would-you-recommend",
-      "interactionMetaInformation": [
-        {
-          "headline": "The consumer wants to install the product Start Cube Towel rail 600 mm in his bathroom.  What GROHE QuickGlue set would you recommend?"
-        }
-      ],
-      "interactionBuilder": [
-        {
-          "__typename": "interactionBuilder_choiceModule_BlockType",
-          "questionOverline": "Knowledge check",
-          "question": "<p>The consumer wants to install the product <strong>Start Cube Towel rail 600 mm</strong> in his bathroom.<br />What GROHE QuickGlue set would you recommend?</p>",
-          "questionInstruction": "<p class=\"is-typo-copytext--small\">Please select the correct answer below and proceed to the next question.</p>",
-          "optionalImageComponent": [],
-          "forceMultipleChoice": false,
-          "disableShuffle": false,
-          "stacked": true,
-          "choiceAnswerOptions": [
-            {
-              "answerText": "<p>GROHE QuickGlue S</p>",
-              "correctAnswer": false,
-              "asset": []
-            },
-            {
-              "answerText": "<p>GROHE QuickGlue A1</p>",
-              "correctAnswer": false,
-              "asset": []
-            },
-            {
-              "answerText": "<p>GROHE QuickGlue A2</p>",
-              "correctAnswer": true,
-              "asset": []
-            }
-          ],
-          "positiveFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz Question</p>"
-            }
-          ],
-          "negativeFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": "<p>Quiz Question</p>"
-            }
-          ],
-          "solutionFeedback": [
-            {
-              "feedbackHeadline": null,
-              "feedbackText": null
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "8814085",
       "uid": "4b6c1ce7-984b-4c99-8713-01ee13b55b9e",
       "title": "QuickGlue - A product which has been glued with GROHE QuickGlue can be removed without any residue.",
@@ -37830,6 +38993,202 @@
             {
               "answerText": "<p>They do not have the self-motivation. It is therefore easier to hire an installer.</p>",
               "correctAnswer": false,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz Question</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz Question</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8814740",
+      "uid": "80947bc6-92e8-45e2-8df6-ca47baa816db",
+      "title": "QuickGlue - Do you know the correct phrases?",
+      "slug": "quickglue-do-you-know-the-correct-phrases",
+      "interactionMetaInformation": [
+        {
+          "headline": "Do you know the correct phrases?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_fillTheBlankModule_BlockType",
+          "questionOverline": "Fill in the blanks",
+          "question": "<p>Do you know the correct phrases?</p>",
+          "questionInstruction": "<p class=\"is-typo-copytext--small\">Can you complete the paragraph by filling in the blanks?</p>",
+          "optionalImageComponent": [],
+          "textWithoutFormating": "<p>The {{difference|similarity}} between the A- and S- glue set is, that the {{packaging|installation}} and application method is specialized to the respective product type (accessories/ shower products) in order to allow an {{easy installation process|easy unpacking process}}</p>",
+          "stacked": true,
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz Question</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz Question</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8814739",
+      "uid": "314a0575-a36d-4c1c-932b-e01eda1b9c02",
+      "title": "QuickGlue - The glue and the accessory come together in one package.",
+      "slug": "quickglue-the-glue-and-the-accessory-come-together-in-one-package",
+      "interactionMetaInformation": [
+        {
+          "headline": "The glue and the accessory come together in one package."
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_trueFalseModule_BlockType",
+          "questionOverline": "What do you think?",
+          "question": "<p>The glue and the accessory come together in one package.</p>",
+          "questionInstruction": "<p class=\"is-typo-copytext--small\">Please select the correct answer below and proceed to the next question.</p>",
+          "optionalImageComponent": [],
+          "stacked": true,
+          "trueFalseAnswerOptions": [
+            {
+              "trueLabel": "True",
+              "falseLabel": "False",
+              "correctAnswer": "false"
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz Question</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz Question</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8814738",
+      "uid": "d3241de5-466f-42a8-897d-f4dbf7e9d3c7",
+      "title": "QuickGlue - Which product lines can be combined with GROHE QuickGlue set A1 and A2?",
+      "slug": "quickglue-which-product-lines-can-be-combined-with-grohe-quickglue-set-a1-and-a2",
+      "interactionMetaInformation": [
+        {
+          "headline": "Which product lines can be combined with GROHE QuickGlue set A1 and A2?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": "Knowledge check",
+          "question": "<p>Which product lines can be combined with GROHE QuickGlue set A1 and A2?</p>",
+          "questionInstruction": "<p class=\"is-typo-copytext--small\">Please select the correct answer below and proceed to the next question.</p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>Start, Start Cosmopolitan, Start Cube</p>",
+              "correctAnswer": true,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Start and VitalioFlex</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>Tempesta</p>",
+              "correctAnswer": false,
+              "asset": []
+            }
+          ],
+          "positiveFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz Question</p>"
+            }
+          ],
+          "negativeFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": "<p>Quiz Question</p>"
+            }
+          ],
+          "solutionFeedback": [
+            {
+              "feedbackHeadline": null,
+              "feedbackText": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8814737",
+      "uid": "027a86ac-5f7d-4039-b289-bbfb0fabf489",
+      "title": "QuickGlue - The consumer wants to install the product Start Cube Towel rail 600 mm in his bathroom.  What GROHE QuickGlue set would you recommend?",
+      "slug": "quickglue-the-consumer-wants-to-install-the-product-start-cube-towel-rail-600-mm-in-his-bathroom-what-grohe-quickglue-set-would-you-recommend",
+      "interactionMetaInformation": [
+        {
+          "headline": "The consumer wants to install the product Start Cube Towel rail 600 mm in his bathroom.  What GROHE QuickGlue set would you recommend?"
+        }
+      ],
+      "interactionBuilder": [
+        {
+          "__typename": "interactionBuilder_choiceModule_BlockType",
+          "questionOverline": "Knowledge check",
+          "question": "<p>The consumer wants to install the product <strong>Start Cube Towel rail 600 mm</strong> in his bathroom.<br />What GROHE QuickGlue set would you recommend?</p>",
+          "questionInstruction": "<p class=\"is-typo-copytext--small\">Please select the correct answer below and proceed to the next question.</p>",
+          "optionalImageComponent": [],
+          "forceMultipleChoice": false,
+          "disableShuffle": false,
+          "stacked": true,
+          "choiceAnswerOptions": [
+            {
+              "answerText": "<p>GROHE QuickGlue S</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>GROHE QuickGlue A1</p>",
+              "correctAnswer": false,
+              "asset": []
+            },
+            {
+              "answerText": "<p>GROHE QuickGlue A2</p>",
+              "correctAnswer": true,
               "asset": []
             }
           ],

@@ -24,7 +24,7 @@ Languages:
   Fields:
   - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
     Hint: __Short description
-    Value: Image for pass screen
+    Value: External CDN URL for pass screen image
   - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
     Hint: __Unversioned revision
     Value: "0c5fca66-d211-1bfd-41b1-d765bd361368"
@@ -44,7 +44,7 @@ Languages:
         sitecore\artsiom.dylevich@actumdigital.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: 0a55bd13-ab34-b23c-a259-2a763dc85b56
+      Value: f9c72d4c-addf-86ba-4bd1-ebb1ae44ff57
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

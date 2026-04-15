@@ -307,6 +307,12 @@ const baseKeyvisualUrl = makeFieldItem('KeyvisualUrl', baseContentSec.id, `${bas
 });
 writeYml('GTC/_GtcBasePageTemplate/GTC Content/KeyvisualUrl.yml', baseKeyvisualUrl.yml);
 
+const baseHeroStageVideoUrl = makeFieldItem('HeroStageVideoURL', baseContentSec.id, `${baseTplPath}/GTC Content`, 400, 'Single-Line Text', {
+  shared: true,
+  shortDesc: 'Video URL for the hero stage banner (used instead of Asset Media)',
+});
+writeYml('GTC/_GtcBasePageTemplate/GTC Content/HeroStageVideoURL.yml', baseHeroStageVideoUrl.yml);
+
 // _GtcBasePageTemplate → GTC Settings section
 const baseSettingsSec = makeSectionItem('GTC Settings', baseTpl.id, baseTplPath, 200);
 writeYml('GTC/_GtcBasePageTemplate/GTC Settings.yml', baseSettingsSec.yml);
@@ -386,15 +392,6 @@ writeYml('GTC/Collection Page.yml', templateYml({
   path: collPath,
   sharedFields: collTpl.sharedFields,
 }));
-
-// Collection → GTC Content
-const collContentSec = makeSectionItem('GTC Content', collTpl.id, collPath, 100);
-writeYml('GTC/Collection Page/GTC Content.yml', collContentSec.yml);
-
-const collHeroText = makeFieldItem('HeroText', collContentSec.id, `${collPath}/GTC Content`, 100, 'Rich Text', {
-  shortDesc: 'Hero banner descriptive text',
-});
-writeYml('GTC/Collection Page/GTC Content/HeroText.yml', collHeroText.yml);
 
 // Collection → GTC Settings
 const collSettingsSec = makeSectionItem('GTC Settings', collTpl.id, collPath, 200);
